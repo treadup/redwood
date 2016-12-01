@@ -10,7 +10,8 @@ body {
 header {
     width: 100%;
     height: 6em;
-    background-color: green;
+    background: #228B22;
+    color: white;
 }
 
 footer {
@@ -20,5 +21,6 @@ footer {
     width: 100%;
     height: 3em;
 
-    background-color: green;
+    background: #228B22;
+    color: white;
 }
