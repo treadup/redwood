@@ -7,20 +7,45 @@ body {
     margin-bottom: 3em;
 }
 
+/* Header */
 header {
     width: 100%;
-    height: 6em;
+    height: 3em;
     background: #228B22;
     color: white;
 }
 
+/* Navigation */
+nav {
+    display:flex;
+}
+
+.nav_left {
+    padding: 1em;
+}
+
+.nav_right {
+    padding: 1em;
+    margin-left: auto;
+}
+
+/* Main content */
+main {
+
+}
+
+/* Footer */
 footer {
+    /* Positioning of the footer. */
     box-sizing: border-box;
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 3em;
+    /* height should be the same size as margin bottom
+       on the body */
+    
     padding: 1em;
     background: #228B22;
     color: white;
