@@ -5,6 +5,18 @@ html {
 
 body {
     margin-bottom: 3em;
+
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+/* Remove underline on links */
+:link {
+    text-decoration: none !important;
+}
+
+:visited {
+    color: #D3D3D3;
+    text-decoration: none !important;    
 }
 
 /* Header */
@@ -17,15 +29,20 @@ header {
 
 /* Navigation */
 nav {
+    /* Navbar should be the full height of the header. */
+    height: 100%;
+
     display:flex;
+
+    /* Vertical centering */
+    align-items: center;
 }
 
-.nav_left {
-    padding: 1em;
+nav div {
+    padding: 0.5em;
 }
 
 .nav_right {
-    padding: 1em;
     margin-left: auto;
 }
 
@@ -45,9 +62,18 @@ footer {
     height: 3em;
     /* height should be the same size as margin bottom
        on the body */
-    
-    padding: 1em;
+
+    /* Align items in the container */
+    display: flex;
+    justify-content: center;
+
+    /* Colors */
     background: #228B22;
     color: white;
-    text-align: right;
 }
+
+footer div {
+    padding: 1em;
+}
+
+
