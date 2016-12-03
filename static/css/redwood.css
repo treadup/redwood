@@ -14,11 +14,6 @@ body {
     text-decoration: none !important;
 }
 
-:visited {
-    color: #D3D3D3;
-    text-decoration: none !important;    
-}
-
 /* Header */
 header {
     width: 100%;
@@ -46,6 +41,10 @@ nav div {
     margin-left: auto;
 }
 
+nav a:visited {
+    color: #D3D3D3;
+}
+
 /* Main content */
 main {
     padding: 1em;
@@ -53,6 +52,20 @@ main {
     min-width: 20em;
     margin-left: auto;
     margin-right: auto
+}
+
+main a {
+    color: #228B22;
+}
+
+main ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+main h1 {
+    margin-bottom: 0;
 }
 
 /* Footer */

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Bookmarks{% endblock %}
+{% block content %}
+
+{% for bookmarkCollection in bookmarks %}
+<h1>{{bookmarkCollection.name}}</h1>
+  <ul>
+    {% for item in bookmarkCollection['items'] %}
+    <li><a href="{{item[1]}}">{{item[0]}}</a></li>
+    {% endfor %}
+  </ul>
+{% endfor %}
+{% endblock %}
