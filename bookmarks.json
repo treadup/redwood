@@ -1,0 +1,16 @@
+[
+    {
+        "category": "Python",
+        "bookmarks": [{"text": "Django", "url": "http://www.djangoproject.com"},
+                      {"text": "Flask",  "url": "http://flask.pocoo.org/"},
+                      {"text": "Jinja2", "url": "http://jinja.pocoo.org/"},
+                      {"text": "Fabric", "url": ""},
+                      {"text": "Kivy",   "url": ""}]
+    },
+    {
+        "category": "Clojure",
+        "bookmarks": [{"text": "Clojure", "url": ""},
+                      {"text": "Clojure Toolbox", "url": ""}]
+    }
+]
+                       
