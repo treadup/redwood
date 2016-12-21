@@ -11,6 +11,10 @@
         "category": "Clojure",
         "bookmarks": [{"text": "Clojure", "url": ""},
                       {"text": "Clojure Toolbox", "url": ""}]
+    },
+    {
+        "category": "Services",
+        "bookmarks": [{"text": "Shippable", "url": "https://app.shippable.com/"}]
     }
 ]
                        
