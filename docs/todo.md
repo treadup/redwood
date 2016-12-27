@@ -1,7 +1,9 @@
 # TODO
 This is the todo list for my personal website.
 
-- [ ] Unit testing
-- [ ] Continuous integration (Shippable)
+- [x] Unit testing
+- [x] Continuous integration (Circle CI)
+- [ ] Photo album
 - [ ] Login
 - [ ] Deploy on Heroku
+
