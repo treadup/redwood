@@ -17,16 +17,18 @@ def load_bookmarks():
     Loads the bookmarks from the bookmarks.json file
     """
     filename = app.config['BOOKMARKS_FILENAME']
+    
     with open(filename) as f:
         bookmarks_json = f.read()
 
     return json.loads(bookmarks_json)
 
 @app.route('/bookmarks')
-def bookmarks(bookmarks=load_bookmarks()): # Hack to only load the bookmarks file once.
+def bookmarks():
     """
     Show bookmarks belonging to different categories
     """
+    bookmarks=load_bookmarks()
     return render_template('bookmarks.html', bookmarks=bookmarks)
 
 # For now I might just want a single page of photos.
