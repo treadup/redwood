@@ -17,6 +17,10 @@
         "bookmarks": [{"text": "Circle CI", "url": "https://circleci.com/"},
                       {"text": "Travis CI", "url": "https://travis-ci.org/"},
                       {"text": "Coveralls", "url": "https://coveralls.io/"}]
+    },
+    {
+        "category": "Error handling",
+        "bookmarks": [{"text": "Airbrake", "url": "https://airbrake.io/"}]
     }
 ]
 
