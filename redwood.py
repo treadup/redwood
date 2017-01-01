@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 import json
 from pprint import pprint
 
@@ -122,8 +122,13 @@ def single_photo(collection_name, photo):
     
     return 'Could not find matching photo. Should return a nice 404 error here.'
 
-# Have an index page for image collections.
-# Each image collection should have a page 
+@app.route('/login/', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        return 'Handling login post requests is not implemented yet.'
+    else:
+        return render_template("login.html")
+
 
 @app.route('/notes')
 @app.route('/notes/<path>')

@@ -5,7 +5,6 @@ html {
 
 body {
     margin-bottom: 3em;
-
     font-family: Verdana, Geneva, sans-serif;
 }
 
@@ -51,7 +50,7 @@ main {
     max-width: 60em;
     min-width: 20em;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
 }
 
 main a {
@@ -117,3 +116,33 @@ footer div {
 .photo-gallery img {
     margin: 1em;
 }
+
+/* Login page */
+.login-form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Height of the viewport minus height of the footer and header
+       minus the padding for the main element. */
+    height: calc(100vh - 6em - 2em);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 12em;
+}
+
+.login-form input[type=text], .login-form input[type=password] {
+    width: 10em;
+    margin: 0.3em;
+}
+
+.login-form input[type=submit] {
+    width: 8em;
+    margin: 0.3em;
+}
+
+
+
+
