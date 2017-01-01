@@ -42,16 +42,16 @@ def bookmarks():
 # In other words have a single collection page and then
 # a detail page for each photo.
 
-def get_thumbnail_url(collection_name, image_name):
+def get_thumbnail_s3_url(collection_name, image_name):
     f = 'http://s3.amazonaws.com/rainforestphotos/{}/thumbs/thumb_{}'
     return f.format(collection_name, image_name)
 
-def get_photo_url(collection_name, image_name):
+def get_photo_s3_url(collection_name, image_name):
     f = 'http://s3.amazonaws.com/rainforestphotos/{}/{}'
     return f.format(collection_name, image_name)
 
 def add_collection_thumbnail_url(collection):
-    collection['thumbnail'] = get_thumbnail_url(collection['slug'], collection['image'])
+    collection['thumbnail'] = get_thumbnail_s3_url(collection['slug'], collection['image'])
 
 def add_collection_url(collection):
     collection['url'] = '/photos/{}'.format(collection['slug'])
@@ -85,8 +85,9 @@ def get_raw_photo_collection(collection_name):
 
 def map_image(collection_name, image_name):
     return {"name": image_name,
-            "url": get_photo_url(collection_name, image_name),
-            "thumbnail": get_thumbnail_url(collection_name, image_name)}
+            "s3url": get_photo_s3_url(collection_name, image_name),
+            "thumbnail": get_thumbnail_s3_url(collection_name, image_name),
+            "url": '/photos/{}/{}'.format(collection_name, image_name)}
     
 
 def get_photo_collection(collection_name):
@@ -94,8 +95,6 @@ def get_photo_collection(collection_name):
 
     if collection:
         collection['images'] = [map_image(collection_name, img) for img in collection['images']]
-        print("Collection contents")
-        pprint(collection)
         return collection
     else:
         return None
@@ -107,20 +106,21 @@ def photo_collection(collection_name):
     """
     collection = get_photo_collection(collection_name)
 
-    print("Collection contents:")
-    pprint(collection)
-
     if(collection):
-        # Replace the images array with an array of objects with
-        # the following properties.
-        # name, url, thumbnail (which is a url)
         return render_template('photo-collection.html', collection=collection)
     else:
         return "Could not find the collection. Should return a nice 404 error here."
 
-@app.route('/photos/<collection>/<photo>')
-def single_photo(collection, photo):
-    return 'Single photo goes here.'
+@app.route('/photos/<collection_name>/<photo>')
+def single_photo(collection_name, photo):
+    collection = get_photo_collection(collection_name)
+
+    if collection:
+        for image in collection['images']:
+            if image['name'] == photo:
+                return render_template("photo.html", image=image)
+    
+    return 'Could not find matching photo. Should return a nice 404 error here.'
 
 # Have an index page for image collections.
 # Each image collection should have a page 
