@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Photos{% endblock %}
+{% block content %}
+{% for image in collection.images %}
+
+{{image}} <br/>
+
+{% endfor %}
+
+
+{% endblock %}

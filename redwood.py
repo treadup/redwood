@@ -72,7 +72,8 @@ def get_photo_collection(collection_name):
     photo_collections = load_photo_collection_list()
     for collection in photo_collections:
         if collection['slug'] == collection_name:
-            return collection
+            filename = 'photos/{}'.format(collection['collection'])
+            return load_json(filename)
 
     return None
 
@@ -82,6 +83,9 @@ def photo_collection(collection_name):
     Show a single photo collection.
     """
     collection = get_photo_collection(collection_name)
+
+    print("Collection contents:")
+    pprint(collection)
 
     if(collection):
         return render_template('photo-collection.html', collection=collection)
