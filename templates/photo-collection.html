@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 {% block title %}Photos{% endblock %}
 {% block content %}
+<div class="photo-gallery">
 {% for image in collection.images %}
 
-{{image}} <br/>
+<a href="{{image.url}}"><img src="{{image.thumbnail}}" /></a><br/>
 
 {% endfor %}
-
-
+</div>
 {% endblock %}

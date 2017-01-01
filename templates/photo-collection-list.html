@@ -1,21 +1,6 @@
 {% extends "base.html" %}
 {% block title %}Photo Collections{% endblock %}
 {% block content %}
-<style>
- .photo-collection {
-     display: table;
- }
-
- .photo-collection div {
-     display: table-cell;
-     vertical-align: middle;
- }
-
- .photo-collection img {
-     margin-right: 1em;
- }
-</style>
-
 {% for collection in photo_collections %}
 <div class="photo-collection">
     <div>

@@ -48,7 +48,7 @@ nav a:visited {
 /* Main content */
 main {
     padding: 1em;
-    max-width: 40em;
+    max-width: 60em;
     min-width: 20em;
     margin-left: auto;
     margin-right: auto
@@ -93,4 +93,27 @@ footer div {
     padding: 1em;
 }
 
+/* Photo collection list */
+.photo-collection {
+    display: table;
+}
 
+.photo-collection div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.photo-collection img {
+    margin-right: 1em;
+}
+
+/* Photo collection */
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.photo-gallery img {
+    margin: 1em;
+}
