@@ -1,2 +1,1 @@
- web: gunicorn redwood:app
- 
+web: gunicorn redwood:app
