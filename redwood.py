@@ -122,6 +122,14 @@ def single_photo(collection_name, photo):
     
     return 'Could not find matching photo. Should return a nice 404 error here.'
 
+@app.route('/.well-known/acme-challenge/FiJYIF8cu88TYGIAaFbtC_74mTdJjbyDUAegb2z6ALg')
+def letsencrypt_verification():
+    return 'FiJYIF8cu88TYGIAaFbtC_74mTdJjbyDUAegb2z6ALg.do-Ea0EwowSq-4RD9j1t9cNV_0hjtZRC28xzYDjdCTk'
+
+@app.route('/time')
+def current_time():
+    return 'A page showing the current time in different timezones.'    
+
 @app.route('/login/', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -138,6 +146,8 @@ def notes(path=None):
     In other words they require authentication to access.
     """
     return 'Notes go here.'
+
+
 
 @app.route('/hacks')
 def hacks():
