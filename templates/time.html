@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Time{% endblock %}
+{% block content %}
+<table class="time-table">
+    {% for place in places %}
+    <tr>
+        <td>{{place.name}}</td>
+        <td>{{place.time}}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
