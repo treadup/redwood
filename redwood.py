@@ -1,5 +1,8 @@
 from flask import Flask, render_template, request
 import json
+from datetime import datetime
+import pytz
+
 from pprint import pprint
 
 def create_app():
@@ -128,7 +131,15 @@ def letsencrypt_verification():
 
 @app.route('/time')
 def current_time():
-    return 'A page showing the current time in different timezones.'    
+    places = [{"name": "Sweden:", "tz": "Europe/Stockholm"},
+              {"name": "Hawaii:", "tz": "Pacific/Honolulu"},
+              {"name": "California:", "tz": "America/Los_Angeles"},
+              {"name": "Wyoming", "tz": "US/Mountain"}]
+
+    for place in places:
+        place['time'] = datetime.now(pytz.timezone(place['tz'])).strftime("%H:%M")
+    
+    return render_template("time.html", places=places)
 
 @app.route('/login/', methods=['GET', 'POST'])
 def login():
