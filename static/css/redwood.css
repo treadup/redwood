@@ -40,6 +40,10 @@ nav div {
     margin-left: auto;
 }
 
+nav a {
+    color: white;
+}
+
 nav a:visited {
     color: #D3D3D3;
 }
@@ -85,6 +89,10 @@ footer {
 
     /* Colors */
     background: #228B22;
+    color: white;
+}
+
+footer a {
     color: white;
 }
 
