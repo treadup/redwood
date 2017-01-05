@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Music{% endblock %}
+{% block content %}
+<ul>
+{% for music_url in music_urls %}
+    <li><a href="{{music_url}}">{{music_url}}</a></li>
+{% endfor %}
+</ul>
+{% endblock %}

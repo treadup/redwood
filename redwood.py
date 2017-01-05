@@ -9,6 +9,7 @@ def create_app():
     app = Flask(__name__)
     app.config['BOOKMARKS_FILENAME'] = 'bookmarks.json'
     app.config['PHOTO_COLLECTION_FILENAME'] = 'photos/photo_collections.json'
+    app.config['MUSIC_FILENAME'] = 'data/music.json'
     return app
 
 app = create_app()
@@ -140,6 +141,11 @@ def current_time():
         place['time'] = datetime.now(pytz.timezone(place['tz'])).strftime("%H:%M")
     
     return render_template("time.html", places=places)
+
+@app.route('/music')
+def music():
+    music_urls = load_json(app.config['MUSIC_FILENAME'])
+    return render_template("music.html", music_urls=music_urls)
 
 @app.route('/login/', methods=['GET', 'POST'])
 def login():
