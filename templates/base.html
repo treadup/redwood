@@ -18,6 +18,14 @@
         <div>
           <a href="/photos">Photos</a>
         </div>
+        {% if user %}
+        <div>
+            <a href="/music">Music</aa>
+        </div>
+        <div>
+          <a href="/time">Time</aa>
+        </div>
+        {% endif %}
         <div class="nav_right">
         {% block auth %}
             {% if user %}
