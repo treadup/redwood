@@ -19,7 +19,13 @@
           <a href="/photos">Photos</a>
         </div>
         <div class="nav_right">
-          <a>Login</a>
+        {% block auth %}
+            {% if user %}
+            <a href="/logout">Logout</a>
+            {% else %}
+            <a href="/login">Login</a>
+            {% endif %}
+        {% endblock %}
         </div>
       </nav>
     </header>

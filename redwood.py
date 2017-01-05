@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, make_response
+from flask import redirect
 import json
 from datetime import datetime
 import pytz
@@ -14,9 +15,18 @@ def create_app():
 
 app = create_app()
 
+def get_current_user():
+    identity_jwt = request.cookies.get('identity_jwt')
+
+    if identity_jwt is not None:
+        return {"username": identity_jwt}
+    else:
+        return None
+
 @app.route('/')
 def index():
-    return render_template('index.html')
+    user = get_current_user()
+    return render_template('index.html', user=user)
 
 def load_json(filename):
     """
@@ -39,8 +49,9 @@ def bookmarks():
     """
     Show bookmarks belonging to different categories
     """
+    user = get_current_user()
     bookmarks=load_bookmarks()
-    return render_template('bookmarks.html', bookmarks=bookmarks)
+    return render_template('bookmarks.html', bookmarks=bookmarks, user=user)
 
 # For now I might just want a single page of photos.
 # In other words have a single collection page and then
@@ -75,8 +86,9 @@ def photo_collection_list():
     """
     Show list of photo collections.
     """
+    user = get_current_user()
     photo_collections = load_photo_collection_list()
-    return render_template('photo-collection-list.html', photo_collections=photo_collections)
+    return render_template('photo-collection-list.html', photo_collections=photo_collections, user=user)
 
 def get_raw_photo_collection(collection_name):
     photo_collections = load_photo_collection_list()
@@ -93,7 +105,6 @@ def map_image(collection_name, image_name):
             "thumbnail": get_thumbnail_s3_url(collection_name, image_name),
             "url": '/photos/{}/{}'.format(collection_name, image_name)}
     
-
 def get_photo_collection(collection_name):
     collection = get_raw_photo_collection(collection_name)
 
@@ -108,21 +119,23 @@ def photo_collection(collection_name):
     """
     Show a single photo collection.
     """
+    user = get_current_user()
     collection = get_photo_collection(collection_name)
 
     if(collection):
-        return render_template('photo-collection.html', collection=collection)
+        return render_template('photo-collection.html', collection=collection, user=user)
     else:
         return "Could not find the collection. Should return a nice 404 error here."
 
 @app.route('/photos/<collection_name>/<photo>')
 def single_photo(collection_name, photo):
+    user = get_current_user()
     collection = get_photo_collection(collection_name)
 
     if collection:
         for image in collection['images']:
             if image['name'] == photo:
-                return render_template("photo.html", image=image)
+                return render_template("photo.html", image=image, user=user)
     
     return 'Could not find matching photo. Should return a nice 404 error here.'
 
@@ -132,6 +145,7 @@ def letsencrypt_verification():
 
 @app.route('/time')
 def current_time():
+    user = get_current_user()
     places = [{"name": "Sweden:", "tz": "Europe/Stockholm"},
               {"name": "Hawaii:", "tz": "Pacific/Honolulu"},
               {"name": "California:", "tz": "America/Los_Angeles"},
@@ -140,20 +154,55 @@ def current_time():
     for place in places:
         place['time'] = datetime.now(pytz.timezone(place['tz'])).strftime("%H:%M")
     
-    return render_template("time.html", places=places)
+    return render_template("time.html", places=places, user=user)
 
 @app.route('/music')
 def music():
+    user = get_current_user()
     music_urls = load_json(app.config['MUSIC_FILENAME'])
-    return render_template("music.html", music_urls=music_urls)
+    return render_template("music.html", music_urls=music_urls, user=user)
+
+def valid_credentials(username, password):
+    return username == 'henrik' and password == 'foo'
+
 
 @app.route('/login/', methods=['GET', 'POST'])
 def login():
+    # TODO: Consider using a CSRF token.
+    
     if request.method == 'POST':
-        return 'Handling login post requests is not implemented yet.'
+        username = request.form.get('username', '')
+        password = request.form.get('password', '')
+
+        if not username:
+            render_template("login.html", login_error_message="You need to specify a username.")
+
+        if not password:
+            render_template("login.html", login_error_message="You need to specify a password.")
+
+        if valid_credentials(username, password):
+            resp = make_response(redirect("/", code=303))
+            # TODO: This cookie is insecure.
+            # Create a cookie using JWT.
+            # jwt = create_user_jwt(username)
+            resp.set_cookie('identity_jwt', username)
+            return resp
+        else:
+            render_template("login.html", login_error_message="Incorrect username or password.")
+        # Set the cookie.
     else:
         return render_template("login.html")
 
+@app.route('/logout/')
+def logout():
+    resp = make_response(redirect("/", code=303))
+    resp.set_cookie('identity_jwt', '', expires=0)
+    return resp
+    
+@app.route('/account')
+def account():
+    user = get_current_user()
+    return render_template("account.html", user=user)
 
 @app.route('/notes')
 @app.route('/notes/<path>')
@@ -164,11 +213,16 @@ def notes(path=None):
     """
     return 'Notes go here.'
 
-
-
 @app.route('/hacks')
 def hacks():
     """
     List of projects that I have created.
     """
     return 'Hacks go here.'
+
+@app.route('/library')
+def library():
+    """
+    List of books I am interested in.
+    """
+    return 'Book list goes here.' 
