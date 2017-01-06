@@ -2,8 +2,10 @@ from flask import Flask, render_template, request, make_response
 from flask import redirect
 import json
 from datetime import datetime
+import time
 import pytz
 import jwt
+from jwt import ExpiredSignatureError
 
 from pprint import pprint
 
@@ -22,8 +24,11 @@ def get_current_user():
     identity_jwt = request.cookies.get('identity_jwt')
 
     if identity_jwt:
-        identity = jwt.decode(identity_jwt.encode('utf-8'), secret, algorithms=['HS256'])
-        return identity
+        try:
+            identity = jwt.decode(identity_jwt.encode('utf-8'), secret, algorithms=['HS256'])
+            return identity
+        except ExpiredSignatureError as err:
+            return None
 
     return None
 
@@ -176,7 +181,12 @@ def valid_credentials(username, password):
 
 def create_user_jwt(username):
     secret = app.config['IDENTITY_JWT_SECRET']
-    identity = {'username': username}
+    TWELVE_HOURS = 12*60*60
+    ONE_MINUTE = 60
+    
+    expires = int(time.time()) + ONE_MINUTE 
+    identity = {'username': username,
+                'exp': expires}
     
     return jwt.encode(identity, secret, algorithm='HS256').decode('utf-8')
 
