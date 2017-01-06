@@ -8,6 +8,11 @@
                       {"text": "Kivy",   "url": ""}]
     },
     {
+        "category": "Flask",
+        "bookmarks": [{"text": "Flask Principal", "url": "https://pythonhosted.org/Flask-Principal/"},
+                      {"text": "Flask Admin", "url": "http://flask-admin.readthedocs.io/en/latest/" }]
+    },
+    {
         "category": "Clojure",
         "bookmarks": [{"text": "Clojure", "url": ""},
                       {"text": "Clojure Toolbox", "url": ""}]
