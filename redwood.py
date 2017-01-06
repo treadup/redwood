@@ -11,7 +11,7 @@ from pprint import pprint
 
 def create_app():
     app = Flask(__name__)
-    app.config['BOOKMARKS_FILENAME'] = 'bookmarks.json'
+    app.config['BOOKMARKS_FILENAME'] = 'data/bookmarks.json'
     app.config['PHOTO_COLLECTION_FILENAME'] = 'photos/photo_collections.json'
     app.config['MUSIC_FILENAME'] = 'data/music.json'
     app.config['IDENTITY_JWT_SECRET'] = 'EiGie9chaish7AifYaec9UoJieFee8shTiaw6jeeHuuw1d6iePfi9Mi6ph'
