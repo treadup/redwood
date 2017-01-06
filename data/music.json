@@ -1,18 +1,17 @@
 [
-    "http://8tracks.com/ilithya/my-middle-earth",
-    "http://8tracks.com/bjornbug/headed-north",
-    "http://8tracks.com/undertheironc/oh-my-darling",
-    "http://8tracks.com/eldamars/eldamar",
-    "http://8tracks.com/lanie-mores/setting-the-mood-for-brilliance",
-    "http://8tracks.com/datacake/there-and-back-again",
-    "https://www.youtube.com/watch?v=jiwuQ6UHMQg",
-    "https://www.youtube.com/watch?v=3j5xuEl-y5k",
-    "https://www.youtube.com/watch?v=e8A7I2xoox8",
-    "https://www.youtube.com/watch?v=BiqlZZddZEo",
-    "https://www.youtube.com/watch?v=pUfGjWYpE-I&spfreload=10",
-    "https://www.youtube.com/watch?v=X2q-Iq82UbE",
-    "http://8tracks.com/hulloemily/a-library-in-the-mist",
-    "http://8tracks.com/eldamars/taur-nu-fuin",
-    "https://www.youtube.com/watch?v=tyic00pDGGo",
-    "http://8tracks.com/daltoneering/the-taste-of-strawberries"
+    {
+        "category": "Celtic",
+        "items": [{"title": "Celtic Fantasy Music",
+                   "url":"https://www.youtube.com/watch?v=pUfGjWYpE-I",
+                   "artist": "Peter Gundry"},
+                  {"title": "Celtic Irish Music",
+                   "url": "https://www.youtube.com/watch?v=X2q-Iq82UbE",
+                   "artist": "Lewis Luong"}] 
+    },
+    {
+        "category": "Middle Earth",
+        "items": [{"title": "Lord of the Rings Calm Ambient Mix"
+                   "url": "https://www.youtube.com/watch?v=UrJTZZibdHk",
+                   "artist": "Synaptic"}]
+    }
 ]

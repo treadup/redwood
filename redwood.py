@@ -167,15 +167,20 @@ def current_time():
     
     return render_template("time.html", places=places, user=user)
 
+def load_music():
+    """
+    Loads the bookmarks from the bookmarks.json file
+    """
+    filename = app.config['MUSIC_FILENAME']
+    return load_json(filename)
+
 @app.route('/music')
 def music():
     user = get_current_user()
-    music_urls = load_json(app.config['MUSIC_FILENAME'])
+    music_json = load_music()
 
-    # TODO: Just use the same file format for the music.json file
-    # as for the bookmarks file. That way we can load them using the
-    # same function but with different filenames.
-    
+    # Good search: https://www.youtube.com/results?search_query=celtic+music
+
     return render_template("music.html", music_urls=music_urls, user=user)
 
 def valid_credentials(username, password):
