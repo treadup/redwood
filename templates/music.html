@@ -5,7 +5,7 @@
 {% for collection in music_collections %}
 <h1>{{collection.category}}</h1>
   <ul>
-    {% for item in collection.bookmarks %}
+    {% for item in collection.items %}
     <li><a href="{{item.url}}">{{item.title}} - {{item.artist}}</a></li>
     {% endfor %}
   </ul>
