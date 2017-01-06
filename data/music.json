@@ -1,7 +1,7 @@
 [
     {
         "category": "Celtic",
-        "items": [{"title": "Celtic Fantasy Music",
+        "songs": [{"title": "Celtic Fantasy Music",
                    "url":"https://www.youtube.com/watch?v=pUfGjWYpE-I",
                    "artist": "Peter Gundry"},
                   {"title": "Celtic Irish Music",
@@ -10,7 +10,7 @@
     },
     {
         "category": "Middle Earth",
-        "items": [{"title": "Lord of the Rings Calm Ambient Mix",
+        "songs": [{"title": "Lord of the Rings Calm Ambient Mix",
                    "url": "https://www.youtube.com/watch?v=UrJTZZibdHk",
                    "artist": "Synaptic"}]
     }
