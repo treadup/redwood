@@ -3,6 +3,7 @@ from flask import redirect
 import json
 from datetime import datetime
 import pytz
+import jwt
 
 from pprint import pprint
 
@@ -11,17 +12,20 @@ def create_app():
     app.config['BOOKMARKS_FILENAME'] = 'bookmarks.json'
     app.config['PHOTO_COLLECTION_FILENAME'] = 'photos/photo_collections.json'
     app.config['MUSIC_FILENAME'] = 'data/music.json'
+    app.config['IDENTITY_JWT_SECRET'] = 'EiGie9chaish7AifYaec9UoJieFee8shTiaw6jeeHuuw1d6iePfi9Mi6ph'
     return app
 
 app = create_app()
 
 def get_current_user():
+    secret = app.config['IDENTITY_JWT_SECRET']
     identity_jwt = request.cookies.get('identity_jwt')
 
-    if identity_jwt is not None:
-        return {"username": identity_jwt}
-    else:
-        return None
+    if identity_jwt:
+        identity = jwt.decode(identity_jwt.encode('utf-8'), secret, algorithms=['HS256'])
+        return identity
+
+    return None
 
 @app.route('/')
 def index():
@@ -160,11 +164,21 @@ def current_time():
 def music():
     user = get_current_user()
     music_urls = load_json(app.config['MUSIC_FILENAME'])
+
+    # TODO: Just use the same file format for the music.json file
+    # as for the bookmarks file. That way we can load them using the
+    # same function but with different filenames.
+    
     return render_template("music.html", music_urls=music_urls, user=user)
 
 def valid_credentials(username, password):
     return username == 'henrik' and password == 'foo'
 
+def create_user_jwt(username):
+    secret = app.config['IDENTITY_JWT_SECRET']
+    identity = {'username': username}
+    
+    return jwt.encode(identity, secret, algorithm='HS256').decode('utf-8')
 
 @app.route('/login/', methods=['GET', 'POST'])
 def login():
@@ -185,7 +199,7 @@ def login():
             # TODO: This cookie is insecure.
             # Create a cookie using JWT.
             # jwt = create_user_jwt(username)
-            resp.set_cookie('identity_jwt', username)
+            resp.set_cookie('identity_jwt', create_user_jwt(username))
             return resp
         else:
             render_template("login.html", login_error_message="Incorrect username or password.")
