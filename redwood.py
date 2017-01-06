@@ -177,11 +177,11 @@ def load_music():
 @app.route('/music')
 def music():
     user = get_current_user()
-    music_json = load_music()
+    music_collections = load_music()
 
     # Good search: https://www.youtube.com/results?search_query=celtic+music
 
-    return render_template("music.html", music_urls=music_urls, user=user)
+    return render_template("music.html", music_collections=music_collections, user=user)
 
 def valid_credentials(username, password):
     return username == 'henrik' and password == 'foo'

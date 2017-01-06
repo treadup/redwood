@@ -2,7 +2,7 @@
 {% block title %}Music{% endblock %}
 {% block content %}
 
-{% for collection in music %}
+{% for collection in music_collections %}
 <h1>{{collection.category}}</h1>
   <ul>
     {% for item in collection.bookmarks %}
