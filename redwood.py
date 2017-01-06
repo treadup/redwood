@@ -15,6 +15,8 @@ def create_app():
     app.config['PHOTO_COLLECTION_FILENAME'] = 'photos/photo_collections.json'
     app.config['MUSIC_FILENAME'] = 'data/music.json'
     app.config['IDENTITY_JWT_SECRET'] = 'EiGie9chaish7AifYaec9UoJieFee8shTiaw6jeeHuuw1d6iePfi9Mi6ph'
+    TWELVE_HOURS = 12*60*60
+    app.config['JWT_EXPIRATION_TIMEDELTA'] = TWELVE_HOURS
     return app
 
 app = create_app()
@@ -181,10 +183,8 @@ def valid_credentials(username, password):
 
 def create_user_jwt(username):
     secret = app.config['IDENTITY_JWT_SECRET']
-    TWELVE_HOURS = 12*60*60
-    ONE_MINUTE = 60
-    
-    expires = int(time.time()) + ONE_MINUTE 
+    time_delta = app.config['JWT_EXPIRATION_TIMEDELTA']
+    expires = int(time.time()) + time_delta
     identity = {'username': username,
                 'exp': expires}
     
