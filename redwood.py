@@ -207,6 +207,14 @@ def login():
     else:
         return render_template("login.html")
 
+def protocol():
+    header = request.headers.get('x-forwarded-proto')
+
+    if header:
+        return "Using protocol: {}".format(header)
+    else:
+        return "No protocol header."
+
 @app.route('/logout/')
 def logout():
     resp = make_response(redirect("/", code=303))
