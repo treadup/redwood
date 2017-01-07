@@ -253,9 +253,29 @@ def hacks():
     """
     return 'Hacks go here.'
 
-@app.route('/library')
+@app.route('/books')
 def library():
     """
-    List of books I am interested in.
+    Something to do with books that I like.
     """
-    return 'Book list goes here.' 
+    return 'Book list goes here.'
+
+@app.route('/recepies')
+def recepies():
+    """
+    List of recepies.
+    """
+    # TODO: Would be good to have a translation of spices between English
+    # and swedish.
+
+    # TODO: Could also be a good idea to have a page where you can do conversions
+    # between Swedish and American measurements.
+
+    return 'List of recepies goes here.'
+
+@app.route('/files')
+def files():
+    # Upload and download files.
+    # Edit text files in some sort of editor.
+    # Upload files using curl using http headers for authentication.
+    return 'The part of the site where you can manage files goes here.'
