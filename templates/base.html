@@ -18,13 +18,13 @@
         <div>
           <a href="/photos">Photos</a>
         </div>
-        {% if user %}
         <div>
-            <a href="/music">Music</aa>
+            <a href="/music">Music</a>
         </div>
         <div>
           <a href="/time">Time</aa>
         </div>
+        {% if user %}
         {% endif %}
         <div class="nav_right">
         {% block auth %}
@@ -42,6 +42,7 @@
     </main>
     <footer>
       <div>Henrik Treadup</div>
+      <div><i class="icon-envelope"></i> henrik.treadup ~at~ gmail.com</div>
       <div><a href="https://github.com/treadup"><i class="icon-github-sign"></i> GitHub</a></div>
       <div><a href="https://www.linkedin.com/in/henriktreadup"><i class="icon-linkedin-sign"></i> LinkedIn</a></div>
     </footer>

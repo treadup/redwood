@@ -1,9 +1,14 @@
 {% extends "base.html" %}
 {% block title %}Music{% endblock %}
 {% block content %}
-<ul>
-{% for music_url in music_urls %}
-    <li><a href="{{music_url}}">{{music_url}}</a></li>
+
+{% for collection in music_collections %}
+<h1>{{collection.category}}</h1>
+  <ul>
+    {% for song in collection.songs %}
+    <li><a href="{{song.url}}">{{song.title}} - {{song.artist}}</a></li>
+    {% endfor %}
+  </ul>
 {% endfor %}
-</ul>
+
 {% endblock %}
