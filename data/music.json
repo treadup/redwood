@@ -6,12 +6,48 @@
                    "artist": "Peter Gundry"},
                   {"title": "Celtic Irish Music",
                    "url": "https://www.youtube.com/watch?v=X2q-Iq82UbE",
-                   "artist": "Lewis Luong"}] 
+                   "artist": "Lewis Luong"},
+                  {"title": "Celtic Music",
+                   "url": "https://www.youtube.com/watch?v=jiwuQ6UHMQg",
+                   "artist": "Adrian von Zeigler"},
+                  {"title": "Relaxing Celtic Music",
+                   "url": "https://www.youtube.com/watch?v=BiqlZZddZEo",
+                   "artist": ""}] 
     },
     {
-        "category": "Middle Earth",
+        "category": "Fantasy",
         "songs": [{"title": "Lord of the Rings Calm Ambient Mix",
                    "url": "https://www.youtube.com/watch?v=UrJTZZibdHk",
-                   "artist": "Synaptic"}]
+                   "artist": "Synaptic"},
+                  {"title": "Rains of Castamere",
+                   "url": "https://www.youtube.com/watch?v=2l7wzOaODYQ",
+                   "artist": "Karliene"},
+                  {"title": "The Eternal Forest",
+                   "url": "https://www.youtube.com/watch?v=dZWGH0ougJI",
+                   "artist": "Brunuh Ville"},
+                  {"title": "The Hobbit Soundtrack",
+                   "url": "https://www.youtube.com/watch?v=tyic00pDGGo",
+                   "artist": ""}]
+    },
+    {
+        "category": "Classical",
+        "songs": [{"title": "Classical Chillout",
+                   "url":"https://www.youtube.com/watch?v=hSnD30bcAS8",
+                   "artist": "Classical Chillout"},
+                  {"title": "Moonlight Sonata",
+                   "url": "https://www.youtube.com/watch?v=4Tr0otuiQuU",
+                   "artist": "Beethoven"}]
+    },
+    {
+        "category": "Iron and Wine",
+        "songs": [{"title": "Iron and Wine playlist",
+                   "url": "https://www.youtube.com/watch?v=yt7O8gDy0DA&list=RDyt7O8gDy0DA#t=10",
+                   "artist": "Iron and Wine"}]
+    },
+    {
+        "category": "Death Cab for Cutie",
+        "songs": [{"title": "Death Cab for Cutie playlist",
+                   "url": "https://www.youtube.com/watch?v=aoR0mGq_z2I&list=PL9FzrCRE_7NaTkRtUk5EJRtEq6lZJ7xUq",
+                   "artist": "Death Cab for Cutie"}]
     }
 ]
