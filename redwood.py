@@ -283,6 +283,9 @@ def recepies():
     """
     List of recepies.
     """
+    # This should be a protected resource since I don't really feel this needs
+    # to be publically accessible.
+    #
     # TODO: Would be good to have a translation of spices between English
     # and swedish.
 
