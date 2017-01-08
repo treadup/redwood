@@ -206,7 +206,7 @@ def login():
     
     if redirect_url:
         action_url = url_for('login', redirect=redirect_url)
-    else
+    else:
         action_url = url_for('login')
     
     if request.method == 'POST':
