@@ -201,7 +201,8 @@ def login():
     redirect_url = request.args.get('redirect', None)
 
     # Change empty redirect_url to None
-    redirect_url = None if not redirect_url
+    if not redirect_url:
+        redirect_url = None
     
     if redirect_url:
         action_url = url_for('login', redirect=redirect_url)
