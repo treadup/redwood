@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, make_response
-from flask import redirect
+from flask import redirect, url_for
 import json
 from datetime import datetime
 import time
@@ -224,7 +224,8 @@ def login():
                             action_url=action_url)
 
         if valid_credentials(username, password):
-            redirect_url = "/" if not redirect_url
+            if not redirect_url:
+                redirect_url = "/"
             resp = make_response(redirect(redirect_url, code=303))
             resp.set_cookie('identity_jwt', create_user_jwt(username))
             return resp
