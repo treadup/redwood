@@ -6,6 +6,7 @@ import time
 import pytz
 import jwt
 from jwt import ExpiredSignatureError
+from functools import wraps
 
 from pprint import pprint
 
@@ -197,30 +198,41 @@ def create_user_jwt(username):
 
 @app.route('/login/', methods=['GET', 'POST'])
 def login():
-    # TODO: Consider using a CSRF token.
+    redirect_url = request.args.get('redirect', None)
+
+    # Change empty redirect_url to None
+    redirect_url = None if not redirect_url
+    
+    if redirect_url:
+        action_url = url_for('login', redirect=redirect_url)
+    else
+        action_url = url_for('login')
     
     if request.method == 'POST':
         username = request.form.get('username', '')
         password = request.form.get('password', '')
 
         if not username:
-            render_template("login.html", login_error_message="You need to specify a username.")
+            render_template("login.html",
+                            login_error_message="You need to specify a username.",
+                            action_url=action_url)
 
         if not password:
-            render_template("login.html", login_error_message="You need to specify a password.")
+            render_template("login.html",
+                            login_error_message="You need to specify a password.",
+                            action_url=action_url)
 
         if valid_credentials(username, password):
-            resp = make_response(redirect("/", code=303))
-            # TODO: This cookie is insecure.
-            # Create a cookie using JWT.
-            # jwt = create_user_jwt(username)
+            redirect_url = "/" if not redirect_url
+            resp = make_response(redirect(redirect_url, code=303))
             resp.set_cookie('identity_jwt', create_user_jwt(username))
             return resp
         else:
-            render_template("login.html", login_error_message="Incorrect username or password.")
-        # Set the cookie.
+            render_template("login.html",
+                            login_error_message="Incorrect username or password.",
+                            action_url=action_url)
     else:
-        return render_template("login.html")
+        return render_template("login.html", action_url=action_url)
 
 @app.route('/protocol/')
 def protocol():
