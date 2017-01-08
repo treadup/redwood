@@ -263,7 +263,8 @@ def library():
     """
     Something to do with books that I like.
     """
-    return 'Book list goes here.'
+    # Computer Graphics Programming in OpenGL with Java
+    return 'Book list goes here.' 
 
 @app.route('/recepies')
 def recepies():
@@ -287,3 +288,4 @@ def files():
     # Edit text files in some sort of editor.
     # Upload files using curl using http headers for authentication.
     return 'The part of the site where you can manage files goes here.'
+
