@@ -101,17 +101,10 @@ footer div {
 }
 
 /* Photo collection list */
-.photo-collection {
-    display: table;
-}
-
-.photo-collection div {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.photo-collection img {
-    margin-right: 1em;
+.photo-collection-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 /* Photo collection */
