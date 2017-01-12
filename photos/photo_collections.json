@@ -1,6 +1,14 @@
-[{
-    "slug": "hawaii-2015",
-    "description": "Hawaii 2015",
-    "collection": "hawaii_2015.json",
-    "image": "honolulu.jpg"
-}]
+[
+    {
+        "slug": "hawaii-2015",
+        "description": "Hawaii 2015",
+        "collection": "hawaii-2015.json",
+        "image": "honolulu.jpg"
+    },
+    {
+        "slug": "california-2015",
+        "description": "California 2015",
+        "collection": "california-2015.json",
+        "image": "all_the_siblings.jpg"
+    }
+]
