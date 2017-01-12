@@ -25,7 +25,8 @@
     },
     {   "category": "Web",
         "bookmarks": [{"text": "Dirty Markup", "url": "https://dirtymarkup.com/"},
-                      {"text": "BEM", "url": "http://getbem.com/introduction/"}]
+                      {"text": "BEM", "url": "http://getbem.com/introduction/"},
+                      {"text": "Can I use?", "url": "http://caniuse.com"}]
     },
     {
         "category": "Error handling",
