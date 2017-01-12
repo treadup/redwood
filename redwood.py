@@ -5,10 +5,18 @@ from datetime import datetime
 import time
 import pytz
 import jwt
+import os
+import hashlib
 from jwt import ExpiredSignatureError
 from functools import wraps
 
 from pprint import pprint
+
+def load_environment_variable(name):
+    try:
+        return os.environ[name]
+    except KeyError:
+        return None
 
 def create_app():
     app = Flask(__name__)
@@ -18,6 +26,19 @@ def create_app():
     app.config['IDENTITY_JWT_SECRET'] = 'EiGie9chaish7AifYaec9UoJieFee8shTiaw6jeeHuuw1d6iePfi9Mi6ph'
     TWELVE_HOURS = 12*60*60
     app.config['JWT_EXPIRATION_TIMEDELTA'] = TWELVE_HOURS
+
+    app.config['USERNAME'] = load_environment_variable('USERNAME')
+
+    # Use XKCD style pass phrase.
+    # http://xkcd.com/936/
+    app.config['PASSWORD_HASH'] = load_environment_variable('PASSWORD_HASH')
+
+    # The password salt can be generated using the token_hex function in
+    # the secrets module.
+    # You can also generate salt using the following command.
+    # cat /dev/urandom | head -c 1024 | sha256sum
+    app.config['PASSWORD_SALT'] = load_environment_variable('PASSWORD_SALT')
+    
     return app
 
 app = create_app()
@@ -185,9 +206,28 @@ def music():
     return render_template("music.html", music_collections=music_collections, user=user)
 
 def valid_credentials(username, password):
-    return username == 'henrik' and password == 'foo'
+    """
+    Validates the users login credentials.
+    """
+    if(username != app.config['USERNAME']):
+        return False
 
+    # Calculates the password hash using the sha256 algorithm.
+    # Uses salt and the password to calculate the password hash.
+    m = hashlib.sha256()
+    salt = app.config['PASSWORD_SALT']
+    m.update(salt.encode('utf-8'))
+    m.update(password.encode('utf-8'))
+    password_hash = m.hexdigest()
+
+    return password_hash == app.config['PASSWORD_HASH']
+    
 def create_user_jwt(username):
+    """
+    Creates a JWT for the given username.
+    The JWT contains an expiration date set JWT_EXPIRATION_TIMEDELTA seconds
+    into the future.
+    """
     secret = app.config['IDENTITY_JWT_SECRET']
     time_delta = app.config['JWT_EXPIRATION_TIMEDELTA']
     expires = int(time.time()) + time_delta
@@ -214,25 +254,27 @@ def login():
         password = request.form.get('password', '')
 
         if not username:
-            render_template("login.html",
-                            login_error_message="You need to specify a username.",
-                            action_url=action_url)
+            return render_template("login.html",
+                                   login_error_message="You need to specify a username.",
+                                   action_url=action_url)
 
         if not password:
-            render_template("login.html",
-                            login_error_message="You need to specify a password.",
-                            action_url=action_url)
+            return render_template("login.html",
+                                   login_error_message="You need to specify a password.",
+                                   action_url=action_url)
 
         if valid_credentials(username, password):
             if not redirect_url:
                 redirect_url = "/"
-            resp = make_response(redirect(redirect_url, code=303))
+
+            # Should be a 303 status code but Flask Testing does not support this.
+            resp = make_response(redirect(redirect_url, code=302))
             resp.set_cookie('identity_jwt', create_user_jwt(username))
             return resp
         else:
-            render_template("login.html",
-                            login_error_message="Incorrect username or password.",
-                            action_url=action_url)
+            return render_template("login.html",
+                                   login_error_message="Incorrect username or password.",
+                                   action_url=action_url)
     else:
         return render_template("login.html", action_url=action_url)
 
