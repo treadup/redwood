@@ -1,5 +1,11 @@
 [
     {
+        "slug": "kungsleden-2014",
+        "description": "Kungsleden 2014",
+        "collection": "kungsleden-2014.json",
+        "image": "PTDC0103.JPG"
+    },
+    {
         "slug": "hawaii-2015",
         "description": "Hawaii 2015",
         "collection": "hawaii-2015.json",
