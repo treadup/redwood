@@ -16,5 +16,11 @@
         "description": "California 2015",
         "collection": "california-2015.json",
         "image": "all_the_siblings.jpg"
+    },
+    {
+        "slug": "kungsleden-2016",
+        "description": "Kungsleden 2016",
+        "collection": "kungsleden-2016.json",
+        "image": "DSCF1966.JPG"
     }
 ]
