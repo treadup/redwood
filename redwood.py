@@ -12,11 +12,11 @@ from functools import wraps
 
 from pprint import pprint
 
-def load_environment_variable(name):
+def load_environment_variable(name, default=None):
     try:
         return os.environ[name]
     except KeyError:
-        return None
+        return default
 
 def create_app():
     app = Flask(__name__)
@@ -38,6 +38,11 @@ def create_app():
     # You can also generate salt using the following command.
     # cat /dev/urandom | head -c 1024 | sha256sum
     app.config['PASSWORD_SALT'] = load_environment_variable('PASSWORD_SALT')
+
+    https_required = load_environment_variable('HTTPS_REQUIRED', default='True')
+    app.config['HTTPS_REQUIRED'] = https_required.strip() != 'False'
+    
+    # TODO: Validate that all required app config variables were set.
     
     return app
 
@@ -55,6 +60,45 @@ def get_current_user():
             return None
 
     return None
+
+# TODO: Write a decorator called login_required that redirects you to the login page
+# if you are currently not logged in.
+
+@app.before_request
+def require_https():
+    """
+    The require_https method is a before request method that checks that the request
+    is being made using https.
+    (Actually since we are using heroku it will check that the x-forwarded-proto header
+    is set to https and not http.)
+    The LetsEncrypt url is white listed and you can access this url using plain http.
+    """
+    # Alwats allow access to the LetsEncrypt verification endpoint without requiring
+    # https access.
+    if request.endpoint == 'letsencrypt_verification':
+        return None
+
+    # If we are not configured to require HTTPS then do nothing.
+    if not app.config['HTTPS_REQUIRED']:
+        return None
+
+    # If we are already using HTTPS then do nothing.
+    protocol_header = request.headers.get('x-forwarded-proto')
+    if protocol_header == 'https':
+        return None
+
+    print("About to check HTTP method.")
+    if request.method == 'POST':
+        # Render an error page.
+        return render_template("post-https-only.html")
+    elif request.method == 'GET':
+        # Redirect to the HTTPS version of the page.
+        return redirect(request.url.replace("http://", "https://"), code=302)
+
+    return None 
+
+def login_required(f):
+    return f
 
 @app.route('/')
 def index():
