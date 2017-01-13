@@ -135,11 +135,11 @@ def bookmarks():
 # a detail page for each photo.
 
 def get_thumbnail_s3_url(collection_name, image_name):
-    f = 'http://s3.amazonaws.com/rainforestphotos/{}/thumbs/thumb_{}'
+    f = 'https://s3.amazonaws.com/rainforestphotos/{}/thumbs/thumb_{}'
     return f.format(collection_name, image_name)
 
 def get_photo_s3_url(collection_name, image_name):
-    f = 'http://s3.amazonaws.com/rainforestphotos/{}/{}'
+    f = 'https://s3.amazonaws.com/rainforestphotos/{}/{}'
     return f.format(collection_name, image_name)
 
 def add_collection_thumbnail_url(collection):
