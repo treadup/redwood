@@ -61,9 +61,6 @@ def get_current_user():
 
     return None
 
-# TODO: Write a decorator called login_required that redirects you to the login page
-# if you are currently not logged in.
-
 @app.before_request
 def require_https():
     """
@@ -73,7 +70,7 @@ def require_https():
     is set to https and not http.)
     The LetsEncrypt url is white listed and you can access this url using plain http.
     """
-    # Alwats allow access to the LetsEncrypt verification endpoint without requiring
+    # Always allow access to the LetsEncrypt verification endpoint without requiring
     # https access.
     if request.endpoint == 'letsencrypt_verification':
         return None
@@ -98,7 +95,22 @@ def require_https():
     return None 
 
 def login_required(f):
-    return f
+    """
+    The login required decorator will redirect you to the login page if you are not
+    currently logged in.
+    """
+    @wraps(f)
+    def login_required_wrapper(*args, **kwargs):
+        current_user = get_current_user()
+        if not current_user:
+            current_url = request.url
+            login_url = url_for('login', redirect=current_url)
+
+            return redirect(login_url, code=302)
+
+        return f(*args, **kwargs)
+    
+    return login_required_wrapper
 
 @app.route('/')
 def index():
@@ -342,8 +354,10 @@ def account():
     user = get_current_user()
     return render_template("account.html", user=user)
 
+
 @app.route('/notes')
 @app.route('/notes/<path>')
+@login_required
 def notes(path=None):
     """
     Shows markdown notes hosted on S3. The notes should be a protected resource.
