@@ -432,31 +432,20 @@ def notes(path='/'):
     Shows markdown notes hosted on S3. The notes should be a protected resource.
     In other words they require authentication to access.
     """
-    # To get the list of folders in a folder use the following command.
-    # pprint(client.list_objects(Bucket='redwood-notes', Delimiter='/', Prefix='python/')['CommonPrefixes'])
+    user = get_current_user()
 
-    # To get the list of folders in the root folder use the following command.
-    # pprint(client.list_objects(Bucket='redwood-notes', Delimiter='/')['CommonPrefixes'])
-
-    # If there are any objects in the current result they can be found under the 'Contents' key.
-    # pprint(client.list_objects(Bucket='redwood-notes', Delimiter='/')['Contents'])
-
-    # If there are no objects in the current result then there will be no 'Contents' key.
-    # pprint(client.list_objects(Bucket='redwood-notes', Delimiter='/', Prefix='python/')['Contents'])
-
-    # First try getting an object. If there is no object then try getting the contents of the folder.
-
+    # If this is a folder
     if path.endswith('/'):
         folders, files = read_s3_bucket_folder('redwood-notes', path)
 
         folders = process_folders(folders)
         files = process_files(path, files)
 
-        return render_template('notes-folder.html', folders=folders, files=files)
-    else:
+        return render_template('notes-folder.html', folders=folders, files=files, user=user)
+    else: # Otherwise this is a file
         text = read_s3_file('redwood-notes', path)
         
-        return render_template('notes-file.html', text=text)
+        return render_template('notes-file.html', text=text, user=user)
 
 @app.route('/hacks')
 def hacks():
