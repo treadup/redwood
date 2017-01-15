@@ -17,6 +17,7 @@ class RedwoodTest(TestCase):
         m.update(password.encode('utf-8'))
         password_hash = m.hexdigest()
 
+        app.config['HTTPS_REQUIRED'] = False
         app.config['USERNAME'] = username
         app.config['PASSWORD_SALT'] = salt        
         app.config['PASSWORD_HASH'] = password_hash
