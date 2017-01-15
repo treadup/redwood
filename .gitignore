@@ -6,3 +6,6 @@
 
 # Python Virtual Environment
 env/
+
+# Heroku environment file
+.env
