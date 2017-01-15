@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Notes{% endblock %}
+{% block content %}
+<ul>
+    {% for folder in folders %}
+    <li>
+        <a href="{{folder.url}}">{{folder.text}}</a></td>
+    </li>
+    {% endfor %}
+</ul>
+<ul>
+    {% for f in files %}
+    <li>
+        <a href="{{f.url}}">{{f.text}}</a></td>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

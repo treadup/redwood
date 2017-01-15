@@ -7,6 +7,7 @@ import pytz
 import jwt
 import os
 import hashlib
+import boto3
 from jwt import ExpiredSignatureError
 from functools import wraps
 
@@ -354,16 +355,108 @@ def account():
     user = get_current_user()
     return render_template("account.html", user=user)
 
+def get_s3_folders_from_result(result):
+    if 'CommonPrefixes' in result:
+        folders = result['CommonPrefixes']
+    else:
+        folders = []
+
+    return [x['Prefix'] for x in folders]
+
+def get_s3_files_from_result(result):
+    if 'Contents' in result:
+        files = result['Contents']
+    else:
+        files = []
+
+    return [x['Key'] for x in files]
+
+def read_s3_bucket_folder(bucket_name, folder):
+    """
+    Reads the contents of an s3 folder in a bucket.
+    """
+    client = boto3.client('s3')
+
+    kwargs = {'Bucket': bucket_name, 'Delimiter':'/'}
+
+    if(folder != '/'):
+        kwargs['Prefix'] = folder
+    
+    result = client.list_objects(**kwargs)
+
+    folders = get_s3_folders_from_result(result)
+    files = get_s3_files_from_result(result)
+
+    return folders, files
+
+def read_s3_file(bucket_name, key):
+    """
+    Reads the contents of an S3 text file.
+    """
+    client = boto3.client('s3')
+
+    result = client.get_object(Bucket=bucket_name, Key=key)
+
+    if result['ResponseMetadata']['HTTPStatusCode'] != 200:
+        pass
+
+    return result['Body'].read().decode('utf-8')
+
+def process_folders(folders):
+    result = []
+
+    for f in folders:
+        text = f[0:-1].split('/')[-1] + '/'
+        folder = {"text": text,
+                  "url": "/notes/" + f }
+        result.append(folder)
+
+    return result
+
+def process_files(path, files):
+    result = []
+
+    for f in files:
+        text = f.split('/')[-1]
+        url = '/notes/' + f
+
+        result.append({"text": text, "url": url})
+
+    return result
 
 @app.route('/notes')
-@app.route('/notes/<path>')
+@app.route('/notes/<path:path>')
 @login_required
-def notes(path=None):
+def notes(path='/'):
     """
     Shows markdown notes hosted on S3. The notes should be a protected resource.
     In other words they require authentication to access.
     """
-    return 'Notes go here.'
+    # To get the list of folders in a folder use the following command.
+    # pprint(client.list_objects(Bucket='redwood-notes', Delimiter='/', Prefix='python/')['CommonPrefixes'])
+
+    # To get the list of folders in the root folder use the following command.
+    # pprint(client.list_objects(Bucket='redwood-notes', Delimiter='/')['CommonPrefixes'])
+
+    # If there are any objects in the current result they can be found under the 'Contents' key.
+    # pprint(client.list_objects(Bucket='redwood-notes', Delimiter='/')['Contents'])
+
+    # If there are no objects in the current result then there will be no 'Contents' key.
+    # pprint(client.list_objects(Bucket='redwood-notes', Delimiter='/', Prefix='python/')['Contents'])
+
+    # First try getting an object. If there is no object then try getting the contents of the folder.
+
+    if path.endswith('/'):
+        folders, files = read_s3_bucket_folder('redwood-notes', path)
+
+        folders = process_folders(folders)
+        files = process_files(path, files)
+
+        return render_template('notes-folder.html', folders=folders, files=files)
+    else:
+        text = read_s3_file('redwood-notes', path)
+        
+        return render_template('notes-file.html', text=text)
 
 @app.route('/hacks')
 def hacks():
