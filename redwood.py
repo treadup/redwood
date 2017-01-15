@@ -24,7 +24,7 @@ def create_app():
     app.config['BOOKMARKS_FILENAME'] = 'data/bookmarks.json'
     app.config['PHOTO_COLLECTION_FILENAME'] = 'photos/photo_collections.json'
     app.config['MUSIC_FILENAME'] = 'data/music.json'
-    app.config['IDENTITY_JWT_SECRET'] = 'EiGie9chaish7AifYaec9UoJieFee8shTiaw6jeeHuuw1d6iePfi9Mi6ph'
+    app.config['IDENTITY_JWT_SECRET'] = load_environment_variable('IDENTITY_JWT_SECRET')
     TWELVE_HOURS = 12*60*60
     app.config['JWT_EXPIRATION_TIMEDELTA'] = TWELVE_HOURS
 
