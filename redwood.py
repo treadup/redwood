@@ -365,11 +365,17 @@ def account():
     return render_template("account.html", user=user)
 
 @app.route('/token')
+@login_required
 def token():
     """
     Creates and shows a JWT token that is valid for 15 minutes.
     """
-    pass
+    user = get_current_user()
+    username = user['username']
+    FIFTEEN_MINUTES = 15*60 
+    token_jwt = create_user_jwt(username, FIFTEEN_MINUTES)
+
+    return render_template("token.html", token=token_jwt, user=user)
 
 def get_s3_folders_from_result(result):
     if 'CommonPrefixes' in result:
