@@ -49,12 +49,21 @@ def create_app():
 
 app = create_app()
 
+def get_jwt_from_request():
+    cookie_identity_jwt = request.cookies.get('identity_jwt')
+    header_identity_jwt = request.headers.get('Authorization')
+
+    if cookie_identity_jwt:
+        return cookie_identity_jwt
+    else:
+        return header_identity_jwt
+
 def get_current_user():
-    secret = app.config['IDENTITY_JWT_SECRET']
-    identity_jwt = request.cookies.get('identity_jwt')
+    identity_jwt = get_jwt_from_request()
 
     if identity_jwt:
         try:
+            secret = app.config['IDENTITY_JWT_SECRET']
             identity = jwt.decode(identity_jwt.encode('utf-8'), secret, algorithms=['HS256'])
             return identity
         except ExpiredSignatureError as err:
