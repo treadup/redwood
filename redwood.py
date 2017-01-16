@@ -219,6 +219,9 @@ def photo_collection(collection_name):
 
 @app.route('/photos/<collection_name>/<photo>')
 def single_photo(collection_name, photo):
+    """
+    Show a single photo from a photo collection.
+    """
     user = get_current_user()
     collection = get_photo_collection(collection_name)
 
@@ -235,6 +238,9 @@ def letsencrypt_verification():
 
 @app.route('/time')
 def current_time():
+    """
+    Show the current local time in different time zones.
+    """
     user = get_current_user()
     places = [{"name": "Sweden:", "tz": "Europe/Stockholm"},
               {"name": "Hawaii:", "tz": "Pacific/Honolulu"},
@@ -279,15 +285,14 @@ def valid_credentials(username, password):
 
     return password_hash == app.config['PASSWORD_HASH']
     
-def create_user_jwt(username):
+def create_user_jwt(username, expiration_time_delta):
     """
     Creates a JWT for the given username.
     The JWT contains an expiration date set JWT_EXPIRATION_TIMEDELTA seconds
     into the future.
     """
     secret = app.config['IDENTITY_JWT_SECRET']
-    time_delta = app.config['JWT_EXPIRATION_TIMEDELTA']
-    expires = int(time.time()) + time_delta
+    expires = int(time.time()) + expiration_time_delta
     identity = {'username': username,
                 'exp': expires}
     
@@ -326,7 +331,8 @@ def login():
 
             # Should be a 303 status code but Flask Testing does not support this.
             resp = make_response(redirect(redirect_url, code=302))
-            resp.set_cookie('identity_jwt', create_user_jwt(username))
+            time_delta = app.config['JWT_EXPIRATION_TIMEDELTA']
+            resp.set_cookie('identity_jwt', create_user_jwt(username, time_delta))
             return resp
         else:
             return render_template("login.html",
@@ -352,8 +358,18 @@ def logout():
     
 @app.route('/account')
 def account():
+    """
+    Shows information about the currently logged in user.
+    """
     user = get_current_user()
     return render_template("account.html", user=user)
+
+@app.route('/token')
+def token():
+    """
+    Creates and shows a JWT token that is valid for 15 minutes.
+    """
+    pass
 
 def get_s3_folders_from_result(result):
     if 'CommonPrefixes' in result:
@@ -484,4 +500,3 @@ def files():
     # Edit text files in some sort of editor.
     # Upload files using curl using http headers for authentication.
     return 'The part of the site where you can manage files goes here.'
-
