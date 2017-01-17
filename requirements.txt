@@ -10,5 +10,6 @@ PyJWT==1.4.2
 Werkzeug==0.11.11
 pytz==2016.10
 boto3==1.4.3
+beautifulsoup4==4.5.3
 
 
