@@ -1,7 +1,7 @@
 import unittest 
 from flask import Flask
 from flask_testing import TestCase
-from redwood import app
+from redwood import app, create_user_jwt
 import hashlib
 import jwt
 import time
@@ -29,6 +29,22 @@ class RedwoodTest(TestCase):
         app.config['TESTING'] = True
         app.config['BOOKMARKS_FILENAME'] = 'tests/bookmarks/bookmarks.json'
         return app
+
+    def get_cookie_from_client(self, cookie_name, client):
+        for cookie in client.cookie_jar:
+            if cookie.name == cookie_name:
+                return cookie
+
+        return None
+
+    def set_client_identity_jwt(self, username, expiration_time, roles):
+        # Set the identity JWT
+        identity_jwt = create_user_jwt(username, expiration_time, roles=roles)
+        self.client.set_cookie('localhost', 'identity_jwt', identity_jwt)
+
+        actual_jwt_cookie = self.get_cookie_from_client('identity_jwt', self.client)
+        self.assertIsNotNone(actual_jwt_cookie,
+                             msg='The identity_jwt cookie does not appear to have been set correctly.')
 
     def test_index_page(self):
         response = self.client.get("/")
@@ -90,13 +106,6 @@ class RedwoodTest(TestCase):
         self.assertTemplateUsed('login.html')
         self.assertContext('action_url', '/login/')
         self.assertContext('login_error_message', "Incorrect username or password.")
-
-    def get_cookie_from_client(self, cookie_name, client):
-        for cookie in client.cookie_jar:
-            if cookie.name == cookie_name:
-                return cookie
-
-        return None
         
     def assert_post_successful_login(self, login_url, redirect_url):
         payload = {'username': 'henrik', 'password': 'foo'}
@@ -119,6 +128,7 @@ class RedwoodTest(TestCase):
 
         self.assertIsNotNone(identity)
         self.assertEqual('henrik', identity['username'])
+        self.assertEqual(['token_creator'], identity['roles'])
 
         # Need to check the expiration claim in the JWT.
         actual_exp = identity['exp']
@@ -146,6 +156,43 @@ class RedwoodTest(TestCase):
         response = self.client.get('/logout/')
         cookie = self.get_cookie_from_client('identity_jwt', self.client)
         self.assertIsNone(cookie, msg='JWT cookie still present.')
+
+    def test_token_with_token_creator_role(self):
+        # Set the identity JWT
+        self.set_client_identity_jwt('henrik', 3600, ['token_creator'])
+
+        # Get the response
+        response = self.client.get('/token')
+        
+        self.assertStatus(response, status_code=200)
+        self.assertTemplateUsed('token.html')
+
+        # Check the token value
+        actual_token = self.get_context_variable('token')
+        self.assertIsNotNone(actual_token)
+
+        secret = app.config['IDENTITY_JWT_SECRET']
+        identity = jwt.decode(actual_token.encode('utf-8'), secret, algorithms=['HS256'])
+
+        self.assertEqual('henrik', identity['username'])
+        self.assertEqual([], identity['roles'])
+        
+        # Check that the expiration date is 15 minutes from now.
+        actual_exp = identity['exp']
+        current_time = int(time.time())
+        FIFTEEN_MINUTES = 15*60
+        expected_exp = current_time + FIFTEEN_MINUTES
+
+        self.assertTrue(abs(actual_exp - expected_exp) <= 1, msg="Incorrect expiration time")
+
+    def test_token_with_incorrect_role(self):
+        # Set the identity JWT
+        self.set_client_identity_jwt('henrik', 3600, [])
+
+        # Get the response
+        response = self.client.get('/token')
+        
+        self.assertStatus(response, status_code=401)
         
 if __name__ == '__main__':
     unittest.main()

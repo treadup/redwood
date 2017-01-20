@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, make_response
-from flask import redirect, url_for
+from flask import redirect, url_for, abort
 import json
 from datetime import datetime
 import time
@@ -294,7 +294,7 @@ def valid_credentials(username, password):
 
     return password_hash == app.config['PASSWORD_HASH']
     
-def create_user_jwt(username, expiration_time_delta):
+def create_user_jwt(username, expiration_time_delta, roles):
     """
     Creates a JWT for the given username.
     The JWT contains an expiration date set JWT_EXPIRATION_TIMEDELTA seconds
@@ -303,7 +303,8 @@ def create_user_jwt(username, expiration_time_delta):
     secret = app.config['IDENTITY_JWT_SECRET']
     expires = int(time.time()) + expiration_time_delta
     identity = {'username': username,
-                'exp': expires}
+                'exp': expires,
+                'roles': roles}
     
     return jwt.encode(identity, secret, algorithm='HS256').decode('utf-8')
 
@@ -341,7 +342,8 @@ def login():
             # Should be a 303 status code but Flask Testing does not support this.
             resp = make_response(redirect(redirect_url, code=302))
             time_delta = app.config['JWT_EXPIRATION_TIMEDELTA']
-            resp.set_cookie('identity_jwt', create_user_jwt(username, time_delta))
+            roles = ['token_creator']
+            resp.set_cookie('identity_jwt', value=create_user_jwt(username, time_delta, roles))
             return resp
         else:
             return render_template("login.html",
@@ -373,6 +375,13 @@ def account():
     user = get_current_user()
     return render_template("account.html", user=user)
 
+def is_token_creator(user):
+    """
+    Check that the user has the role token_creator
+    """
+    roles = user['roles']
+    return 'token_creator' in roles
+
 @app.route('/token')
 @login_required
 def token():
@@ -380,9 +389,15 @@ def token():
     Creates and shows a JWT token that is valid for 15 minutes.
     """
     user = get_current_user()
+
+    # Check that the user has the role token_creator
+    if not is_token_creator(user):
+        abort(401)
+    
     username = user['username']
-    FIFTEEN_MINUTES = 15*60 
-    token_jwt = create_user_jwt(username, FIFTEEN_MINUTES)
+    FIFTEEN_MINUTES = 15*60
+    roles = []
+    token_jwt = create_user_jwt(username, FIFTEEN_MINUTES, roles)
 
     return render_template("token.html", token=token_jwt, user=user)
 
