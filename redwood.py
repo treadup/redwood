@@ -50,6 +50,10 @@ def create_app():
 app = create_app()
 
 def get_jwt_from_request():
+    """
+    Gets the JWT from the request. Looks for the JWT in a cookie called
+    identity_jwt or in the Authorization header.
+    """
     cookie_identity_jwt = request.cookies.get('identity_jwt')
     header_identity_jwt = request.headers.get('Authorization')
 
@@ -59,6 +63,10 @@ def get_jwt_from_request():
         return header_identity_jwt
 
 def get_current_user():
+    """
+    Gets the current user. Gets the JWT from the request and parses out the result.
+    Returns None if the JWT has expired.
+    """
     identity_jwt = get_jwt_from_request()
 
     if identity_jwt:
@@ -124,6 +132,9 @@ def login_required(f):
 
 @app.route('/')
 def index():
+    """
+    Shows the index page.
+    """
     user = get_current_user()
     return render_template('index.html', user=user)
 
@@ -152,25 +163,36 @@ def bookmarks():
     bookmarks=load_bookmarks()
     return render_template('bookmarks.html', bookmarks=bookmarks, user=user)
 
-# For now I might just want a single page of photos.
-# In other words have a single collection page and then
-# a detail page for each photo.
-
 def get_thumbnail_s3_url(collection_name, image_name):
+    """
+    Creates the thumbnail url given the collection name and the image name.
+    """
     f = 'https://s3.amazonaws.com/rainforestphotos/{}/thumbs/thumb_{}'
     return f.format(collection_name, image_name)
 
 def get_photo_s3_url(collection_name, image_name):
+    """
+    Creates the image url given the collection name and the image name.
+    """
     f = 'https://s3.amazonaws.com/rainforestphotos/{}/{}'
     return f.format(collection_name, image_name)
 
 def add_collection_thumbnail_url(collection):
+    """
+    Adds the collection thumbnail url to the collection.
+    """
     collection['thumbnail'] = get_thumbnail_s3_url(collection['slug'], collection['image'])
 
 def add_collection_url(collection):
+    """
+    Adds the collection url to the collection.
+    """
     collection['url'] = '/photos/{}'.format(collection['slug'])
     
 def load_photo_collection_list():
+    """
+    Loads the photo collection list from the photo collection json file.
+    """
     filename = app.config['PHOTO_COLLECTION_FILENAME']
     photo_collections =  load_json(filename)
 
@@ -190,6 +212,10 @@ def photo_collection_list():
     return render_template('photo-collection-list.html', photo_collections=photo_collections, user=user)
 
 def get_raw_photo_collection(collection_name):
+    """
+    Loads the raw photo collection. Checks that a collection with the
+    given collection name exists before trying to load the collection.
+    """
     photo_collections = load_photo_collection_list()
     for collection in photo_collections:
         if collection['slug'] == collection_name:
@@ -198,17 +224,24 @@ def get_raw_photo_collection(collection_name):
 
     return None
 
-def map_image(collection_name, image_name):
+def create_image_dict(collection_name, image_name):
+    """
+    Creates an image dict given the collection name and the image name.
+    """
     return {"name": image_name,
             "s3url": get_photo_s3_url(collection_name, image_name),
             "thumbnail": get_thumbnail_s3_url(collection_name, image_name),
             "url": '/photos/{}/{}'.format(collection_name, image_name)}
     
 def get_photo_collection(collection_name):
+    """
+    Gets the photo collection for the given name. If there is no photo collection
+    for the given name return None.
+    """
     collection = get_raw_photo_collection(collection_name)
 
     if collection:
-        collection['images'] = [map_image(collection_name, img) for img in collection['images']]
+        collection['images'] = [create_image_dict(collection_name, img) for img in collection['images']]
         return collection
     else:
         return None
@@ -243,6 +276,11 @@ def single_photo(collection_name, photo):
 
 @app.route('/.well-known/acme-challenge/FiJYIF8cu88TYGIAaFbtC_74mTdJjbyDUAegb2z6ALg')
 def letsencrypt_verification():
+    """
+    The LetsEncrypt subdomain verification endpoint.
+    """
+    # TODO: Have the constants be configuration variables. These should then be loaded from
+    # environment variables.
     return 'FiJYIF8cu88TYGIAaFbtC_74mTdJjbyDUAegb2z6ALg.do-Ea0EwowSq-4RD9j1t9cNV_0hjtZRC28xzYDjdCTk'
 
 @app.route('/time')
@@ -270,6 +308,9 @@ def load_music():
 
 @app.route('/music')
 def music():
+    """
+    Page with links to music.
+    """
     user = get_current_user()
     music_collections = load_music()
 
@@ -310,6 +351,11 @@ def create_user_jwt(username, expiration_time_delta, roles):
 
 @app.route('/login/', methods=['GET', 'POST'])
 def login():
+    """
+    Login for the user. GET displays the login form. POST handles
+    validation of the credentials and creation of the identity JWT
+    cookie.
+    """
     redirect_url = request.args.get('redirect', None)
 
     # Change empty redirect_url to None
@@ -354,6 +400,11 @@ def login():
 
 @app.route('/protocol/')
 def protocol():
+    """
+    A page showing the protocol that was used to access the page.
+    Uses the fact that Heroku adds the x-forwarded-proto header
+    which contains http or https depending on which protocol was used.
+    """
     header = request.headers.get('x-forwarded-proto')
 
     if header:
@@ -363,6 +414,9 @@ def protocol():
 
 @app.route('/logout/')
 def logout():
+    """
+    Logs out the user by destroying the JWT cookie.
+    """
     resp = make_response(redirect("/", code=303))
     resp.set_cookie('identity_jwt', '', expires=0)
     return resp
@@ -402,6 +456,10 @@ def token():
     return render_template("token.html", token=token_jwt, user=user)
 
 def get_s3_folders_from_result(result):
+    """
+    Gets the folders from a s3 list_objects result.
+    """
+
     if 'CommonPrefixes' in result:
         folders = result['CommonPrefixes']
     else:
@@ -410,6 +468,9 @@ def get_s3_folders_from_result(result):
     return [x['Prefix'] for x in folders]
 
 def get_s3_files_from_result(result):
+    """
+    Gets the files from a s3 list_objects result.
+    """
     if 'Contents' in result:
         files = result['Contents']
     else:
@@ -449,6 +510,12 @@ def read_s3_file(bucket_name, key):
     return result['Body'].read().decode('utf-8')
 
 def process_folders(folders):
+    """
+    Given a list of folder names create a list of folder dicts
+    where the dict contains the keys "text" and "url". The "text"
+    key contains the relative folder name. The "url" contains the
+    url for the folder.
+    """
     result = []
 
     for f in folders:
@@ -460,6 +527,11 @@ def process_folders(folders):
     return result
 
 def process_files(path, files):
+    """
+    Given a list of filenames creates a list of file dicts where the dict 
+    contains the keys "text" and "url". The value for the "text" key is the
+    filename. The value for the "url" key is the url of the file.
+    """
     result = []
 
     for f in files:
@@ -526,6 +598,9 @@ def recepies():
 
 @app.route('/files')
 def files():
+    """
+    Upload and download files.
+    """
     # Upload and download files.
     # Edit text files in some sort of editor.
     # Upload files using curl using http headers for authentication.
