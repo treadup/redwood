@@ -193,6 +193,11 @@ class RedwoodTest(TestCase):
         response = self.client.get('/token')
         
         self.assertStatus(response, status_code=401)
-        
+
+    def test_work(self):
+        response = self.client.get('/work')
+        self.assertStatus(response, status_code=200)
+        self.assertTemplateUsed('work.html')
+
 if __name__ == '__main__':
     unittest.main()

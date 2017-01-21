@@ -605,3 +605,11 @@ def files():
     # Edit text files in some sort of editor.
     # Upload files using curl using http headers for authentication.
     return 'The part of the site where you can manage files goes here.'
+
+@app.route('/work')
+def work():
+    """
+    Work related stuff.
+    """
+    user = get_current_user()
+    return render_template('work.html', user=user)
