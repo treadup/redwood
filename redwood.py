@@ -10,6 +10,7 @@ import hashlib
 import boto3
 from jwt import ExpiredSignatureError
 from functools import wraps
+from io import StringIO, BytesIO
 
 from pprint import pprint
 
@@ -509,6 +510,16 @@ def read_s3_file(bucket_name, key):
 
     return result['Body'].read().decode('utf-8')
 
+def write_s3_file(bucket_name, key, content):
+    """
+    Writes text to an S3 text file.
+    """
+    client = boto3.client('s3')
+    file_like_content = BytesIO(content)
+    result = client.put_object(Bucket=bucket_name, Key=key, Body=file_like_content)
+
+    # TODO: Some kind of error handling.
+
 def process_folders(folders):
     """
     Given a list of folder names create a list of folder dicts
@@ -605,6 +616,24 @@ def files():
     # Edit text files in some sort of editor.
     # Upload files using curl using http headers for authentication.
     return 'The part of the site where you can manage files goes here.'
+
+@app.route('/files/<filename>', methods=['GET', 'PUT'])
+@login_required
+def single_file(filename):
+    """
+    Upload or download a single file. The filename can not contain slash /
+    characters.
+    """
+    bucket_name = 'redwood-files'
+
+    if request.method == 'PUT':
+        # TODO: See if we can use request.stream instead. That way
+        # we can avoid using BytesIO as well.
+        write_s3_file(bucket_name, filename, request.data)
+        return "Wrote {}".format(filename)
+    else:
+        file_content = read_s3_file(bucket_name, filename)
+        return file_content
 
 @app.route('/work')
 def work():
