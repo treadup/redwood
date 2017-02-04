@@ -31,7 +31,12 @@
     },
     {
         "category": "Error handling",
-        "bookmarks": [{"text": "Airbrake", "url": "https://airbrake.io/"}]
+        "bookmarks": [{"text": "Airbrake", "url": "https://airbrake.io/"},
+                      {"text": "Rollbar", "url": "http://rollbar.com"}]
+    },
+    {
+        "category": "Emacs"
+        "bookmarks": [{"text": "Awesome Emacs", "url": "https://github.com/emacs-tw/awesome-emacs"}]
     }
 ]
 
