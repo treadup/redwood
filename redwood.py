@@ -632,6 +632,10 @@ def single_file(filename):
         write_s3_file(bucket_name, filename, request.data)
         return "Wrote {}".format(filename)
     else:
+        # Both wget and curl send the following Accept header.
+        # Accept: */*
+        # A web browser will return an Accept header that contains text/html
+        # This allows us to return different pages for web browsers and curl/wget.      
         file_content = read_s3_file(bucket_name, filename)
         return file_content
 
