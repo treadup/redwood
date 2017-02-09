@@ -35,7 +35,7 @@
                       {"text": "Rollbar", "url": "http://rollbar.com"}]
     },
     {
-        "category": "Emacs"
+        "category": "Emacs",
         "bookmarks": [{"text": "Awesome Emacs", "url": "https://github.com/emacs-tw/awesome-emacs"}]
     }
 ]
