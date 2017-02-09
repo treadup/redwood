@@ -24,7 +24,6 @@ def create_app():
     app = Flask(__name__)
     app.config['BOOKMARKS_FILENAME'] = 'data/bookmarks.json'
     app.config['PHOTO_COLLECTION_FILENAME'] = 'photos/photo_collections.json'
-    app.config['MUSIC_FILENAME'] = 'data/music.json'
     app.config['IDENTITY_JWT_SECRET'] = load_environment_variable('IDENTITY_JWT_SECRET')
     TWELVE_HOURS = 12*60*60
     app.config['JWT_EXPIRATION_TIMEDELTA'] = TWELVE_HOURS
@@ -299,25 +298,6 @@ def current_time():
         place['time'] = datetime.now(pytz.timezone(place['tz'])).strftime("%H:%M")
     
     return render_template("time.html", places=places, user=user)
-
-def load_music():
-    """
-    Loads the bookmarks from the bookmarks.json file
-    """
-    filename = app.config['MUSIC_FILENAME']
-    return load_json(filename)
-
-@app.route('/music')
-def music():
-    """
-    Page with links to music.
-    """
-    user = get_current_user()
-    music_collections = load_music()
-
-    # Good search: https://www.youtube.com/results?search_query=celtic+music
-
-    return render_template("music.html", music_collections=music_collections, user=user)
 
 def valid_credentials(username, password):
     """
@@ -632,6 +612,10 @@ def single_file(filename):
         write_s3_file(bucket_name, filename, request.data)
         return "Wrote {}".format(filename)
     else:
+        # Both wget and curl send the following Accept header.
+        # Accept: */*
+        # A web browser will return an Accept header that contains text/html
+        # This allows us to return different pages for web browsers and curl/wget.      
         file_content = read_s3_file(bucket_name, filename)
         return file_content
 
