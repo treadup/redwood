@@ -37,6 +37,12 @@
     {
         "category": "Emacs",
         "bookmarks": [{"text": "Awesome Emacs", "url": "https://github.com/emacs-tw/awesome-emacs"}]
+    },
+    {
+        "category": "WebGL",
+        "bookmarks": [{"text": "WebGL", "url": "https://get.webgl.org/"},
+                      {"text": "WebGL fundamentals", "url": "https://webglfundamentals.org/"},
+                      {"text": "WebGL2 fundamentals", "url": "https://webgl2fundamentals.org/"}]
     }
 ]
 
