@@ -18,7 +18,9 @@
         "bookmarks": [{"text": "Clojure", "url": "https://clojure.org/"},
                       {"text": "Clojure Toolbox", "url": "http://www.clojure-toolbox.com/"},
                       {"text": "Cider", "url": "https://cider.readthedocs.io/en/latest/"},
-                      {"text": "Leiningen", "url": "https://leiningen.org/"}]
+                      {"text": "Leiningen", "url": "https://leiningen.org/"},
+                      {"text": "NightCode", "url": "https://sekao.net/nightcode/"},
+                      {"text": "Light Table", "url": "http://lighttable.com/"}]
     },
     {
         "category": "Continuous Integration",
