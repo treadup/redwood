@@ -41,6 +41,10 @@
         "bookmarks": [{"text": "Awesome Emacs", "url": "https://github.com/emacs-tw/awesome-emacs"}]
     },
     {
+        "category": "Vim",
+        "bookmarks": [{"text": "Fireplace", "url": "https://github.com/tpope/vim-fireplace"}]
+    },
+    {
         "category": "WebGL",
         "bookmarks": [{"text": "WebGL", "url": "https://get.webgl.org/"},
                       {"text": "WebGL fundamentals", "url": "https://webglfundamentals.org/"},
