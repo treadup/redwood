@@ -53,8 +53,11 @@
                       {"text": "WebGL2 fundamentals", "url": "https://webgl2fundamentals.org/"}]
     },
     {
-        "category": "Clouds",
-        "bookmarks": [{"text": "Vultr", "url": "https://www.vultr.com/"}]
+        "category": "Cloud Providers",
+        "bookmarks": [{"text": "Amazon Web Services", "url": "https://aws.amazon.com/"},
+                      {"text": "Amazon LightSail", "url": "https://amazonlightsail.com/"},
+                      {"text": "Google Cloud", "url": "https://cloud.google.com/"},
+                      {"text": "Vultr", "url": "https://www.vultr.com/"}]
     }
 ]
 
