@@ -51,6 +51,10 @@
         "bookmarks": [{"text": "WebGL", "url": "https://get.webgl.org/"},
                       {"text": "WebGL fundamentals", "url": "https://webglfundamentals.org/"},
                       {"text": "WebGL2 fundamentals", "url": "https://webgl2fundamentals.org/"}]
+    },
+    {
+        "category": "Clouds",
+        "bookmarks": [{"text": "Vultr", "url": "https://www.vultr.com/"}]
     }
 ]
 
