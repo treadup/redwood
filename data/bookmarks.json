@@ -34,6 +34,10 @@
                       {"text": "Can I use?", "url": "http://caniuse.com"}]
     },
     {
+        "category": "JavaScript",
+        "bookmarks": [{"text": "Webpack", "url": "https://webpack.js.org/"}]
+    },
+    {
         "category": "Error handling",
         "bookmarks": [{"text": "Airbrake", "url": "https://airbrake.io/"},
                       {"text": "Rollbar", "url": "http://rollbar.com"}]
