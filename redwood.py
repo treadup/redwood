@@ -36,7 +36,7 @@ def create_app():
 
     # Lets Encrypt challenge response
     app.config['LETS_ENCRYPT_CHALLENGE'] = load_environment_variable('LETS_ENCRYPT_CHALLENGE', 'challenge')
-    app.config['LETS_ENCRYTP_RESPONSE'] = load_environment_variable('LETS_ENCRYPT_RESPONSE', 'response')
+    app.config['LETS_ENCRYPT_RESPONSE'] = load_environment_variable('LETS_ENCRYPT_RESPONSE', 'response')
 
     # The password salt can be generated using the token_hex function in
     # the secrets module.
