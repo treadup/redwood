@@ -34,6 +34,10 @@ def create_app():
     # http://xkcd.com/936/
     app.config['PASSWORD_HASH'] = load_environment_variable('PASSWORD_HASH')
 
+    # Lets Encrypt challenge response
+    app.config['LETS_ENCRYPT_CHALLENGE'] = load_environment_variable('LETS_ENCRYPT_CHALLENGE', 'challenge')
+    app.config['LETS_ENCRYTP_RESPONSE'] = load_environment_variable('LETS_ENCRYPT_RESPONSE', 'response')
+
     # The password salt can be generated using the token_hex function in
     # the secrets module.
     # You can also generate salt using the following command.
@@ -274,14 +278,15 @@ def single_photo(collection_name, photo):
     
     return 'Could not find matching photo. Should return a nice 404 error here.'
 
-@app.route('/.well-known/acme-challenge/FiJYIF8cu88TYGIAaFbtC_74mTdJjbyDUAegb2z6ALg')
-def letsencrypt_verification():
+@app.route('/.well-known/acme-challenge/<challenge>')
+def letsencrypt_verification(challenge):
     """
     The LetsEncrypt subdomain verification endpoint.
     """
-    # TODO: Have the constants be configuration variables. These should then be loaded from
-    # environment variables.
-    return 'FiJYIF8cu88TYGIAaFbtC_74mTdJjbyDUAegb2z6ALg.do-Ea0EwowSq-4RD9j1t9cNV_0hjtZRC28xzYDjdCTk'
+    if challenge != app.config['LETS_ENCRYPT_CHALLENGE']:
+        return 'Not the correct challenge'
+    
+    return app.config['LETS_ENCRYPT_RESPONSE']
 
 @app.route('/time')
 def current_time():
