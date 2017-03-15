@@ -626,3 +626,12 @@ def work():
     """
     user = get_current_user()
     return render_template('work.html', user=user)
+
+@app.route('/contact')
+def contact():
+    """
+    Contact page.
+    """
+    user = get_current_user()
+    return render_template('contact.html', user=user)
+
