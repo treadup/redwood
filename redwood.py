@@ -86,13 +86,7 @@ def require_https():
     is being made using https.
     (Actually since we are using heroku it will check that the x-forwarded-proto header
     is set to https and not http.)
-    The LetsEncrypt url is white listed and you can access this url using plain http.
     """
-    # Always allow access to the LetsEncrypt verification endpoint without requiring
-    # https access.
-    if request.endpoint == 'letsencrypt_verification':
-        return None
-
     # If we are not configured to require HTTPS then do nothing.
     if not app.config['HTTPS_REQUIRED']:
         return None
@@ -273,16 +267,6 @@ def single_photo(collection_name, photo):
                 return render_template("photo.html", image=image, user=user)
     
     return 'Could not find matching photo. Should return a nice 404 error here.'
-
-@app.route('/.well-known/acme-challenge/<challenge>')
-def letsencrypt_verification(challenge):
-    """
-    The LetsEncrypt subdomain verification endpoint.
-    """
-    if challenge != load_environment_variable('LETS_ENCRYPT_CHALLENGE', 'challenge'):
-        return 'Not the correct challenge'
-    
-    return load_environment_variable('LETS_ENCRYPT_RESPONSE', 'response')
 
 @app.route('/time')
 def current_time():
