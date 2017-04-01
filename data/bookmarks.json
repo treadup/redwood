@@ -6,30 +6,7 @@
                       {"text": "Jinja2", "url": "http://jinja.pocoo.org/"},
                       {"text": "Awesome Python", "url": "https://awesome-python.com/"},
                       {"text": "Fabric", "url": "http://www.fabfile.org/"},
-                      {"text": "Hitchhiker's Guide to Python", "url": "http://docs.python-guide.org/en/latest/"]
-    },
-    {
-        "category": "Flask",
-        "bookmarks": [{"text": "Flask Principal", "url": "https://pythonhosted.org/Flask-Principal/"},
-                      {"text": "Flask Admin", "url": "http://flask-admin.readthedocs.io/en/latest/" }]
-    },
-    {
-        "category": "Clojure",
-        "bookmarks": [{"text": "Clojure", "url": "https://clojure.org/"},
-                      {"text": "Clojure Toolbox", "url": "http://www.clojure-toolbox.com/"},
-                      {"text": "Cider", "url": "https://cider.readthedocs.io/en/latest/"},
-                      {"text": "Leiningen", "url": "https://leiningen.org/"},
-                      {"text": "NightCode", "url": "https://sekao.net/nightcode/"},
-                      {"text": "Light Table", "url": "http://lighttable.com/"}]
-    },
-    {
-        "category": "Continuous Integration",
-        "bookmarks": [{"text": "Circle CI", "url": "https://circleci.com/"},
-                      {"text": "Travis CI", "url": "https://travis-ci.org/"},
-                      {"text": "Coveralls", "url": "https://coveralls.io/"}]
-    },
-    {   "category": "Web",
-"]
+                      {"text": "Hitchhiker's Guide to Python", "url": "http://docs.python-guide.org/en/latest/"}]
     },
     {
         "category": "Flask",
@@ -72,7 +49,8 @@
     },
     {
         "category": "Vim",
-        "bookmarks": [{"text": "Fireplace", "url": "https://github.com/tpope/vim-fireplace"}]
+        "bookmarks": [{"text": "Vim Awesome", "url": "http://vimawesome.com/"},
+                      {"text": "Fireplace", "url": "https://github.com/tpope/vim-fireplace"}]
     },
     {
         "category": "WebGL",
@@ -91,6 +69,10 @@
         "category": "Essays",
         "bookmarks": [{"text": "The Vietnam of Computer Science",
                        "url": "http://blogs.tedneward.com/post/the-vietnam-of-computer-science/"}]
+    },
+    {
+        "category": "Music",
+        "bookmarks": [{"text": "A soft murmur", "url": "http://asoftmurmur.com/"}]
     }
 ]
 
