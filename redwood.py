@@ -34,10 +34,6 @@ def create_app():
     # http://xkcd.com/936/
     app.config['PASSWORD_HASH'] = load_environment_variable('PASSWORD_HASH')
 
-    # Lets Encrypt challenge response
-    app.config['LETS_ENCRYPT_CHALLENGE'] = load_environment_variable('LETS_ENCRYPT_CHALLENGE', 'challenge')
-    app.config['LETS_ENCRYPT_RESPONSE'] = load_environment_variable('LETS_ENCRYPT_RESPONSE', 'response')
-
     # The password salt can be generated using the token_hex function in
     # the secrets module.
     # You can also generate salt using the following command.
@@ -283,10 +279,10 @@ def letsencrypt_verification(challenge):
     """
     The LetsEncrypt subdomain verification endpoint.
     """
-    if challenge != app.config['LETS_ENCRYPT_CHALLENGE']:
+    if challenge != load_environment_variable('LETS_ENCRYPT_CHALLENGE', 'challenge'):
         return 'Not the correct challenge'
     
-    return app.config['LETS_ENCRYPT_RESPONSE']
+    return load_environment_variable('LETS_ENCRYPT_RESPONSE', 'response')
 
 @app.route('/time')
 def current_time():
