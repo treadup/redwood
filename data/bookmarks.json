@@ -23,6 +23,10 @@
                       {"text": "Light Table", "url": "http://lighttable.com/"}]
     },
     {
+        "category": "Go",
+        "bookmarks": [{"text": "Awesome Go", "url": "http://awesome-go.com/"}]
+    },
+    {
         "category": "Continuous Integration",
         "bookmarks": [{"text": "Circle CI", "url": "https://circleci.com/"},
                       {"text": "Travis CI", "url": "https://travis-ci.org/"},
