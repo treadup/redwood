@@ -27,6 +27,11 @@
         "bookmarks": [{"text": "Awesome Go", "url": "http://awesome-go.com/"}]
     },
     {
+        "category": "Machine Learning",
+        "bookmarks": [{"text": "Awesome Machine Learning",
+                       "url": "https://github.com/josephmisiti/awesome-machine-learning"}]
+    },
+    {
         "category": "Continuous Integration",
         "bookmarks": [{"text": "Circle CI", "url": "https://circleci.com/"},
                       {"text": "Travis CI", "url": "https://travis-ci.org/"},
