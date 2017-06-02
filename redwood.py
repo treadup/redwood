@@ -587,6 +587,7 @@ def files():
     """
     Upload and download files.
     """
+    user = get_current_user()
     bucket_name = 'redwood-files'
     
     if request.method == 'POST':
@@ -597,7 +598,7 @@ def files():
         return redirect(url_for('files'))
     else:
         _, file_list = read_s3_bucket_folder(bucket_name, '/')
-        return render_template('file-list.html', file_list=file_list)
+        return render_template('file-list.html', file_list=file_list, user=user)
 
 @app.route('/files/<filename>', methods=['GET', 'PUT'])
 @login_required
