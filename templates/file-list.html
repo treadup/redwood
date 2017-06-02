@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Files{% endblock %}
+{% block content %}
+
+<h2>Files</h2>
+<ul>
+{% for file in file_list %}
+    <li><a href="/files/{{file}}">{{file}}</a></li>
+{% endfor %}
+</ul>
+
+<h2>Upload file</h2>
+<form action="/files" method="POST" enctype="multipart/form-data">
+    <input type="file" name="file"/>
+    <input type="submit" value="Upload" />
+</form>
+
+{% endblock %}
