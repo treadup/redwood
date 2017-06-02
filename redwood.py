@@ -330,6 +330,7 @@ def login():
     Login for the user. GET displays the login form. POST handles
     validation of the credentials and creation of the identity JWT
     cookie.
+    The created JWT has the role 'token_creator'.
     """
     redirect_url = request.args.get('redirect', None)
 
@@ -416,6 +417,7 @@ def is_token_creator(user):
 def token():
     """
     Creates and shows a JWT token that is valid for 15 minutes.
+    The created JWT does not have any roles.
     """
     user = get_current_user()
 
