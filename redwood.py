@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, make_response
 from flask import redirect, url_for, abort
+from werkzeug import secure_filename
 import json
 from datetime import datetime
 import time
@@ -50,6 +51,8 @@ def create_app():
     # cat /dev/urandom | head -c 1024 | sha256sum
     app.config['PASSWORD_SALT'] = load_environment_variable('PASSWORD_SALT')
     app.config['HTTPS_REQUIRED'] = load_boolean_environment_variable('HTTPS_REQUIRED', True)
+
+    app.config['UPLOAD_FOLDER'] = '/tmp/upload'
 
     return app
 
@@ -579,14 +582,22 @@ def recepies():
     return 'List of recepies goes here.'
 
 @app.route('/files', methods=['GET', 'POST'])
+@login_required
 def files():
     """
     Upload and download files.
     """
+    bucket_name = 'redwood-files'
+    
     if request.method == 'POST':
-        pass
+        f = request.files['file']
+        if(f):
+            write_s3_file(bucket_name, secure_filename(f.filename), f.read())
+  	      
+        return redirect(url_for('files'))
     else:
-        return render_template('file-list.html')
+        _, file_list = read_s3_bucket_folder(bucket_name, '/')
+        return render_template('file-list.html', file_list=file_list)
 
 @app.route('/files/<filename>', methods=['GET', 'PUT'])
 @login_required
@@ -598,16 +609,16 @@ def single_file(filename):
     bucket_name = 'redwood-files'
 
     if request.method == 'PUT':
-        # TODO: See if we can use request.stream instead. That way
-        # we can avoid using BytesIO as well.
-        write_s3_file(bucket_name, filename, request.data)
-        return "Wrote {}".format(filename)
+        write_s3_file(bucket_name, secure_filename(filename), request.data)
+        return redirect(url_for('files'))
     else:
         # Both wget and curl send the following Accept header.
         # Accept: */*
         # A web browser will return an Accept header that contains text/html
-        # This allows us to return different pages for web browsers and curl/wget.      
-        file_content = read_s3_file(bucket_name, filename)
+        # This allows us to return different pages for web browsers and curl/wget.
+        # I'm not sure that I want to do this.
+
+        file_content = read_s3_file(bucket_name, secure_filename(filename))
         return file_content
 
 @app.route('/work')
