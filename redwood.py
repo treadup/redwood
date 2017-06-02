@@ -20,6 +20,16 @@ def load_environment_variable(name, default=None):
     except KeyError:
         return default
 
+def load_boolean_environment_variable(name, default):
+    s = load_environment_variable(name, '')
+
+    if s == 'True':
+        return True
+    elif s == 'False':
+        return False
+    else:
+        return default
+
 def create_app():
     app = Flask(__name__)
     app.config['BOOKMARKS_FILENAME'] = 'data/bookmarks.json'
@@ -39,12 +49,8 @@ def create_app():
     # You can also generate salt using the following command.
     # cat /dev/urandom | head -c 1024 | sha256sum
     app.config['PASSWORD_SALT'] = load_environment_variable('PASSWORD_SALT')
+    app.config['HTTPS_REQUIRED'] = load_boolean_environment_variable('HTTPS_REQUIRED', True)
 
-    https_required = load_environment_variable('HTTPS_REQUIRED', default='True')
-    app.config['HTTPS_REQUIRED'] = https_required.strip() != 'False'
-    
-    # TODO: Validate that all required app config variables were set.
-    
     return app
 
 app = create_app()
@@ -572,15 +578,15 @@ def recepies():
 
     return 'List of recepies goes here.'
 
-@app.route('/files')
+@app.route('/files', methods=['GET', 'POST'])
 def files():
     """
     Upload and download files.
     """
-    # Upload and download files.
-    # Edit text files in some sort of editor.
-    # Upload files using curl using http headers for authentication.
-    return 'The part of the site where you can manage files goes here.'
+    if request.method == 'POST':
+        pass
+    else:
+        return render_template('file-list.html')
 
 @app.route('/files/<filename>', methods=['GET', 'PUT'])
 @login_required
