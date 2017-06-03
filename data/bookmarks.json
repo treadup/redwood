@@ -6,7 +6,8 @@
                       {"text": "Jinja2", "url": "http://jinja.pocoo.org/"},
                       {"text": "Awesome Python", "url": "https://awesome-python.com/"},
                       {"text": "Fabric", "url": "http://www.fabfile.org/"},
-                      {"text": "Hitchhiker's Guide to Python", "url": "http://docs.python-guide.org/en/latest/"}]
+                      {"text": "Hitchhiker's Guide to Python", "url": "http://docs.python-guide.org/en/latest/"},
+                      {"text": "Awesome Django", "url": "http://awesome-django.com/"}]
     },
     {
         "category": "Flask",
