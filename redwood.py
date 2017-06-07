@@ -473,7 +473,7 @@ def read_s3_bucket_folder(bucket_name, folder):
 
     return folders, files
 
-def read_s3_file(bucket_name, key):
+def read_s3_file(bucket_name, key, binary=False):
     """
     Reads the contents of an S3 text file.
     """
@@ -484,7 +484,10 @@ def read_s3_file(bucket_name, key):
     if result['ResponseMetadata']['HTTPStatusCode'] != 200:
         pass
 
-    return result['Body'].read().decode('utf-8')
+    if binary:
+        return result['Body'].read()
+    else:
+        return result['Body'].read().decode('utf-8')
 
 def write_s3_file(bucket_name, key, content):
     """
@@ -644,18 +647,14 @@ def contact():
 def public_files(token, filename):
     bucket_name = 'redwood-files'
     expected_token = load_environment_variable('PUBLIC_FILE_TOKEN')
-    expected_filename = load_environment_variable('PUBLIC_FILE_NAME')
     filename = secure_filename(filename)
 
-    if not expected_token or not expected_filename:
+    if not expected_token:
         abort(500)
 
     if token == expected_token:
-        if expected_filename == filename:
-            file_content = read_s3_file(bucket_name, filename)
-            return file_content
-        else:
-            abort(404)
+        file_content = read_s3_file(bucket_name, filename, binary=True)
+        return file_content
     else:
         raise abort(403)
 
