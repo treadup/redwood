@@ -654,7 +654,10 @@ def public_files(token, filename):
 
     if token == expected_token:
         file_content = read_s3_file(bucket_name, filename, binary=True)
-        return file_content
+        return Response(file_content,
+            mimetype='application/zip',
+            headers={'Content-Disposition':'attachment;filename='+ filename})
     else:
         raise abort(403)
+
 
