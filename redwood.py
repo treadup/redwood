@@ -640,3 +640,22 @@ def contact():
     user = get_current_user()
     return render_template('contact.html', user=user)
 
+@app.route('/public/<token>/<filename>')
+def public_files(token, filename):
+    bucket_name = 'redwood-files'
+    expected_token = load_environment_variable('PUBLIC_FILE_TOKEN')
+    expected_filename = load_environment_variable('PUBLIC_FILE_NAME')
+    filename = secure_filename(filename)
+
+    if not expected_token or not expected_filename:
+        abort(500)
+
+    if token == expected_token:
+        if expected_filename == filename:
+            file_content = read_s3_file(bucket_name, filename)
+            return file_content
+        else:
+            abort(404)
+    else:
+        raise abort(403)
+
