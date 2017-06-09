@@ -643,6 +643,23 @@ def contact():
     user = get_current_user()
     return render_template('contact.html', user=user)
 
+def mimetype_from_extension(filename):
+    """
+    Given a filename returns the mime type. This is determined based on the extension.
+    """
+    extension = filename.split('.')[-1]
+    extensionMap = {"txt": "text/plain",
+                    "css": "text/css",
+                    "html": "text/html",
+                    "gif":  "image/gif",
+                    "jpg":  "image/jpeg",
+                    "jpeg": "image/jpeg",
+                    "png": "image/png",
+                    "zip": "application/zip"
+    }
+
+    return extensionMap.get(extension, "application/octet-stream")
+
 @app.route('/public/<token>/<filename>')
 def public_files(token, filename):
     bucket_name = 'redwood-files'
@@ -655,8 +672,7 @@ def public_files(token, filename):
     if token == expected_token:
         file_content = read_s3_file(bucket_name, filename, binary=True)
         return Response(file_content,
-            mimetype='application/zip',
-            headers={'Content-Disposition':'attachment;filename='+ filename})
+            mimetype=mimetype_from_extension(filename))
     else:
         raise abort(403)
 
