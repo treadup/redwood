@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, make_response
-from flask import redirect, url_for, abort, Response
+from flask import redirect, url_for, abort, send_file
 from werkzeug import secure_filename
 import json
 from datetime import datetime
@@ -658,7 +658,20 @@ def mimetype_from_extension(filename):
                     "zip": "application/zip"
     }
 
-    return extensionMap.get(extension, "application/octet-stream")
+    return extensionMap.get(extension.lower(), "application/octet-stream")
+
+def read_s3_stream(bucket_name, key):
+    """
+    Reads the contents of an S3 text file.
+    """
+    client = boto3.client('s3')
+
+    result = client.get_object(Bucket=bucket_name, Key=key)
+
+    if result['ResponseMetadata']['HTTPStatusCode'] != 200:
+        pass
+
+    return result['Body']
 
 @app.route('/public/<token>/<filename>')
 def public_files(token, filename):
@@ -670,8 +683,8 @@ def public_files(token, filename):
         abort(500)
 
     if token == expected_token:
-        file_content = read_s3_file(bucket_name, filename, binary=True)
-        return Response(file_content,
+        file_stream = read_s3_stream(bucket_name, filename)
+        return send_file(file_stream,
             mimetype=mimetype_from_extension(filename))
     else:
         raise abort(403)
