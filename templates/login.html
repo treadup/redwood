@@ -8,6 +8,9 @@
         <input type="text" name="username" />
         <label>Password</label>
         <input type="password" name="password" />
+        {% if login_error_message %}
+        <p class="error">{{login_error_message}}</p>
+        {% endif %}
         <input type="submit" value="Login" />
     </form>
 </div>
