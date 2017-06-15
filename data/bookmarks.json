@@ -46,7 +46,8 @@
     {
         "category": "JavaScript",
         "bookmarks": [{"text": "Webpack", "url": "https://webpack.js.org/"},
-                      {"text": "Survive JS", "url": "http://survivejs.com/"}]
+                      {"text": "Survive JS", "url": "http://survivejs.com/"},
+                      {"text": "Awesome JS", "url": "https://github.com/sindresorhus/awesome-nodejs"}]
     },
     {
         "category": "Error handling",
