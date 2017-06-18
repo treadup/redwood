@@ -77,6 +77,13 @@
                       {"text": "Vultr", "url": "https://www.vultr.com/"}]
     },
     {
+        "category": "Literate Programming",
+        "bookmarks": [{"text": "Docco", "url": "http://jashkenas.github.io/docco/"},
+                      {"text": "Pycco", "url": "https://github.com/pycco-docs/pycco"},
+                      {"text": "Marginalia", "url": "https://github.com/gdeer81/marginalia"},
+                      {"text": "Gocco", "url": "http://nikhilm.github.io/gocco/"}]
+    },
+    {
         "category": "Essays",
         "bookmarks": [{"text": "The Vietnam of Computer Science",
                        "url": "http://blogs.tedneward.com/post/the-vietnam-of-computer-science/"}]
