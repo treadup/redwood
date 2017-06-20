@@ -24,6 +24,10 @@
                       {"text": "Light Table", "url": "http://lighttable.com/"}]
     },
     {
+        "category": "Clojure Script",
+        "bookmarks": [{"text": "Reagent", "url": "https://reagent-project.github.io/"}]
+    },
+    {
         "category": "Go",
         "bookmarks": [{"text": "Awesome Go", "url": "http://awesome-go.com/"}]
     },
