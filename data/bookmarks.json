@@ -50,6 +50,10 @@
                       {"text": "Awesome JS", "url": "https://github.com/sindresorhus/awesome-nodejs"}]
     },
     {
+        "category": "Ruby",
+        "bookmarks": [{"text": "Awesome Ruby", "url": "http://awesome-ruby.com/"}]
+    },
+    {
         "category": "Error handling",
         "bookmarks": [{"text": "Airbrake", "url": "https://airbrake.io/"},
                       {"text": "Rollbar", "url": "http://rollbar.com"}]
@@ -91,6 +95,15 @@
     {
         "category": "Music",
         "bookmarks": [{"text": "A soft murmur", "url": "http://asoftmurmur.com/"}]
+    },
+    {
+        "category": "Open Source",
+        "bookmarks": [{"text": "Libraries.io", "url": "http://libraries.io"}]
+    },
+    {
+        "category": "Ember",
+        "bookmarks": [{"text": "Ember Observer", "url": "https://emberobserver.com/"}
+            {"text": "Ember Addons", "url": "https://www.emberaddons.com/"}]
     }
 ]
 
