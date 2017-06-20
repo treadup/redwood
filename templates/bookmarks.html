@@ -2,12 +2,16 @@
 {% block title %}Bookmarks{% endblock %}
 {% block content %}
 
-{% for collection in bookmarks %}
-<h1>{{collection.category}}</h1>
-  <ul>
-    {% for bookmark in collection.bookmarks %}
-    <li><a href="{{bookmark.url}}">{{bookmark.text}}</a></li>
+<div class="bookmarks">
+    {% for collection in bookmarks %}
+    <div>
+        <h1>{{collection.category}}</h1>
+        <ul>
+            {% for bookmark in collection.bookmarks %}
+            <li><a href="{{bookmark.url}}">{{bookmark.text}}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
     {% endfor %}
-  </ul>
-{% endfor %}
+</div>
 {% endblock %}
