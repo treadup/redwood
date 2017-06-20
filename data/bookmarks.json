@@ -106,8 +106,8 @@
     },
     {
         "category": "Ember",
-        "bookmarks": [{"text": "Ember Observer", "url": "https://emberobserver.com/"}
-            {"text": "Ember Addons", "url": "https://www.emberaddons.com/"}]
+        "bookmarks": [{"text": "Ember Observer", "url": "https://emberobserver.com/"},
+                      {"text": "Ember Addons", "url": "https://www.emberaddons.com/"}]
     }
 ]
 
