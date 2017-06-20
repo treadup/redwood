@@ -624,8 +624,10 @@ def single_file(filename):
         # This allows us to return different pages for web browsers and curl/wget.
         # I'm not sure that I want to do this.
 
-        file_content = read_s3_file(bucket_name, secure_filename(filename))
-        return file_content
+        file_stream = read_s3_stream(bucket_name, filename)
+        return send_file(file_stream,
+            mimetype=mimetype_from_extension(filename))
+
 
 @app.route('/work')
 def work():
