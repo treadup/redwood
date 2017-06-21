@@ -113,6 +113,10 @@
         "category": "Ember",
         "bookmarks": [{"text": "Ember Observer", "url": "https://emberobserver.com/"},
                       {"text": "Ember Addons", "url": "https://www.emberaddons.com/"}]
+    },
+    {
+        "category": "REST",
+        "bookmarks": [{"text": "Swagger", "url": "http://swagger.io/"}]
     }
 ]
 
