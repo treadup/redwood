@@ -21,7 +21,12 @@
                       {"text": "Cider", "url": "https://cider.readthedocs.io/en/latest/"},
                       {"text": "Leiningen", "url": "https://leiningen.org/"},
                       {"text": "NightCode", "url": "https://sekao.net/nightcode/"},
-                      {"text": "Light Table", "url": "http://lighttable.com/"}]
+                      {"text": "Light Table", "url": "http://lighttable.com/"},
+                      {"text": "Ring", "url": "https://github.com/ring-clojure/ring"},
+                      {"text": "Ring Swagger", "url": "https://github.com/metosin/ring-swagger"},
+                      {"text": "Compojure", "url": "https://github.com/weavejester/compojure"},
+                      {"text": "Hiccup", "url": "https://github.com/weavejester/hiccup"},
+                      {"text": "Selmer", "url": "https://github.com/yogthos/Selmer"}]
     },
     {
         "category": "Clojure Script",
