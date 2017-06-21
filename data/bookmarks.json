@@ -26,7 +26,9 @@
                       {"text": "Ring Swagger", "url": "https://github.com/metosin/ring-swagger"},
                       {"text": "Compojure", "url": "https://github.com/weavejester/compojure"},
                       {"text": "Hiccup", "url": "https://github.com/weavejester/hiccup"},
-                      {"text": "Selmer", "url": "https://github.com/yogthos/Selmer"}]
+                      {"text": "Selmer", "url": "https://github.com/yogthos/Selmer"},
+                      {"text": "Compujure API", "url": "https://github.com/metosin/compojure-api"},
+                      {"text": "HugSQL", "url": "https://github.com/layerware/hugsql"}]
     },
     {
         "category": "Clojure Script",
