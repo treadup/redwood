@@ -28,7 +28,8 @@
                       {"text": "Hiccup", "url": "https://github.com/weavejester/hiccup"},
                       {"text": "Selmer", "url": "https://github.com/yogthos/Selmer"},
                       {"text": "Compujure API", "url": "https://github.com/metosin/compojure-api"},
-                      {"text": "HugSQL", "url": "https://github.com/layerware/hugsql"}]
+                      {"text": "HugSQL", "url": "https://github.com/layerware/hugsql"},
+                      {"text": "Hickory", "url": "https://github.com/davidsantiago/hickory"}]
     },
     {
         "category": "Clojure Script",
