@@ -3,6 +3,8 @@
 \#*\#
 .\#*
 
+# Python files
+*.pyc
 
 # Python Virtual Environment
 env/
