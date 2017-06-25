@@ -36,7 +36,8 @@
     },
     {
         "category": "Clojure Script",
-        "bookmarks": [{"text": "Reagent", "url": "https://reagent-project.github.io/"}]
+        "bookmarks": [{"text": "Reagent", "url": "https://reagent-project.github.io/"},
+                      {"text": "Om", "url": "https://github.com/omcljs/om"}]
     },
     {
         "category": "Go",
@@ -113,7 +114,8 @@
     },
     {
         "category": "Open Source",
-        "bookmarks": [{"text": "Libraries.io", "url": "http://libraries.io"}]
+        "bookmarks": [{"text": "Libraries.io", "url": "http://libraries.io"},
+                      {"text": "Libhunt", "url": "https://www.libhunt.com/"}]
     },
     {
         "category": "Ember",
