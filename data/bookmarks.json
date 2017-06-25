@@ -12,7 +12,8 @@
     {
         "category": "Flask",
         "bookmarks": [{"text": "Flask Principal", "url": "https://pythonhosted.org/Flask-Principal/"},
-                      {"text": "Flask Admin", "url": "http://flask-admin.readthedocs.io/en/latest/" }]
+                      {"text": "Flask Admin", "url": "http://flask-admin.readthedocs.io/en/latest/" },
+                      {"text": "Flask SocketIO", "url": "https://flask-socketio.readthedocs.io/en/latest/"}]
     },
     {
         "category": "Clojure",
@@ -29,7 +30,9 @@
                       {"text": "Selmer", "url": "https://github.com/yogthos/Selmer"},
                       {"text": "Compujure API", "url": "https://github.com/metosin/compojure-api"},
                       {"text": "HugSQL", "url": "https://github.com/layerware/hugsql"},
-                      {"text": "Hickory", "url": "https://github.com/davidsantiago/hickory"}]
+                      {"text": "Hickory", "url": "https://github.com/davidsantiago/hickory"},
+                      {"text": "Clojars", "url": "https://clojars.org/"},
+                      {"text": "Clojure Docs", "url": "http://clojure-doc.org/"}]
     },
     {
         "category": "Clojure Script",
