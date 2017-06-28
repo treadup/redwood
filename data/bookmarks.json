@@ -46,7 +46,8 @@
     {
         "category": "Machine Learning",
         "bookmarks": [{"text": "Awesome Machine Learning",
-                       "url": "https://github.com/josephmisiti/awesome-machine-learning"}]
+                       "url": "https://github.com/josephmisiti/awesome-machine-learning"},
+                      {"text": "Keras.io", "url": "https://keras.io/"}]
     },
     {
         "category": "Continuous Integration",
