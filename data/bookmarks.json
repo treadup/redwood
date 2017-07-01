@@ -55,10 +55,16 @@
                       {"text": "Travis CI", "url": "https://travis-ci.org/"},
                       {"text": "Coveralls", "url": "https://coveralls.io/"}]
     },
-    {   "category": "Web",
+    {
+        "category": "Web",
         "bookmarks": [{"text": "Dirty Markup", "url": "https://dirtymarkup.com/"},
                       {"text": "BEM", "url": "http://getbem.com/introduction/"},
                       {"text": "Can I use?", "url": "http://caniuse.com"}]
+    },
+    {
+        "category": "Responsive Web Design",
+        "bookmarks": [{"text": "Guidelines for Responsive Web Design",
+                       "url": "https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/"}]
     },
     {
         "category": "JavaScript",
