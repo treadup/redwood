@@ -67,6 +67,10 @@
                       {"text": "Awesome JS", "url": "https://github.com/sindresorhus/awesome-nodejs"}]
     },
     {
+        "category": "JavaScript frameworks",
+        "bookmarks": [{"text": "Mithril", "url": "https://mithril.js.org/"}]
+    },
+    {
         "category": "Ruby",
         "bookmarks": [{"text": "Awesome Ruby", "url": "http://awesome-ruby.com/"}]
     },
