@@ -59,7 +59,9 @@
         "category": "Web",
         "bookmarks": [{"text": "Dirty Markup", "url": "https://dirtymarkup.com/"},
                       {"text": "BEM", "url": "http://getbem.com/introduction/"},
-                      {"text": "Can I use?", "url": "http://caniuse.com"}]
+                      {"text": "Can I use?", "url": "http://caniuse.com"},
+                      {"text": "Edge status",
+                       "url": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/"}]
     },
     {
         "category": "Responsive Web Design",
@@ -136,6 +138,15 @@
     {
         "category": "REST",
         "bookmarks": [{"text": "Swagger", "url": "http://swagger.io/"}]
+    },
+    {
+        "category": "Security",
+        "bookmarks": [{"text": "OWASP", "url": "https://www.owasp.org"}]
+    },
+    {
+        "category": "Future Web",
+        "bookmarks": [{"text": "Web Components", "url": "https://www.webcomponents.org"},
+                      {"text": "Web Assembly", "url": "http://webassembly.org"}]
     }
 ]
 
