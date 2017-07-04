@@ -32,7 +32,12 @@
                       {"text": "HugSQL", "url": "https://github.com/layerware/hugsql"},
                       {"text": "Hickory", "url": "https://github.com/davidsantiago/hickory"},
                       {"text": "Clojars", "url": "https://clojars.org/"},
-                      {"text": "Clojure Docs", "url": "http://clojure-doc.org/"}]
+                      {"text": "Clojure Docs", "url": "http://clojure-doc.org/"},
+                      {"text": "Clojure Style Guide", "url": "https://github.com/bbatsov/clojure-style-guide"},
+                      {"text": "Clojure Quick Reference", "url": "http://clojuredocs.org/quickref"},
+                      {"text": "Functional programming for the JVM",
+                       "url": "https://objectcomputing.com/resources/publications/sett/march-2009-clojure-functional-programming-for-the-jvm/"},
+                      {"text": "Clojure Distilled", "url": "https://yogthos.github.io/ClojureDistilled.html"}]
     },
     {
         "category": "Clojure Script",
@@ -129,6 +134,11 @@
         "category": "Open Source",
         "bookmarks": [{"text": "Libraries.io", "url": "http://libraries.io"},
                       {"text": "Libhunt", "url": "https://www.libhunt.com/"}]
+    },
+    {
+        "category": "React",
+        "bookmarks": [{"text": "Awesome React", "url": "https://github.com/enaqx/awesome-react"},
+                      {"text": "Awesome React Components", "url": "https://github.com/brillout/awesome-react-components"}]
     },
     {
         "category": "Ember",
