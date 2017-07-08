@@ -144,10 +144,3 @@ footer div {
     margin: 0.3em;
 }
 
-
-/* Bookmark page */
-.bookmarks {
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 3;
-}

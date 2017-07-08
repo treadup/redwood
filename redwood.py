@@ -160,10 +160,33 @@ def load_bookmarks():
 def collect_bookmark_categories():
     """
     """
-    pass
+    result = []
+    for collection in load_bookmarks():
+        slug = collection.get('slug', None)
+        category = collection.get('category', None)
+
+        assert slug is not None
+        assert category is not None
+   
+        result.append({
+            "category": category,
+            "url": "/bookmarks/{}".format(slug)
+        })
+
+    # return sorted(result, key=lambda x: x['category'])
+    return result
 
 @app.route('/bookmarks')
 def bookmarks():
+    """
+    Show the different bookmark categories.
+    """
+    user = get_current_user()
+    bookmark_categories = collect_bookmark_categories()
+    return render_template('bookmarks.html', categories=bookmark_categories, user=user)
+
+@app.route('/oldbookmarks')
+def oldbookmarks():
     """
     Show bookmarks belonging to different categories
     """
