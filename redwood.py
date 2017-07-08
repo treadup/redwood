@@ -157,6 +157,11 @@ def load_bookmarks():
     filename = app.config['BOOKMARKS_FILENAME']
     return load_json(filename)
 
+def collect_bookmark_categories():
+    """
+    """
+    pass
+
 @app.route('/bookmarks')
 def bookmarks():
     """
@@ -165,6 +170,33 @@ def bookmarks():
     user = get_current_user()
     bookmarks=load_bookmarks()
     return render_template('bookmarks.html', bookmarks=bookmarks, user=user)
+
+def fetch_bookmark_collection_for_category(category):
+    for collection in load_bookmarks():
+        slug = collection.get('slug', None)
+
+        if not slug:
+            raise LookupError('Bookmark category missing slug.')
+
+        if slug == category:
+            return collection
+
+    return None
+
+@app.route('/bookmarks/<category_slug>')
+def bookmark_category(category_slug):
+    """
+    Show the bookmarks for a given category.
+    """
+    user = get_current_user()
+    bookmark_collection = fetch_bookmark_collection_for_category(category_slug)
+
+    if bookmark_collection:
+        category = bookmark_collection['category']
+        bookmarks = bookmark_collection['bookmarks']
+        return render_template('bookmark-category.html', category=category, bookmarks=bookmarks, user=user)
+    else:
+        abort(404)
 
 def get_thumbnail_s3_url(collection_name, image_name):
     """
@@ -664,7 +696,7 @@ def mimetype_from_extension(filename):
 
 def read_s3_stream(bucket_name, key):
     """
-    Reads the contents of an S3 text file.
+    Returns a stream for an S3 file.
     """
     client = boto3.client('s3')
 
@@ -674,6 +706,12 @@ def read_s3_stream(bucket_name, key):
         pass
 
     return result['Body']
+
+def write_s3_stream(bucket_name, key, stream):
+    """
+    Writes a stream to S3.
+    """
+    pass
 
 @app.route('/public/<token>/<filename>')
 def public_files(token, filename):

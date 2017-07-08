@@ -1,6 +1,7 @@
 [
     {
         "category": "Python",
+        "slug": "python",
         "bookmarks": [{"text": "Django", "url": "http://www.djangoproject.com"},
                       {"text": "Flask",  "url": "http://flask.pocoo.org/"},
                       {"text": "Jinja2", "url": "http://jinja.pocoo.org/"},
@@ -11,12 +12,14 @@
     },
     {
         "category": "Flask",
+        "slug": "flask",
         "bookmarks": [{"text": "Flask Principal", "url": "https://pythonhosted.org/Flask-Principal/"},
                       {"text": "Flask Admin", "url": "http://flask-admin.readthedocs.io/en/latest/" },
                       {"text": "Flask SocketIO", "url": "https://flask-socketio.readthedocs.io/en/latest/"}]
     },
     {
         "category": "Clojure",
+        "slug": "clojure",
         "bookmarks": [{"text": "Clojure", "url": "https://clojure.org/"},
                       {"text": "Clojure Toolbox", "url": "http://www.clojure-toolbox.com/"},
                       {"text": "Cider", "url": "https://cider.readthedocs.io/en/latest/"},
@@ -41,27 +44,32 @@
     },
     {
         "category": "Clojure Script",
+        "slug": "clojure-script",
         "bookmarks": [{"text": "Reagent", "url": "https://reagent-project.github.io/"},
                       {"text": "Om", "url": "https://github.com/omcljs/om"}]
     },
     {
         "category": "Go",
+        "slug": "go",
         "bookmarks": [{"text": "Awesome Go", "url": "http://awesome-go.com/"}]
     },
     {
         "category": "Machine Learning",
+        "slug": "machine-learning",
         "bookmarks": [{"text": "Awesome Machine Learning",
                        "url": "https://github.com/josephmisiti/awesome-machine-learning"},
                       {"text": "Keras.io", "url": "https://keras.io/"}]
     },
     {
         "category": "Continuous Integration",
+        "slug": "continuous-integration",
         "bookmarks": [{"text": "Circle CI", "url": "https://circleci.com/"},
                       {"text": "Travis CI", "url": "https://travis-ci.org/"},
                       {"text": "Coveralls", "url": "https://coveralls.io/"}]
     },
     {
         "category": "Web",
+        "slug": "web",
         "bookmarks": [{"text": "Dirty Markup", "url": "https://dirtymarkup.com/"},
                       {"text": "BEM", "url": "http://getbem.com/introduction/"},
                       {"text": "Can I use?", "url": "http://caniuse.com"},
@@ -70,45 +78,54 @@
     },
     {
         "category": "Responsive Web Design",
+        "slug": "responsive-web-design",
         "bookmarks": [{"text": "Guidelines for Responsive Web Design",
                        "url": "https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/"}]
     },
     {
         "category": "JavaScript",
+        "slug": "javascript",
         "bookmarks": [{"text": "Webpack", "url": "https://webpack.js.org/"},
                       {"text": "Survive JS", "url": "http://survivejs.com/"},
                       {"text": "Awesome JS", "url": "https://github.com/sindresorhus/awesome-nodejs"}]
     },
     {
         "category": "JavaScript frameworks",
+        "slug": "javascript-frameworks",
         "bookmarks": [{"text": "Mithril", "url": "https://mithril.js.org/"}]
     },
     {
         "category": "Ruby",
+        "slug": "ruby",
         "bookmarks": [{"text": "Awesome Ruby", "url": "http://awesome-ruby.com/"}]
     },
     {
         "category": "Error handling",
+        "slug": "error-handling",
         "bookmarks": [{"text": "Airbrake", "url": "https://airbrake.io/"},
                       {"text": "Rollbar", "url": "http://rollbar.com"}]
     },
     {
         "category": "Emacs",
+        "slug": "emacs",
         "bookmarks": [{"text": "Awesome Emacs", "url": "https://github.com/emacs-tw/awesome-emacs"}]
     },
     {
         "category": "Vim",
+        "slug": "vim",
         "bookmarks": [{"text": "Vim Awesome", "url": "http://vimawesome.com/"},
                       {"text": "Fireplace", "url": "https://github.com/tpope/vim-fireplace"}]
     },
     {
         "category": "WebGL",
+        "slug": "webgl",
         "bookmarks": [{"text": "WebGL", "url": "https://get.webgl.org/"},
                       {"text": "WebGL fundamentals", "url": "https://webglfundamentals.org/"},
                       {"text": "WebGL2 fundamentals", "url": "https://webgl2fundamentals.org/"}]
     },
     {
         "category": "Cloud Providers",
+        "slug": "cloud-providers",
         "bookmarks": [{"text": "Amazon Web Services", "url": "https://aws.amazon.com/"},
                       {"text": "Amazon LightSail", "url": "https://amazonlightsail.com/"},
                       {"text": "Google Cloud", "url": "https://cloud.google.com/"},
@@ -116,6 +133,7 @@
     },
     {
         "category": "Literate Programming",
+        "slug": "literate-programming",
         "bookmarks": [{"text": "Docco", "url": "http://jashkenas.github.io/docco/"},
                       {"text": "Pycco", "url": "https://github.com/pycco-docs/pycco"},
                       {"text": "Marginalia", "url": "https://github.com/gdeer81/marginalia"},
@@ -123,38 +141,46 @@
     },
     {
         "category": "Essays",
+        "slug": "essays",
         "bookmarks": [{"text": "The Vietnam of Computer Science",
                        "url": "http://blogs.tedneward.com/post/the-vietnam-of-computer-science/"}]
     },
     {
         "category": "Music",
+        "slug": "music",
         "bookmarks": [{"text": "A soft murmur", "url": "http://asoftmurmur.com/"}]
     },
     {
         "category": "Open Source",
+        "slug": "open-source",
         "bookmarks": [{"text": "Libraries.io", "url": "http://libraries.io"},
                       {"text": "Libhunt", "url": "https://www.libhunt.com/"}]
     },
     {
         "category": "React",
+        "slug": "react",
         "bookmarks": [{"text": "Awesome React", "url": "https://github.com/enaqx/awesome-react"},
                       {"text": "Awesome React Components", "url": "https://github.com/brillout/awesome-react-components"}]
     },
     {
         "category": "Ember",
+        "slug": "ember",
         "bookmarks": [{"text": "Ember Observer", "url": "https://emberobserver.com/"},
                       {"text": "Ember Addons", "url": "https://www.emberaddons.com/"}]
     },
     {
         "category": "REST",
+        "slug": "rest",
         "bookmarks": [{"text": "Swagger", "url": "http://swagger.io/"}]
     },
     {
         "category": "Security",
+        "slug": "security",
         "bookmarks": [{"text": "OWASP", "url": "https://www.owasp.org"}]
     },
     {
         "category": "Future Web",
+        "slug": "future-web",
         "bookmarks": [{"text": "Web Components", "url": "https://www.webcomponents.org"},
                       {"text": "Web Assembly", "url": "http://webassembly.org"}]
     }

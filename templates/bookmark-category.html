@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Bookmarks{% endblock %}
+{% block content %}
+
+<div>
+    <h1>{{category}}</h1>
+    <ul>
+        {% for bookmark in bookmarks %}
+        <li><a href="{{bookmark.url}}">{{bookmark.text}}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
