@@ -159,6 +159,7 @@ def load_bookmarks():
 
 def collect_bookmark_categories():
     """
+    Create a list of bookmark categories from the bookmarks.
     """
     result = []
     for collection in load_bookmarks():
@@ -173,7 +174,6 @@ def collect_bookmark_categories():
             "url": "/bookmarks/{}".format(slug)
         })
 
-    # return sorted(result, key=lambda x: x['category'])
     return result
 
 @app.route('/bookmarks')
@@ -184,15 +184,6 @@ def bookmarks():
     user = get_current_user()
     bookmark_categories = collect_bookmark_categories()
     return render_template('bookmarks.html', categories=bookmark_categories, user=user)
-
-@app.route('/oldbookmarks')
-def oldbookmarks():
-    """
-    Show bookmarks belonging to different categories
-    """
-    user = get_current_user()
-    bookmarks=load_bookmarks()
-    return render_template('bookmarks.html', bookmarks=bookmarks, user=user)
 
 def fetch_bookmark_collection_for_category(category):
     for collection in load_bookmarks():

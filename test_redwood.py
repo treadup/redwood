@@ -52,15 +52,24 @@ class RedwoodTest(TestCase):
         self.assertTemplateUsed("index.html")
 
     def test_bookmarks_page(self):
-        expected_bookmarks = [ {"category": "Python",
-                                "bookmarks": [{"text": "Django", "url": "http://www.djangoproject.com"},
-                                              {"text": "Flask",  "url": "http://flask.pocoo.org/"}]},
+        expected_categories = [ {"category": "Python",
+                                "url": "/bookmarks/python"},
                                {"category": "Clojure",
-                                "bookmarks": [{"text": "Clojure", "url": ""}]}]
+                                "url": "/bookmarks/clojure"}]
         
         response = self.client.get("/bookmarks")
         self.assertStatus(response, status_code=200)
         self.assertTemplateUsed("bookmarks.html")
+        self.assertContext('categories', expected_categories)
+
+    def test_bookmark_category_page(self):
+        expected_category = 'Clojure'
+        expected_bookmarks = [{"text": "Clojure", "url": "http://clojure.org"}]
+
+        response = self.client.get('/bookmarks/clojure')
+        self.assertStatus(response, status_code=200)
+        self.assertTemplateUsed('bookmark-category.html')
+        self.assertContext('category', expected_category)
         self.assertContext('bookmarks', expected_bookmarks)
 
     def test_get_login_page(self):

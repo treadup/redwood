@@ -1,12 +1,14 @@
 [
     {
         "category": "Python",
+        "slug": "python",
         "bookmarks": [{"text": "Django", "url": "http://www.djangoproject.com"},
                       {"text": "Flask",  "url": "http://flask.pocoo.org/"}]
     },
     {
         "category": "Clojure",
-        "bookmarks": [{"text": "Clojure", "url": ""}]
+        "slug": "clojure",
+        "bookmarks": [{"text": "Clojure", "url": "http://clojure.org"}]
     }
 ]
 
