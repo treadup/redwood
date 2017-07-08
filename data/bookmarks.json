@@ -74,7 +74,8 @@
                       {"text": "BEM", "url": "http://getbem.com/introduction/"},
                       {"text": "Can I use?", "url": "http://caniuse.com"},
                       {"text": "Edge status",
-                       "url": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/"}]
+                       "url": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/"},
+                      {"text": "You might not need jQuery", "url": "http://youmightnotneedjquery.com/"}]
     },
     {
         "category": "Responsive Web Design",
