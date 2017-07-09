@@ -78,6 +78,11 @@
                       {"text": "You might not need jQuery", "url": "http://youmightnotneedjquery.com/"}]
     },
     {
+        "category": "CSS",
+        "slug": "css",
+        "bookmarks": [{"text":"Picnic CSS", "url": "https://picnicss.com/"}]
+    },
+    {
         "category": "Responsive Web Design",
         "slug": "responsive-web-design",
         "bookmarks": [{"text": "Guidelines for Responsive Web Design",
