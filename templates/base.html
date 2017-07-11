@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="stylesheet" href="/static/css/normalize.css" />
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" />
     <link rel="stylesheet" href="/static/css/redwood.css" />
@@ -42,8 +43,9 @@
             {% else %}
             <a href="/login">Login</a>
             {% endif %}
-        {% endblock %}
+            {% endblock %}
         </div>
+        {# See if we can have a responsive menu in the corner using the bars icon. http://fontawesome.io/icon/bars/ #}
       </nav>
     </header>
     <main>
