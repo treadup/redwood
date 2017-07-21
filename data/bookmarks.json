@@ -135,10 +135,17 @@
     {
         "category": "Cloud Providers",
         "slug": "cloud-providers",
-        "bookmarks": [{"text": "Amazon Web Services", "url": "https://aws.amazon.com/"},
+        "bookmarks": [{"text": "Heroku", "url": "https://heroku.com"},
+		      {"text": "Amazon Web Services", "url": "https://aws.amazon.com/"},
                       {"text": "Amazon LightSail", "url": "https://amazonlightsail.com/"},
                       {"text": "Google Cloud", "url": "https://cloud.google.com/"},
                       {"text": "Vultr", "url": "https://www.vultr.com/"}]
+    },
+    {
+        "category": "Hosting",
+	"slug": "hosting",
+	"bookmarks": [{"text": "Netlify", "url": "https://www.netlify.com/"},
+                      {"text": "Python Anywhere", "url": "https://www.pythonanywhere.com/"}]
     },
     {
         "category": "Literate Programming",
