@@ -8,7 +8,8 @@
                       {"text": "Awesome Python", "url": "https://awesome-python.com/"},
                       {"text": "Fabric", "url": "http://www.fabfile.org/"},
                       {"text": "Hitchhiker's Guide to Python", "url": "http://docs.python-guide.org/en/latest/"},
-                      {"text": "Awesome Django", "url": "http://awesome-django.com/"}]
+                      {"text": "Awesome Django", "url": "http://awesome-django.com/"},
+                      {"text": "Kivy", "url": "https://kivy.org/"}]
     },
     {
         "category": "Flask",
@@ -68,6 +69,11 @@
                       {"text": "Coveralls", "url": "https://coveralls.io/"}]
     },
     {
+        "category": "Configuration Management",
+        "slug": "configuration-management",
+        "bookmarks": [{"text": "Ansible", "url": "https://www.ansible.com/"}]
+    },
+    {
         "category": "Web",
         "slug": "web",
         "bookmarks": [{"text": "Dirty Markup", "url": "https://dirtymarkup.com/"},
@@ -75,12 +81,14 @@
                       {"text": "Can I use?", "url": "http://caniuse.com"},
                       {"text": "Edge status",
                        "url": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/"},
-                      {"text": "You might not need jQuery", "url": "http://youmightnotneedjquery.com/"}]
+                      {"text": "You might not need jQuery", "url": "http://youmightnotneedjquery.com/"},
+                      {"text": "CodePen", "url": "https://codepen.io/"}]
     },
     {
         "category": "CSS",
         "slug": "css",
-        "bookmarks": [{"text":"Picnic CSS", "url": "https://picnicss.com/"}]
+        "bookmarks": [{"text":"Picnic CSS", "url": "https://picnicss.com/"},
+                      {"text": "PostCSS", "url": "http://postcss.org/"}]
     },
     {
         "category": "Responsive Web Design",
