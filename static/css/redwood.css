@@ -181,3 +181,13 @@ footer div {
     margin: 0.3em;
 }
 
+.button {
+    /* Colors */
+    background-color: #228B22;
+    color: white;
+    border: none;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-decoration: none;
+}
+
