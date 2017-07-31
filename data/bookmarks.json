@@ -79,6 +79,9 @@
         "bookmarks": [{"text": "Dirty Markup", "url": "https://dirtymarkup.com/"},
                       {"text": "BEM", "url": "http://getbem.com/introduction/"},
                       {"text": "Can I use?", "url": "http://caniuse.com"},
+		      {"text": "I want to use", "url": "http://www.iwanttouse.com/"},
+		      {"text": "Do I use?", "url": "http://doiuse.herokuapp.com/"},
+                      {"text": "HTML5 please", "url": "http://html5please.com/"},
                       {"text": "Edge status",
                        "url": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/"},
                       {"text": "You might not need jQuery", "url": "http://youmightnotneedjquery.com/"},
@@ -140,10 +143,17 @@
     {
         "category": "Cloud Providers",
         "slug": "cloud-providers",
-        "bookmarks": [{"text": "Amazon Web Services", "url": "https://aws.amazon.com/"},
+        "bookmarks": [{"text": "Heroku", "url": "https://heroku.com"},
+		      {"text": "Amazon Web Services", "url": "https://aws.amazon.com/"},
                       {"text": "Amazon LightSail", "url": "https://amazonlightsail.com/"},
                       {"text": "Google Cloud", "url": "https://cloud.google.com/"},
                       {"text": "Vultr", "url": "https://www.vultr.com/"}]
+    },
+    {
+        "category": "Hosting",
+	"slug": "hosting",
+	"bookmarks": [{"text": "Netlify", "url": "https://www.netlify.com/"},
+                      {"text": "Python Anywhere", "url": "https://www.pythonanywhere.com/"}]
     },
     {
         "category": "Literate Programming",
