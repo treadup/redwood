@@ -8,6 +8,13 @@ body {
     font-family: Verdana, Geneva, sans-serif;
 }
 
+@media only screen and (max-width: 736px) {
+    body {
+        margin-bottom: 10em;
+        font-family: Verdana, Geneva, sans-serif;
+    }
+}
+
 /* Remove underline on links */
 :link {
     text-decoration: none !important;
@@ -86,11 +93,41 @@ footer {
     /* Align items in the container */
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    flex-direction: row;
 
     /* Colors */
     background: #228B22;
     color: white;
 }
+
+@media only screen and (max-width: 736px) {
+    footer {
+        /* Positioning of the footer. */
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 10em;
+        /* height should be at least the same sizethe same size as margin bottom
+           on the body */
+
+        /* Align items in the container */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        flex-direction: column;
+
+        /* Colors */
+        background: #228B22;
+        color: white;
+
+    }
+}
+
 
 footer a {
     color: white;
