@@ -124,6 +124,13 @@ main {
     margin-right: auto;
 }
 
+@media only screen and (max-width: 736px) {
+    main {
+        padding: 1em;
+        width: 100%;
+    }
+}
+
 main a {
     color: #228B22;
 }
