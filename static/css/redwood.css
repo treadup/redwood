@@ -8,7 +8,7 @@ body {
     font-family: Verdana, Geneva, sans-serif;
 }
 
-@media only screen and (max-width: 736px) {
+@media only screen and (max-width: 480px) {
     body {
         margin-bottom: 10em;
         font-family: Verdana, Geneva, sans-serif;
@@ -28,7 +28,7 @@ header {
     color: white;
 }
 
-@media only screen and (max-width: 736px) {
+@media only screen and (max-width: 480px) {
     header {
         width: 100%;
         height: auto;
@@ -39,7 +39,7 @@ header {
     display: none;
 }
 
-@media only screen and (max-width: 736px) {
+@media only screen and (max-width: 480px) {
     .hamburger {
         display: block;
         align-item: left;
@@ -76,7 +76,7 @@ nav {
     flex-direction: row;
 }
 
-@media only screen and (max-width: 736px) {
+@media only screen and (max-width: 480px) {
     .nav-menu {
         position: absolute;
         top: 3em;
@@ -101,7 +101,7 @@ nav div {
     padding: 0.5em;
 }
 
-@media only screen and (min-width: 737px) {
+@media only screen and (min-width: 481px) {
     .nav_right {
         margin-left: auto;
     }
@@ -124,7 +124,7 @@ main {
     margin-right: auto;
 }
 
-@media only screen and (max-width: 736px) {
+@media only screen and (max-width: 480px) {
     main {
         padding: 1em;
         width: 100%;
@@ -170,7 +170,7 @@ footer {
     color: white;
 }
 
-@media only screen and (max-width: 736px) {
+@media only screen and (max-width: 480px) {
     footer {
         /* Positioning of the footer. */
         box-sizing: border-box;
