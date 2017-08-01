@@ -210,6 +210,7 @@ footer div {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    justify-content: center;
 }
 
 /* Photo collection */
@@ -217,6 +218,7 @@ footer div {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    justify-content: center;
 }
 
 .photo-gallery img {
