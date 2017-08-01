@@ -65,7 +65,7 @@ nav {
 }
 
 /* Navigation */
-.nav-menu {
+.nav-menu, .nav-menu--collapsed {
     /* Navbar should be the full height of the header. */
     height: 100%;
     display:flex;
@@ -89,6 +89,11 @@ nav {
         /* Colors */
         background-color: #228B22;
         color: white;
+    }
+
+    .nav-menu--collapsed {
+        position: absolute;
+        display: none;
     }
 }
 

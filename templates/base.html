@@ -5,15 +5,16 @@
     <link rel="stylesheet" href="/static/css/normalize.css" />
     <script src="https://use.fontawesome.com/b2831d6e53.js"></script>
     <link rel="stylesheet" href="/static/css/redwood.css" />
+    <script src="/static/js/redwood.js"></script>
     <title>{% block title %}{% endblock %}</title>
   </head>
   <body>
     <header>
       <nav>   
         <div class="hamburger">
-          <button class="hamburger-button"><i class="fa fa-bars"></i></button>      
+          <button class="hamburger-button" onclick="toggleNavMenu()"><i class="fa fa-bars"></i></button>
         </div>
-        <div class="nav-menu">
+        <div id="navigation-menu" class="nav-menu--collapsed">
           <div>
             <a href="/">Home</a>
           </div>
