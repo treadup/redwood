@@ -28,45 +28,78 @@ header {
     color: white;
 }
 
+@media only screen and (max-width: 736px) {
+    header {
+        width: 100%;
+        height: auto;
+    }
+}
+
 .hamburger {
     display: none;
 }
 
-/*
 @media only screen and (max-width: 736px) {
     .hamburger {
         display: block;
+        align-item: left;
+        margin: 0px;
+        padding: 0px;
     }
 }
-*/
 
 .hamburger-button {
     height: 3em;
+    width: 3em;
     line-height: 3em;
 
     background-color: #228B22;
     color: white;
     border: none;
     text-decoration: none;
+    margin: 0px;
+}
+
+nav {
+    position: relative;
 }
 
 /* Navigation */
-nav {
+.nav-menu {
     /* Navbar should be the full height of the header. */
     height: 100%;
-
     display:flex;
 
     /* Vertical centering */
     align-items: center;
+
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 736px) {
+    .nav-menu {
+        position: absolute;
+        top: 3em;
+        left: 0px;
+        width: 8em;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* Colors */
+        background-color: #228B22;
+        color: white;
+    }
 }
 
 nav div {
     padding: 0.5em;
 }
 
-.nav_right {
-    margin-left: auto;
+@media only screen and (min-width: 737px) {
+    .nav_right {
+        margin-left: auto;
+    }
 }
 
 nav a {

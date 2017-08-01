@@ -9,44 +9,46 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav>   
         <div class="hamburger">
-            <button class="hamburger-button"><i class="fa fa-bars"></i></button>      
+          <button class="hamburger-button"><i class="fa fa-bars"></i></button>      
         </div>
-        <div>
-          <a href="/">Home</a>
-        </div>
-        <div>
-          <a href="/bookmarks">Bookmarks</a>
-        </div>
-        <div>
-          <a href="/photos">Photos</a>
-        </div>
-        <div>
-          <a href="/time">Time</a>
-        </div>
-        {% if user %}
-        <div>
-            <a href="/notes">Notes</a>
-        </div>
-        <div>
+        <div class="nav-menu">
+          <div>
+            <a href="/">Home</a>
+          </div>
+          <div>
+            <a href="/bookmarks">Bookmarks</a>
+          </div>
+          <div>
+            <a href="/photos">Photos</a>
+          </div>
+          <div>
+            <a href="/time">Time</a>
+          </div>
+          {% if user %}
+          <div>
+              <a href="/notes">Notes</a>
+          </div>
+          <div>
             <a href="/files">Files</a>
-        </div>
-        <div>
+          </div>
+          <div>
             <a href="/token">Token</a>
-        </div>
-        {% endif %}
-        <div>
+          </div>
+          {% endif %}
+          <div>
             <a href="/contact">Contact</a>
-        </div>
-        <div class="nav_right">
-        {% block auth %}
+          </div>
+          <div class="nav_right">
+          {% block auth %}
             {% if user %}
             <a href="/logout">Logout</a>
             {% else %}
             <a href="/login">Login</a>
             {% endif %}
-            {% endblock %}
+          {% endblock %}
+          </div>
         </div>
         {# See if we can have a responsive menu in the corner using the bars icon. http://fontawesome.io/icon/bars/ #}
       </nav>
