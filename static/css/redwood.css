@@ -28,6 +28,28 @@ header {
     color: white;
 }
 
+.hamburger {
+    display: none;
+}
+
+/*
+@media only screen and (max-width: 736px) {
+    .hamburger {
+        display: block;
+    }
+}
+*/
+
+.hamburger-button {
+    height: 3em;
+    line-height: 3em;
+
+    background-color: #228B22;
+    color: white;
+    border: none;
+    text-decoration: none;
+}
+
 /* Navigation */
 nav {
     /* Navbar should be the full height of the header. */

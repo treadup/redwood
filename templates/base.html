@@ -3,21 +3,22 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="stylesheet" href="/static/css/normalize.css" />
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" />
+    <script src="https://use.fontawesome.com/b2831d6e53.js"></script>
     <link rel="stylesheet" href="/static/css/redwood.css" />
     <title>{% block title %}{% endblock %}</title>
   </head>
   <body>
     <header>
       <nav>
+        <div class="hamburger">
+            <button class="hamburger-button"><i class="fa fa-bars"></i></button>      
+        </div>
         <div>
           <a href="/">Home</a>
         </div>
-        {#
         <div>
           <a href="/bookmarks">Bookmarks</a>
         </div>
-        #}
         <div>
           <a href="/photos">Photos</a>
         </div>
@@ -55,9 +56,9 @@
     </main>
     {# The footer is causing the extra whitespace on the right and bottom. #}
     <footer>
-      <div><i class="icon-envelope"></i> henrik.treadup ~at~ gmail.com</div>
-      <div><a href="https://github.com/treadup"><i class="icon-github-sign"></i> GitHub</a></div>
-      <div><a href="https://www.linkedin.com/in/henriktreadup"><i class="icon-linkedin-sign"></i> LinkedIn</a></div>
+        <div><i class="fa fa-envelope"></i> henrik.treadup ~at~ gmail.com</div>
+      <div><a href="https://github.com/treadup"><i class="fa fa-github"></i> GitHub</a></div>
+      <div><a href="https://www.linkedin.com/in/henriktreadup"><i class="fa fa-linkedin-square"></i> LinkedIn</a></div>
     </footer>
   </body>
 </html>
