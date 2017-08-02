@@ -1,7 +1,5 @@
 {% extends "base.html" %}
 {% block title %}Photos{% endblock %}
 {% block content %}
-<div class="photo">
-    <img src="{{image.s3url}}" />
-</div>
+<img class="photo" src="{{image.s3url}}" />
 {% endblock %}
