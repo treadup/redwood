@@ -203,6 +203,7 @@ footer a {
 
 footer div {
     padding: 1em;
+    white-space: nowrap;
 }
 
 /* Photo collection list */
