@@ -123,6 +123,11 @@
                       {"text": "Rollbar", "url": "http://rollbar.com"}]
     },
     {
+        "category": "Static analysis",
+        "slug": "static-analysis",
+        "bookmarks": [{"text": "Code Climate", "url": "https://codeclimate.com/"}]
+    },
+    {
         "category": "Emacs",
         "slug": "emacs",
         "bookmarks": [{"text": "Awesome Emacs", "url": "https://github.com/emacs-tw/awesome-emacs"}]
