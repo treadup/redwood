@@ -91,7 +91,8 @@
         "category": "CSS",
         "slug": "css",
         "bookmarks": [{"text":"Picnic CSS", "url": "https://picnicss.com/"},
-                      {"text": "PostCSS", "url": "http://postcss.org/"}]
+                      {"text": "PostCSS", "url": "http://postcss.org/"},
+                      {"text": "Awesome PostCSS", "url": "https://github.com/jjaderg/awesome-postcss"}]
     },
     {
         "category": "Responsive Web Design",
