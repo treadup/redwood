@@ -105,11 +105,12 @@
         "slug": "javascript",
         "bookmarks": [{"text": "Webpack", "url": "https://webpack.js.org/"},
                       {"text": "Survive JS", "url": "http://survivejs.com/"},
-                      {"text": "Awesome JS", "url": "https://github.com/sindresorhus/awesome-nodejs"}]
+                      {"text": "Awesome JS", "url": "https://github.com/sindresorhus/awesome-nodejs"},
+                      {"text": "microjs", "url": "http://microjs.com"}]
     },
     {
-        "category": "JavaScript frameworks",
-        "slug": "javascript-frameworks",
+        "category": "Mithril",
+        "slug": "mithril",
         "bookmarks": [{"text": "Mithril", "url": "https://mithril.js.org/"}]
     },
     {
