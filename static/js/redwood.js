@@ -10,3 +10,8 @@ function toggleNavMenu() {
         menuEl.className = "nav-menu";
     }
 }
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    var menuButtonEl = document.querySelector('.hamburger-button');
+    menuButtonEl.addEventListener("click", toggleNavMenu);
+});
