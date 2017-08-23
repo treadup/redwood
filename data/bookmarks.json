@@ -107,7 +107,9 @@
         "bookmarks": [{"text": "Webpack", "url": "https://webpack.js.org/"},
                       {"text": "Survive JS", "url": "http://survivejs.com/"},
                       {"text": "Awesome JS", "url": "https://github.com/sindresorhus/awesome-nodejs"},
-                      {"text": "microjs", "url": "http://microjs.com"}]
+                      {"text": "microjs", "url": "http://microjs.com"},
+                      {"text": "unpkg", "url": "https://unpkg.com"},
+                      {"text": "cdnjs", "url": "https://cdnjs.com/"}]
     },
     {
         "category": "Mithril",
