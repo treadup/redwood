@@ -27,6 +27,9 @@ These environment variables are needed for accessing S3.
     AWS_SECRET_ACCESS_KEY=<aws secret access key>
 
 ## Testing
-To run the unit tests use the following command.
+To run the unit tests locally use the following command.
 
     python test_redwood.py
+
+This project uses CircleCI for automatic unit tests. 
+[![CircleCI](https://circleci.com/gh/treadup/redwood.svg?style=svg)](https://circleci.com/gh/treadup/redwood)
