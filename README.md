@@ -23,9 +23,8 @@ The following is pseudo code for how the password hash is calculated.
 
 These environment variables are needed for accessing S3.
 
-AWS_ACCESS_KEY_ID=<aws access key id>
-AWS_SECRET_ACCESS_KEY=<aws secret access key>
-
+    AWS_ACCESS_KEY_ID=<aws access key id>
+    AWS_SECRET_ACCESS_KEY=<aws secret access key>
 
 ## Testing
 To run the unit tests use the following command.
