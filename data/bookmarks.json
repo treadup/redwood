@@ -55,6 +55,17 @@
         "bookmarks": [{"text": "Awesome Go", "url": "http://awesome-go.com/"}]
     },
     {
+        "category": "Erlang",
+        "slug": "erlang",
+        "bookmarks": [{"text": "Erlang", "url": "https://www.erlang.org/"}]
+    },
+    {
+        "category": "Elixir",
+        "slug": "elixir",
+        "bookmarks": [{"text": "Elixir", "url": "https://elixir-lang.org/"},
+                      {"text": "Phoenix Framework", "url": "http://phoenixframework.org/"}]
+    },
+    {
         "category": "Machine Learning",
         "slug": "machine-learning",
         "bookmarks": [{"text": "Awesome Machine Learning",
