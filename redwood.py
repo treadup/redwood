@@ -4,7 +4,10 @@ from werkzeug import secure_filename
 import settings
 from storage import get_s3_files_from_result, get_s3_folders_from_result
 from storage import read_s3_bucket_folder, read_s3_file, write_s3_file, read_s3_stream
-import json
+from photos import get_thumbnail_s3_url, get_photo_s3_url, add_collection_thumbnail_url
+from photos import add_collection_url, load_photo_collection_list, get_raw_photo_collection
+from photos import create_image_dict, get_photo_collection
+from util import load_json
 from datetime import datetime
 import time
 import pytz
@@ -107,14 +110,6 @@ def index():
     user = get_current_user()
     return render_template('index.html', user=user)
 
-def load_json(filename):
-    """
-    Loads json from the file with the given filename.
-    """
-    with open(filename) as f:
-        contents = f.read()
-
-    return json.loads(contents)
 
 def load_bookmarks():
     """
@@ -177,45 +172,6 @@ def bookmark_category(category_slug):
         return render_template('bookmark-category.html', category=category, bookmarks=bookmarks, user=user)
     else:
         abort(404)
-
-def get_thumbnail_s3_url(collection_name, image_name):
-    """
-    Creates the thumbnail url given the collection name and the image name.
-    """
-    f = 'https://s3.amazonaws.com/rainforestphotos/{}/thumbs/thumb_{}'
-    return f.format(collection_name, image_name)
-
-def get_photo_s3_url(collection_name, image_name):
-    """
-    Creates the image url given the collection name and the image name.
-    """
-    f = 'https://s3.amazonaws.com/rainforestphotos/{}/{}'
-    return f.format(collection_name, image_name)
-
-def add_collection_thumbnail_url(collection):
-    """
-    Adds the collection thumbnail url to the collection.
-    """
-    collection['thumbnail'] = get_thumbnail_s3_url(collection['slug'], collection['image'])
-
-def add_collection_url(collection):
-    """
-    Adds the collection url to the collection.
-    """
-    collection['url'] = '/photos/{}'.format(collection['slug'])
-    
-def load_photo_collection_list():
-    """
-    Loads the photo collection list from the photo collection json file.
-    """
-    filename = app.config['PHOTO_COLLECTION_FILENAME']
-    photo_collections =  load_json(filename)
-
-    for collection in photo_collections:
-        add_collection_url(collection)
-        add_collection_thumbnail_url(collection)
-
-    return photo_collections
     
 @app.route('/photos')
 def photo_collection_list():
@@ -223,43 +179,10 @@ def photo_collection_list():
     Show list of photo collections.
     """
     user = get_current_user()
-    photo_collections = load_photo_collection_list()
+    filename = app.config['PHOTO_COLLECTION_FILENAME']
+    photo_collections = load_photo_collection_list(filename)
     return render_template('photo-collection-list.html', photo_collections=photo_collections, user=user)
 
-def get_raw_photo_collection(collection_name):
-    """
-    Loads the raw photo collection. Checks that a collection with the
-    given collection name exists before trying to load the collection.
-    """
-    photo_collections = load_photo_collection_list()
-    for collection in photo_collections:
-        if collection['slug'] == collection_name:
-            filename = 'photos/{}'.format(collection['collection'])
-            return load_json(filename)
-
-    return None
-
-def create_image_dict(collection_name, image_name):
-    """
-    Creates an image dict given the collection name and the image name.
-    """
-    return {"name": image_name,
-            "s3url": get_photo_s3_url(collection_name, image_name),
-            "thumbnail": get_thumbnail_s3_url(collection_name, image_name),
-            "url": '/photos/{}/{}'.format(collection_name, image_name)}
-    
-def get_photo_collection(collection_name):
-    """
-    Gets the photo collection for the given name. If there is no photo collection
-    for the given name return None.
-    """
-    collection = get_raw_photo_collection(collection_name)
-
-    if collection:
-        collection['images'] = [create_image_dict(collection_name, img) for img in collection['images']]
-        return collection
-    else:
-        return None
 
 @app.route('/photos/<collection_name>')
 def photo_collection(collection_name):
@@ -267,7 +190,8 @@ def photo_collection(collection_name):
     Show a single photo collection.
     """
     user = get_current_user()
-    collection = get_photo_collection(collection_name)
+    filename = app.config['PHOTO_COLLECTION_FILENAME']
+    collection = get_photo_collection(collection_name, filename)
 
     if(collection):
         return render_template('photo-collection.html', collection=collection, user=user)
@@ -280,7 +204,8 @@ def single_photo(collection_name, photo):
     Show a single photo from a photo collection.
     """
     user = get_current_user()
-    collection = get_photo_collection(collection_name)
+    filename = app.config['PHOTO_COLLECTION_FILENAME']
+    collection = get_photo_collection(collection_name, filename)
 
     if collection:
         for image in collection['images']:
