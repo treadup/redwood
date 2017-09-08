@@ -1,12 +1,12 @@
 from flask import Flask, render_template, request, make_response
 from flask import redirect, url_for, abort, send_file
 from werkzeug import secure_filename
+import settings
 import json
 from datetime import datetime
 import time
 import pytz
 import jwt
-import os
 import hashlib
 import boto3
 from jwt import ExpiredSignatureError
@@ -15,47 +15,12 @@ from io import StringIO, BytesIO
 
 from pprint import pprint
 
-def load_environment_variable(name, default=None):
-    try:
-        return os.environ[name]
-    except KeyError:
-        return default
-
-def load_boolean_environment_variable(name, default):
-    s = load_environment_variable(name, '')
-
-    if s == 'True':
-        return True
-    elif s == 'False':
-        return False
-    else:
-        return default
-
 def create_app():
     app = Flask(__name__)
-    app.config['BOOKMARKS_FILENAME'] = 'data/bookmarks.json'
-    app.config['PHOTO_COLLECTION_FILENAME'] = 'photos/photo_collections.json'
-    app.config['IDENTITY_JWT_SECRET'] = load_environment_variable('IDENTITY_JWT_SECRET')
-    TWELVE_HOURS = 12*60*60
-    app.config['JWT_EXPIRATION_TIMEDELTA'] = TWELVE_HOURS
-
-    app.config['USERNAME'] = load_environment_variable('USERNAME')
-
-    # Use XKCD style pass phrase.
-    # http://xkcd.com/936/
-    app.config['PASSWORD_HASH'] = load_environment_variable('PASSWORD_HASH')
-
-    # The password salt can be generated using the token_hex function in
-    # the secrets module.
-    # You can also generate salt using the following command.
-    # cat /dev/urandom | head -c 1024 | sha256sum
-    app.config['PASSWORD_SALT'] = load_environment_variable('PASSWORD_SALT')
-    app.config['HTTPS_REQUIRED'] = load_boolean_environment_variable('HTTPS_REQUIRED', True)
-
-    app.config['UPLOAD_FOLDER'] = '/tmp/upload'
+    app.config.from_object(settings.DefaultConfiguration)
 
     return app
-
+    
 app = create_app()
 
 def get_jwt_from_request():
