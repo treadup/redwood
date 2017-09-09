@@ -186,10 +186,12 @@
                       {"text": "Gocco", "url": "http://nikhilm.github.io/gocco/"}]
     },
     {
-        "category": "Essays",
-        "slug": "essays",
+        "category": "Articles",
+        "slug": "articles",
         "bookmarks": [{"text": "The Vietnam of Computer Science",
-                       "url": "http://blogs.tedneward.com/post/the-vietnam-of-computer-science/"}]
+                       "url": "http://blogs.tedneward.com/post/the-vietnam-of-computer-science/"},
+                      {"text": "Bored People Quit",
+                       "url": "http://randsinrepose.com/archives/bored-people-quit/"}]
     },
     {
         "category": "Music",
