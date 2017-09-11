@@ -191,7 +191,10 @@
         "bookmarks": [{"text": "The Vietnam of Computer Science",
                        "url": "http://blogs.tedneward.com/post/the-vietnam-of-computer-science/"},
                       {"text": "Bored People Quit",
-                       "url": "http://randsinrepose.com/archives/bored-people-quit/"}]
+                       "url": "http://randsinrepose.com/archives/bored-people-quit/"},
+                      {"text": "Python Paradox", "url": "http://www.paulgraham.com/pypar.html"},
+                      {"text": "Beating the Averages",
+                       "url": "http://www.paulgraham.com/avg.html"}]
     },
     {
         "category": "Music",
