@@ -114,6 +114,12 @@
                        "url": "https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/"}]
     },
     {
+        "category": "Progressive Enhancement",
+        "slug": "progressive-enhancement",
+        "bookmarks": [{"text": "Progressive enhancement is still important",
+                       "url": "https://jakearchibald.com/2013/progressive-enhancement-still-important/"}]
+    },
+    {
         "category": "JavaScript",
         "slug": "javascript",
         "bookmarks": [{"text": "Webpack", "url": "https://webpack.js.org/"},
@@ -234,6 +240,11 @@
         "slug": "future-web",
         "bookmarks": [{"text": "Web Components", "url": "https://www.webcomponents.org"},
                       {"text": "Web Assembly", "url": "http://webassembly.org"}]
+    },
+    {
+        "category": "Data models",
+        "slug": "data-models",
+        "bookmarks": [{"text": "Schema.org", "url": "https://schema.org/"}]
     }
 ]
 
