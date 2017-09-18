@@ -98,14 +98,27 @@
                        "url": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/"},
                       {"text": "You might not need jQuery", "url": "http://youmightnotneedjquery.com/"},
                       {"text": "CodePen", "url": "https://codepen.io/"},
-                      {"text": "Unsplash it", "url": "http://unsplash.it/"}]
+                      {"text": "Unsplash it", "url": "http://unsplash.it/"},
+                      {"text": "Modernizir", "url": "https://modernizr.com/"}]
     },
     {
         "category": "CSS",
         "slug": "css",
         "bookmarks": [{"text":"Picnic CSS", "url": "https://picnicss.com/"},
                       {"text": "PostCSS", "url": "http://postcss.org/"},
-                      {"text": "Awesome PostCSS", "url": "https://github.com/jjaderg/awesome-postcss"}]
+                      {"text": "Awesome PostCSS", "url": "https://github.com/jjaderg/awesome-postcss"},
+                      {"text": "cssreference.io", "url": "http://cssreference.io/"}]
+    },
+    {
+        "category": "Flexbox",
+        "slug": "flexbox",
+        "bookmarks": [{"text": "A Complete Guide to Flexbox",
+                       "url": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/"},
+                      {"text": "Flexbugs", "url": "https://github.com/philipwalton/flexbugs"},
+                      {"text": "Almost complete guide to flexbox without flexbox",
+                       "url": "https://kyusuf.com/post/almost-complete-guide-to-flexbox-without-flexbox"},
+                      {"text": "Flexbox: How to deal with older browsers",
+                       "url": "https://medium.com/css-mine/flexbox-how-to-deal-with-older-browsers-fbf6eb8c7a65"}]
     },
     {
         "category": "Responsive Web Design",
