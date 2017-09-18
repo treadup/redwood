@@ -148,6 +148,12 @@
         "bookmarks": [{"text": "Mithril", "url": "https://mithril.js.org/"}]
     },
     {
+        "category": "D3",
+        "slug": "d3",
+        "bookmarks": [{"text": "D3", "url": "https://d3js.org/"},
+                      {"text": "Dashing D3", "url": "https://www.dashingd3js.com/"}]
+    },
+    {
         "category": "Ruby",
         "slug": "ruby",
         "bookmarks": [{"text": "Awesome Ruby", "url": "http://awesome-ruby.com/"}]
