@@ -140,7 +140,8 @@
                       {"text": "Awesome JS", "url": "https://github.com/sindresorhus/awesome-nodejs"},
                       {"text": "microjs", "url": "http://microjs.com"},
                       {"text": "unpkg", "url": "https://unpkg.com"},
-                      {"text": "cdnjs", "url": "https://cdnjs.com/"}]
+                      {"text": "cdnjs", "url": "https://cdnjs.com/"},
+                      {"text": "Callback Hell", "url": "http://callbackhell.com/"}]
     },
     {
         "category": "Mithril",
