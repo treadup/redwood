@@ -195,7 +195,13 @@
 		      {"text": "Amazon Web Services", "url": "https://aws.amazon.com/"},
                       {"text": "Amazon LightSail", "url": "https://amazonlightsail.com/"},
                       {"text": "Google Cloud", "url": "https://cloud.google.com/"},
-                      {"text": "Vultr", "url": "https://www.vultr.com/"}]
+                      {"text": "Vultr", "url": "https://www.vultr.com/"},
+                      {"text": "Hyper.sh", "url": "https://hyper.sh/"}]
+    },
+    {
+        "category": "Self Hosted Cloud",
+        "slug": "self-hosted-cloud",
+        "bookmarks": [{"text": "Dokku", "url": "http://dokku.viewdocs.io/dokku/"}]
     },
     {
         "category": "Hosting",
