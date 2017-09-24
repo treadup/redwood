@@ -15,7 +15,6 @@ import jwt
 import hashlib
 from jwt import ExpiredSignatureError
 from functools import wraps
-from io import StringIO, BytesIO
 
 from pprint import pprint
 

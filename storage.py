@@ -1,4 +1,5 @@
 import boto3
+from io import BytesIO
 
 def get_s3_folders_from_result(result):
     """
