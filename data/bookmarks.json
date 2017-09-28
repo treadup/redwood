@@ -149,6 +149,11 @@
         "bookmarks": [{"text": "Mithril", "url": "https://mithril.js.org/"}]
     },
     {
+        "category": "Aurelia",
+        "slug": "aurelia",
+        "bookmarks": [{"text": "Aurelia", "url": "http://aurelia.io/"}]
+    },
+    {
         "category": "D3",
         "slug": "d3",
         "bookmarks": [{"text": "D3", "url": "https://d3js.org/"},
