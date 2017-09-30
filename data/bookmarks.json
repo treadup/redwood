@@ -2,20 +2,26 @@
     {
         "category": "Python",
         "slug": "python",
-        "bookmarks": [{"text": "Django", "url": "http://www.djangoproject.com"},
-                      {"text": "Flask",  "url": "http://flask.pocoo.org/"},
-                      {"text": "Jinja2", "url": "http://jinja.pocoo.org/"},
-                      {"text": "Awesome Python", "url": "https://awesome-python.com/"},
+        "bookmarks": [{"text": "Awesome Python", "url": "https://awesome-python.com/"},
                       {"text": "Fabric", "url": "http://www.fabfile.org/"},
                       {"text": "Hitchhiker's Guide to Python", "url": "http://docs.python-guide.org/en/latest/"},
+                      {"text": "Structuring Your Project", "url": "http://docs.python-guide.org/en/latest/writing/structure/"},
+                      {"text": "Testing Your Code", "url": "http://docs.python-guide.org/en/latest/writing/tests/"},
                       {"text": "Awesome Django", "url": "http://awesome-django.com/"},
                       {"text": "Kivy", "url": "https://kivy.org/"},
                       {"text": "Awesome Asyncio", "url": "https://github.com/timofurrer/awesome-asyncio"}]
     },
     {
+        "category": "Django",
+        "slug": "django",
+        "bookmarks": [{"text": "Django", "url": "http://www.djangoproject.com"}]
+    },
+    {
         "category": "Flask",
         "slug": "flask",
-        "bookmarks": [{"text": "Flask Principal", "url": "https://pythonhosted.org/Flask-Principal/"},
+        "bookmarks": [{"text": "Flask",  "url": "http://flask.pocoo.org/"},
+                      {"text": "Jinja2", "url": "http://jinja.pocoo.org/"},
+                      {"text": "Flask Principal", "url": "https://pythonhosted.org/Flask-Principal/"},
                       {"text": "Flask Admin", "url": "http://flask-admin.readthedocs.io/en/latest/" },
                       {"text": "Flask SocketIO", "url": "https://flask-socketio.readthedocs.io/en/latest/"}]
     },
