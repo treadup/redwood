@@ -231,7 +231,9 @@
                        "url": "http://randsinrepose.com/archives/bored-people-quit/"},
                       {"text": "Python Paradox", "url": "http://www.paulgraham.com/pypar.html"},
                       {"text": "Beating the Averages",
-                       "url": "http://www.paulgraham.com/avg.html"}]
+                       "url": "http://www.paulgraham.com/avg.html"},
+                      {"text": "Project Management: A surefire way to kill your software product",
+                       "url": "https://techbeacon.com/project-management-surefire-way-kill-your-software-product"}]
     },
     {
         "category": "Music",
