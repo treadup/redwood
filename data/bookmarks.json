@@ -5,16 +5,24 @@
         "bookmarks": [{"text": "Awesome Python", "url": "https://awesome-python.com/"},
                       {"text": "Fabric", "url": "http://www.fabfile.org/"},
                       {"text": "Hitchhiker's Guide to Python", "url": "http://docs.python-guide.org/en/latest/"},
-                      {"text": "Structuring Your Project", "url": "http://docs.python-guide.org/en/latest/writing/structure/"},
+                      {"text": "Structuring Your Project",
+                       "url": "http://docs.python-guide.org/en/latest/writing/structure/"},
                       {"text": "Testing Your Code", "url": "http://docs.python-guide.org/en/latest/writing/tests/"},
-                      {"text": "Awesome Django", "url": "http://awesome-django.com/"},
                       {"text": "Kivy", "url": "https://kivy.org/"},
                       {"text": "Awesome Asyncio", "url": "https://github.com/timofurrer/awesome-asyncio"}]
     },
     {
         "category": "Django",
         "slug": "django",
-        "bookmarks": [{"text": "Django", "url": "http://www.djangoproject.com"}]
+        "bookmarks": [{"text": "Django", "url": "http://www.djangoproject.com"},
+                      {"text": "Awesome Django", "url": "http://awesome-django.com/"},
+                      {"text": "Classy Class Based Views", "url": "http://ccbv.co.uk/"}]
+    },
+    {
+        "category": "Django Rest Framework",
+        "slug": "django-rest-framework",
+        "bookmarks": [{"text": "Djanog Rest Framework", "url": "http://www.django-rest-framework.org/"},
+                      {"text": "Classy Django Rest Framework", "url": "http://www.cdrf.co/"}]
     },
     {
         "category": "Flask",
@@ -162,8 +170,10 @@
     {
         "category": "D3",
         "slug": "d3",
-        "bookmarks": [{"text": "D3", "url": "https://d3js.org/"},
-                      {"text": "Dashing D3", "url": "https://www.dashingd3js.com/"}]
+        "bookmarks": [{"text": "D3.js", "url": "https://d3js.org/"},
+                      {"text": "Dashing D3", "url": "https://www.dashingd3js.com/"},
+                      {"text": "C3.js", "url": "http://c3js.org/"},
+                      {"text": "NVD3.js", "url": "http://nvd3.org/"}]
     },
     {
         "category": "Ruby",
