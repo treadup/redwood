@@ -81,6 +81,12 @@
                       {"text": "Phoenix Framework", "url": "http://phoenixframework.org/"}]
     },
     {
+        "category": "PHP",
+        "slug": "php",
+        "bookmarks": [{"text": "PHP: A fractal of bad design",
+                       "url": "https://eev.ee/blog/2012/04/09/php-a-fractal-of-bad-design/"}]
+    },
+    {
         "category": "Machine Learning",
         "slug": "machine-learning",
         "bookmarks": [{"text": "Awesome Machine Learning",
