@@ -81,12 +81,6 @@
                       {"text": "Phoenix Framework", "url": "http://phoenixframework.org/"}]
     },
     {
-        "category": "PHP",
-        "slug": "php",
-        "bookmarks": [{"text": "PHP: A fractal of bad design",
-                       "url": "https://eev.ee/blog/2012/04/09/php-a-fractal-of-bad-design/"}]
-    },
-    {
         "category": "Machine Learning",
         "slug": "machine-learning",
         "bookmarks": [{"text": "Awesome Machine Learning",
@@ -255,7 +249,9 @@
                       {"text": "Beating the Averages",
                        "url": "http://www.paulgraham.com/avg.html"},
                       {"text": "Project Management: A surefire way to kill your software product",
-                       "url": "https://techbeacon.com/project-management-surefire-way-kill-your-software-product"}]
+                       "url": "https://techbeacon.com/project-management-surefire-way-kill-your-software-product"},
+                      {"text": "PHP: A fractal of bad design",
+                       "url": "https://eev.ee/blog/2012/04/09/php-a-fractal-of-bad-design/"}]
     },
     {
         "category": "Music",
@@ -273,12 +269,6 @@
         "slug": "react",
         "bookmarks": [{"text": "Awesome React", "url": "https://github.com/enaqx/awesome-react"},
                       {"text": "Awesome React Components", "url": "https://github.com/brillout/awesome-react-components"}]
-    },
-    {
-        "category": "Ember",
-        "slug": "ember",
-        "bookmarks": [{"text": "Ember Observer", "url": "https://emberobserver.com/"},
-                      {"text": "Ember Addons", "url": "https://www.emberaddons.com/"}]
     },
     {
         "category": "REST",
@@ -308,4 +298,3 @@
                       {"text": "Unity", "url": "https://unity3d.com/"}]
     }
 ]
-
