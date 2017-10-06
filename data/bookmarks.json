@@ -295,6 +295,7 @@
         "category": "Game Engines",
         "slug": "game-engines",
         "bookmarks": [{"text": "Amazon Lumberyard", "url": "https://aws.amazon.com/lumberyard/"},
-                      {"text": "Unity", "url": "https://unity3d.com/"}]
+                      {"text": "Unity", "url": "https://unity3d.com/"},
+                      {"text": "Phaser", "url": "https://phaser.io/"}]
     }
 ]
