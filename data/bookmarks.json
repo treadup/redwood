@@ -297,5 +297,10 @@
         "bookmarks": [{"text": "Amazon Lumberyard", "url": "https://aws.amazon.com/lumberyard/"},
                       {"text": "Unity", "url": "https://unity3d.com/"},
                       {"text": "Phaser", "url": "https://phaser.io/"}]
+    },
+    {
+        "category": "Documentation",
+        "slug": "documentation",
+        "bookmarks": [{"text": "DevDocs", "url": "http://devdocs.io"}]
     }
 ]
