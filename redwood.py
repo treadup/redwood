@@ -56,6 +56,13 @@ def get_current_user():
 
     return None
 
+@app.context_processor
+def inject_user():
+    """
+    Inject the current user into the template context.
+    """
+    return {"user": get_current_user()}
+
 @app.before_request
 def require_https():
     """
@@ -106,8 +113,7 @@ def index():
     """
     Shows the index page.
     """
-    user = get_current_user()
-    return render_template('index.html', user=user)
+    return render_template('index.html')
 
 
 def load_bookmarks():
@@ -141,9 +147,8 @@ def bookmarks():
     """
     Show the different bookmark categories.
     """
-    user = get_current_user()
     bookmark_categories = collect_bookmark_categories()
-    return render_template('bookmarks.html', categories=bookmark_categories, user=user)
+    return render_template('bookmarks.html', categories=bookmark_categories)
 
 def fetch_bookmark_collection_for_category(category):
     for collection in load_bookmarks():
@@ -162,13 +167,12 @@ def bookmark_category(category_slug):
     """
     Show the bookmarks for a given category.
     """
-    user = get_current_user()
     bookmark_collection = fetch_bookmark_collection_for_category(category_slug)
 
     if bookmark_collection:
         category = bookmark_collection['category']
         bookmarks = bookmark_collection['bookmarks']
-        return render_template('bookmark-category.html', category=category, bookmarks=bookmarks, user=user)
+        return render_template('bookmark-category.html', category=category, bookmarks=bookmarks)
     else:
         abort(404)
     
@@ -177,10 +181,9 @@ def photo_collection_list():
     """
     Show list of photo collections.
     """
-    user = get_current_user()
     filename = app.config['PHOTO_COLLECTION_FILENAME']
     photo_collections = load_photo_collection_list(filename)
-    return render_template('photo-collection-list.html', photo_collections=photo_collections, user=user)
+    return render_template('photo-collection-list.html', photo_collections=photo_collections)
 
 
 @app.route('/photos/<collection_name>')
@@ -188,12 +191,11 @@ def photo_collection(collection_name):
     """
     Show a single photo collection.
     """
-    user = get_current_user()
     filename = app.config['PHOTO_COLLECTION_FILENAME']
     collection = get_photo_collection(collection_name, filename)
 
     if(collection):
-        return render_template('photo-collection.html', collection=collection, user=user)
+        return render_template('photo-collection.html', collection=collection)
     else:
         return "Could not find the collection. Should return a nice 404 error here."
 
@@ -202,14 +204,13 @@ def single_photo(collection_name, photo):
     """
     Show a single photo from a photo collection.
     """
-    user = get_current_user()
     filename = app.config['PHOTO_COLLECTION_FILENAME']
     collection = get_photo_collection(collection_name, filename)
 
     if collection:
         for image in collection['images']:
             if image['name'] == photo:
-                return render_template("photo.html", image=image, user=user)
+                return render_template("photo.html", image=image)
     
     return 'Could not find matching photo. Should return a nice 404 error here.'
 
@@ -218,7 +219,6 @@ def current_time():
     """
     Show the current local time in different time zones.
     """
-    user = get_current_user()
     places = [{"name": "Sweden:", "tz": "Europe/Stockholm"},
               {"name": "Hawaii:", "tz": "Pacific/Honolulu"},
               {"name": "California:", "tz": "America/Los_Angeles"},
@@ -227,7 +227,7 @@ def current_time():
     for place in places:
         place['time'] = datetime.now(pytz.timezone(place['tz'])).strftime("%H:%M")
     
-    return render_template("time.html", places=places, user=user)
+    return render_template("time.html", places=places)
 
 def valid_credentials(username, password):
     """
@@ -338,8 +338,7 @@ def account():
     """
     Shows information about the currently logged in user.
     """
-    user = get_current_user()
-    return render_template("account.html", user=user)
+    return render_template("account.html")
 
 def is_token_creator(user):
     """
@@ -366,7 +365,7 @@ def token():
     roles = []
     token_jwt = create_user_jwt(username, FIFTEEN_MINUTES, roles)
 
-    return render_template("token.html", token=token_jwt, user=user)
+    return render_template("token.html", token=token_jwt)
 
 def process_folders(folders):
     """
@@ -409,7 +408,6 @@ def notes(path='/'):
     Shows markdown notes hosted on S3. The notes should be a protected resource.
     In other words they require authentication to access.
     """
-    user = get_current_user()
 
     # If this is a folder
     if path.endswith('/'):
@@ -418,11 +416,11 @@ def notes(path='/'):
         folders = process_folders(folders)
         files = process_files(path, files)
 
-        return render_template('notes-folder.html', folders=folders, files=files, user=user)
+        return render_template('notes-folder.html', folders=folders, files=files)
     else: # Otherwise this is a file
         text = read_s3_file('redwood-notes', path)
         
-        return render_template('notes-file.html', text=text, user=user)
+        return render_template('notes-file.html', text=text)
 
 @app.route('/hacks')
 def hacks():
@@ -461,7 +459,6 @@ def files():
     """
     Upload and download files.
     """
-    user = get_current_user()
     bucket_name = 'redwood-files'
     
     if request.method == 'POST':
@@ -472,7 +469,7 @@ def files():
         return redirect(url_for('files'))
     else:
         _, file_list = read_s3_bucket_folder(bucket_name, '/')
-        return render_template('file-list.html', file_list=file_list, user=user)
+        return render_template('file-list.html', file_list=file_list)
 
 @app.route('/files/<filename>', methods=['GET', 'PUT'])
 @login_required
@@ -503,16 +500,14 @@ def work():
     """
     Work related stuff.
     """
-    user = get_current_user()
-    return render_template('work.html', user=user)
+    return render_template('work.html')
 
 @app.route('/contact')
 def contact():
     """
     Contact page.
     """
-    user = get_current_user()
-    return render_template('contact.html', user=user)
+    return render_template('contact.html')
 
 def mimetype_from_extension(filename):
     """
