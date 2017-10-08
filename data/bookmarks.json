@@ -56,7 +56,8 @@
                       {"text": "Clojure Quick Reference", "url": "http://clojuredocs.org/quickref"},
                       {"text": "Functional programming for the JVM",
                        "url": "https://objectcomputing.com/resources/publications/sett/march-2009-clojure-functional-programming-for-the-jvm/"},
-                      {"text": "Clojure Distilled", "url": "https://yogthos.github.io/ClojureDistilled.html"}]
+                      {"text": "Clojure Distilled", "url": "https://yogthos.github.io/ClojureDistilled.html"},
+                      {"text": "Awesome Clojure", "url": "https://github.com/razum2um/awesome-clojure"}]
     },
     {
         "category": "Clojure Script",
