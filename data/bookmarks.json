@@ -300,8 +300,19 @@
                       {"text": "Phaser", "url": "https://phaser.io/"}]
     },
     {
+        "category": "Web Game Dev",
+        "slug": "web-game-dev",
+        "bookmarks": [{"text": "HTML5 Game Devs", "url": "http://www.html5gamedevs.com/"}]
+    },
+    {
         "category": "Documentation",
         "slug": "documentation",
         "bookmarks": [{"text": "DevDocs", "url": "http://devdocs.io"}]
+    },
+    {
+        "category": "Git",
+        "slug": "git",
+        "bookmarks": [{"text": "Conditional Includes",
+                       "url": "https://motowilliams.com/conditional-includes-for-git-config"}]
     }
 ]
