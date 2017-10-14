@@ -314,5 +314,10 @@
         "slug": "git",
         "bookmarks": [{"text": "Conditional Includes",
                        "url": "https://motowilliams.com/conditional-includes-for-git-config"}]
+    },
+    {
+        "category": "Text Editing",
+        "slug": "text-editing",
+        "bookmarks": [{"text": "The Craft of Text Editing", "url": "https://www.finseth.com/craft/"}]
     }
 ]
