@@ -81,6 +81,7 @@
         "category": "Elixir",
         "slug": "elixir",
         "bookmarks": [{"text": "Elixir", "url": "https://elixir-lang.org/"},
+                      {"text": "Elixir Docs", "url": "https://elixir-lang.org/docs.html"},
                       {"text": "Phoenix Framework", "url": "http://phoenixframework.org/"}]
     },
     {
@@ -393,5 +394,15 @@
         "category": "Text Editing",
         "slug": "text-editing",
         "bookmarks": [{"text": "The Craft of Text Editing", "url": "https://www.finseth.com/craft/"}]
+    },
+    {
+        "category": "Opinionated",
+        "slug": "opinionated",
+        "bookmarks": [{"text": "suckless.org", "url": "https://suckless.org/"}]
+    },
+    {
+        "category": "Shell",
+        "slug": "shell",
+        "bookmarks": [{"text": "fish", "url": "https://fishshell.com/"}] 
     }
 ]
