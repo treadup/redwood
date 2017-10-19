@@ -68,7 +68,9 @@
     {
         "category": "Go",
         "slug": "go",
-        "bookmarks": [{"text": "Awesome Go", "url": "http://awesome-go.com/"}]
+        "bookmarks": [{"text": "Go", "url": "https://golang.org/"},
+                      {"text": "Awesome Go", "url": "http://awesome-go.com/"},
+                      {"text": "Go Lang Libs", "url": "https://golanglibs.com/"}]
     },
     {
         "category": "Erlang",
@@ -80,6 +82,38 @@
         "slug": "elixir",
         "bookmarks": [{"text": "Elixir", "url": "https://elixir-lang.org/"},
                       {"text": "Phoenix Framework", "url": "http://phoenixframework.org/"}]
+    },
+    {
+        "category": "JVM",
+        "slug": "jvm",
+        "bookmarks": [{"text": "Awesome JVM",
+                       "url": "https://github.com/deephacks/awesome-jvm"}]
+    },
+    {
+        "category": "BEAM",
+        "slug": "beam",
+        "bookmarks": [{"text": "BEAM Wisdoms", "url": "http://beam-wisdoms.clau.se/en/latest/"}]
+    },
+    {
+        "category": "Ypsilon",
+        "slug": "ypsilon",
+        "bookmarks": [{"text": "Ypsilon",
+                       "url": "http://www.littlewingpinball.net/mediawiki/index.php/Ypsilon"},
+                      {"text": "Why Ypsilon was created",
+                       "url": "http://www.littlewingpinball.com/doc/en/ypsilon/index.html"}]
+    },
+    {
+        "category": "newLISP",
+        "slug": "newlisp",
+        "bookmarks": [{"text": "newLISP", "url": "http://www.newlisp.org/"},
+                      {"text": "Automatic Memory Management in newLISP",
+                       "url": "http://www.newlisp.org/MemoryManagement.html"}]
+    },
+    {
+        "category": "Garbage Collection",
+        "slug": "garbage-collection",
+        "bookmarks": [{"text": "Shenandoah", "url": "http://openjdk.java.net/jeps/189",
+                       "text": "Go Garbage Collector", "url": "https://making.pusher.com/golangs-real-time-gc-in-theory-and-practice/"}]
     },
     {
         "category": "Machine Learning",
@@ -182,6 +216,41 @@
         "bookmarks": [{"text": "Awesome Ruby", "url": "http://awesome-ruby.com/"}]
     },
     {
+        "category": "Erlang",
+        "slug": "erlang",
+        "bookmarks":[]
+    },
+    {
+        "category": "Lisp Flavored Erlang",
+        "slug": "lfe",
+        "bookmarks": [{"text": "Lisp Flavored Erlang", "url": "http://lfe.io/"}]
+    },
+    {
+        "category": "Concatenative Programming",
+        "slug": "concatenative",
+        "bookmarks": [{"text": "Concatenative.org", "url": "http://concatenative.org"},
+                      {"text": "Wikipedia on Concatenative Languages",
+                       "url": "https://en.wikipedia.org/wiki/Concatenative_programming_language"},
+                      {"text": "Wikipedia on Stack Oriented Languages",
+                       "url": "https://en.wikipedia.org/wiki/Stack-oriented_programming_language"}]
+    },
+    {
+        "category": "Forth",
+        "slug": "forth",
+        "bookmarks": [{"text": "C2 on Forth", "url": "http://wiki.c2.com/?ForthLanguage"},
+                      {"text": "StoneKnifeForth", "url": "https://github.com/kragen/stoneknifeforth"}]
+    },
+    {
+        "category": "Factor",
+        "slug": "factor",
+        "bookmarks": [{"text": "C2 on Factor", "url": "http://wiki.c2.com/?FactorLanguage"}]
+    },
+    {
+        "category": "NIM",
+        "slug": "nim",
+        "bookmarks": [{"text": "NIM", "url": "https://nim-lang.org/"}]
+    },
+    {
         "category": "Error handling",
         "slug": "error-handling",
         "bookmarks": [{"text": "Airbrake", "url": "https://airbrake.io/"},
@@ -227,8 +296,8 @@
     },
     {
         "category": "Hosting",
-	"slug": "hosting",
-	"bookmarks": [{"text": "Netlify", "url": "https://www.netlify.com/"},
+        "slug": "hosting",
+	      "bookmarks": [{"text": "Netlify", "url": "https://www.netlify.com/"},
                       {"text": "Python Anywhere", "url": "https://www.pythonanywhere.com/"}]
     },
     {
@@ -298,6 +367,11 @@
         "bookmarks": [{"text": "Amazon Lumberyard", "url": "https://aws.amazon.com/lumberyard/"},
                       {"text": "Unity", "url": "https://unity3d.com/"},
                       {"text": "Phaser", "url": "https://phaser.io/"}]
+    },
+    {
+        "category": "Game Development",
+        "slug": "game-development",
+        "bookmarks": [{"text": "Graphics Server", "url": "http://prog21.dadgum.com/157.html"}]
     },
     {
         "category": "Web Game Dev",
