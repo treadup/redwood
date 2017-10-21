@@ -57,7 +57,8 @@
                       {"text": "Functional programming for the JVM",
                        "url": "https://objectcomputing.com/resources/publications/sett/march-2009-clojure-functional-programming-for-the-jvm/"},
                       {"text": "Clojure Distilled", "url": "https://yogthos.github.io/ClojureDistilled.html"},
-                      {"text": "Awesome Clojure", "url": "https://github.com/razum2um/awesome-clojure"}]
+                      {"text": "Awesome Clojure", "url": "https://github.com/razum2um/awesome-clojure"},
+                      {"text": "Amazonica", "url": "https://github.com/mcohen01/amazonica"}]
     },
     {
         "category": "Clojure Script",
@@ -70,7 +71,8 @@
         "slug": "go",
         "bookmarks": [{"text": "Go", "url": "https://golang.org/"},
                       {"text": "Awesome Go", "url": "http://awesome-go.com/"},
-                      {"text": "Go Lang Libs", "url": "https://golanglibs.com/"}]
+                      {"text": "Go Lang Libs", "url": "https://golanglibs.com/"},
+                      {"text": "cgo", "url": "https://golang.org/cmd/cgo/"}]
     },
     {
         "category": "Erlang",
@@ -82,7 +84,8 @@
         "slug": "elixir",
         "bookmarks": [{"text": "Elixir", "url": "https://elixir-lang.org/"},
                       {"text": "Elixir Docs", "url": "https://elixir-lang.org/docs.html"},
-                      {"text": "Phoenix Framework", "url": "http://phoenixframework.org/"}]
+                      {"text": "Phoenix Framework", "url": "http://phoenixframework.org/"},
+                      {"text": "Distillery", "url": "https://github.com/bitwalker/distillery"}]
     },
     {
         "category": "JVM",
@@ -93,7 +96,8 @@
     {
         "category": "BEAM",
         "slug": "beam",
-        "bookmarks": [{"text": "BEAM Wisdoms", "url": "http://beam-wisdoms.clau.se/en/latest/"}]
+        "bookmarks": [{"text": "BEAM Wisdoms", "url": "http://beam-wisdoms.clau.se/en/latest/"},
+                      {"text": "BEAM languages", "url": "https://github.com/llaisdy/beam_languages"}]
     },
     {
         "category": "Ypsilon",
@@ -113,8 +117,22 @@
     {
         "category": "Garbage Collection",
         "slug": "garbage-collection",
-        "bookmarks": [{"text": "Shenandoah", "url": "http://openjdk.java.net/jeps/189",
-                       "text": "Go Garbage Collector", "url": "https://making.pusher.com/golangs-real-time-gc-in-theory-and-practice/"}]
+        "bookmarks": [{"text": "Shenandoah", "url": "http://openjdk.java.net/jeps/189"},
+                      {"text": "Go Garbage Collector",
+                       "url":
+                       "https://making.pusher.com/golangs-real-time-gc-in-theory-and-practice/"},
+                      {"text": "Linus Torvalds on Garbage Collection",
+                       "url": "https://news.ycombinator.com/item?id=2473932"},
+                      {"text": "Real-Time Garbage Collection Is Real",
+                       "url": "http://michaelrbernste.in/2013/06/03/real-time-garbage-collection-is-real.html"},
+                      {"text": "Baby's First Garbage Collector",
+                       "url": "http://journal.stuffwithstuff.com/2013/12/08/babys-first-garbage-collector/"},
+                      {"text": "The Garbage Collection Handbook", "url": "http://gchandbook.org"},
+                      {"text": "Concurrent Garbage Collection in Rubinius",
+                       "url": "https://github.com/rubinius/rubinius-website-archive/blob/cf54187d421275eec7d2db0abd5d4c059755b577/_posts/2013-06-22-concurrent-garbage-collection.markdown"},
+                      {"text": "Immix", "url": "http://users.cecs.anu.edu.au/~steveb/pubs/papers/immix-pldi-2008.pdf"},
+                      {"text": "Reference Counting Immix",
+                       "url": "http://users.cecs.anu.edu.au/~steveb/downloads/pdf/rcix-oopsla-2013.pdf"}]
     },
     {
         "category": "Machine Learning",
@@ -219,12 +237,13 @@
     {
         "category": "Erlang",
         "slug": "erlang",
-        "bookmarks":[]
+        "bookmarks":[{"text": "Native Implemented Functions", "url": "http://erlang.org/doc/tutorial/nif.html"}]
     },
     {
         "category": "Lisp Flavored Erlang",
         "slug": "lfe",
-        "bookmarks": [{"text": "Lisp Flavored Erlang", "url": "http://lfe.io/"}]
+        "bookmarks": [{"text": "Lisp Flavored Erlang", "url": "http://lfe.io/"},
+                      {"text": "Robert Virding on LFE", "url": "https://www.youtube.com/watch?v=Br2KY12LB2w"}]
     },
     {
         "category": "Concatenative Programming",
