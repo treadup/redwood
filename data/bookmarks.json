@@ -389,6 +389,12 @@
                       {"text": "Phaser", "url": "https://phaser.io/"}]
     },
     {
+        "category": "Game Libraries in C",
+        "slug": "c-game-libraries",
+        "bookmarks": [{"text": "Raylib", "url": "http://www.raylib.com/"},
+                      {"text": "SDL2", "url": "https://www.libsdl.org/"}]
+    },
+    {
         "category": "Game Development",
         "slug": "game-development",
         "bookmarks": [{"text": "Graphics Server", "url": "http://prog21.dadgum.com/157.html"}]
@@ -423,5 +429,13 @@
         "category": "Shell",
         "slug": "shell",
         "bookmarks": [{"text": "fish", "url": "https://fishshell.com/"}] 
+    },
+    {
+        "category": "Audio Libraries",
+        "slug": "audo-libraries",
+        "bookmarks": [{"text": "libsound", "url": "http://libsound.io/"},
+                      {"text": "OpenAL Soft", "url": "https://github.com/kcat/openal-soft"},
+                      {"text": "PortAudio", "url": "http://www.portaudio.com/"},
+                      {"text": "cubeb", "url": "https://github.com/kinetiknz/cubeb"}]
     }
 ]
