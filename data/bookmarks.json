@@ -115,6 +115,11 @@
                        "url": "http://www.newlisp.org/MemoryManagement.html"}]
     },
     {
+        "category": "Cyclone Scheme",
+        "slug": "cyclone",
+        "bookmarks": [{"text": "Cyclone", "url": "https://github.com/justinethier/cyclone"}]
+    },
+    {
         "category": "Garbage Collection",
         "slug": "garbage-collection",
         "bookmarks": [{"text": "Shenandoah", "url": "http://openjdk.java.net/jeps/189"},
@@ -431,11 +436,21 @@
         "bookmarks": [{"text": "fish", "url": "https://fishshell.com/"}] 
     },
     {
+        "category": "Image Libraries",
+        "slug": "image-libraries",
+        "bookmarks": [{"text": "soil", "url": "http://www.lonesock.net/soil.html"}]
+    },
+    {
         "category": "Audio Libraries",
         "slug": "audo-libraries",
         "bookmarks": [{"text": "libsound", "url": "http://libsound.io/"},
                       {"text": "OpenAL Soft", "url": "https://github.com/kcat/openal-soft"},
                       {"text": "PortAudio", "url": "http://www.portaudio.com/"},
                       {"text": "cubeb", "url": "https://github.com/kinetiknz/cubeb"}]
+    },
+    {
+        "category": "Lisp Papers",
+        "slug": "lisp-papers",
+        "bookmarks": [{"text": "Cheney on the M.T.A.", "url": "http://www.pipeline.com/~hbaker1/CheneyMTA.html"}]
     }
 ]
