@@ -433,7 +433,7 @@
     {
         "category": "Shell",
         "slug": "shell",
-        "bookmarks": [{"text": "fish", "url": "https://fishshell.com/"}] 
+        "bookmarks": [{"text": "fish", "url": "https://fishshell.com/"}]
     },
     {
         "category": "Image Libraries",
@@ -452,5 +452,12 @@
         "category": "Lisp Papers",
         "slug": "lisp-papers",
         "bookmarks": [{"text": "Cheney on the M.T.A.", "url": "http://www.pipeline.com/~hbaker1/CheneyMTA.html"}]
+    },
+    {
+        "category": "OpenGL",
+        "slug": "opengl",
+        "bookmarks": [{"text": "docs.GL", "url": "http://docs.gl"},
+                      {"text": "OpenGL 4 Reference Pages",
+                       "url": "https://www.khronos.org/registry/OpenGL-Refpages/gl4/"}]
     }
 ]
