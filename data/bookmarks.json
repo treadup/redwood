@@ -72,7 +72,8 @@
         "bookmarks": [{"text": "Go", "url": "https://golang.org/"},
                       {"text": "Awesome Go", "url": "http://awesome-go.com/"},
                       {"text": "Go Lang Libs", "url": "https://golanglibs.com/"},
-                      {"text": "cgo", "url": "https://golang.org/cmd/cgo/"}]
+                      {"text": "cgo", "url": "https://golang.org/cmd/cgo/"},
+                      {"text": "Grumpy", "url": "https://github.com/google/grumpy"}]
     },
     {
         "category": "Erlang",
@@ -216,6 +217,21 @@
                       {"text": "unpkg", "url": "https://unpkg.com"},
                       {"text": "cdnjs", "url": "https://cdnjs.com/"},
                       {"text": "Callback Hell", "url": "http://callbackhell.com/"}]
+    },
+    {
+        "category": "JavaScript Graphics",
+        "slug": "javascript-graphics",
+        "bookmarks": [{"text": "Pixi.js", "url": "http://www.pixijs.com/"}]
+    },
+    {
+        "category": "JavaScript 3D Engines",
+        "slug": "javascript-3d-engines",
+        "bookmarks": [{"text": "Copperlicht", "url": "http://www.ambiera.com/copperlicht/index.html"},
+                      {"text": "Goo Engine", "url": "http://code.gooengine.com/latest/docs/"},
+                      {"text": "Ammo.js", "url": "https://github.com/kripken/ammo.js"},
+                      {"text": "three.js", "url": "https://threejs.org/"},
+                      {"text": "BabylonJS", "url": "http://www.babylonjs.com/"},
+                      {"text": "Whitestorm", "url": "http://whsjs.io/"}]
     },
     {
         "category": "Mithril",
@@ -411,6 +427,11 @@
         "bookmarks": [{"text": "HTML5 Game Devs", "url": "http://www.html5gamedevs.com/"}]
     },
     {
+        "category": "Web Games",
+        "slug": "web-games",
+        "bookmarks": [{"text": "KeepOut", "url": "http://www.playkeepout.com/"}]
+    },
+    {
         "category": "Documentation",
         "slug": "documentation",
         "bookmarks": [{"text": "DevDocs", "url": "http://devdocs.io"}]
@@ -459,6 +480,7 @@
         "slug": "opengl",
         "bookmarks": [{"text": "docs.GL", "url": "http://docs.gl"},
                       {"text": "OpenGL 4 Reference Pages",
-                       "url": "https://www.khronos.org/registry/OpenGL-Refpages/gl4/"}]
+                       "url": "https://www.khronos.org/registry/OpenGL-Refpages/gl4/"},
+                      {"text": "Mesa3D", "url": "https://www.mesa3d.org/"}]
     }
 ]
