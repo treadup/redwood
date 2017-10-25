@@ -137,7 +137,8 @@
                        "url": "https://github.com/rubinius/rubinius-website-archive/blob/cf54187d421275eec7d2db0abd5d4c059755b577/_posts/2013-06-22-concurrent-garbage-collection.markdown"},
                       {"text": "Immix", "url": "http://users.cecs.anu.edu.au/~steveb/pubs/papers/immix-pldi-2008.pdf"},
                       {"text": "Reference Counting Immix",
-                       "url": "http://users.cecs.anu.edu.au/~steveb/downloads/pdf/rcix-oopsla-2013.pdf"}]
+                       "url": "http://users.cecs.anu.edu.au/~steveb/downloads/pdf/rcix-oopsla-2013.pdf"},
+                      {"text": "Go 1.5 Garbage Collector", "url": "https://blog.golang.org/go15gc"}]
     },
     {
         "category": "Machine Learning",
