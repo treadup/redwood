@@ -73,7 +73,8 @@
                       {"text": "Awesome Go", "url": "http://awesome-go.com/"},
                       {"text": "Go Lang Libs", "url": "https://golanglibs.com/"},
                       {"text": "cgo", "url": "https://golang.org/cmd/cgo/"},
-                      {"text": "Grumpy", "url": "https://github.com/google/grumpy"}]
+                      {"text": "Grumpy", "url": "https://github.com/google/grumpy"},
+                      {"text": "dep", "url": "https://github.com/golang/dep"}]
     },
     {
         "category": "Erlang",
