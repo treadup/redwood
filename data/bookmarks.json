@@ -483,5 +483,10 @@
                       {"text": "OpenGL 4 Reference Pages",
                        "url": "https://www.khronos.org/registry/OpenGL-Refpages/gl4/"},
                       {"text": "Mesa3D", "url": "https://www.mesa3d.org/"}]
+    },
+    {
+        "category": "GLSL",
+        "slug": "glsl",
+        "bookmarks": [{"text": "GLSL debugger", "url": "http://glsl-debugger.github.io/"}]
     }
 ]
