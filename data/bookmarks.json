@@ -375,7 +375,8 @@
         "category": "Open Source",
         "slug": "open-source",
         "bookmarks": [{"text": "Libraries.io", "url": "http://libraries.io"},
-                      {"text": "Libhunt", "url": "https://www.libhunt.com/"}]
+                      {"text": "Libhunt", "url": "https://www.libhunt.com/"},
+                      {"text": "A.W.E.S.O.M.O", "url": "https://github.com/lk-geimfari/awesomo"}]
     },
     {
         "category": "React",
