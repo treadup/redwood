@@ -489,5 +489,10 @@
         "category": "GLSL",
         "slug": "glsl",
         "bookmarks": [{"text": "GLSL debugger", "url": "http://glsl-debugger.github.io/"}]
+    },
+    {
+        "category": "Naming Things",
+        "slug": "naming-things",
+        "bookmarks": [{"text": "NameQL", "url": "https://www.nameql.com/"}]
     }
 ]
