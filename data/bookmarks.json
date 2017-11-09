@@ -122,6 +122,16 @@
         "bookmarks": [{"text": "Cyclone", "url": "https://github.com/justinethier/cyclone"}]
     },
     {
+        "category": "Gambit Scheme",
+        "slug": "gambit-scheme",
+        "bookmarks": [{"text": "Gambit Scheme", "url": "http://gambitscheme.org"}]
+    },
+    {
+        "category": "LambdaNative",
+        "slug": "lambda-native",
+        "bookmarks": [{"text": "Lambda Native", "url": "http://www.lambdanative.org/"}]
+    },
+    {
         "category": "Garbage Collection",
         "slug": "garbage-collection",
         "bookmarks": [{"text": "Shenandoah", "url": "http://openjdk.java.net/jeps/189"},
@@ -429,7 +439,8 @@
     {
         "category": "Game Development",
         "slug": "game-development",
-        "bookmarks": [{"text": "Graphics Server", "url": "http://prog21.dadgum.com/157.html"}]
+        "bookmarks": [{"text": "Graphics Server", "url": "http://prog21.dadgum.com/157.html"},
+                      {"text": "Game Development in Scheme", "url": "https://www.reddit.com/r/scheme/comments/6hng3q/i_developed_a_medium_sized_cross_platform/"}]
     },
     {
         "category": "Web Game Dev",
