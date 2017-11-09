@@ -305,6 +305,14 @@
         "bookmarks": [{"text": "Code Climate", "url": "https://codeclimate.com/"}]
     },
     {
+        "category": "Redis",
+        "slug": "redis",
+        "bookmarks": [{"text": "Redis", "url": "https://redis.io/"},
+                      {"text": "Redis Manifesto", "url": "https://github.com/antirez/redis/blob/unstable/MANIFESTO"},
+                      {"text": "Redis CLI", "url": "https://redis.io/topics/rediscli"},
+                      {"text": "Redis Commands", "url": "https://redis.io/commands"}]
+    },
+    {
         "category": "Emacs",
         "slug": "emacs",
         "bookmarks": [{"text": "Awesome Emacs", "url": "https://github.com/emacs-tw/awesome-emacs"}]
@@ -443,6 +451,11 @@
         "slug": "git",
         "bookmarks": [{"text": "Conditional Includes",
                        "url": "https://motowilliams.com/conditional-includes-for-git-config"}]
+    },
+    {
+        "category": "GitHub",
+        "slug": "github",
+        "bookmarks": [{"text": "GitHub stars", "url": "https://github.com/stars"}]
     },
     {
         "category": "Text Editing",
