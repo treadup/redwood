@@ -558,5 +558,10 @@
         "category": "RabbitMQ",
         "slug": "rabbitmq",
         "bookmarks": [{"text": "RabbitMQ", "url": "https://www.rabbitmq.com/" }]
+    },
+    {
+        "category": "Terminal",
+        "slug": "terminal",
+        "bookmarks": [{"text": "Terminals are sexy", "url": "https://terminalsare.sexy/"}]
     }
 ]
