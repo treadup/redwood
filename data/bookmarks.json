@@ -117,6 +117,12 @@
                        "url": "http://www.newlisp.org/MemoryManagement.html"}]
     },
     {
+        "category": "Scheme",
+        "slug": "scheme",
+        "bookmarks": [{"text": "An opinionated guide to Scheme implementations",
+                       "url": "https://wingolog.org/archives/2013/01/07/an-opinionated-guide-to-scheme-implementations"}]
+    },
+    {
         "category": "Cyclone Scheme",
         "slug": "cyclone",
         "bookmarks": [{"text": "Cyclone", "url": "https://github.com/justinethier/cyclone"}]
@@ -130,6 +136,24 @@
         "category": "LambdaNative",
         "slug": "lambda-native",
         "bookmarks": [{"text": "Lambda Native", "url": "http://www.lambdanative.org/"}]
+    },
+    {
+        "category": "S7",
+        "slug": "s7",
+        "bookmarks": [{"text": "S7", "url": "https://ccrma.stanford.edu/software/snd/snd/s7.html"},
+                      {"text": "A love letter to S7 Scheme", "url": "http://carloscarrasco.com/category/gamedev.html"}]
+    },
+    {
+        "category": "Tiny Scheme",
+        "slug": "tiny-scheme",
+        "bookmarks": [{"text": "Tiny Scheme", "url": "http://tinyscheme.sourceforge.net/home.html"},
+                      {"text": "Embedding Scheme for a Game Mission DSL",
+                       "url": "http://carloscarrasco.com/embedding-scheme-for-a-game-mission-scripting-dsl.html"}]
+    },
+    {
+        "category": "femtolisp",
+        "slug": "femtolisp",
+        "bookmarks": [{"text": "femtolisp", "url": "https://github.com/JeffBezanson/femtolisp"}]
     },
     {
         "category": "Garbage Collection",
@@ -518,5 +542,21 @@
         "category": "Naming Things",
         "slug": "naming-things",
         "bookmarks": [{"text": "NameQL", "url": "https://www.nameql.com/"}]
+    },
+    {
+        "category": "Microcontrollers",
+        "slug": "microcontrollers",
+        "bookmarks": [{"text": "The Amazing $1 Microcontroller"}]
+    },
+    {
+        "category": "Messaging Protocols",
+        "slug": "messaging-protocols",
+        "bookmarks": [{"text": "Choosing your Messaging Protocol",
+                       "url": "https://blogs.vmware.com/vfabric/2013/02/choosing-your-messaging-protocol-amqp-mqtt-or-stomp.html"}]
+    },
+    {
+        "category": "RabbitMQ",
+        "slug": "rabbitmq",
+        "bookmarks": [{"text": "RabbitMQ", "url": "https://www.rabbitmq.com/" }]
     }
 ]
