@@ -174,7 +174,15 @@
                       {"text": "Immix", "url": "http://users.cecs.anu.edu.au/~steveb/pubs/papers/immix-pldi-2008.pdf"},
                       {"text": "Reference Counting Immix",
                        "url": "http://users.cecs.anu.edu.au/~steveb/downloads/pdf/rcix-oopsla-2013.pdf"},
-                      {"text": "Go 1.5 Garbage Collector", "url": "https://blog.golang.org/go15gc"}]
+                      {"text": "Go 1.5 Garbage Collector", "url": "https://blog.golang.org/go15gc"},
+                      {"text": "Building a lower latency garbage collector",
+                       "url": "https://blog.janestreet.com/building-a-lower-latency-gc/"},
+                      {"text": "Very Concurrent Mark and Sweep Garbage Collection",
+                       "url": "http://doc.cat-v.org/inferno/concurrent_gc/"},
+                      {"text": "memorymanagement.org", "url": "http://www.memorymanagement.org"},
+                      {"text": "Learning garbage collection theory",
+                       "url": "https://stackoverflow.com/questions/1318631/learning-garbage-collection-theory"},
+                      {"text": "Baker's Treadmill", "url": "http://home.pipeline.com/~hbaker1/NoMotionGC.html"}]
     },
     {
         "category": "Machine Learning",
@@ -464,7 +472,10 @@
         "category": "Game Development",
         "slug": "game-development",
         "bookmarks": [{"text": "Graphics Server", "url": "http://prog21.dadgum.com/157.html"},
-                      {"text": "Game Development in Scheme", "url": "https://www.reddit.com/r/scheme/comments/6hng3q/i_developed_a_medium_sized_cross_platform/"}]
+                      {"text": "Game Development in Scheme",
+                       "url": "https://www.reddit.com/r/scheme/comments/6hng3q/i_developed_a_medium_sized_cross_platform/"},
+                      {"text": "Functional game logic with truly pauseless garbage collection",
+                       "url": "https://medium.com/@brianwill/functional-game-logic-with-truly-pauseless-garbage-collection-cffecc7b96d7"}]
     },
     {
         "category": "Web Game Dev",
@@ -563,5 +574,12 @@
         "category": "Terminal",
         "slug": "terminal",
         "bookmarks": [{"text": "Terminals are sexy", "url": "https://terminalsare.sexy/"}]
+    },
+    {
+        "category": "Http Utils",
+        "slug": "http-utils",
+        "bookmarks": [{"text": "httpbin", "url": "http://httpbin.org/"},
+                      {"text": "hurl.it", "url": "https://www.hurl.it/"},
+                      {"text": "requestb.in", "url": "https://requestb.in/"}]
     }
 ]
