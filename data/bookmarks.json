@@ -9,6 +9,7 @@
                        "url": "http://docs.python-guide.org/en/latest/writing/structure/"},
                       {"text": "Testing Your Code", "url": "http://docs.python-guide.org/en/latest/writing/tests/"},
                       {"text": "Kivy", "url": "https://kivy.org/"},
+                      {"text": "KivEnt", "url": "http://kivent.org/"},
                       {"text": "Awesome Asyncio", "url": "https://github.com/timofurrer/awesome-asyncio"}]
     },
     {
@@ -460,7 +461,8 @@
         "slug": "game-engines",
         "bookmarks": [{"text": "Amazon Lumberyard", "url": "https://aws.amazon.com/lumberyard/"},
                       {"text": "Unity", "url": "https://unity3d.com/"},
-                      {"text": "Phaser", "url": "https://phaser.io/"}]
+                      {"text": "Phaser", "url": "https://phaser.io/"},
+                      {"text": "Ignifuga", "url": "http://ignifuga.org/"}]
     },
     {
         "category": "Game Libraries in C",
