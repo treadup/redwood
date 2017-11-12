@@ -275,8 +275,8 @@
                        "url": "https://jakearchibald.com/2013/progressive-enhancement-still-important/"}]
     },
     {
-        "text": "Text Design Tools",
-        "category": "text-design-tools",
+        "category": "Text Design Tools",
+        "slug": "text-design-tools",
         "bookmarks": [{"text": "Textcraft", "url": "https://textcraft.net/"},
                       {"text": "Cool Text", "url": "https://cooltext.com/"}]
     },
