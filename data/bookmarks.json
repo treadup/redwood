@@ -505,7 +505,8 @@
                       {"text": "Game Development in Scheme",
                        "url": "https://www.reddit.com/r/scheme/comments/6hng3q/i_developed_a_medium_sized_cross_platform/"},
                       {"text": "Functional game logic with truly pauseless garbage collection",
-                       "url": "https://medium.com/@brianwill/functional-game-logic-with-truly-pauseless-garbage-collection-cffecc7b96d7"}]
+                       "url": "https://medium.com/@brianwill/functional-game-logic-with-truly-pauseless-garbage-collection-cffecc7b96d7"},
+                      {"text": "Hexagonal Grids", "url": "https://www.redblobgames.com/grids/hexagons/"}]
     },
     {
         "category": "Web Game Dev",
