@@ -240,7 +240,8 @@
                       {"text": "You might not need jQuery", "url": "http://youmightnotneedjquery.com/"},
                       {"text": "CodePen", "url": "https://codepen.io/"},
                       {"text": "Unsplash it", "url": "http://unsplash.it/"},
-                      {"text": "Modernizir", "url": "https://modernizr.com/"}]
+                      {"text": "Modernizir", "url": "https://modernizr.com/"},
+                      {"text": "favicon.io", "url": "https://favicon.io/"}]
     },
     {
         "category": "CSS",
