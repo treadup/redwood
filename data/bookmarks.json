@@ -9,8 +9,20 @@
                        "url": "http://docs.python-guide.org/en/latest/writing/structure/"},
                       {"text": "Testing Your Code", "url": "http://docs.python-guide.org/en/latest/writing/tests/"},
                       {"text": "Kivy", "url": "https://kivy.org/"},
+                      {"text": "Awesome Asyncio", "url": "https://github.com/timofurrer/awesome-asyncio"},
+                      {"text": "Nuitka", "url": "http://nuitka.net/"}]
+    },
+    {
+        "category": "Python Game Development",
+        "slug": "python-game-development",
+        "bookmarks": [{"text": "pyglet", "url": "https://bitbucket.org/pyglet/pyglet/wiki/Home"},
+                      {"text": "Python Game Libraries", "url": "https://wiki.python.org/moin/PythonGameLibraries"},
+                      {"text": "Cocos2D", "url": "http://cocos2d.org/"},
+                      {"text": "2d and 3d Game and Rendering Engines for Python",
+                       "url": "http://codeboje.de/2d-and-3d-game-and-rendering-engines-python/"},
                       {"text": "KivEnt", "url": "http://kivent.org/"},
-                      {"text": "Awesome Asyncio", "url": "https://github.com/timofurrer/awesome-asyncio"}]
+                      {"text": "PyOpenGL", "url": "http://pyopengl.sourceforge.net/"},
+                      {"text": "Python 3D Software", "url": "http://www.vrplumber.com/py3d.py"}]
     },
     {
         "category": "Django",
@@ -33,6 +45,16 @@
                       {"text": "Flask Principal", "url": "https://pythonhosted.org/Flask-Principal/"},
                       {"text": "Flask Admin", "url": "http://flask-admin.readthedocs.io/en/latest/" },
                       {"text": "Flask SocketIO", "url": "https://flask-socketio.readthedocs.io/en/latest/"}]
+    },
+    {
+        "category": "Stackless Python",
+        "slug": "stackless-python",
+        "bookmarks": [{"text": "Stackless Python", "url": "https://bitbucket.org/stackless-dev/stackless/wiki/Home"}]
+    },
+    {
+        "category": "Cython",
+        "slug": "cython",
+        "bookmarks": [{"text": "Cython", "url": "http://cython.org/"}]
     },
     {
         "category": "Clojure",
@@ -462,7 +484,13 @@
         "bookmarks": [{"text": "Amazon Lumberyard", "url": "https://aws.amazon.com/lumberyard/"},
                       {"text": "Unity", "url": "https://unity3d.com/"},
                       {"text": "Phaser", "url": "https://phaser.io/"},
-                      {"text": "Ignifuga", "url": "http://ignifuga.org/"}]
+                      {"text": "Ignifuga", "url": "http://ignifuga.org/"},
+                      {"text": "PyGame", "url": "http://www.pygame.org/"}]
+    },
+    {
+        "category": "Physics Engines",
+        "slug": "physics-engines",
+        "bookmarks": [{"text": "Chipmunk", "url": "https://chipmunk-physics.net/"}]
     },
     {
         "category": "Game Libraries in C",
