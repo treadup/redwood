@@ -25,6 +25,11 @@
                       {"text": "Python 3D Software", "url": "http://www.vrplumber.com/py3d.py"}]
     },
     {
+        "category": "Python Standalone Executables",
+        "slug": "python-standalone-executables",
+        "bookmarks": [{"text": "PyInstaller", "url": "http://www.pyinstaller.org/"}]
+    },
+    {
         "category": "Django",
         "slug": "django",
         "bookmarks": [{"text": "Django", "url": "http://www.djangoproject.com"},
@@ -513,7 +518,8 @@
                        "url": "https://www.reddit.com/r/scheme/comments/6hng3q/i_developed_a_medium_sized_cross_platform/"},
                       {"text": "Functional game logic with truly pauseless garbage collection",
                        "url": "https://medium.com/@brianwill/functional-game-logic-with-truly-pauseless-garbage-collection-cffecc7b96d7"},
-                      {"text": "Hexagonal Grids", "url": "https://www.redblobgames.com/grids/hexagons/"}]
+                      {"text": "Hexagonal Grids", "url": "https://www.redblobgames.com/grids/hexagons/"},
+                      {"text": "Tiled", "url": "http://www.mapeditor.org/"}]
     },
     {
         "category": "Web Game Dev",
@@ -623,6 +629,15 @@
     {
         "category": "Business",
         "slug": "business",
-        "bookmarks": [{"text": "Startup Playbook", "url": "http://playbook.samaltman.com/"}]
+        "bookmarks": [{"text": "Startup Playbook", "url": "http://playbook.samaltman.com/"},
+                      {"text": "Kalzumeus", "url": "https://kalzumeus.com/"},
+                      {"text": "How to start a lean startup", "url": "http://www.ryanyosua.me/how-to-start-a-lean-startup/"},
+                      {"text": "Five ways to build a $100 million business",
+                       "url": "http://christophjanz.blogspot.com/2014/10/five-ways-to-build-100-million-business.html"}]
+    },
+    {
+        "category": "Drawing",
+        "slug": "drawing",
+        "bookmarks": [{"text": "Krita", "url": "https://krita.org/en/"}]
     }
 ]
