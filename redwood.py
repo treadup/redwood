@@ -1,5 +1,7 @@
+import os
 from flask import Flask, render_template, request, make_response
 from flask import redirect, url_for, abort, send_file
+from flask import send_from_directory
 from werkzeug import secure_filename
 import settings
 from storage import get_s3_files_from_result, get_s3_folders_from_result
@@ -23,8 +25,13 @@ def create_app():
     app.config.from_object(settings.DefaultConfiguration)
 
     return app
-    
+
 app = create_app()
+
+@app.route('/favicon.png')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static'),
+                               'favicon.png', mimetype='image/png')
 
 def get_jwt_from_request():
     """
@@ -105,7 +112,7 @@ def login_required(f):
             return redirect(login_url, code=302)
 
         return f(*args, **kwargs)
-    
+
     return login_required_wrapper
 
 @app.route('/')
@@ -134,7 +141,7 @@ def collect_bookmark_categories():
 
         assert slug is not None
         assert category is not None
-   
+
         result.append({
             "category": category,
             "url": "/bookmarks/{}".format(slug)
@@ -175,7 +182,7 @@ def bookmark_category(category_slug):
         return render_template('bookmark-category.html', category=category, bookmarks=bookmarks)
     else:
         abort(404)
-    
+
 @app.route('/photos')
 def photo_collection_list():
     """
@@ -211,7 +218,7 @@ def single_photo(collection_name, photo):
         for image in collection['images']:
             if image['name'] == photo:
                 return render_template("photo.html", image=image)
-    
+
     return 'Could not find matching photo. Should return a nice 404 error here.'
 
 @app.route('/time')
@@ -226,7 +233,7 @@ def current_time():
 
     for place in places:
         place['time'] = datetime.now(pytz.timezone(place['tz'])).strftime("%H:%M")
-    
+
     return render_template("time.html", places=places)
 
 def valid_credentials(username, password):
@@ -245,7 +252,7 @@ def valid_credentials(username, password):
     password_hash = m.hexdigest()
 
     return password_hash == app.config['PASSWORD_HASH']
-    
+
 def create_user_jwt(username, expiration_time_delta, roles):
     """
     Creates a JWT for the given username.
@@ -257,7 +264,7 @@ def create_user_jwt(username, expiration_time_delta, roles):
     identity = {'username': username,
                 'exp': expires,
                 'roles': roles}
-    
+
     return jwt.encode(identity, secret, algorithm='HS256').decode('utf-8')
 
 @app.route('/login/', methods=['GET', 'POST'])
@@ -273,12 +280,12 @@ def login():
     # Change empty redirect_url to None
     if not redirect_url:
         redirect_url = None
-    
+
     if redirect_url:
         action_url = url_for('login', redirect=redirect_url)
     else:
         action_url = url_for('login')
-    
+
     if request.method == 'POST':
         username = request.form.get('username', '')
         password = request.form.get('password', '')
@@ -332,7 +339,7 @@ def logout():
     resp = make_response(redirect("/", code=303))
     resp.set_cookie('identity_jwt', '', expires=0)
     return resp
-    
+
 @app.route('/account')
 def account():
     """
@@ -359,7 +366,7 @@ def token():
     # Check that the user has the role token_creator
     if not is_token_creator(user):
         abort(401)
-    
+
     username = user['username']
     FIFTEEN_MINUTES = 15*60
     roles = []
@@ -419,7 +426,7 @@ def notes(path='/'):
         return render_template('notes-folder.html', folders=folders, files=files)
     else: # Otherwise this is a file
         text = read_s3_file('redwood-notes', path)
-        
+
         return render_template('notes-file.html', text=text)
 
 @app.route('/hacks')
@@ -460,12 +467,12 @@ def files():
     Upload and download files.
     """
     bucket_name = 'redwood-files'
-    
+
     if request.method == 'POST':
         f = request.files['file']
         if(f):
             write_s3_file(bucket_name, secure_filename(f.filename), f.read())
-  	      
+
         return redirect(url_for('files'))
     else:
         _, file_list = read_s3_bucket_folder(bucket_name, '/')
