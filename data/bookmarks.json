@@ -232,8 +232,8 @@
         "bookmarks": [{"text": "Dirty Markup", "url": "https://dirtymarkup.com/"},
                       {"text": "BEM", "url": "http://getbem.com/introduction/"},
                       {"text": "Can I use?", "url": "http://caniuse.com"},
-		      {"text": "I want to use", "url": "http://www.iwanttouse.com/"},
-		      {"text": "Do I use?", "url": "http://doiuse.herokuapp.com/"},
+                      {"text": "I want to use", "url": "http://www.iwanttouse.com/"},
+                      {"text": "Do I use?", "url": "http://doiuse.herokuapp.com/"},
                       {"text": "HTML5 please", "url": "http://html5please.com/"},
                       {"text": "Edge status",
                        "url": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/"},
@@ -272,6 +272,12 @@
         "slug": "progressive-enhancement",
         "bookmarks": [{"text": "Progressive enhancement is still important",
                        "url": "https://jakearchibald.com/2013/progressive-enhancement-still-important/"}]
+    },
+    {
+        "text": "Text Design Tools",
+        "category": "text-design-tools",
+        "bookmarks": [{"text": "Textcraft", "url": "https://textcraft.net/"},
+                      {"text": "Cool Text", "url": "https://cooltext.com/"}]
     },
     {
         "category": "JavaScript",
@@ -612,5 +618,10 @@
         "bookmarks": [{"text": "httpbin", "url": "http://httpbin.org/"},
                       {"text": "hurl.it", "url": "https://www.hurl.it/"},
                       {"text": "requestb.in", "url": "https://requestb.in/"}]
+    },
+    {
+        "category": "Business",
+        "slug": "business",
+        "bookmarks": [{"text": "Startup Playbook", "url": "http://playbook.samaltman.com/"}]
     }
 ]
