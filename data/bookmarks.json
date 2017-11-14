@@ -210,7 +210,9 @@
                       {"text": "memorymanagement.org", "url": "http://www.memorymanagement.org"},
                       {"text": "Learning garbage collection theory",
                        "url": "https://stackoverflow.com/questions/1318631/learning-garbage-collection-theory"},
-                      {"text": "Baker's Treadmill", "url": "http://home.pipeline.com/~hbaker1/NoMotionGC.html"}]
+                      {"text": "Baker's Treadmill", "url": "http://home.pipeline.com/~hbaker1/NoMotionGC.html"},
+                      {"text": "Garbage Collection in Real Time Games with Lua",
+                       "url": "http://lua-users.org/wiki/GarbageCollectionInRealTimeGames"}]
     },
     {
         "category": "Machine Learning",
@@ -337,7 +339,8 @@
     {
         "category": "Erlang",
         "slug": "erlang",
-        "bookmarks":[{"text": "Native Implemented Functions", "url": "http://erlang.org/doc/tutorial/nif.html"}]
+        "bookmarks":[{"text": "Native Implemented Functions", "url": "http://erlang.org/doc/tutorial/nif.html"},
+                     {"text": "Learn you some Erlang", "url": "http://learnyousomeerlang.com/"}]
     },
     {
         "category": "Lisp Flavored Erlang",
@@ -395,6 +398,12 @@
         "bookmarks": [{"text": "Awesome Emacs", "url": "https://github.com/emacs-tw/awesome-emacs"}]
     },
     {
+        "category": "Spacemacs",
+        "slug": "spacemacs",
+        "bookmarks": [{"text": "Spacemacs", "url": "http://spacemacs.org/"},
+                      {"text": "Quick Start", "url": "http://spacemacs.org/doc/QUICK_START.html"}]
+    },
+    {
         "category": "Vim",
         "slug": "vim",
         "bookmarks": [{"text": "Vim Awesome", "url": "http://vimawesome.com/"},
@@ -426,7 +435,7 @@
         "category": "Hosting",
         "slug": "hosting",
 	      "bookmarks": [{"text": "Netlify", "url": "https://www.netlify.com/"},
-                      {"text": "Python Anywhere", "url": "https://www.pythonanywhere.com/"}]
+                        {"text": "Python Anywhere", "url": "https://www.pythonanywhere.com/"}]
     },
     {
         "category": "Literate Programming",
@@ -639,5 +648,13 @@
         "category": "Drawing",
         "slug": "drawing",
         "bookmarks": [{"text": "Krita", "url": "https://krita.org/en/"}]
+    },
+    {
+        "category": "Status",
+        "slug": "status",
+        "bookmarks": [{"text": "status.io", "url": "https://www.status.io/"},
+                      {"text": "statuspage.io", "url": "https://www.statuspage.io/"},
+                      {"text": "statushub", "url": "https://statushub.com/"}]
     }
 ]
+
