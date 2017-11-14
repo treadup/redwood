@@ -105,6 +105,16 @@
                       {"text": "dep", "url": "https://github.com/golang/dep"}]
     },
     {
+        "category": "C",
+        "slug": "haxe",
+        "bookmarks": [{"text": "clib", "url": "https://github.com/clibs/clib"}]
+    },
+    {
+        "category": "Haxe",
+        "slug": "haxe",
+        "bookmarks": [{"text": "Haxe", "url": "https://haxe.org/"}]
+    },
+    {
         "category": "Erlang",
         "slug": "erlang",
         "bookmarks": [{"text": "Erlang", "url": "https://www.erlang.org/"}]
