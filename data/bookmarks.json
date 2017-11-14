@@ -577,9 +577,12 @@
         "bookmarks": [{"text": "suckless.org", "url": "https://suckless.org/"}]
     },
     {
-        "category": "Shell",
-        "slug": "shell",
-        "bookmarks": [{"text": "fish", "url": "https://fishshell.com/"}]
+        "category": "Fish Shell",
+        "slug": "fish",
+        "bookmarks": [{"text": "fish", "url": "https://fishshell.com/"},
+                      {"text": "fish design document", "url": "https://fishshell.com/docs/current/design.html"},
+                      {"text": "fish source", "url": "https://github.com/fish-shell/fish-shell"},
+                      {"text": "Oh My Fish!", "url": "https://github.com/oh-my-fish/oh-my-fish"}]
     },
     {
         "category": "Image Libraries",
