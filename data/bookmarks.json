@@ -62,6 +62,16 @@
         "bookmarks": [{"text": "Cython", "url": "http://cython.org/"}]
     },
     {
+        "category": "Python on the Web",
+        "slug": "python-on-the-web",
+        "bookmarks": [{"text": "PyPy.js", "url": "http://pypyjs.org/" }]
+    },
+    {
+        "category": "RPython",
+        "slug": "rpython",
+        "bookmarks": [{"text": "RPython", "url": "https://rpython.readthedocs.io/en/latest/"}]
+    },
+    {
         "category": "Clojure",
         "slug": "clojure",
         "bookmarks": [{"text": "Clojure", "url": "https://clojure.org/"},
@@ -501,8 +511,13 @@
     {
         "category": "Future Web",
         "slug": "future-web",
-        "bookmarks": [{"text": "Web Components", "url": "https://www.webcomponents.org"},
-                      {"text": "Web Assembly", "url": "http://webassembly.org"}]
+        "bookmarks": [{"text": "Web Components", "url": "https://www.webcomponents.org"}]
+    },
+    {
+        "category": "Web Assembly",
+        "slug": "web-assembly",
+        "bookmarks": [{"text": "Web Assembly", "url": "http://webassembly.org"},
+                     {"text": "Cheerp", "url": "https://www.leaningtech.com/cheerp/"}]
     },
     {
         "category": "Data models",
@@ -668,6 +683,27 @@
         "bookmarks": [{"text": "status.io", "url": "https://www.status.io/"},
                       {"text": "statuspage.io", "url": "https://www.statuspage.io/"},
                       {"text": "statushub", "url": "https://statushub.com/"}]
+    },
+    {
+        "category": "GraphQL",
+        "slug": "graphql",
+        "bookmarks": [{"text": "Graphene", "url": "http://graphene-python.org/"},
+                      {"text": "GraphQL Specification", "url": "http://facebook.github.io/graphql/"},
+                      {"text": "GraphQL on GitHub", "url": "https://github.com/facebook/graphql"}]
+    },
+    {
+        "category": "tmux",
+        "slug": "tmux",
+        "bookmarks": [
+            {"text": "tmux", "url": "https://github.com/tmux/tmux/wiki"},
+            {"text": "The tao of tmux", "url": "https://leanpub.com/the-tao-of-tmux/read"},
+            {"text": "tmux crash course", "url": "https://robots.thoughtbot.com/a-tmux-crash-course"},
+            {"text": "a quick and easy guide to tmux", "url": "http://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/"}]
+    },
+    {
+        "category": "dot files",
+        "slug": "dot-files",
+        "bookmarks": [{"text": "Store your dot files in a bare git repo",
+                       "url": "https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/"}]
     }
 ]
-
