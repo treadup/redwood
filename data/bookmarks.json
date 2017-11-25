@@ -704,6 +704,15 @@
         "category": "dot files",
         "slug": "dot-files",
         "bookmarks": [{"text": "Store your dot files in a bare git repo",
-                       "url": "https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/"}]
+                       "url": "https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/"},
+                      {"text": "dotfiles on GitHub", "url": "http://dotfiles.github.io/"},
+                      {"text": "Yet Another Dotfiles Manager",
+                       "url": "https://thelocehiliosan.github.io/yadm/"},
+                       {"text": "Dotfiles without Symlinks",
+                        "url": "http://lukehinds.com/2016/09/02/dotfiles-without-symlinks.html"},
+                       {"text": "Manage Dotfiles With a Bare Git Repository",
+                        "url": "https://harfangk.github.io/2016/09/19/manage-dotfiles-with-a-git-bare-repository.html"}
+                     ]
     }
 ]
+
