@@ -592,6 +592,16 @@
         "bookmarks": [{"text": "suckless.org", "url": "https://suckless.org/"}]
     },
     {
+        "category": "Shell",
+        "slug": "shell",
+        "bookmarks": [{"text": "Awesome Shell", "url": "https://github.com/alebcay/awesome-shell"}]
+    },
+    {
+        "category": "Bash Shell",
+        "slug": "bash",
+        "bookmarks": [{"text": "Awesome Bash", "url": "https://github.com/awesome-lists/awesome-bash"}]
+    },
+    {
         "category": "Fish Shell",
         "slug": "fish",
         "bookmarks": [{"text": "fish", "url": "https://fishshell.com/"},
