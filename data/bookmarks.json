@@ -723,6 +723,12 @@
                        {"text": "Manage Dotfiles With a Bare Git Repository",
                         "url": "https://harfangk.github.io/2016/09/19/manage-dotfiles-with-a-git-bare-repository.html"}
                      ]
+    },
+    {
+        "category": "CockroachDB",
+        "slug": "cockroachdb",
+        "bookmarks": [{"text": "CockroachDB", "url": "https://www.cockroachlabs.com/"},
+                      {"text": "CockroachDB on GitHub", "url": "https://github.com/cockroachdb/cockroach"}]
     }
 ]
 
