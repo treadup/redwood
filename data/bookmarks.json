@@ -204,6 +204,11 @@
         "bookmarks": [{"text": "femtolisp", "url": "https://github.com/JeffBezanson/femtolisp"}]
     },
     {
+        "category": "Carp Lisp",
+        "slug": "carp",
+        "bookmarks": [{"text": "Carp Lisp", "url": "https://github.com/carp-lang/Carp"}]
+    },
+    {
         "category": "Garbage Collection",
         "slug": "garbage-collection",
         "bookmarks": [{"text": "Shenandoah", "url": "http://openjdk.java.net/jeps/189"},
