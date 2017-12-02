@@ -245,6 +245,11 @@
                        "url": "http://lua-users.org/wiki/GarbageCollectionInRealTimeGames"}]
     },
     {
+        "category": "Region Based Memory Management",
+        "slug": "region-based-memory-management",
+        "bookmarks": [{"text": "Region Based Memory Manangement", "url": "https://en.wikipedia.org/wiki/Region-based_memory_management"}]
+    },
+    {
         "category": "Machine Learning",
         "slug": "machine-learning",
         "bookmarks": [{"text": "Awesome Machine Learning",
