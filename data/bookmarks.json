@@ -209,6 +209,11 @@
         "bookmarks": [{"text": "Carp Lisp", "url": "https://github.com/carp-lang/Carp"}]
     },
     {
+        "category": "Bone Lisp",
+        "slug": "bone-lisp",
+        "bookmarks": [{"text": "Bone Lisp", "url": "https://github.com/wolfgangj/bone-lisp" }]
+    },
+    {
         "category": "Garbage Collection",
         "slug": "garbage-collection",
         "bookmarks": [{"text": "Shenandoah", "url": "http://openjdk.java.net/jeps/189"},
