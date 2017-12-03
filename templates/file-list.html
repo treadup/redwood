@@ -2,12 +2,22 @@
 {% block title %}Files{% endblock %}
 {% block content %}
 
+{% if file_list %}
 <h2>Files</h2>
-<ul>
-{% for file in file_list %}
-    <li><a href="/files/{{file}}">{{file}}</a></li>
-{% endfor %}
-</ul>
+<table>
+    <tbody>
+        {% for file in file_list %}
+        <tr>
+            <td><a href="/files/{{file}}">{{file}}</a></li></td>
+            {# <td><a href="#"><i class="fa fa-edit"></i></a></td> #}
+            <td class="files-trash">
+                <a href="/files/delete/{{file}}"><i class="fa fa-trash"></i></a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endif %}
 
 <h2>Upload file</h2>
 <form action="/files" method="POST" enctype="multipart/form-data">

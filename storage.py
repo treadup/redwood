@@ -86,3 +86,9 @@ def write_s3_stream(bucket_name, key, stream):
     Writes a stream to S3.
     """
     pass
+
+def delete_s3_file(bucket_name, key):
+    """Delete file from S3."""
+    client = boto3.client('s3')
+    client.delete_object(Bucket=bucket_name,
+                         Key=key)

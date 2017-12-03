@@ -5,7 +5,11 @@ from flask import send_from_directory
 from werkzeug import secure_filename
 import settings
 from storage import get_s3_files_from_result, get_s3_folders_from_result
-from storage import read_s3_bucket_folder, read_s3_file, write_s3_file, read_s3_stream
+from storage import (read_s3_bucket_folder,
+                     read_s3_file,
+                     write_s3_file,
+                     read_s3_stream,
+                     delete_s3_file)
 from photos import get_thumbnail_s3_url, get_photo_s3_url, add_collection_thumbnail_url
 from photos import add_collection_url, load_photo_collection_list, get_raw_photo_collection
 from photos import create_image_dict, get_photo_collection
@@ -95,7 +99,7 @@ def require_https():
         # Redirect to the HTTPS version of the page.
         return redirect(request.url.replace("http://", "https://"), code=302)
 
-    return None 
+    return None
 
 def login_required(f):
     """
@@ -393,7 +397,7 @@ def process_folders(folders):
 
 def process_files(path, files):
     """
-    Given a list of filenames creates a list of file dicts where the dict 
+    Given a list of filenames creates a list of file dicts where the dict
     contains the keys "text" and "url". The value for the "text" key is the
     filename. The value for the "url" key is the url of the file.
     """
@@ -442,7 +446,7 @@ def library():
     Something to do with books that I like.
     """
     # Computer Graphics Programming in OpenGL with Java
-    return 'Book list goes here.' 
+    return 'Book list goes here.'
 
 @app.route('/recepies')
 def recepies():
@@ -477,6 +481,19 @@ def files():
     else:
         _, file_list = read_s3_bucket_folder(bucket_name, '/')
         return render_template('file-list.html', file_list=file_list)
+
+@app.route('/files/delete/<filename>', methods=['GET', 'POST'])
+def delete_file(filename):
+    """
+    Delete a single file. The filename can not contain / characters.
+    """
+    bucket_name = 'redwood-files'
+    if request.method == 'POST':
+        delete_s3_file(bucket_name, filename)
+
+        return redirect(url_for('files'))
+    else:
+        return render_template('delete-file.html', filename=filename)
 
 @app.route('/files/<filename>', methods=['GET', 'PUT'])
 @login_required
@@ -548,5 +565,3 @@ def public_files(token, filename):
             mimetype=mimetype_from_extension(filename))
     else:
         raise abort(403)
-
-

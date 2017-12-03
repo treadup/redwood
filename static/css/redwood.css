@@ -233,7 +233,7 @@ footer div {
     max-height:100%;
     display: block;
     margin-left: auto;
-    margin-right: auto     
+    margin-right: auto
     box-sizing: border-box;
 }
 
@@ -273,3 +273,7 @@ footer div {
     text-decoration: none;
 }
 
+/* Files page */
+.files-trash {
+    padding-left: 4em;
+}
