@@ -744,6 +744,14 @@
         "slug": "cockroachdb",
         "bookmarks": [{"text": "CockroachDB", "url": "https://www.cockroachlabs.com/"},
                       {"text": "CockroachDB on GitHub", "url": "https://github.com/cockroachdb/cockroach"}]
+    },
+    {
+        "category": "Books",
+        "slug": "books",
+        "bookmarks": [{"text": "little os book", "url": "https://littleosbook.github.io/"},
+                      {"text": "Crafting Interpreters", "url": "http://www.craftinginterpreters.com/"},
+                      {"text": "Beautiful Racket", "url": "https://beautifulracket.com/"},
+                      {"text": "Writing an Interpreter in Go", "url": "https://interpreterbook.com/"}]
     }
 ]
 
