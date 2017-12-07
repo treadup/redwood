@@ -493,7 +493,8 @@
                       {"text": "Project Management: A surefire way to kill your software product",
                        "url": "https://techbeacon.com/project-management-surefire-way-kill-your-software-product"},
                       {"text": "PHP: A fractal of bad design",
-                       "url": "https://eev.ee/blog/2012/04/09/php-a-fractal-of-bad-design/"}]
+                       "url": "https://eev.ee/blog/2012/04/09/php-a-fractal-of-bad-design/"},
+                      {"text": "Cheney on the M.T.A", "url": "http://home.pipeline.com/~hbaker1/CheneyMTA.html"}]
     },
     {
         "category": "Music",
@@ -557,7 +558,9 @@
         "category": "Game Libraries in C",
         "slug": "c-game-libraries",
         "bookmarks": [{"text": "Raylib", "url": "http://www.raylib.com/"},
-                      {"text": "SDL2", "url": "https://www.libsdl.org/"}]
+                      {"text": "SDL2", "url": "https://www.libsdl.org/"},
+                      {"text": "rfxgen", "url": "https://github.com/raysan5/rfxgen"},
+                      {"text": "raygui", "url": "https://github.com/raysan5/raygui"}]
     },
     {
         "category": "Game Development",
@@ -568,7 +571,9 @@
                       {"text": "Functional game logic with truly pauseless garbage collection",
                        "url": "https://medium.com/@brianwill/functional-game-logic-with-truly-pauseless-garbage-collection-cffecc7b96d7"},
                       {"text": "Hexagonal Grids", "url": "https://www.redblobgames.com/grids/hexagons/"},
-                      {"text": "Tiled", "url": "http://www.mapeditor.org/"}]
+                      {"text": "Tiled", "url": "http://www.mapeditor.org/"},
+                      {"text": "Awesome Game Development",
+                       "url": "https://notabug.org/Calinou/awesome-gamedev"}]
     },
     {
         "category": "Web Game Dev",
@@ -752,6 +757,54 @@
                       {"text": "Crafting Interpreters", "url": "http://www.craftinginterpreters.com/"},
                       {"text": "Beautiful Racket", "url": "https://beautifulracket.com/"},
                       {"text": "Writing an Interpreter in Go", "url": "https://interpreterbook.com/"}]
+    },
+    {
+        "category": "Music Tracker",
+        "slug": "music-tracker",
+        "bookmarks": [{"text": "Music Tracker", "url": "https://en.wikipedia.org/wiki/Music_tracker"},
+                       {"text": "Module file", "url": "https://en.wikipedia.org/wiki/Module_file"},
+                      {"text": "Tracker file formats",
+                       "url": "http://web.archive.org/web/20090504053653/http://pipin.tmd.ns.ac.yu/extra/fileformat/modules/index.htm"},
+                      {"text": "Music Tracking at Library of Congress", "url": "https://www.loc.gov/preservation/digital/formats/fdd/fdd000126.shtml"},
+                      {"text": "Module formats", "url": "https://wiki.openmpt.org/Manual:_Module_formats"},
+                      {"text": "Chiptune", "url": "https://en.wikipedia.org/wiki/Chiptune"},
+                      {"text": "MOD file format", "url": "https://en.wikipedia.org/wiki/MOD_(file_format)"}]
+    },
+    {
+        "category": "Programming Music",
+        "slug": "programming-music",
+        "bookmarks": [{"text": "Pencil Code Music", "url": "https://gym.pencilcode.net/jam/#/jam/dream.html"}]
+    },
+    {
+        "category": "Assembly",
+        "slug": "assembly",
+        "bookmarks": [{"text": "Linux Assembly", "url": "http://asm.sourceforge.net/"},
+                      {"text": "Yasm", "url": "http://yasm.tortall.net/"},
+                      {"text": "NASM", "url": "http://www.nasm.us/"},
+                      {"text": "flat assembler", "url": "https://flatassembler.net/"},
+                      {"text": "flat assembler on Wikipedia", "url": "https://en.wikipedia.org/wiki/FASM"},
+                      {"text": "High Level Assembly on Wikipedia", "url": "https://en.wikipedia.org/wiki/High_Level_Assembly"},
+                      {"text": "Comparison of Assemblers", "url": "https://en.wikipedia.org/wiki/Comparison_of_assemblers"},
+                      {"text": "GNU Assembler", "url": "https://en.wikipedia.org/wiki/GNU_Assembler"}]
+    },
+    {
+        "category": "SDCC",
+        "slug": "sdcc",
+        "bookmarks": [{"text": "Small Device C Compiler", "url": "http://sdcc.sourceforge.net/"}]
+    },
+    {
+        "category": "LLVM",
+        "slug": "llvm",
+        "bookmarks": [{"text": "LLVM", "url": "https://llvm.org/"}]
+    },
+    {
+        "category": "LCC",
+        "slug": "lcc",
+        "bookmarks": [{"text": "LCC", "url": "https://en.m.wikipedia.org/wiki/LCC_(compiler)"}]
+    },
+    {
+        "category": "TCC",
+        "slug": "tcc",
+        "bookmarks": [{"text": "TCC", "url": "https://bellard.org/tcc/"}]
     }
 ]
-
