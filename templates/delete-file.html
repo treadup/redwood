@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Files{% endblock %}
+{% block content %}
+
+<h2>Delete File</h2>
+<p>Are you sure you want to delete the file {{filename}}?</p>
+<h2>Upload file</h2>
+
+<form action="/files/delete/{{filename}}" method="POST" enctype="multipart/form-data">
+    <input type="submit" value="Delete" />
+    <a href="/files">Cancel</a>
+</form>
+
+{% endblock %}
