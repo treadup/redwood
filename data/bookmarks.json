@@ -621,7 +621,8 @@
     {
         "category": "Shell",
         "slug": "shell",
-        "bookmarks": [{"text": "Awesome Shell", "url": "https://github.com/alebcay/awesome-shell"}]
+        "bookmarks": [{"text": "Awesome Shell", "url": "https://github.com/alebcay/awesome-shell"},
+                      {"text": "Writing robust shell scripts", "url": "http://www.davidpashley.com/articles/writing-robust-shell-scripts/"}]
     },
     {
         "category": "Bash Shell",
@@ -813,5 +814,10 @@
         "category": "TCC",
         "slug": "tcc",
         "bookmarks": [{"text": "TCC", "url": "https://bellard.org/tcc/"}]
+    },
+    {
+        "category": "Window Managers",
+        "slug": "window-managers",
+        "bookmarks": [{"text": "SwayWM", "url": "https://github.com/swaywm/sway"}]
     }
 ]
