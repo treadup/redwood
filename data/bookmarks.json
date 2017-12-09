@@ -116,8 +116,10 @@
     },
     {
         "category": "C",
-        "slug": "haxe",
-        "bookmarks": [{"text": "clib", "url": "https://github.com/clibs/clib"}]
+        "slug": "c",
+        "bookmarks": [{"text": "clib", "url": "https://github.com/clibs/clib"},
+                      {"text": "tinyspline", "text": "https://github.com/msteinbeck/tinyspline"},
+                      {"text": "kazmath", "text": "https://github.com/Kazade/kazmath"}]
     },
     {
         "category": "Haxe",
@@ -214,6 +216,11 @@
         "bookmarks": [{"text": "Bone Lisp", "url": "https://github.com/wolfgangj/bone-lisp" }]
     },
     {
+        "category": "Lumen - lisp for lua and JavaScript",
+        "slug": "lumen",
+        "bookmarks": [{"text": "Lumen", "url": "https://github.com/sctb/lumen"}]
+    },
+    {
         "category": "Garbage Collection",
         "slug": "garbage-collection",
         "bookmarks": [{"text": "Shenandoah", "url": "http://openjdk.java.net/jeps/189"},
@@ -243,6 +250,11 @@
                       {"text": "Baker's Treadmill", "url": "http://home.pipeline.com/~hbaker1/NoMotionGC.html"},
                       {"text": "Garbage Collection in Real Time Games with Lua",
                        "url": "http://lua-users.org/wiki/GarbageCollectionInRealTimeGames"}]
+    },
+    {
+        "category": "Tail Calls",
+        "slug": "tail-calls",
+        "bookmarks": [{"text": "Tail Calls", "url": "https://david.wragg.org/blog/2014/02/c-tail-calls-1.html"}]
     },
     {
         "category": "Region Based Memory Management",
@@ -390,6 +402,14 @@
         "slug": "lfe",
         "bookmarks": [{"text": "Lisp Flavored Erlang", "url": "http://lfe.io/"},
                       {"text": "Robert Virding on LFE", "url": "https://www.youtube.com/watch?v=Br2KY12LB2w"}]
+    },
+    {
+        "category": "R",
+        "slug": "r",
+        "bookmarks": [{"text": "R", "url": "https://www.r-project.org/"},
+                      {"text": "Tidyverse", "url": "https://www.tidyverse.org/"},
+                      {"text": "Advanced R", "url": "https://adv-r.hadley.nz/"},
+                      {"text": "R for Data Science", "url": "http://r4ds.had.co.nz/"}]
     },
     {
         "category": "Concatenative Programming",
