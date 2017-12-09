@@ -283,7 +283,8 @@
                       {"text": "CodePen", "url": "https://codepen.io/"},
                       {"text": "Unsplash it", "url": "http://unsplash.it/"},
                       {"text": "Modernizir", "url": "https://modernizr.com/"},
-                      {"text": "favicon.io", "url": "https://favicon.io/"}]
+                      {"text": "favicon.io", "url": "https://favicon.io/"},
+                      {"text": "WTF is a source map?", "url": "https://www.schneems.com/2017/11/14/wtf-is-a-source-map/"}]
     },
     {
         "category": "CSS",
