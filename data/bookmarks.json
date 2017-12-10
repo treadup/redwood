@@ -840,5 +840,24 @@
         "category": "Window Managers",
         "slug": "window-managers",
         "bookmarks": [{"text": "SwayWM", "url": "https://github.com/swaywm/sway"}]
+    },
+    {
+        "category": "Linux Distributions",
+        "slug": "linux-distros",
+        "bookmarks": [{"text": "Gentoo Linux", "url": ""},
+                      {"text": "Sabayon Linux", "url": "https://www.sabayon.org/"},
+                      {"text": "Void Linux", "url": "https://www.voidlinux.eu/"},
+                      {"text": "Artix Linux", "url": "https://artixlinux.org/"}]
+    },
+    {
+        "category": "Gentoo Linux",
+        "slug": "gentoo",
+        "bookmarks": [{"text": "", "url": "https://www.gentoo.org/"},
+                      {"text": "Gentoo Handbook", "url": "https://wiki.gentoo.org/wiki/Handbook:AMD64"}]
+    },
+    {
+        "category": "Courses",
+        "slug": "courses",
+        "bookmarks": [{"text": "hackr.io", "url": "https://hackr.io/"}]
     }
 ]
