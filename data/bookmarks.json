@@ -852,8 +852,13 @@
     {
         "category": "Gentoo Linux",
         "slug": "gentoo",
-        "bookmarks": [{"text": "", "url": "https://www.gentoo.org/"},
+        "bookmarks": [{"text": "Gentoo", "url": "https://www.gentoo.org/"},
                       {"text": "Gentoo Handbook", "url": "https://wiki.gentoo.org/wiki/Handbook:AMD64"}]
+    },
+    {
+        "category": "BSD",
+        "slug": "bsd",
+        "bookmarks": [{"text": "BSD for Linux users", "url": "https://www.over-yonder.net/~fullermd/rants/bsd4linux/01"}]
     },
     {
         "category": "Courses",
