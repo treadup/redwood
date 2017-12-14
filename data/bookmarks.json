@@ -344,7 +344,9 @@
                       {"text": "microjs", "url": "http://microjs.com"},
                       {"text": "unpkg", "url": "https://unpkg.com"},
                       {"text": "cdnjs", "url": "https://cdnjs.com/"},
-                      {"text": "Callback Hell", "url": "http://callbackhell.com/"}]
+                      {"text": "Callback Hell", "url": "http://callbackhell.com/"},
+                      {"text": "ParcelJS", "url": "https://parceljs.org/"},
+                      {"text": "Prettier.io", "url": "https://prettier.io/"}]
     },
     {
         "category": "JavaScript Graphics",
