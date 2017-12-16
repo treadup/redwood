@@ -872,6 +872,15 @@
     {
         "category": "Courses",
         "slug": "courses",
-        "bookmarks": [{"text": "hackr.io", "url": "https://hackr.io/"}]
+        "bookmarks": [{"text": "hackr.io", "url": "https://hackr.io/"},
+                      {"text": "DataCamp", "url": "https://www.datacamp.com/"},
+                      {"text": "edX", "url": "https://www.edx.org/"},
+                      {"text": "Kahn Academy", "url": "https://www.khanacademy.org/"},
+                      {"text": "Udacity", "url": "https://www.udacity.com/"},
+                      {"text": "Standford Engineering Everywhere", "url": "https://see.stanford.edu/"},
+                      {"text": "Springboard", "url": "https://www.springboard.com/"},
+                      {"text": "Udemy", "url": "https://www.udemy.com/"},
+                      {"text": "Duolingo", "url": "https://www.duolingo.com/"},
+                      {"text": "MIT Open Courseware", "url": "https://ocw.mit.edu/"}]
     }
 ]
