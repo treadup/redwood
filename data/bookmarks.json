@@ -269,6 +269,12 @@
                       {"text": "Keras.io", "url": "https://keras.io/"}]
     },
     {
+        "category": "Machine Learning Courses",
+        "slug": "machine-learning-courses",
+        "bookmarks": [{"text": "fast.ai", "url": "http://www.fast.ai/"},
+                      {"text": "deeplearning.ai", "url": "https://www.deeplearning.ai/"}]
+    },
+    {
         "category": "Continuous Integration",
         "slug": "continuous-integration",
         "bookmarks": [{"text": "Circle CI", "url": "https://circleci.com/"},
