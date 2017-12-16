@@ -849,7 +849,8 @@
         "bookmarks": [{"text": "Gentoo Linux", "url": ""},
                       {"text": "Sabayon Linux", "url": "https://www.sabayon.org/"},
                       {"text": "Void Linux", "url": "https://www.voidlinux.eu/"},
-                      {"text": "Artix Linux", "url": "https://artixlinux.org/"}]
+                      {"text": "Artix Linux", "url": "https://artixlinux.org/"},
+                      {"text": "Manjaro Linux", "url": "https://manjaro.org/"}]
     },
     {
         "category": "Gentoo Linux",
