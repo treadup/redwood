@@ -221,6 +221,15 @@
         "bookmarks": [{"text": "Lumen", "url": "https://github.com/sctb/lumen"}]
     },
     {
+        "category": "Lisp Game Programming",
+        "slug": "lisp-game-programming",
+        "bookmarks": [{"text": "CLinch", "url": "https://github.com/BradWBeer/clinch"},
+                      {"text": "Lisp Games", "url": "https://github.com/lispgames/lispgames.github.io/wiki"},
+                      {"text": "Making Games in Chicken",
+                       "url": "http://alex-charlton.com/posts/Prototype_to_polish_Making_games_in_CHICKEN_Scheme_with_Hypergiant/"},
+                      {"text": "Hypergiant", "url": "http://wiki.call-cc.org/eggref/4/hypergiant"}]
+    },
+    {
         "category": "Garbage Collection",
         "slug": "garbage-collection",
         "bookmarks": [{"text": "Shenandoah", "url": "http://openjdk.java.net/jeps/189"},
