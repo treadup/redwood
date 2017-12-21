@@ -118,8 +118,10 @@
         "category": "C",
         "slug": "c",
         "bookmarks": [{"text": "clib", "url": "https://github.com/clibs/clib"},
-                      {"text": "tinyspline", "text": "https://github.com/msteinbeck/tinyspline"},
-                      {"text": "kazmath", "text": "https://github.com/Kazade/kazmath"}]
+                      {"text": "tinyspline", "url": "https://github.com/msteinbeck/tinyspline"},
+                      {"text": "kazmath", "url": "https://github.com/Kazade/kazmath"},
+                      {"text": "SubC", "url": "https://www.t3x.org/reload/"},
+                      {"text": "Awesome C", "url": "https://notabug.org/koz.ross/awesome-c"}]
     },
     {
         "category": "Haxe",
@@ -269,6 +271,12 @@
         "category": "Region Based Memory Management",
         "slug": "region-based-memory-management",
         "bookmarks": [{"text": "Region Based Memory Manangement", "url": "https://en.wikipedia.org/wiki/Region-based_memory_management"}]
+    },
+    {
+        "category": "Data Science",
+        "slug": "data-science",
+        "bookmarks": [{"text": "Machine Learning Prerequisite isnt math",
+                       "url": "http://sharpsightlabs.com/blog/machine-learning-prerequisite-isnt-math/"}]
     },
     {
         "category": "Machine Learning",
