@@ -119,7 +119,8 @@
         "slug": "c",
         "bookmarks": [{"text": "clib", "url": "https://github.com/clibs/clib"},
                       {"text": "tinyspline", "url": "https://github.com/msteinbeck/tinyspline"},
-                      {"text": "kazmath", "url": "https://github.com/Kazade/kazmath"},
+                      {"text": "MathC", "url": "https://github.com/ferreiradaselva/mathc"},
+                      {"text": "Handmade Math", "url": "https://github.com/HandmadeMath/Handmade-Math"},
                       {"text": "SubC", "url": "https://www.t3x.org/reload/"},
                       {"text": "Awesome C", "url": "https://notabug.org/koz.ross/awesome-c"}]
     },
@@ -172,7 +173,8 @@
         "category": "Scheme",
         "slug": "scheme",
         "bookmarks": [{"text": "An opinionated guide to Scheme implementations",
-                       "url": "https://wingolog.org/archives/2013/01/07/an-opinionated-guide-to-scheme-implementations"}]
+                       "url": "https://wingolog.org/archives/2013/01/07/an-opinionated-guide-to-scheme-implementations"},
+		      {"text": "The Little JavaScripter", "url": "http://crockford.com/javascript/little.html"}]
     },
     {
         "category": "Cyclone Scheme",
