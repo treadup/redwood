@@ -901,5 +901,10 @@
                       {"text": "Udemy", "url": "https://www.udemy.com/"},
                       {"text": "Duolingo", "url": "https://www.duolingo.com/"},
                       {"text": "MIT Open Courseware", "url": "https://ocw.mit.edu/"}]
+    },
+    {
+	"category": "Lindenmayer systems",
+	"slug": "lindenmayer-systems",
+	"bookmarks": [{"text": "Simple Loindenmayer System explanation", "url": "http://jobtalle.com/lindenmayer_systems.html"}]
     }
 ]
