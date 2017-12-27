@@ -122,7 +122,8 @@
                       {"text": "MathC", "url": "https://github.com/ferreiradaselva/mathc"},
                       {"text": "Handmade Math", "url": "https://github.com/HandmadeMath/Handmade-Math"},
                       {"text": "SubC", "url": "https://www.t3x.org/reload/"},
-                      {"text": "Awesome C", "url": "https://notabug.org/koz.ross/awesome-c"}]
+                      {"text": "Awesome C", "url": "https://notabug.org/koz.ross/awesome-c"},
+                      {"text": "MiniAL", "url": "https://github.com/dr-soft/mini_al"}]
     },
     {
         "category": "Haxe",
