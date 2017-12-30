@@ -518,6 +518,20 @@ def single_file(filename):
         return send_file(file_stream,
             mimetype=mimetype_from_extension(filename))
 
+def load_todo_list():
+    """
+    Loads the Todo list from the todo.json file
+    """
+    filename = app.config['TODO_LIST_FILENAME']
+    return load_json(filename)
+
+@app.route('/todo')
+def todo():
+    """
+    Display Todo list.
+    """
+    todo_list = load_todo_list()
+    return render_template('todo.html', todo_list=todo_list)
 
 @app.route('/work')
 def work():
