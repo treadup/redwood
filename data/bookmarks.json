@@ -901,5 +901,12 @@
                       {"text": "Udemy", "url": "https://www.udemy.com/"},
                       {"text": "Duolingo", "url": "https://www.duolingo.com/"},
                       {"text": "MIT Open Courseware", "url": "https://ocw.mit.edu/"}]
+    },
+    {
+        "category": "netcode.io",
+        "slug": "netcode.io",
+        "bookmarks": [{"text": "netcode.io", "url": "https://github.com/networkprotocol/netcode.io"},
+                      {"text": "netcode.io in the browser", "url": "https://github.com/RedpointGames/netcode.io-browser"},
+                      {"text": "UDP in the browser", "url": "https://gafferongames.com/post/why_cant_i_send_udp_packets_from_a_browser/"}]
     }
 ]
