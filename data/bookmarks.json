@@ -908,5 +908,10 @@
         "bookmarks": [{"text": "netcode.io", "url": "https://github.com/networkprotocol/netcode.io"},
                       {"text": "netcode.io in the browser", "url": "https://github.com/RedpointGames/netcode.io-browser"},
                       {"text": "UDP in the browser", "url": "https://gafferongames.com/post/why_cant_i_send_udp_packets_from_a_browser/"}]
+    },
+    {
+        "category": "Faketime",
+        "slug": "faketime",
+        "bookmarks": [{"text": "faketime", "url": "https://github.com/wolfcw/libfaketime"}]
     }
 ]
