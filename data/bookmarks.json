@@ -784,7 +784,8 @@
             {"text": "tmux", "url": "https://github.com/tmux/tmux/wiki"},
             {"text": "The tao of tmux", "url": "https://leanpub.com/the-tao-of-tmux/read"},
             {"text": "tmux crash course", "url": "https://robots.thoughtbot.com/a-tmux-crash-course"},
-            {"text": "a quick and easy guide to tmux", "url": "http://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/"}]
+            {"text": "a quick and easy guide to tmux", "url": "http://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/"},
+            {"text": "tmuxp", "url": "https://tmuxp.git-pull.com/en/latest/"}]
     },
     {
         "category": "dot files",
