@@ -140,7 +140,8 @@
         "bookmarks": [{"text": "Elixir", "url": "https://elixir-lang.org/"},
                       {"text": "Elixir Docs", "url": "https://elixir-lang.org/docs.html"},
                       {"text": "Phoenix Framework", "url": "http://phoenixframework.org/"},
-                      {"text": "Distillery", "url": "https://github.com/bitwalker/distillery"}]
+                      {"text": "Distillery", "url": "https://github.com/bitwalker/distillery"},
+                      {"text": "Gigalixir", "url": "https://gigalixir.com/"}]
     },
     {
         "category": "JVM",
