@@ -141,7 +141,8 @@
                       {"text": "Elixir Docs", "url": "https://elixir-lang.org/docs.html"},
                       {"text": "Phoenix Framework", "url": "http://phoenixframework.org/"},
                       {"text": "Distillery", "url": "https://github.com/bitwalker/distillery"},
-                      {"text": "Gigalixir", "url": "https://gigalixir.com/"}]
+                      {"text": "Gigalixir", "url": "https://gigalixir.com/"},
+                      {"text": "Elixir on Google Cloud", "url": "https://cloud.google.com/elixir/"}]
     },
     {
         "category": "JVM",
