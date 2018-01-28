@@ -20,6 +20,7 @@ def load_boolean_environment_variable(name, default):
 class DefaultConfiguration:
 
     BOOKMARKS_FILENAME = 'data/bookmarks.json'
+    TODO_LIST_FILENAME = 'data/todo.json'
     PHOTO_COLLECTION_FILENAME = 'photos/photo_collections.json'
     IDENTITY_JWT_SECRET = load_environment_variable('IDENTITY_JWT_SECRET')
     TWELVE_HOURS = 12*60*60
@@ -37,6 +38,3 @@ class DefaultConfiguration:
     # cat /dev/urandom | head -c 1024 | sha256sum
     PASSWORD_SALT = load_environment_variable('PASSWORD_SALT')
     HTTPS_REQUIRED = load_boolean_environment_variable('HTTPS_REQUIRED', True)
-
-    # The UPLOAD_FOLDER variable does not seem to be used.
-    UPLOAD_FOLDER = '/tmp/upload' 

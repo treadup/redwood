@@ -141,7 +141,9 @@
         "bookmarks": [{"text": "Elixir", "url": "https://elixir-lang.org/"},
                       {"text": "Elixir Docs", "url": "https://elixir-lang.org/docs.html"},
                       {"text": "Phoenix Framework", "url": "http://phoenixframework.org/"},
-                      {"text": "Distillery", "url": "https://github.com/bitwalker/distillery"}]
+                      {"text": "Distillery", "url": "https://github.com/bitwalker/distillery"},
+                      {"text": "Gigalixir", "url": "https://gigalixir.com/"},
+                      {"text": "Elixir on Google Cloud", "url": "https://cloud.google.com/elixir/"}]
     },
     {
         "category": "JVM",
@@ -785,7 +787,9 @@
             {"text": "tmux", "url": "https://github.com/tmux/tmux/wiki"},
             {"text": "The tao of tmux", "url": "https://leanpub.com/the-tao-of-tmux/read"},
             {"text": "tmux crash course", "url": "https://robots.thoughtbot.com/a-tmux-crash-course"},
-            {"text": "a quick and easy guide to tmux", "url": "http://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/"}]
+            {"text": "a quick and easy guide to tmux", "url": "http://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/"},
+            {"text": "tmuxp", "url": "https://tmuxp.git-pull.com/en/latest/"},
+            {"text": "Zanshin Tmux Configuration", "url": "https://zanshin.net/2013/09/05/my-tmux-configuration/"}]
     },
     {
         "category": "dot files",
@@ -904,8 +908,24 @@
                       {"text": "MIT Open Courseware", "url": "https://ocw.mit.edu/"}]
     },
     {
-	"category": "Lindenmayer systems",
-	"slug": "lindenmayer-systems",
-	"bookmarks": [{"text": "Simple Loindenmayer System explanation", "url": "http://jobtalle.com/lindenmayer_systems.html"}]
+        "category": "Lindenmayer systems",
+        "slug": "lindenmayer-systems",
+        "bookmarks": [{"text": "Simple Loindenmayer System explanation",
+                       "url": "http://jobtalle.com/lindenmayer_systems.html"}]
+    },
+    {
+        "category": "netcode.io",
+        "slug": "netcode.io",
+        "bookmarks": [{"text": "netcode.io",
+                       "url": "https://github.com/networkprotocol/netcode.io"},
+                      {"text": "netcode.io in the browser",
+                       "url": "https://github.com/RedpointGames/netcode.io-browser"},
+                      {"text": "UDP in the browser",
+                       "url": "https://gafferongames.com/post/why_cant_i_send_udp_packets_from_a_browser/"}]
+    },
+    {
+        "category": "Faketime",
+        "slug": "faketime",
+        "bookmarks": [{"text": "faketime", "url": "https://github.com/wolfcw/libfaketime"}]
     }
 ]
