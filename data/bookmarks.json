@@ -10,7 +10,9 @@
                       {"text": "Testing Your Code", "url": "http://docs.python-guide.org/en/latest/writing/tests/"},
                       {"text": "Kivy", "url": "https://kivy.org/"},
                       {"text": "Awesome Asyncio", "url": "https://github.com/timofurrer/awesome-asyncio"},
-                      {"text": "Nuitka", "url": "http://nuitka.net/"}]
+                      {"text": "Nuitka", "url": "http://nuitka.net/"},
+                      {"text": "PyFormat", "url": "https://pyformat.info/"},
+                      {"text": "strftime", "url": "http://strftime.org/"}]
     },
     {
         "category": "Python Game Development",
@@ -302,6 +304,11 @@
         "bookmarks": [{"text": "Circle CI", "url": "https://circleci.com/"},
                       {"text": "Travis CI", "url": "https://travis-ci.org/"},
                       {"text": "Coveralls", "url": "https://coveralls.io/"}]
+    },
+    {
+        "category": "Continuous Delivery",
+        "slug": "continuous-delivery",
+        "bookmarks": [{"text": "GoCD", "url": "https://www.gocd.org/"}]
     },
     {
         "category": "Configuration Management",
@@ -743,7 +750,8 @@
     {
         "category": "Terminal",
         "slug": "terminal",
-        "bookmarks": [{"text": "Terminals are sexy", "url": "https://terminalsare.sexy/"}]
+        "bookmarks": [{"text": "Terminals are sexy", "url": "https://terminalsare.sexy/"},
+                      {"text": "mosh", "url": "https://mosh.org/"}]
     },
     {
         "category": "Http Utils",
@@ -927,5 +935,10 @@
         "category": "Faketime",
         "slug": "faketime",
         "bookmarks": [{"text": "faketime", "url": "https://github.com/wolfcw/libfaketime"}]
+    },
+    {
+        "category": "Scrum",
+        "slug": "scrum",
+        "bookmarks": [{"text": "Scrum Guide", "url": "http://www.scrumguides.org/scrum-guide.html"}]
     }
 ]
