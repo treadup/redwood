@@ -230,6 +230,16 @@
         "bookmarks": [{"text": "Lumen", "url": "https://github.com/sctb/lumen"}]
     },
     {
+        "category": "Common Lisp Web Programming",
+        "slug": "common-lisp-web-programming",
+        "bookmarks": [{"text": "Clack", "url": "https://github.com/fukamachi/clack"},
+                      {"text": "Websocket Driver", "url": "https://github.com/fukamachi/websocket-driver"},
+                      {"text": "Woo", "url": "https://github.com/fukamachi/woo"},
+                      {"text": "ningle", "url": "http://8arrow.org/ningle/"},
+                      {"text": "Caveman2", "url": "https://github.com/fukamachi/caveman"},
+                      {"text": "fukamachi", "url": "https://github.com/fukamachi?tab=repositories"}]
+    },
+    {
         "category": "Lisp Game Programming",
         "slug": "lisp-game-programming",
         "bookmarks": [{"text": "CLinch", "url": "https://github.com/BradWBeer/clinch"},
