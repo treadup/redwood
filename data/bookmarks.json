@@ -940,5 +940,10 @@
         "category": "Scrum",
         "slug": "scrum",
         "bookmarks": [{"text": "Scrum Guide", "url": "http://www.scrumguides.org/scrum-guide.html"}]
+    },
+    {
+        "category": "Serialization Formats",
+        "slug": "serialization-formats",
+        "bookmarks": [{"text": "MessagePack", "url": "https://msgpack.org/"}]
     }
 ]
