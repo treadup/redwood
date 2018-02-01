@@ -114,7 +114,14 @@
                       {"text": "Go Lang Libs", "url": "https://golanglibs.com/"},
                       {"text": "cgo", "url": "https://golang.org/cmd/cgo/"},
                       {"text": "Grumpy", "url": "https://github.com/google/grumpy"},
-                      {"text": "dep", "url": "https://github.com/golang/dep"}]
+                      {"text": "dep", "url": "https://github.com/golang/dep"},
+                      {"text": "Delve", "url": "https://github.com/derekparker/delve"}]
+    },
+    {
+        "category": "node.js",
+        "slug": "nodejs",
+        "bookmarks": [{"text": "ws", "url": "https://github.com/derekparker/delve"},
+                      {"text": "primus", "url": "https://github.com/primus/primus"}]
     },
     {
         "category": "C",
@@ -441,7 +448,8 @@
     {
         "category": "Erlang",
         "slug": "erlang",
-        "bookmarks":[{"text": "Native Implemented Functions", "url": "http://erlang.org/doc/tutorial/nif.html"},
+        "bookmarks":[{"text": "Cowboy", "url": "https://github.com/ninenines/cowboy"},
+                     {"text": "Native Implemented Functions", "url": "http://erlang.org/doc/tutorial/nif.html"},
                      {"text": "Learn you some Erlang", "url": "http://learnyousomeerlang.com/"}]
     },
     {
