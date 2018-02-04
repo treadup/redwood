@@ -351,6 +351,11 @@
                       {"text": "WTF is a source map?", "url": "https://www.schneems.com/2017/11/14/wtf-is-a-source-map/"}]
     },
     {
+        "category": "WebSockets",
+        "slug": "websockets",
+        "bookmarks": [{"text": "Echo server", "url": "https://www.websocket.org/echo.html"}]
+    },
+    {
         "category": "CSS",
         "slug": "css",
         "bookmarks": [{"text":"Picnic CSS", "url": "https://picnicss.com/"},
