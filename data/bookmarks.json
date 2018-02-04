@@ -393,8 +393,18 @@
     {
         "category": "Bootstrap",
         "slug": "bootstrap",
-        "bookmarks": [{"text": "Buttons", "https://getbootstrap.com/docs/4.0/components/buttons/"},
+        "bookmarks": [{"text": "Buttons", "url": "https://getbootstrap.com/docs/4.0/components/buttons/"},
                       {"text": "Spacing", "url": "https://getbootstrap.com/docs/4.0/utilities/spacing/"}]
+    },
+    {
+        "category": "Spectre CSS",
+        "slug": "spectre",
+        "bookmarks": [{"text": "", "url": "https://picturepan2.github.io/spectre/"}]
+    },
+    {
+        "category": "Tailwind CSS",
+        "slug": "tailwindcss",
+        "bookmarks": [{"text": "Tailwind CSS", "url": "https://tailwindcss.com/"}]
     },
     {
         "category": "Text Design Tools",
@@ -727,6 +737,11 @@
                       {"text": "fish design document", "url": "https://fishshell.com/docs/current/design.html"},
                       {"text": "fish source", "url": "https://github.com/fish-shell/fish-shell"},
                       {"text": "Oh My Fish!", "url": "https://github.com/oh-my-fish/oh-my-fish"}]
+    },
+    {
+        "category": "Elvish",
+        "slug": "elvish",
+        "bookmarks": [{"text": "elvish", "url": "https://elvish.io/"}]
     },
     {
         "category": "Image Libraries",
