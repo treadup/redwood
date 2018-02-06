@@ -993,5 +993,14 @@
         "category": "Serialization Formats",
         "slug": "serialization-formats",
         "bookmarks": [{"text": "MessagePack", "url": "https://msgpack.org/"}]
+    },
+    {
+        "category": "Streaming",
+        "slug": "streaming",
+        "bookmarks": [{"text": "Awesome Streaming", "url": "https://github.com/manuzhang/awesome-streaming"},
+                      {"text": "Apache Storm", "url": "http://storm.apache.org/"},
+                      {"text": "Apache Flink", "url": "https://flink.apache.org/"},
+                      {"text": "Apache Spark Streaming",
+                       "url": "https://spark.apache.org/docs/latest/quick-start.html"}]
     }
 ]
