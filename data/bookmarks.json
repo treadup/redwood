@@ -142,8 +142,11 @@
     {
         "category": "Erlang",
         "slug": "erlang",
-        "bookmarks": [{"text": "Erlang", "url": "https://www.erlang.org/"}]
+        "bookmarks": [{"text": "Erlang", "url": "https://www.erlang.org/"},
+                      {"text": "Cowboy", "url": "https://github.com/ninenines/cowboy"},
+                      {"text": "Learn you some Erlang", "url": "http://learnyousomeerlang.com/content"}]
     },
+
     {
         "category": "Elixir",
         "slug": "elixir",
@@ -469,13 +472,6 @@
         "bookmarks": [
             {"text": "Lua", "url": "http://www.lua.org/"},
             {"text": "Löve2D", "url": "https://love2d.org/"}]
-    },
-    {
-        "category": "Erlang",
-        "slug": "erlang",
-        "bookmarks":[{"text": "Cowboy", "url": "https://github.com/ninenines/cowboy"},
-                     {"text": "Native Implemented Functions", "url": "http://erlang.org/doc/tutorial/nif.html"},
-                     {"text": "Learn you some Erlang", "url": "http://learnyousomeerlang.com/content"}]
     },
     {
         "category": "Lisp Flavored Erlang",
