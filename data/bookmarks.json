@@ -475,7 +475,7 @@
         "slug": "erlang",
         "bookmarks":[{"text": "Cowboy", "url": "https://github.com/ninenines/cowboy"},
                      {"text": "Native Implemented Functions", "url": "http://erlang.org/doc/tutorial/nif.html"},
-                     {"text": "Learn you some Erlang", "url": "http://learnyousomeerlang.com/"}]
+                     {"text": "Learn you some Erlang", "url": "http://learnyousomeerlang.com/content"}]
     },
     {
         "category": "Lisp Flavored Erlang",
