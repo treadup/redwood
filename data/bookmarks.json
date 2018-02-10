@@ -413,6 +413,11 @@
         "bookmarks": [{"text": "Tailwind CSS", "url": "https://tailwindcss.com/"}]
     },
     {
+        "category": "Tachyons CSS",
+        "slug": "tachyons",
+        "bookmarks": [{"text": "tachyons", "url": "https://tachyons.io"}]
+    },
+    {
         "category": "Text Design Tools",
         "slug": "text-design-tools",
         "bookmarks": [{"text": "Textcraft", "url": "https://textcraft.net/"},
@@ -601,7 +606,9 @@
                        "url": "https://techbeacon.com/project-management-surefire-way-kill-your-software-product"},
                       {"text": "PHP: A fractal of bad design",
                        "url": "https://eev.ee/blog/2012/04/09/php-a-fractal-of-bad-design/"},
-                      {"text": "Cheney on the M.T.A", "url": "http://home.pipeline.com/~hbaker1/CheneyMTA.html"}]
+                      {"text": "Cheney on the M.T.A", "url": "http://home.pipeline.com/~hbaker1/CheneyMTA.html"},
+                      {"text": "Everything Easy is Hard Again",
+                       "url": "https://frankchimero.com/writing/everything-easy-is-hard-again/"}]
     },
     {
         "category": "Music",
