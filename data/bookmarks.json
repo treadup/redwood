@@ -360,7 +360,10 @@
     {
         "category": "WebSockets",
         "slug": "websockets",
-        "bookmarks": [{"text": "Echo server", "url": "https://www.websocket.org/echo.html"}]
+        "bookmarks": [{"text": "Echo server", "url": "https://www.websocket.org/echo.html"},
+                      {"text": "websocketd", "url": "http://websocketd.com/"},
+                      {"text": "Websockets from Scratch",
+                       "url": "https://blog.pusher.com/websockets-from-scratch/"}]
     },
     {
         "category": "CSS",
