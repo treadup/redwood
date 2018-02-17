@@ -1,0 +1,20 @@
+[
+    {
+        "category": "Machine Learning",
+        "slug": "machine-learning",
+        "books":[
+            {"title": "Introduction to Machine Learning",
+             "url": "https://www.amazon.com/Introduction-Machine-Learning-Python-Scientists/dp/1449369413/"},
+            {"title": "Machine Learning: A Hands-On, Project-Based Introduction to Machine Learning",
+             "url": "https://www.amazon.com/Machine-Learning-Hands-Project-Based-Introduction/dp/1978373880/"},
+            {"title": "Machine Learning Ultimate Beginners Guide",
+             "url": "https://www.amazon.com/Machine-Learning-Ultimate-Beginners-Algorithms/dp/197402038X/"},
+            {"title": "Data Science from Scratch",
+             "url": "https://www.amazon.com/Data-Science-Scratch-Principles-Python/dp/149190142X/"},
+            {"title": "Python Data Science Handbook: Essential Tools for Working with Data",
+             "url": "https://www.amazon.com/Python-Data-Science-Handbook-Essential/dp/1491912057/"},
+            {"title": "Deep Learning: A Practitioner's Approach",
+             "url": "https://www.amazon.com/Deep-Learning-Practitioners-Josh-Patterson/dp/1491914254/"}
+        ]
+    }
+]
