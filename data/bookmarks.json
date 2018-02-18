@@ -1019,5 +1019,12 @@
                       {"text": "Apache Flink", "url": "https://flink.apache.org/"},
                       {"text": "Apache Spark Streaming",
                        "url": "https://spark.apache.org/docs/latest/quick-start.html"}]
+    },
+    {
+        "category": "Remote Desktop Protocol",
+        "slug": "rdp",
+        "bookmarks": [{"text": "rdesktop", "url": "http://www.rdesktop.org/"},
+                      {"text": "xrdp", "url": "http://www.xrdp.org/"},
+                      {"text": "FreeRDP", "url: "https://github.com/FreeRDP/FreeRDP"}]
     }
 ]
