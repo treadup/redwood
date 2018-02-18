@@ -12,7 +12,15 @@
                       {"text": "Awesome Asyncio", "url": "https://github.com/timofurrer/awesome-asyncio"},
                       {"text": "Nuitka", "url": "http://nuitka.net/"},
                       {"text": "PyFormat", "url": "https://pyformat.info/"},
-                      {"text": "strftime", "url": "http://strftime.org/"}]
+                      {"text": "strftime", "url": "http://strftime.org/"},
+                      {"text": "Alice in Python projectland",
+                       "url": "https://veekaybee.github.io/2017/09/26/python-packaging/"},
+                      {"text": "Structuring your Project",
+                       "url": "http://docs.python-guide.org/en/latest/writing/structure/"},
+                      {"text": "Python Packaging",
+                       "url": "https://python-packaging.readthedocs.io/en/latest/"},
+                      {"text": "localshop",
+                       "url": "https://github.com/mvantellingen/localshop"}]
     },
     {
         "category": "Python Game Development",
@@ -307,14 +315,16 @@
         "category": "Data Science",
         "slug": "data-science",
         "bookmarks": [{"text": "Machine Learning Prerequisite isnt math",
-                       "url": "http://sharpsightlabs.com/blog/machine-learning-prerequisite-isnt-math/"}]
+                       "url": "http://sharpsightlabs.com/blog/machine-learning-prerequisite-isnt-math/"},
+                      {"text": "Kaggle", "url": "https://www.kaggle.com/"}]
     },
     {
         "category": "Machine Learning",
         "slug": "machine-learning",
         "bookmarks": [{"text": "Awesome Machine Learning",
                        "url": "https://github.com/josephmisiti/awesome-machine-learning"},
-                      {"text": "Keras.io", "url": "https://keras.io/"}]
+                      {"text": "Keras.io", "url": "https://keras.io/"},
+                      {"text": "PyTorch", "url": "http://pytorch.org/"}]
     },
     {
         "category": "Machine Learning Courses",
@@ -371,7 +381,8 @@
         "bookmarks": [{"text":"Picnic CSS", "url": "https://picnicss.com/"},
                       {"text": "PostCSS", "url": "http://postcss.org/"},
                       {"text": "Awesome PostCSS", "url": "https://github.com/jjaderg/awesome-postcss"},
-                      {"text": "cssreference.io", "url": "http://cssreference.io/"}]
+                      {"text": "cssreference.io", "url": "http://cssreference.io/"},
+                      {"text": "pesticide.io", "url": "http://pesticide.io/"}]
     },
     {
         "category": "Flexbox",
