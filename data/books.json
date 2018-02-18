@@ -16,5 +16,19 @@
             {"title": "Deep Learning: A Practitioner's Approach",
              "url": "https://www.amazon.com/Deep-Learning-Practitioners-Josh-Patterson/dp/1491914254/"}
         ]
+    },
+    {
+        "category": "Visualizing Information",
+        "slug": "visualizing-information",
+        "books": [
+            {"title": "Storytelling with Data: A Data Visualization Guide for Business Professionals",
+             "url": "https://www.amazon.com/Storytelling-Data-Visualization-Business-Professionals/dp/1119002257/"},
+            {"title": "Show Me the Numbers: Designing Tables and Graphs to Enlighten",
+             "url": "https://www.amazon.com/Show-Me-Numbers-Designing-Enlighten/dp/0970601972/"},
+            {"title": "Beautiful Evidence",
+             "url": "https://www.amazon.com/Beautiful-Evidence-Edward-R-Tufte/dp/0961392177/"},
+            {"title": "Envisioning Information",
+             "url": "https://www.amazon.com/Envisioning-Information-Edward-R-Tufte/dp/0961392118/"}
+        ]
     }
 ]
