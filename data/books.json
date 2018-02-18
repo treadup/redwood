@@ -30,5 +30,13 @@
             {"title": "Envisioning Information",
              "url": "https://www.amazon.com/Envisioning-Information-Edward-R-Tufte/dp/0961392118/"}
         ]
+    },
+    {
+        "category": "Python",
+        "slug": "python",
+        "books": [
+            {"title": "The Hitchhiker's Guide to Python",
+             "url": "https://www.amazon.com/Hitchhikers-Guide-Python-Practices-Development/dp/1491933178/"}
+        ]
     }
 ]
