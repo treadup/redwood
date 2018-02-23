@@ -373,7 +373,9 @@
         "bookmarks": [{"text": "Echo server", "url": "https://www.websocket.org/echo.html"},
                       {"text": "websocketd", "url": "http://websocketd.com/"},
                       {"text": "Websockets from Scratch",
-                       "url": "https://blog.pusher.com/websockets-from-scratch/"}]
+                       "url": "https://blog.pusher.com/websockets-from-scratch/"},
+                      {"text": "Awesome Websockets",
+                       "url": "https://github.com/facundofarias/awesome-websockets"}]
     },
     {
         "category": "CSS",
@@ -1026,6 +1028,6 @@
         "slug": "rdp",
         "bookmarks": [{"text": "rdesktop", "url": "http://www.rdesktop.org/"},
                       {"text": "xrdp", "url": "http://www.xrdp.org/"},
-                      {"text": "FreeRDP", "url: "https://github.com/FreeRDP/FreeRDP"}]
+                      {"text": "FreeRDP", "url": "https://github.com/FreeRDP/FreeRDP"}]
     }
 ]
