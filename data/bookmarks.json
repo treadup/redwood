@@ -152,9 +152,9 @@
         "slug": "erlang",
         "bookmarks": [{"text": "Erlang", "url": "https://www.erlang.org/"},
                       {"text": "Cowboy", "url": "https://github.com/ninenines/cowboy"},
-                      {"text": "Learn you some Erlang", "url": "http://learnyousomeerlang.com/content"}]
+                      {"text": "Learn you some Erlang", "url": "http://learnyousomeerlang.com/content"},
+                      {"text": "rebar3", "url": "https://github.com/erlang/rebar3"}]
     },
-
     {
         "category": "Elixir",
         "slug": "elixir",
