@@ -22,7 +22,8 @@ import hashlib
 from jwt import ExpiredSignatureError
 from functools import wraps
 
-from pprint import pprint
+from settings import load_environment_variable
+
 
 def create_app():
     app = Flask(__name__)
@@ -30,12 +31,15 @@ def create_app():
 
     return app
 
+
 app = create_app()
+
 
 @app.route('/favicon.png')
 def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'),
                                'favicon.png', mimetype='image/png')
+
 
 def get_jwt_from_request():
     """
@@ -50,22 +54,25 @@ def get_jwt_from_request():
     else:
         return header_identity_jwt
 
+
 def get_current_user():
     """
-    Gets the current user. Gets the JWT from the request and parses out the result.
-    Returns None if the JWT has expired.
+    Gets the current user. Gets the JWT from the request and parses out
+    the result. Returns None if the JWT has expired.
     """
     identity_jwt = get_jwt_from_request()
 
     if identity_jwt:
         try:
             secret = app.config['IDENTITY_JWT_SECRET']
-            identity = jwt.decode(identity_jwt.encode('utf-8'), secret, algorithms=['HS256'])
+            identity = jwt.decode(identity_jwt.encode('utf-8'),
+                                  secret, algorithms=['HS256'])
             return identity
         except ExpiredSignatureError as err:
             return None
 
     return None
+
 
 @app.context_processor
 def inject_user():
@@ -74,12 +81,13 @@ def inject_user():
     """
     return {"user": get_current_user()}
 
+
 @app.before_request
 def require_https():
     """
-    The require_https method is a before request method that checks that the request
-    is being made using https.
-    (Actually since we are using heroku it will check that the x-forwarded-proto header
+    The require_https method is a before request method that checks that the
+    request is being made using https.
+    (On Heroku this is done by checking that the x-forwarded-proto header
     is set to https and not http.)
     """
     # If we are not configured to require HTTPS then do nothing.
@@ -100,6 +108,7 @@ def require_https():
         return redirect(request.url.replace("http://", "https://"), code=302)
 
     return None
+
 
 def login_required(f):
     """
