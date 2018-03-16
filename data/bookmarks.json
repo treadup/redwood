@@ -317,7 +317,8 @@
         "slug": "data-science",
         "bookmarks": [{"text": "Machine Learning Prerequisite isnt math",
                        "url": "http://sharpsightlabs.com/blog/machine-learning-prerequisite-isnt-math/"},
-                      {"text": "Kaggle", "url": "https://www.kaggle.com/"}]
+                      {"text": "Kaggle", "url": "https://www.kaggle.com/"},
+                      {"text": "Deep Learning Book", "url": "http://www.deeplearningbook.org/"}]
     },
     {
         "category": "Machine Learning",
