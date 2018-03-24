@@ -133,6 +133,16 @@
                       {"text": "Delve", "url": "https://github.com/derekparker/delve"}]
     },
     {
+        "category": "Go Documentation",
+        "slug": "Go Docs",
+        "bookmarks": [
+            {"text": "Effective Go", "url": "https://golang.org/doc/effective_go.html"},
+            {"text": "Go Programming Language Specification",
+             "url": "https://golang.org/ref/spec"},
+            {"text": "Errors are values", "url": "https://blog.golang.org/errors-are-values"},
+            {"text": "Error handling and Go", "url": "https://blog.golang.org/error-handling-and-go"}]
+    },
+    {
         "category": "node.js",
         "slug": "nodejs",
         "bookmarks": [{"text": "ws", "url": "https://github.com/derekparker/delve"},
