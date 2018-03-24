@@ -24,6 +24,12 @@
                       {"text": "PyDigger", "url": "https://pydigger.com/"}]
     },
     {
+        "category": "Python Language Specification",
+        "slug": "python-language-spec",
+        "bookmarks": [
+            {"text": "ToC", "url": "https://docs.python.org/3/reference/index.html"}
+        ]
+    {
         "category": "Python Game Development",
         "slug": "python-game-development",
         "bookmarks": [{"text": "pyglet", "url": "https://bitbucket.org/pyglet/pyglet/wiki/Home"},
