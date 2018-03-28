@@ -140,7 +140,8 @@
             {"text": "Go Programming Language Specification",
              "url": "https://golang.org/ref/spec"},
             {"text": "Errors are values", "url": "https://blog.golang.org/errors-are-values"},
-            {"text": "Error handling and Go", "url": "https://blog.golang.org/error-handling-and-go"}]
+            {"text": "Error handling and Go", "url": "https://blog.golang.org/error-handling-and-go"},
+            {"text": "Go Proverbs", "url": "http://go-proverbs.github.io/"}]
     },
     {
         "category": "node.js",
