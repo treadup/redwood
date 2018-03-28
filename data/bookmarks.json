@@ -511,7 +511,8 @@
         "slug": "lua",
         "bookmarks": [
             {"text": "Lua", "url": "http://www.lua.org/"},
-            {"text": "Löve2D", "url": "https://love2d.org/"}]
+            {"text": "Löve2D", "url": "https://love2d.org/"},
+            {"text": "luastatic", "url": "https://github.com/ers35/luastatic"}]
     },
     {
         "category": "Lisp Flavored Erlang",
