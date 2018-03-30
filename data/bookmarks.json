@@ -271,6 +271,11 @@
         "bookmarks": [{"text": "Lumen", "url": "https://github.com/sctb/lumen"}]
     },
     {
+        "category": "Common Lisp",
+        "slug": "common-lisp",
+        "bookmarks": [{"text": "Common Lisp", "url": "https://common-lisp.net/"}]
+    },
+    {
         "category": "Common Lisp Web Programming",
         "slug": "common-lisp-web-programming",
         "bookmarks": [{"text": "Clack", "url": "https://github.com/fukamachi/clack"},
