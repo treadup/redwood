@@ -29,6 +29,7 @@
         "bookmarks": [
             {"text": "ToC", "url": "https://docs.python.org/3/reference/index.html"}
         ]
+    },
     {
         "category": "Python Game Development",
         "slug": "python-game-development",
