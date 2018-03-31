@@ -839,6 +839,11 @@
                        "url": "https://blogs.vmware.com/vfabric/2013/02/choosing-your-messaging-protocol-amqp-mqtt-or-stomp.html"}]
     },
     {
+        "category": "Message Queues",
+        "slug": "message-queues",
+        "bookmarks": [{"text": "queues.io", "url": "http://queues.io/"}]
+    },
+    {
         "category": "RabbitMQ",
         "slug": "rabbitmq",
         "bookmarks": [{"text": "RabbitMQ", "url": "https://www.rabbitmq.com/" }]
