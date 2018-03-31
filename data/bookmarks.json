@@ -871,6 +871,11 @@
                        "url": "http://christophjanz.blogspot.com/2014/10/five-ways-to-build-100-million-business.html"}]
     },
     {
+        "category": "Jobs",
+        "slug": "jobs",
+        "bookmarks": [{"text": "The Hub", "url": "https://thehub.se/jobs/"}]
+    },
+    {
         "category": "Drawing",
         "slug": "drawing",
         "bookmarks": [{"text": "Krita", "url": "https://krita.org/en/"}]
