@@ -652,6 +652,11 @@
                        "url": "https://frankchimero.com/writing/everything-easy-is-hard-again/"}]
     },
     {
+        "category": "Talks",
+        "slug": "talks",
+        "bookmarks": [{"text": "The Future of Programming", "url": "https://vimeo.com/71278954", "presenter": "Bret Victor"}]
+    },
+    {
         "category": "Music",
         "slug": "music",
         "bookmarks": [{"text": "A soft murmur", "url": "http://asoftmurmur.com/"}]
