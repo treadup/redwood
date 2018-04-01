@@ -654,7 +654,12 @@
     {
         "category": "Talks",
         "slug": "talks",
-        "bookmarks": [{"text": "The Future of Programming", "url": "https://vimeo.com/71278954", "presenter": "Bret Victor"}]
+        "bookmarks": [{"text": "The Future of Programming",
+                       "url": "https://vimeo.com/71278954",
+                       "presenter": "Bret Victor"},
+                      {"text": "Inventing on Principle",
+                       "url": "https://vimeo.com/36579366",
+                       "presenter": "Bret Victor"}]
     },
     {
         "category": "Music",
