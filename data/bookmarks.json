@@ -21,14 +21,16 @@
                        "url": "https://python-packaging.readthedocs.io/en/latest/"},
                       {"text": "localshop",
                        "url": "https://github.com/mvantellingen/localshop"},
-                      {"text": "PyDigger", "url": "https://pydigger.com/"}]
+                      {"text": "PyDigger", "url": "https://pydigger.com/"}],
+        "visibility": "public"
     },
     {
         "category": "Python Language Specification",
         "slug": "python-language-spec",
         "bookmarks": [
             {"text": "ToC", "url": "https://docs.python.org/3/reference/index.html"}
-        ]
+        ],
+        "visibility": "public"
     },
     {
         "category": "Python Game Development",
@@ -40,25 +42,29 @@
                        "url": "http://codeboje.de/2d-and-3d-game-and-rendering-engines-python/"},
                       {"text": "KivEnt", "url": "http://kivent.org/"},
                       {"text": "PyOpenGL", "url": "http://pyopengl.sourceforge.net/"},
-                      {"text": "Python 3D Software", "url": "http://www.vrplumber.com/py3d.py"}]
+                      {"text": "Python 3D Software", "url": "http://www.vrplumber.com/py3d.py"}],
+        "visibility": "public"
     },
     {
         "category": "Python Standalone Executables",
         "slug": "python-standalone-executables",
-        "bookmarks": [{"text": "PyInstaller", "url": "http://www.pyinstaller.org/"}]
+        "bookmarks": [{"text": "PyInstaller", "url": "http://www.pyinstaller.org/"}],
+        "visibility": "public"
     },
     {
         "category": "Django",
         "slug": "django",
         "bookmarks": [{"text": "Django", "url": "http://www.djangoproject.com"},
                       {"text": "Awesome Django", "url": "http://awesome-django.com/"},
-                      {"text": "Classy Class Based Views", "url": "http://ccbv.co.uk/"}]
+                      {"text": "Classy Class Based Views", "url": "http://ccbv.co.uk/"}],
+        "visibility": "public"
     },
     {
         "category": "Django Rest Framework",
         "slug": "django-rest-framework",
         "bookmarks": [{"text": "Djanog Rest Framework", "url": "http://www.django-rest-framework.org/"},
-                      {"text": "Classy Django Rest Framework", "url": "http://www.cdrf.co/"}]
+                      {"text": "Classy Django Rest Framework", "url": "http://www.cdrf.co/"}],
+        "visibility": "public"
     },
     {
         "category": "Flask",
@@ -67,27 +73,32 @@
                       {"text": "Jinja2", "url": "http://jinja.pocoo.org/"},
                       {"text": "Flask Principal", "url": "https://pythonhosted.org/Flask-Principal/"},
                       {"text": "Flask Admin", "url": "http://flask-admin.readthedocs.io/en/latest/" },
-                      {"text": "Flask SocketIO", "url": "https://flask-socketio.readthedocs.io/en/latest/"}]
+                      {"text": "Flask SocketIO", "url": "https://flask-socketio.readthedocs.io/en/latest/"}],
+        "visibility": "public"
     },
     {
         "category": "Stackless Python",
         "slug": "stackless-python",
-        "bookmarks": [{"text": "Stackless Python", "url": "https://bitbucket.org/stackless-dev/stackless/wiki/Home"}]
+        "bookmarks": [{"text": "Stackless Python", "url": "https://bitbucket.org/stackless-dev/stackless/wiki/Home"}],
+        "visibility": "public"
     },
     {
         "category": "Cython",
         "slug": "cython",
-        "bookmarks": [{"text": "Cython", "url": "http://cython.org/"}]
+        "bookmarks": [{"text": "Cython", "url": "http://cython.org/"}],
+        "visibility": "public"
     },
     {
         "category": "Python on the Web",
         "slug": "python-on-the-web",
-        "bookmarks": [{"text": "PyPy.js", "url": "http://pypyjs.org/" }]
+        "bookmarks": [{"text": "PyPy.js", "url": "http://pypyjs.org/" }],
+        "visibility": "public"
     },
     {
         "category": "RPython",
         "slug": "rpython",
-        "bookmarks": [{"text": "RPython", "url": "https://rpython.readthedocs.io/en/latest/"}]
+        "bookmarks": [{"text": "RPython", "url": "https://rpython.readthedocs.io/en/latest/"}],
+        "visibility": "public"
     },
     {
         "category": "Clojure",
@@ -114,13 +125,15 @@
                        "url": "https://objectcomputing.com/resources/publications/sett/march-2009-clojure-functional-programming-for-the-jvm/"},
                       {"text": "Clojure Distilled", "url": "https://yogthos.github.io/ClojureDistilled.html"},
                       {"text": "Awesome Clojure", "url": "https://github.com/razum2um/awesome-clojure"},
-                      {"text": "Amazonica", "url": "https://github.com/mcohen01/amazonica"}]
+                      {"text": "Amazonica", "url": "https://github.com/mcohen01/amazonica"}],
+        "visibility": "public"
     },
     {
         "category": "Clojure Script",
         "slug": "clojure-script",
         "bookmarks": [{"text": "Reagent", "url": "https://reagent-project.github.io/"},
-                      {"text": "Om", "url": "https://github.com/omcljs/om"}]
+                      {"text": "Om", "url": "https://github.com/omcljs/om"}],
+        "visibility": "public"
     },
     {
         "category": "Go",
@@ -131,7 +144,8 @@
                       {"text": "cgo", "url": "https://golang.org/cmd/cgo/"},
                       {"text": "Grumpy", "url": "https://github.com/google/grumpy"},
                       {"text": "dep", "url": "https://github.com/golang/dep"},
-                      {"text": "Delve", "url": "https://github.com/derekparker/delve"}]
+                      {"text": "Delve", "url": "https://github.com/derekparker/delve"}],
+        "visibility": "public"
     },
     {
         "category": "Go Documentation",
@@ -142,19 +156,22 @@
              "url": "https://golang.org/ref/spec"},
             {"text": "Errors are values", "url": "https://blog.golang.org/errors-are-values"},
             {"text": "Error handling and Go", "url": "https://blog.golang.org/error-handling-and-go"},
-            {"text": "Go Proverbs", "url": "http://go-proverbs.github.io/"}]
+            {"text": "Go Proverbs", "url": "http://go-proverbs.github.io/"}],
+        "visibility": "public"
     },
     {
         "category": "Go Web Development",
         "slug": "goweb",
         "bookmarks": [{"text": "Writing Web Applications", "url": "https://golang.org/doc/articles/wiki/"},
-                      {"text": "Go Web Examples", "url": "https://gowebexamples.com"}]
+                      {"text": "Go Web Examples", "url": "https://gowebexamples.com"}],
+        "visibility": "public"
     },
     {
         "category": "node.js",
         "slug": "nodejs",
         "bookmarks": [{"text": "ws", "url": "https://github.com/derekparker/delve"},
-                      {"text": "primus", "url": "https://github.com/primus/primus"}]
+                      {"text": "primus", "url": "https://github.com/primus/primus"}],
+        "visibility": "public"
     },
     {
         "category": "C",
@@ -165,12 +182,14 @@
                       {"text": "Handmade Math", "url": "https://github.com/HandmadeMath/Handmade-Math"},
                       {"text": "SubC", "url": "https://www.t3x.org/reload/"},
                       {"text": "Awesome C", "url": "https://notabug.org/koz.ross/awesome-c"},
-                      {"text": "MiniAL", "url": "https://github.com/dr-soft/mini_al"}]
+                      {"text": "MiniAL", "url": "https://github.com/dr-soft/mini_al"}],
+        "visibility": "public"
     },
     {
         "category": "Haxe",
         "slug": "haxe",
-        "bookmarks": [{"text": "Haxe", "url": "https://haxe.org/"}]
+        "bookmarks": [{"text": "Haxe", "url": "https://haxe.org/"}],
+        "visibility": "public"
     },
     {
         "category": "Erlang",
@@ -178,7 +197,8 @@
         "bookmarks": [{"text": "Erlang", "url": "https://www.erlang.org/"},
                       {"text": "Cowboy", "url": "https://github.com/ninenines/cowboy"},
                       {"text": "Learn you some Erlang", "url": "http://learnyousomeerlang.com/content"},
-                      {"text": "rebar3", "url": "https://github.com/erlang/rebar3"}]
+                      {"text": "rebar3", "url": "https://github.com/erlang/rebar3"}],
+        "visibility": "public"
     },
     {
         "category": "Elixir",
@@ -192,19 +212,22 @@
                       {"text": "Phoenix Framework", "url": "http://phoenixframework.org/"},
                       {"text": "Distillery", "url": "https://github.com/bitwalker/distillery"},
                       {"text": "Gigalixir", "url": "https://gigalixir.com/"},
-                      {"text": "Elixir on Google Cloud", "url": "https://cloud.google.com/elixir/"}]
+                      {"text": "Elixir on Google Cloud", "url": "https://cloud.google.com/elixir/"}],
+        "visibility": "public"
     },
     {
         "category": "JVM",
         "slug": "jvm",
         "bookmarks": [{"text": "Awesome JVM",
-                       "url": "https://github.com/deephacks/awesome-jvm"}]
+                       "url": "https://github.com/deephacks/awesome-jvm"}],
+        "visibility": "public"
     },
     {
         "category": "BEAM",
         "slug": "beam",
         "bookmarks": [{"text": "BEAM Wisdoms", "url": "http://beam-wisdoms.clau.se/en/latest/"},
-                      {"text": "BEAM languages", "url": "https://github.com/llaisdy/beam_languages"}]
+                      {"text": "BEAM languages", "url": "https://github.com/llaisdy/beam_languages"}],
+        "visibility": "public"
     },
     {
         "category": "Ypsilon",
@@ -212,74 +235,87 @@
         "bookmarks": [{"text": "Ypsilon",
                        "url": "http://www.littlewingpinball.net/mediawiki/index.php/Ypsilon"},
                       {"text": "Why Ypsilon was created",
-                       "url": "http://www.littlewingpinball.com/doc/en/ypsilon/index.html"}]
+                       "url": "http://www.littlewingpinball.com/doc/en/ypsilon/index.html"}],
+        "visibility": "public"
     },
     {
         "category": "newLISP",
         "slug": "newlisp",
         "bookmarks": [{"text": "newLISP", "url": "http://www.newlisp.org/"},
                       {"text": "Automatic Memory Management in newLISP",
-                       "url": "http://www.newlisp.org/MemoryManagement.html"}]
+                       "url": "http://www.newlisp.org/MemoryManagement.html"}],
+        "visibility": "public"
     },
     {
         "category": "Scheme",
         "slug": "scheme",
         "bookmarks": [{"text": "An opinionated guide to Scheme implementations",
                        "url": "https://wingolog.org/archives/2013/01/07/an-opinionated-guide-to-scheme-implementations"},
-		      {"text": "The Little JavaScripter", "url": "http://crockford.com/javascript/little.html"}]
+		              {"text": "The Little JavaScripter", "url": "http://crockford.com/javascript/little.html"}],
+        "visibility": "public"
     },
     {
         "category": "Cyclone Scheme",
         "slug": "cyclone",
-        "bookmarks": [{"text": "Cyclone", "url": "https://github.com/justinethier/cyclone"}]
+        "bookmarks": [{"text": "Cyclone", "url": "https://github.com/justinethier/cyclone"}],
+        "visibility": "public"
     },
     {
         "category": "Gambit Scheme",
         "slug": "gambit-scheme",
-        "bookmarks": [{"text": "Gambit Scheme", "url": "http://gambitscheme.org"}]
+        "bookmarks": [{"text": "Gambit Scheme", "url": "http://gambitscheme.org"}],
+        "visibility": "public"
     },
     {
         "category": "LambdaNative",
         "slug": "lambda-native",
-        "bookmarks": [{"text": "Lambda Native", "url": "http://www.lambdanative.org/"}]
+        "bookmarks": [{"text": "Lambda Native", "url": "http://www.lambdanative.org/"}],
+        "visibility": "public"
     },
     {
         "category": "S7",
         "slug": "s7",
         "bookmarks": [{"text": "S7", "url": "https://ccrma.stanford.edu/software/snd/snd/s7.html"},
-                      {"text": "A love letter to S7 Scheme", "url": "http://carloscarrasco.com/category/gamedev.html"}]
+                      {"text": "A love letter to S7 Scheme", "url": "http://carloscarrasco.com/category/gamedev.html"}],
+        "visibility": "public"
     },
     {
         "category": "Tiny Scheme",
         "slug": "tiny-scheme",
         "bookmarks": [{"text": "Tiny Scheme", "url": "http://tinyscheme.sourceforge.net/home.html"},
                       {"text": "Embedding Scheme for a Game Mission DSL",
-                       "url": "http://carloscarrasco.com/embedding-scheme-for-a-game-mission-scripting-dsl.html"}]
+                       "url": "http://carloscarrasco.com/embedding-scheme-for-a-game-mission-scripting-dsl.html"}],
+        "visibility": "public"
     },
     {
         "category": "femtolisp",
         "slug": "femtolisp",
-        "bookmarks": [{"text": "femtolisp", "url": "https://github.com/JeffBezanson/femtolisp"}]
+        "bookmarks": [{"text": "femtolisp", "url": "https://github.com/JeffBezanson/femtolisp"}],
+        "visibility": "public"
     },
     {
         "category": "Carp Lisp",
         "slug": "carp",
-        "bookmarks": [{"text": "Carp Lisp", "url": "https://github.com/carp-lang/Carp"}]
+        "bookmarks": [{"text": "Carp Lisp", "url": "https://github.com/carp-lang/Carp"}],
+        "visibility": "public"
     },
     {
         "category": "Bone Lisp",
         "slug": "bone-lisp",
-        "bookmarks": [{"text": "Bone Lisp", "url": "https://github.com/wolfgangj/bone-lisp" }]
+        "bookmarks": [{"text": "Bone Lisp", "url": "https://github.com/wolfgangj/bone-lisp" }],
+        "visibility": "public"
     },
     {
         "category": "Lumen - lisp for lua and JavaScript",
         "slug": "lumen",
-        "bookmarks": [{"text": "Lumen", "url": "https://github.com/sctb/lumen"}]
+        "bookmarks": [{"text": "Lumen", "url": "https://github.com/sctb/lumen"}],
+        "visibility": "public"
     },
     {
         "category": "Common Lisp",
         "slug": "common-lisp",
-        "bookmarks": [{"text": "Common Lisp", "url": "https://common-lisp.net/"}]
+        "bookmarks": [{"text": "Common Lisp", "url": "https://common-lisp.net/"}],
+        "visibility": "public"
     },
     {
         "category": "Common Lisp Web Programming",
@@ -289,7 +325,8 @@
                       {"text": "Woo", "url": "https://github.com/fukamachi/woo"},
                       {"text": "ningle", "url": "http://8arrow.org/ningle/"},
                       {"text": "Caveman2", "url": "https://github.com/fukamachi/caveman"},
-                      {"text": "fukamachi", "url": "https://github.com/fukamachi?tab=repositories"}]
+                      {"text": "fukamachi", "url": "https://github.com/fukamachi?tab=repositories"}],
+        "visibility": "public"
     },
     {
         "category": "Lisp Game Programming",
@@ -298,7 +335,8 @@
                       {"text": "Lisp Games", "url": "https://github.com/lispgames/lispgames.github.io/wiki"},
                       {"text": "Making Games in Chicken",
                        "url": "http://alex-charlton.com/posts/Prototype_to_polish_Making_games_in_CHICKEN_Scheme_with_Hypergiant/"},
-                      {"text": "Hypergiant", "url": "http://wiki.call-cc.org/eggref/4/hypergiant"}]
+                      {"text": "Hypergiant", "url": "http://wiki.call-cc.org/eggref/4/hypergiant"}],
+        "visibility": "public"
     },
     {
         "category": "Garbage Collection",
@@ -329,17 +367,20 @@
                        "url": "https://stackoverflow.com/questions/1318631/learning-garbage-collection-theory"},
                       {"text": "Baker's Treadmill", "url": "http://home.pipeline.com/~hbaker1/NoMotionGC.html"},
                       {"text": "Garbage Collection in Real Time Games with Lua",
-                       "url": "http://lua-users.org/wiki/GarbageCollectionInRealTimeGames"}]
+                       "url": "http://lua-users.org/wiki/GarbageCollectionInRealTimeGames"}],
+        "visibility": "public"
     },
     {
         "category": "Tail Calls",
         "slug": "tail-calls",
-        "bookmarks": [{"text": "Tail Calls", "url": "https://david.wragg.org/blog/2014/02/c-tail-calls-1.html"}]
+        "bookmarks": [{"text": "Tail Calls", "url": "https://david.wragg.org/blog/2014/02/c-tail-calls-1.html"}],
+        "visibility": "public"
     },
     {
         "category": "Region Based Memory Management",
         "slug": "region-based-memory-management",
-        "bookmarks": [{"text": "Region Based Memory Manangement", "url": "https://en.wikipedia.org/wiki/Region-based_memory_management"}]
+        "bookmarks": [{"text": "Region Based Memory Manangement", "url": "https://en.wikipedia.org/wiki/Region-based_memory_management"}],
+        "visibility": "public"
     },
     {
         "category": "Data Science",
@@ -347,7 +388,8 @@
         "bookmarks": [{"text": "Machine Learning Prerequisite isnt math",
                        "url": "http://sharpsightlabs.com/blog/machine-learning-prerequisite-isnt-math/"},
                       {"text": "Kaggle", "url": "https://www.kaggle.com/"},
-                      {"text": "Deep Learning Book", "url": "http://www.deeplearningbook.org/"}]
+                      {"text": "Deep Learning Book", "url": "http://www.deeplearningbook.org/"}],
+        "visibility": "public"
     },
     {
         "category": "Machine Learning",
@@ -355,30 +397,35 @@
         "bookmarks": [{"text": "Awesome Machine Learning",
                        "url": "https://github.com/josephmisiti/awesome-machine-learning"},
                       {"text": "Keras.io", "url": "https://keras.io/"},
-                      {"text": "PyTorch", "url": "http://pytorch.org/"}]
+                      {"text": "PyTorch", "url": "http://pytorch.org/"}],
+        "visibility": "public"
     },
     {
         "category": "Machine Learning Courses",
         "slug": "machine-learning-courses",
         "bookmarks": [{"text": "fast.ai", "url": "http://www.fast.ai/"},
-                      {"text": "deeplearning.ai", "url": "https://www.deeplearning.ai/"}]
+                      {"text": "deeplearning.ai", "url": "https://www.deeplearning.ai/"}],
+        "visibility": "public"
     },
     {
         "category": "Continuous Integration",
         "slug": "continuous-integration",
         "bookmarks": [{"text": "Circle CI", "url": "https://circleci.com/"},
                       {"text": "Travis CI", "url": "https://travis-ci.org/"},
-                      {"text": "Coveralls", "url": "https://coveralls.io/"}]
+                      {"text": "Coveralls", "url": "https://coveralls.io/"}],
+        "visibility": "public"
     },
     {
         "category": "Continuous Delivery",
         "slug": "continuous-delivery",
-        "bookmarks": [{"text": "GoCD", "url": "https://www.gocd.org/"}]
+        "bookmarks": [{"text": "GoCD", "url": "https://www.gocd.org/"}],
+        "visibility": "public"
     },
     {
         "category": "Configuration Management",
         "slug": "configuration-management",
-        "bookmarks": [{"text": "Ansible", "url": "https://www.ansible.com/"}]
+        "bookmarks": [{"text": "Ansible", "url": "https://www.ansible.com/"}],
+        "visibility": "public"
     },
     {
         "category": "Web",
@@ -396,7 +443,9 @@
                       {"text": "Unsplash it", "url": "http://unsplash.it/"},
                       {"text": "Modernizir", "url": "https://modernizr.com/"},
                       {"text": "favicon.io", "url": "https://favicon.io/"},
-                      {"text": "WTF is a source map?", "url": "https://www.schneems.com/2017/11/14/wtf-is-a-source-map/"}]
+                      {"text": "WTF is a source map?",
+                       "url": "https://www.schneems.com/2017/11/14/wtf-is-a-source-map/"}],
+        "visibility": "public"
     },
     {
         "category": "WebSockets",
@@ -406,7 +455,8 @@
                       {"text": "Websockets from Scratch",
                        "url": "https://blog.pusher.com/websockets-from-scratch/"},
                       {"text": "Awesome Websockets",
-                       "url": "https://github.com/facundofarias/awesome-websockets"}]
+                       "url": "https://github.com/facundofarias/awesome-websockets"}],
+        "visibility": "public"
     },
     {
         "category": "CSS",
@@ -415,7 +465,8 @@
                       {"text": "PostCSS", "url": "http://postcss.org/"},
                       {"text": "Awesome PostCSS", "url": "https://github.com/jjaderg/awesome-postcss"},
                       {"text": "cssreference.io", "url": "http://cssreference.io/"},
-                      {"text": "pesticide.io", "url": "http://pesticide.io/"}]
+                      {"text": "pesticide.io", "url": "http://pesticide.io/"}],
+        "visibility": "public"
     },
     {
         "category": "Flexbox",
@@ -426,46 +477,54 @@
                       {"text": "Almost complete guide to flexbox without flexbox",
                        "url": "https://kyusuf.com/post/almost-complete-guide-to-flexbox-without-flexbox"},
                       {"text": "Flexbox: How to deal with older browsers",
-                       "url": "https://medium.com/css-mine/flexbox-how-to-deal-with-older-browsers-fbf6eb8c7a65"}]
+                       "url": "https://medium.com/css-mine/flexbox-how-to-deal-with-older-browsers-fbf6eb8c7a65"}],
+        "visibility": "public"
     },
     {
         "category": "Responsive Web Design",
         "slug": "responsive-web-design",
         "bookmarks": [{"text": "Guidelines for Responsive Web Design",
-                       "url": "https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/"}]
+                       "url": "https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/"}],
+        "visibility": "public"
     },
     {
         "category": "Progressive Enhancement",
         "slug": "progressive-enhancement",
         "bookmarks": [{"text": "Progressive enhancement is still important",
-                       "url": "https://jakearchibald.com/2013/progressive-enhancement-still-important/"}]
+                       "url": "https://jakearchibald.com/2013/progressive-enhancement-still-important/"}],
+        "visibility": "public"
     },
     {
         "category": "Bootstrap",
         "slug": "bootstrap",
         "bookmarks": [{"text": "Buttons", "url": "https://getbootstrap.com/docs/4.0/components/buttons/"},
-                      {"text": "Spacing", "url": "https://getbootstrap.com/docs/4.0/utilities/spacing/"}]
+                      {"text": "Spacing", "url": "https://getbootstrap.com/docs/4.0/utilities/spacing/"}],
+        "visibility": "public"
     },
     {
         "category": "Spectre CSS",
         "slug": "spectre",
-        "bookmarks": [{"text": "spectre", "url": "https://picturepan2.github.io/spectre/"}]
+        "bookmarks": [{"text": "spectre", "url": "https://picturepan2.github.io/spectre/"}],
+        "visibility": "public"
     },
     {
         "category": "Tailwind CSS",
         "slug": "tailwindcss",
-        "bookmarks": [{"text": "Tailwind CSS", "url": "https://tailwindcss.com/"}]
+        "bookmarks": [{"text": "Tailwind CSS", "url": "https://tailwindcss.com/"}],
+        "visibility": "public"
     },
     {
         "category": "Tachyons CSS",
         "slug": "tachyons",
-        "bookmarks": [{"text": "tachyons", "url": "https://tachyons.io"}]
+        "bookmarks": [{"text": "tachyons", "url": "https://tachyons.io"}],
+        "visibility": "public"
     },
     {
         "category": "Text Design Tools",
         "slug": "text-design-tools",
         "bookmarks": [{"text": "Textcraft", "url": "https://textcraft.net/"},
-                      {"text": "Cool Text", "url": "https://cooltext.com/"}]
+                      {"text": "Cool Text", "url": "https://cooltext.com/"}],
+        "visibility": "public"
     },
     {
         "category": "JavaScript",
@@ -478,12 +537,14 @@
                       {"text": "cdnjs", "url": "https://cdnjs.com/"},
                       {"text": "Callback Hell", "url": "http://callbackhell.com/"},
                       {"text": "ParcelJS", "url": "https://parceljs.org/"},
-                      {"text": "Prettier.io", "url": "https://prettier.io/"}]
+                      {"text": "Prettier.io", "url": "https://prettier.io/"}],
+        "visibility": "public"
     },
     {
         "category": "JavaScript Graphics",
         "slug": "javascript-graphics",
-        "bookmarks": [{"text": "Pixi.js", "url": "http://www.pixijs.com/"}]
+        "bookmarks": [{"text": "Pixi.js", "url": "http://www.pixijs.com/"}],
+        "visibility": "public"
     },
     {
         "category": "JavaScript 3D Engines",
@@ -493,17 +554,20 @@
                       {"text": "Ammo.js", "url": "https://github.com/kripken/ammo.js"},
                       {"text": "three.js", "url": "https://threejs.org/"},
                       {"text": "BabylonJS", "url": "http://www.babylonjs.com/"},
-                      {"text": "Whitestorm", "url": "http://whsjs.io/"}]
+                      {"text": "Whitestorm", "url": "http://whsjs.io/"}],
+        "visibility": "public"
     },
     {
         "category": "Mithril",
         "slug": "mithril",
-        "bookmarks": [{"text": "Mithril", "url": "https://mithril.js.org/"}]
+        "bookmarks": [{"text": "Mithril", "url": "https://mithril.js.org/"}],
+        "visibility": "public"
     },
     {
         "category": "Aurelia",
         "slug": "aurelia",
-        "bookmarks": [{"text": "Aurelia", "url": "http://aurelia.io/"}]
+        "bookmarks": [{"text": "Aurelia", "url": "http://aurelia.io/"}],
+        "visibility": "public"
     },
     {
         "category": "D3",
@@ -511,20 +575,23 @@
         "bookmarks": [{"text": "D3.js", "url": "https://d3js.org/"},
                       {"text": "Dashing D3", "url": "https://www.dashingd3js.com/"},
                       {"text": "C3.js", "url": "http://c3js.org/"},
-                      {"text": "NVD3.js", "url": "http://nvd3.org/"}]
+                      {"text": "NVD3.js", "url": "http://nvd3.org/"}],
+        "visibility": "public"
     },
     {
         "category": "Ruby",
         "slug": "ruby",
         "bookmarks": [{"text": "Awesome Ruby", "url": "http://awesome-ruby.com/"},
-                      {"text": "ROM", "url": "http://rom-rb.org/"}]
+                      {"text": "ROM", "url": "http://rom-rb.org/"}],
+        "visibility": "public"
     },
     {
         "category": "PHP",
         "slug": "php",
         "bookmarks": [{"text": "Lavarel", "url": "https://laravel.com/"},
                       {"text": "Twig", "url": "https://twig.symfony.com/"},
-                      {"text": "Slim", "url": "https://www.slimframework.com/"}]
+                      {"text": "Slim", "url": "https://www.slimframework.com/"}],
+        "visibility": "public"
     },
     {
         "category": "Lua",
@@ -532,13 +599,15 @@
         "bookmarks": [
             {"text": "Lua", "url": "http://www.lua.org/"},
             {"text": "Löve2D", "url": "https://love2d.org/"},
-            {"text": "luastatic", "url": "https://github.com/ers35/luastatic"}]
+            {"text": "luastatic", "url": "https://github.com/ers35/luastatic"}],
+        "visibility": "public"
     },
     {
         "category": "Lisp Flavored Erlang",
         "slug": "lfe",
         "bookmarks": [{"text": "Lisp Flavored Erlang", "url": "http://lfe.io/"},
-                      {"text": "Robert Virding on LFE", "url": "https://www.youtube.com/watch?v=Br2KY12LB2w"}]
+                      {"text": "Robert Virding on LFE", "url": "https://www.youtube.com/watch?v=Br2KY12LB2w"}],
+        "visibility": "public"
     },
     {
         "category": "R",
@@ -546,7 +615,8 @@
         "bookmarks": [{"text": "R", "url": "https://www.r-project.org/"},
                       {"text": "Tidyverse", "url": "https://www.tidyverse.org/"},
                       {"text": "Advanced R", "url": "https://adv-r.hadley.nz/"},
-                      {"text": "R for Data Science", "url": "http://r4ds.had.co.nz/"}]
+                      {"text": "R for Data Science", "url": "http://r4ds.had.co.nz/"}],
+        "visibility": "public"
     },
     {
         "category": "Concatenative Programming",
@@ -555,34 +625,40 @@
                       {"text": "Wikipedia on Concatenative Languages",
                        "url": "https://en.wikipedia.org/wiki/Concatenative_programming_language"},
                       {"text": "Wikipedia on Stack Oriented Languages",
-                       "url": "https://en.wikipedia.org/wiki/Stack-oriented_programming_language"}]
+                       "url": "https://en.wikipedia.org/wiki/Stack-oriented_programming_language"}],
+        "visibility": "public"
     },
     {
         "category": "Forth",
         "slug": "forth",
         "bookmarks": [{"text": "C2 on Forth", "url": "http://wiki.c2.com/?ForthLanguage"},
-                      {"text": "StoneKnifeForth", "url": "https://github.com/kragen/stoneknifeforth"}]
+                      {"text": "StoneKnifeForth", "url": "https://github.com/kragen/stoneknifeforth"}],
+        "visibility": "public"
     },
     {
         "category": "Factor",
         "slug": "factor",
-        "bookmarks": [{"text": "C2 on Factor", "url": "http://wiki.c2.com/?FactorLanguage"}]
+        "bookmarks": [{"text": "C2 on Factor", "url": "http://wiki.c2.com/?FactorLanguage"}],
+        "visibility": "public"
     },
     {
         "category": "NIM",
         "slug": "nim",
-        "bookmarks": [{"text": "NIM", "url": "https://nim-lang.org/"}]
+        "bookmarks": [{"text": "NIM", "url": "https://nim-lang.org/"}],
+        "visibility": "public"
     },
     {
         "category": "Error handling",
         "slug": "error-handling",
         "bookmarks": [{"text": "Airbrake", "url": "https://airbrake.io/"},
-                      {"text": "Rollbar", "url": "http://rollbar.com"}]
+                      {"text": "Rollbar", "url": "http://rollbar.com"}],
+        "visibility": "public"
     },
     {
         "category": "Static analysis",
         "slug": "static-analysis",
-        "bookmarks": [{"text": "Code Climate", "url": "https://codeclimate.com/"}]
+        "bookmarks": [{"text": "Code Climate", "url": "https://codeclimate.com/"}],
+        "visibility": "public"
     },
     {
         "category": "Redis",
@@ -590,32 +666,38 @@
         "bookmarks": [{"text": "Redis", "url": "https://redis.io/"},
                       {"text": "Redis Manifesto", "url": "https://github.com/antirez/redis/blob/unstable/MANIFESTO"},
                       {"text": "Redis CLI", "url": "https://redis.io/topics/rediscli"},
-                      {"text": "Redis Commands", "url": "https://redis.io/commands"}]
+                      {"text": "Redis Commands", "url": "https://redis.io/commands"}],
+        "visibility": "public"
     },
     {
         "category": "Emacs",
         "slug": "emacs",
         "bookmarks": [{"text": "Awesome Emacs", "url": "https://github.com/emacs-tw/awesome-emacs"},
-                      {"text": "Python programming in Emacs", "url": "https://www.emacswiki.org/emacs/PythonProgrammingInEmacs"}]
+                      {"text": "Python programming in Emacs",
+                       "url": "https://www.emacswiki.org/emacs/PythonProgrammingInEmacs"}],
+        "visibility": "public"
     },
     {
         "category": "Spacemacs",
         "slug": "spacemacs",
         "bookmarks": [{"text": "Spacemacs", "url": "http://spacemacs.org/"},
-                      {"text": "Quick Start", "url": "http://spacemacs.org/doc/QUICK_START.html"}]
+                      {"text": "Quick Start", "url": "http://spacemacs.org/doc/QUICK_START.html"}],
+        "visibility": "public"
     },
     {
         "category": "Vim",
         "slug": "vim",
         "bookmarks": [{"text": "Vim Awesome", "url": "http://vimawesome.com/"},
-                      {"text": "Fireplace", "url": "https://github.com/tpope/vim-fireplace"}]
+                      {"text": "Fireplace", "url": "https://github.com/tpope/vim-fireplace"}],
+        "visibility": "public"
     },
     {
         "category": "WebGL",
         "slug": "webgl",
         "bookmarks": [{"text": "WebGL", "url": "https://get.webgl.org/"},
                       {"text": "WebGL fundamentals", "url": "https://webglfundamentals.org/"},
-                      {"text": "WebGL2 fundamentals", "url": "https://webgl2fundamentals.org/"}]
+                      {"text": "WebGL2 fundamentals", "url": "https://webgl2fundamentals.org/"}],
+        "visibility": "public"
     },
     {
         "category": "Cloud Providers",
@@ -625,18 +707,21 @@
                       {"text": "Amazon LightSail", "url": "https://amazonlightsail.com/"},
                       {"text": "Google Cloud", "url": "https://cloud.google.com/"},
                       {"text": "Vultr", "url": "https://www.vultr.com/"},
-                      {"text": "Hyper.sh", "url": "https://hyper.sh/"}]
+                      {"text": "Hyper.sh", "url": "https://hyper.sh/"}],
+        "visibility": "public"
     },
     {
         "category": "Self Hosted Cloud",
         "slug": "self-hosted-cloud",
-        "bookmarks": [{"text": "Dokku", "url": "http://dokku.viewdocs.io/dokku/"}]
+        "bookmarks": [{"text": "Dokku", "url": "http://dokku.viewdocs.io/dokku/"}],
+        "visibility": "public"
     },
     {
         "category": "Hosting",
         "slug": "hosting",
 	      "bookmarks": [{"text": "Netlify", "url": "https://www.netlify.com/"},
-                        {"text": "Python Anywhere", "url": "https://www.pythonanywhere.com/"}]
+                        {"text": "Python Anywhere", "url": "https://www.pythonanywhere.com/"}],
+        "visibility": "public"
     },
     {
         "category": "Literate Programming",
@@ -644,7 +729,8 @@
         "bookmarks": [{"text": "Docco", "url": "http://jashkenas.github.io/docco/"},
                       {"text": "Pycco", "url": "https://github.com/pycco-docs/pycco"},
                       {"text": "Marginalia", "url": "https://github.com/gdeer81/marginalia"},
-                      {"text": "Gocco", "url": "http://nikhilm.github.io/gocco/"}]
+                      {"text": "Gocco", "url": "http://nikhilm.github.io/gocco/"}],
+        "visibility": "public"
     },
     {
         "category": "Articles",
@@ -662,7 +748,8 @@
                        "url": "https://eev.ee/blog/2012/04/09/php-a-fractal-of-bad-design/"},
                       {"text": "Cheney on the M.T.A", "url": "http://home.pipeline.com/~hbaker1/CheneyMTA.html"},
                       {"text": "Everything Easy is Hard Again",
-                       "url": "https://frankchimero.com/writing/everything-easy-is-hard-again/"}]
+                       "url": "https://frankchimero.com/writing/everything-easy-is-hard-again/"}],
+        "visibility": "public"
     },
     {
         "category": "Talks",
@@ -672,51 +759,62 @@
                        "presenter": "Bret Victor"},
                       {"text": "Inventing on Principle",
                        "url": "https://vimeo.com/36579366",
-                       "presenter": "Bret Victor"}]
+                       "presenter": "Bret Victor"}],
+        "visibility": "public"
     },
     {
         "category": "Music",
         "slug": "music",
-        "bookmarks": [{"text": "A soft murmur", "url": "http://asoftmurmur.com/"}]
+        "bookmarks": [{"text": "A soft murmur", "url": "http://asoftmurmur.com/"}],
+        "visibility": "public"
     },
     {
         "category": "Open Source",
         "slug": "open-source",
         "bookmarks": [{"text": "Libraries.io", "url": "http://libraries.io"},
                       {"text": "Libhunt", "url": "https://www.libhunt.com/"},
-                      {"text": "A.W.E.S.O.M.O", "url": "https://github.com/lk-geimfari/awesomo"}]
+                      {"text": "A.W.E.S.O.M.O", "url": "https://github.com/lk-geimfari/awesomo"}],
+        "visibility": "public"
     },
     {
         "category": "React",
         "slug": "react",
-        "bookmarks": [{"text": "Awesome React", "url": "https://github.com/enaqx/awesome-react"},
-                      {"text": "Awesome React Components", "url": "https://github.com/brillout/awesome-react-components"}]
+        "bookmarks": [{"text": "Awesome React",
+                       "url": "https://github.com/enaqx/awesome-react"},
+                      {"text": "Awesome React Components",
+                       "url": "https://github.com/brillout/awesome-react-components"}],
+        "visibility": "public"
     },
     {
         "category": "REST",
         "slug": "rest",
-        "bookmarks": [{"text": "Swagger", "url": "http://swagger.io/"}]
+        "bookmarks": [{"text": "Swagger", "url": "http://swagger.io/"}],
+        "visibility": "public"
     },
     {
         "category": "Security",
         "slug": "security",
-        "bookmarks": [{"text": "OWASP", "url": "https://www.owasp.org"}]
+        "bookmarks": [{"text": "OWASP", "url": "https://www.owasp.org"}],
+        "visibility": "public"
     },
     {
         "category": "Future Web",
         "slug": "future-web",
-        "bookmarks": [{"text": "Web Components", "url": "https://www.webcomponents.org"}]
+        "bookmarks": [{"text": "Web Components", "url": "https://www.webcomponents.org"}],
+        "visibility": "public"
     },
     {
         "category": "Web Assembly",
         "slug": "web-assembly",
         "bookmarks": [{"text": "Web Assembly", "url": "http://webassembly.org"},
-                     {"text": "Cheerp", "url": "https://www.leaningtech.com/cheerp/"}]
+                      {"text": "Cheerp", "url": "https://www.leaningtech.com/cheerp/"}],
+        "visibility": "public"
     },
     {
         "category": "Data models",
         "slug": "data-models",
-        "bookmarks": [{"text": "Schema.org", "url": "https://schema.org/"}]
+        "bookmarks": [{"text": "Schema.org", "url": "https://schema.org/"}],
+        "visibility": "public"
     },
     {
         "category": "Game Engines",
@@ -725,12 +823,14 @@
                       {"text": "Unity", "url": "https://unity3d.com/"},
                       {"text": "Phaser", "url": "https://phaser.io/"},
                       {"text": "Ignifuga", "url": "http://ignifuga.org/"},
-                      {"text": "PyGame", "url": "http://www.pygame.org/"}]
+                      {"text": "PyGame", "url": "http://www.pygame.org/"}],
+        "visibility": "public"
     },
     {
         "category": "Physics Engines",
         "slug": "physics-engines",
-        "bookmarks": [{"text": "Chipmunk", "url": "https://chipmunk-physics.net/"}]
+        "bookmarks": [{"text": "Chipmunk", "url": "https://chipmunk-physics.net/"}],
+        "visibility": "public"
     },
     {
         "category": "Game Libraries in C",
@@ -738,7 +838,8 @@
         "bookmarks": [{"text": "Raylib", "url": "http://www.raylib.com/"},
                       {"text": "SDL2", "url": "https://www.libsdl.org/"},
                       {"text": "rfxgen", "url": "https://github.com/raysan5/rfxgen"},
-                      {"text": "raygui", "url": "https://github.com/raysan5/raygui"}]
+                      {"text": "raygui", "url": "https://github.com/raysan5/raygui"}],
+        "visibility": "public"
     },
     {
         "category": "Game Development",
@@ -751,54 +852,64 @@
                       {"text": "Hexagonal Grids", "url": "https://www.redblobgames.com/grids/hexagons/"},
                       {"text": "Tiled", "url": "http://www.mapeditor.org/"},
                       {"text": "Awesome Game Development",
-                       "url": "https://notabug.org/Calinou/awesome-gamedev"}]
+                       "url": "https://notabug.org/Calinou/awesome-gamedev"}],
+        "visibility": "public"
     },
     {
         "category": "Web Game Dev",
         "slug": "web-game-dev",
-        "bookmarks": [{"text": "HTML5 Game Devs", "url": "http://www.html5gamedevs.com/"}]
+        "bookmarks": [{"text": "HTML5 Game Devs", "url": "http://www.html5gamedevs.com/"}],
+        "visibility": "public"
     },
     {
         "category": "Web Games",
         "slug": "web-games",
-        "bookmarks": [{"text": "KeepOut", "url": "http://www.playkeepout.com/"}]
+        "bookmarks": [{"text": "KeepOut", "url": "http://www.playkeepout.com/"}],
+        "visibility": "public"
     },
     {
         "category": "Documentation",
         "slug": "documentation",
-        "bookmarks": [{"text": "DevDocs", "url": "http://devdocs.io"}]
+        "bookmarks": [{"text": "DevDocs", "url": "http://devdocs.io"}],
+        "visibility": "public"
     },
     {
         "category": "Git",
         "slug": "git",
         "bookmarks": [{"text": "Conditional Includes",
-                       "url": "https://motowilliams.com/conditional-includes-for-git-config"}]
+                       "url": "https://motowilliams.com/conditional-includes-for-git-config"}],
+        "visibility": "public"
     },
     {
         "category": "GitHub",
         "slug": "github",
-        "bookmarks": [{"text": "GitHub stars", "url": "https://github.com/stars"}]
+        "bookmarks": [{"text": "GitHub stars", "url": "https://github.com/stars"}],
+        "visibility": "public"
     },
     {
         "category": "Text Editing",
         "slug": "text-editing",
-        "bookmarks": [{"text": "The Craft of Text Editing", "url": "https://www.finseth.com/craft/"}]
+        "bookmarks": [{"text": "The Craft of Text Editing", "url": "https://www.finseth.com/craft/"}],
+        "visibility": "public"
     },
     {
         "category": "Opinionated",
         "slug": "opinionated",
-        "bookmarks": [{"text": "suckless.org", "url": "https://suckless.org/"}]
+        "bookmarks": [{"text": "suckless.org", "url": "https://suckless.org/"}],
+        "visibility": "public"
     },
     {
         "category": "Shell",
         "slug": "shell",
         "bookmarks": [{"text": "Awesome Shell", "url": "https://github.com/alebcay/awesome-shell"},
-                      {"text": "Writing robust shell scripts", "url": "http://www.davidpashley.com/articles/writing-robust-shell-scripts/"}]
+                      {"text": "Writing robust shell scripts", "url": "http://www.davidpashley.com/articles/writing-robust-shell-scripts/"}],
+        "visibility": "public"
     },
     {
         "category": "Bash Shell",
         "slug": "bash",
-        "bookmarks": [{"text": "Awesome Bash", "url": "https://github.com/awesome-lists/awesome-bash"}]
+        "bookmarks": [{"text": "Awesome Bash", "url": "https://github.com/awesome-lists/awesome-bash"}],
+        "visibility": "public"
     },
     {
         "category": "Fish Shell",
@@ -807,17 +918,20 @@
                       {"text": "fish design document", "url": "https://fishshell.com/docs/current/design.html"},
                       {"text": "fish source code", "url": "https://github.com/fish-shell/fish-shell"},
                       {"text": "Oh My Fish!", "url": "https://github.com/oh-my-fish/oh-my-fish"},
-                      {"text": "Fish Cookbook", "url": "https://github.com/JorgeBucaran/fish-shell-cookbook"}]
+                      {"text": "Fish Cookbook", "url": "https://github.com/JorgeBucaran/fish-shell-cookbook"}],
+        "visibility": "public"
     },
     {
         "category": "Elvish",
         "slug": "elvish",
-        "bookmarks": [{"text": "elvish", "url": "https://elvish.io/"}]
+        "bookmarks": [{"text": "elvish", "url": "https://elvish.io/"}],
+        "visibility": "public"
     },
     {
         "category": "Image Libraries",
         "slug": "image-libraries",
-        "bookmarks": [{"text": "soil", "url": "http://www.lonesock.net/soil.html"}]
+        "bookmarks": [{"text": "soil", "url": "http://www.lonesock.net/soil.html"}],
+        "visibility": "public"
     },
     {
         "category": "Audio Libraries",
@@ -825,12 +939,14 @@
         "bookmarks": [{"text": "libsound", "url": "http://libsound.io/"},
                       {"text": "OpenAL Soft", "url": "https://github.com/kcat/openal-soft"},
                       {"text": "PortAudio", "url": "http://www.portaudio.com/"},
-                      {"text": "cubeb", "url": "https://github.com/kinetiknz/cubeb"}]
+                      {"text": "cubeb", "url": "https://github.com/kinetiknz/cubeb"}],
+        "visibility": "public"
     },
     {
         "category": "Lisp Papers",
         "slug": "lisp-papers",
-        "bookmarks": [{"text": "Cheney on the M.T.A.", "url": "http://www.pipeline.com/~hbaker1/CheneyMTA.html"}]
+        "bookmarks": [{"text": "Cheney on the M.T.A.", "url": "http://www.pipeline.com/~hbaker1/CheneyMTA.html"}],
+        "visibility": "public"
     },
     {
         "category": "OpenGL",
@@ -838,52 +954,61 @@
         "bookmarks": [{"text": "docs.GL", "url": "http://docs.gl"},
                       {"text": "OpenGL 4 Reference Pages",
                        "url": "https://www.khronos.org/registry/OpenGL-Refpages/gl4/"},
-                      {"text": "Mesa3D", "url": "https://www.mesa3d.org/"}]
+                      {"text": "Mesa3D", "url": "https://www.mesa3d.org/"}],
+        "visibility": "public"
     },
     {
         "category": "GLSL",
         "slug": "glsl",
-        "bookmarks": [{"text": "GLSL debugger", "url": "http://glsl-debugger.github.io/"}]
+        "bookmarks": [{"text": "GLSL debugger", "url": "http://glsl-debugger.github.io/"}],
+        "visibility": "public"
     },
     {
         "category": "Naming Things",
         "slug": "naming-things",
-        "bookmarks": [{"text": "NameQL", "url": "https://www.nameql.com/"}]
+        "bookmarks": [{"text": "NameQL", "url": "https://www.nameql.com/"}],
+        "visibility": "public"
     },
     {
         "category": "Microcontrollers",
         "slug": "microcontrollers",
-        "bookmarks": [{"text": "The Amazing $1 Microcontroller"}]
+        "bookmarks": [{"text": "The Amazing $1 Microcontroller"}],
+        "visibility": "public"
     },
     {
         "category": "Messaging Protocols",
         "slug": "messaging-protocols",
         "bookmarks": [{"text": "Choosing your Messaging Protocol",
-                       "url": "https://blogs.vmware.com/vfabric/2013/02/choosing-your-messaging-protocol-amqp-mqtt-or-stomp.html"}]
+                       "url": "https://blogs.vmware.com/vfabric/2013/02/choosing-your-messaging-protocol-amqp-mqtt-or-stomp.html"}],
+        "visibility": "public"
     },
     {
         "category": "Message Queues",
         "slug": "message-queues",
-        "bookmarks": [{"text": "queues.io", "url": "http://queues.io/"}]
+        "bookmarks": [{"text": "queues.io", "url": "http://queues.io/"}],
+        "visibility": "public"
     },
     {
         "category": "RabbitMQ",
         "slug": "rabbitmq",
         "bookmarks": [{"text": "RabbitMQ", "url": "https://www.rabbitmq.com/" },
-                      {"text": "Broker Semantics", "url": "https://www.rabbitmq.com/semantics.html"}]
+                      {"text": "Broker Semantics", "url": "https://www.rabbitmq.com/semantics.html"}],
+        "visibility": "public"
     },
     {
         "category": "Terminal",
         "slug": "terminal",
         "bookmarks": [{"text": "Terminals are sexy", "url": "https://terminalsare.sexy/"},
-                      {"text": "mosh", "url": "https://mosh.org/"}]
+                      {"text": "mosh", "url": "https://mosh.org/"}],
+        "visibility": "public"
     },
     {
         "category": "Http Utils",
         "slug": "http-utils",
         "bookmarks": [{"text": "httpbin", "url": "http://httpbin.org/"},
                       {"text": "hurl.it", "url": "https://www.hurl.it/"},
-                      {"text": "requestb.in", "url": "https://requestb.in/"}]
+                      {"text": "requestb.in", "url": "https://requestb.in/"}],
+        "visibility": "public"
     },
     {
         "category": "Business",
@@ -892,31 +1017,42 @@
                       {"text": "Kalzumeus", "url": "https://kalzumeus.com/"},
                       {"text": "How to start a lean startup", "url": "http://www.ryanyosua.me/how-to-start-a-lean-startup/"},
                       {"text": "Five ways to build a $100 million business",
-                       "url": "http://christophjanz.blogspot.com/2014/10/five-ways-to-build-100-million-business.html"}]
+                       "url": "http://christophjanz.blogspot.com/2014/10/five-ways-to-build-100-million-business.html"}],
+        "visibility": "public"
     },
     {
         "category": "Jobs",
         "slug": "jobs",
-        "bookmarks": [{"text": "The Hub", "url": "https://thehub.se/jobs/"}]
+        "bookmarks": [{"text": "The Hub", "url": "https://thehub.se/jobs/"},
+                      {"text": "Angel Co", "url": "https://angel.co/stockholm/jobs"},
+                      {"text": "startupjobs.se", "url": "http://startupjobs.se/"},
+                      {"text": "Webb Jobb", "url": "https://webbjobb.io/"},
+                      {"text": "Join Startups", "url": "https://join-startups.com/stockholm"},
+                      {"text": "LinkedIn Startup Jobs",
+                       "url": "https://www.linkedin.com/jobs/startup-jobs/?country=se"}],
+        "visibility": "private"
     },
     {
         "category": "Drawing",
         "slug": "drawing",
-        "bookmarks": [{"text": "Krita", "url": "https://krita.org/en/"}]
+        "bookmarks": [{"text": "Krita", "url": "https://krita.org/en/"}],
+        "visibility": "public"
     },
     {
         "category": "Status",
         "slug": "status",
         "bookmarks": [{"text": "status.io", "url": "https://www.status.io/"},
                       {"text": "statuspage.io", "url": "https://www.statuspage.io/"},
-                      {"text": "statushub", "url": "https://statushub.com/"}]
+                      {"text": "statushub", "url": "https://statushub.com/"}],
+        "visibility": "public"
     },
     {
         "category": "GraphQL",
         "slug": "graphql",
         "bookmarks": [{"text": "Graphene", "url": "http://graphene-python.org/"},
                       {"text": "GraphQL Specification", "url": "http://facebook.github.io/graphql/"},
-                      {"text": "GraphQL on GitHub", "url": "https://github.com/facebook/graphql"}]
+                      {"text": "GraphQL on GitHub", "url": "https://github.com/facebook/graphql"}],
+        "visibility": "public"
     },
     {
         "category": "tmux",
@@ -927,7 +1063,8 @@
             {"text": "tmux crash course", "url": "https://robots.thoughtbot.com/a-tmux-crash-course"},
             {"text": "a quick and easy guide to tmux", "url": "http://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/"},
             {"text": "tmuxp", "url": "https://tmuxp.git-pull.com/en/latest/"},
-            {"text": "Zanshin Tmux Configuration", "url": "https://zanshin.net/2013/09/05/my-tmux-configuration/"}]
+            {"text": "Zanshin Tmux Configuration", "url": "https://zanshin.net/2013/09/05/my-tmux-configuration/"}],
+        "visibility": "public"
     },
     {
         "category": "dot files",
@@ -941,13 +1078,15 @@
                         "url": "http://lukehinds.com/2016/09/02/dotfiles-without-symlinks.html"},
                        {"text": "Manage Dotfiles With a Bare Git Repository",
                         "url": "https://harfangk.github.io/2016/09/19/manage-dotfiles-with-a-git-bare-repository.html"}
-                     ]
+                     ],
+        "visibility": "private"
     },
     {
         "category": "CockroachDB",
         "slug": "cockroachdb",
         "bookmarks": [{"text": "CockroachDB", "url": "https://www.cockroachlabs.com/"},
-                      {"text": "CockroachDB on GitHub", "url": "https://github.com/cockroachdb/cockroach"}]
+                      {"text": "CockroachDB on GitHub", "url": "https://github.com/cockroachdb/cockroach"}],
+        "visibility": "public"
     },
     {
         "category": "Books",
@@ -955,7 +1094,8 @@
         "bookmarks": [{"text": "little os book", "url": "https://littleosbook.github.io/"},
                       {"text": "Crafting Interpreters", "url": "http://www.craftinginterpreters.com/"},
                       {"text": "Beautiful Racket", "url": "https://beautifulracket.com/"},
-                      {"text": "Writing an Interpreter in Go", "url": "https://interpreterbook.com/"}]
+                      {"text": "Writing an Interpreter in Go", "url": "https://interpreterbook.com/"}],
+        "visibility": "public"
     },
     {
         "category": "Music Tracker",
@@ -967,12 +1107,14 @@
                       {"text": "Music Tracking at Library of Congress", "url": "https://www.loc.gov/preservation/digital/formats/fdd/fdd000126.shtml"},
                       {"text": "Module formats", "url": "https://wiki.openmpt.org/Manual:_Module_formats"},
                       {"text": "Chiptune", "url": "https://en.wikipedia.org/wiki/Chiptune"},
-                      {"text": "MOD file format", "url": "https://en.wikipedia.org/wiki/MOD_(file_format)"}]
+                      {"text": "MOD file format", "url": "https://en.wikipedia.org/wiki/MOD_(file_format)"}],
+        "visibility": "public"
     },
     {
         "category": "Programming Music",
         "slug": "programming-music",
-        "bookmarks": [{"text": "Pencil Code Music", "url": "https://gym.pencilcode.net/jam/#/jam/dream.html"}]
+        "bookmarks": [{"text": "Pencil Code Music", "url": "https://gym.pencilcode.net/jam/#/jam/dream.html"}],
+        "visibility": "public"
     },
     {
         "category": "Assembly",
@@ -982,34 +1124,42 @@
                       {"text": "NASM", "url": "http://www.nasm.us/"},
                       {"text": "flat assembler", "url": "https://flatassembler.net/"},
                       {"text": "flat assembler on Wikipedia", "url": "https://en.wikipedia.org/wiki/FASM"},
-                      {"text": "High Level Assembly on Wikipedia", "url": "https://en.wikipedia.org/wiki/High_Level_Assembly"},
-                      {"text": "Comparison of Assemblers", "url": "https://en.wikipedia.org/wiki/Comparison_of_assemblers"},
-                      {"text": "GNU Assembler", "url": "https://en.wikipedia.org/wiki/GNU_Assembler"}]
+                      {"text": "High Level Assembly on Wikipedia",
+                       "url": "https://en.wikipedia.org/wiki/High_Level_Assembly"},
+                      {"text": "Comparison of Assemblers",
+                       "url": "https://en.wikipedia.org/wiki/Comparison_of_assemblers"},
+                      {"text": "GNU Assembler", "url": "https://en.wikipedia.org/wiki/GNU_Assembler"}],
+        "visibility": "public"
     },
     {
         "category": "SDCC",
         "slug": "sdcc",
-        "bookmarks": [{"text": "Small Device C Compiler", "url": "http://sdcc.sourceforge.net/"}]
+        "bookmarks": [{"text": "Small Device C Compiler", "url": "http://sdcc.sourceforge.net/"}],
+        "visibility": "public"
     },
     {
         "category": "LLVM",
         "slug": "llvm",
-        "bookmarks": [{"text": "LLVM", "url": "https://llvm.org/"}]
+        "bookmarks": [{"text": "LLVM", "url": "https://llvm.org/"}],
+        "visibility": "public"
     },
     {
         "category": "LCC",
         "slug": "lcc",
-        "bookmarks": [{"text": "LCC", "url": "https://en.m.wikipedia.org/wiki/LCC_(compiler)"}]
+        "bookmarks": [{"text": "LCC", "url": "https://en.m.wikipedia.org/wiki/LCC_(compiler)"}],
+        "visibility": "public"
     },
     {
         "category": "TCC",
         "slug": "tcc",
-        "bookmarks": [{"text": "TCC", "url": "https://bellard.org/tcc/"}]
+        "bookmarks": [{"text": "TCC", "url": "https://bellard.org/tcc/"}],
+        "visibility": "public"
     },
     {
         "category": "Window Managers",
         "slug": "window-managers",
-        "bookmarks": [{"text": "SwayWM", "url": "https://github.com/swaywm/sway"}]
+        "bookmarks": [{"text": "SwayWM", "url": "https://github.com/swaywm/sway"}],
+        "visibility": "public"
     },
     {
         "category": "Linux Distributions",
@@ -1018,18 +1168,22 @@
                       {"text": "Sabayon Linux", "url": "https://www.sabayon.org/"},
                       {"text": "Void Linux", "url": "https://www.voidlinux.eu/"},
                       {"text": "Artix Linux", "url": "https://artixlinux.org/"},
-                      {"text": "Manjaro Linux", "url": "https://manjaro.org/"}]
+                      {"text": "Manjaro Linux", "url": "https://manjaro.org/"}],
+        "visibility": "public"
     },
     {
         "category": "Gentoo Linux",
         "slug": "gentoo",
         "bookmarks": [{"text": "Gentoo", "url": "https://www.gentoo.org/"},
-                      {"text": "Gentoo Handbook", "url": "https://wiki.gentoo.org/wiki/Handbook:AMD64"}]
+                      {"text": "Gentoo Handbook", "url": "https://wiki.gentoo.org/wiki/Handbook:AMD64"}],
+        "visibility": "public"
     },
     {
         "category": "BSD",
         "slug": "bsd",
-        "bookmarks": [{"text": "BSD for Linux users", "url": "https://www.over-yonder.net/~fullermd/rants/bsd4linux/01"}]
+        "bookmarks": [{"text": "BSD for Linux users",
+                       "url": "https://www.over-yonder.net/~fullermd/rants/bsd4linux/01"}],
+        "visibility": "public"
     },
     {
         "category": "Courses",
@@ -1043,13 +1197,15 @@
                       {"text": "Springboard", "url": "https://www.springboard.com/"},
                       {"text": "Udemy", "url": "https://www.udemy.com/"},
                       {"text": "Duolingo", "url": "https://www.duolingo.com/"},
-                      {"text": "MIT Open Courseware", "url": "https://ocw.mit.edu/"}]
+                      {"text": "MIT Open Courseware", "url": "https://ocw.mit.edu/"}],
+        "visibility": "public"
     },
     {
         "category": "Lindenmayer systems",
         "slug": "lindenmayer-systems",
         "bookmarks": [{"text": "Simple Loindenmayer System explanation",
-                       "url": "http://jobtalle.com/lindenmayer_systems.html"}]
+                       "url": "http://jobtalle.com/lindenmayer_systems.html"}],
+        "visibility": "public"
     },
     {
         "category": "netcode.io",
@@ -1059,22 +1215,26 @@
                       {"text": "netcode.io in the browser",
                        "url": "https://github.com/RedpointGames/netcode.io-browser"},
                       {"text": "UDP in the browser",
-                       "url": "https://gafferongames.com/post/why_cant_i_send_udp_packets_from_a_browser/"}]
+                       "url": "https://gafferongames.com/post/why_cant_i_send_udp_packets_from_a_browser/"}],
+        "visibility": "public"
     },
     {
         "category": "Faketime",
         "slug": "faketime",
-        "bookmarks": [{"text": "faketime", "url": "https://github.com/wolfcw/libfaketime"}]
+        "bookmarks": [{"text": "faketime", "url": "https://github.com/wolfcw/libfaketime"}],
+        "visibility": "public"
     },
     {
         "category": "Scrum",
         "slug": "scrum",
-        "bookmarks": [{"text": "Scrum Guide", "url": "http://www.scrumguides.org/scrum-guide.html"}]
+        "bookmarks": [{"text": "Scrum Guide", "url": "http://www.scrumguides.org/scrum-guide.html"}],
+        "visibility": "public"
     },
     {
         "category": "Serialization Formats",
         "slug": "serialization-formats",
-        "bookmarks": [{"text": "MessagePack", "url": "https://msgpack.org/"}]
+        "bookmarks": [{"text": "MessagePack", "url": "https://msgpack.org/"}],
+        "visibility": "public"
     },
     {
         "category": "Streaming",
@@ -1083,13 +1243,15 @@
                       {"text": "Apache Storm", "url": "http://storm.apache.org/"},
                       {"text": "Apache Flink", "url": "https://flink.apache.org/"},
                       {"text": "Apache Spark Streaming",
-                       "url": "https://spark.apache.org/docs/latest/quick-start.html"}]
+                       "url": "https://spark.apache.org/docs/latest/quick-start.html"}],
+        "visibility": "public"
     },
     {
         "category": "Remote Desktop Protocol",
         "slug": "rdp",
         "bookmarks": [{"text": "rdesktop", "url": "http://www.rdesktop.org/"},
                       {"text": "xrdp", "url": "http://www.xrdp.org/"},
-                      {"text": "FreeRDP", "url": "https://github.com/FreeRDP/FreeRDP"}]
+                      {"text": "FreeRDP", "url": "https://github.com/FreeRDP/FreeRDP"}],
+        "visibility": "public"
     }
 ]

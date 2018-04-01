@@ -4,15 +4,31 @@ from flask import redirect, url_for, abort, send_file
 from flask import send_from_directory
 from werkzeug import secure_filename
 import settings
-from storage import get_s3_files_from_result, get_s3_folders_from_result
-from storage import (read_s3_bucket_folder,
-                     read_s3_file,
-                     write_s3_file,
-                     read_s3_stream,
-                     delete_s3_file)
-from photos import get_thumbnail_s3_url, get_photo_s3_url, add_collection_thumbnail_url
-from photos import add_collection_url, load_photo_collection_list, get_raw_photo_collection
-from photos import create_image_dict, get_photo_collection
+from storage import (
+    get_s3_files_from_result,
+    get_s3_folders_from_result
+)
+from storage import (
+    read_s3_bucket_folder,
+    read_s3_file,
+    write_s3_file,
+    read_s3_stream,
+    delete_s3_file
+)
+from photos import (
+    get_thumbnail_s3_url,
+    get_photo_s3_url,
+    add_collection_thumbnail_url
+)
+from photos import (
+    add_collection_url,
+    load_photo_collection_list,
+    get_raw_photo_collection
+)
+from photos import (
+    create_image_dict,
+    get_photo_collection
+)
 from util import load_json
 from datetime import datetime
 import time
@@ -128,6 +144,7 @@ def login_required(f):
 
     return login_required_wrapper
 
+
 @app.route('/')
 def index():
     """
@@ -143,7 +160,8 @@ def load_bookmarks():
     filename = app.config['BOOKMARKS_FILENAME']
     return load_json(filename)
 
-def collect_bookmark_categories():
+
+def collect_bookmark_categories(public_only):
     """
     Create a list of bookmark categories from the bookmarks.
     """
@@ -151,24 +169,33 @@ def collect_bookmark_categories():
     for collection in load_bookmarks():
         slug = collection.get('slug', None)
         category = collection.get('category', None)
+        visibility = collection.get('visibility', None)
 
         assert slug is not None
         assert category is not None
+        assert visibility is not None
+
+        if public_only and visibility == "private":
+            continue
 
         result.append({
             "category": category,
-            "url": "/bookmarks/{}".format(slug)
+            "url": "/bookmarks/{}".format(slug),
         })
 
     return result
+
 
 @app.route('/bookmarks')
 def bookmarks():
     """
     Show the different bookmark categories.
     """
-    bookmark_categories = collect_bookmark_categories()
+    user = get_current_user()
+    public_only = user is None
+    bookmark_categories = collect_bookmark_categories(public_only)
     return render_template('bookmarks.html', categories=bookmark_categories)
+
 
 def fetch_bookmark_collection_for_category(category):
     for collection in load_bookmarks():
@@ -182,6 +209,7 @@ def fetch_bookmark_collection_for_category(category):
 
     return None
 
+
 @app.route('/bookmarks/<category_slug>')
 def bookmark_category(category_slug):
     """
@@ -189,12 +217,20 @@ def bookmark_category(category_slug):
     """
     bookmark_collection = fetch_bookmark_collection_for_category(category_slug)
 
+    user = get_current_user()
+    if user is None:
+        if bookmark_collection["visibility"] == "private":
+            abort(404)
+
     if bookmark_collection:
         category = bookmark_collection['category']
         bookmarks = bookmark_collection['bookmarks']
-        return render_template('bookmark-category.html', category=category, bookmarks=bookmarks)
+        return render_template('bookmark-category.html',
+                               category=category,
+                               bookmarks=bookmarks)
     else:
         abort(404)
+
 
 @app.route('/photos')
 def photo_collection_list():
@@ -203,7 +239,8 @@ def photo_collection_list():
     """
     filename = app.config['PHOTO_COLLECTION_FILENAME']
     photo_collections = load_photo_collection_list(filename)
-    return render_template('photo-collection-list.html', photo_collections=photo_collections)
+    return render_template('photo-collection-list.html',
+                           photo_collections=photo_collections)
 
 
 @app.route('/photos/<collection_name>')
@@ -218,6 +255,7 @@ def photo_collection(collection_name):
         return render_template('photo-collection.html', collection=collection)
     else:
         return "Could not find the collection. Should return a nice 404 error here."
+
 
 @app.route('/photos/<collection_name>/<photo>')
 def single_photo(collection_name, photo):
@@ -234,6 +272,7 @@ def single_photo(collection_name, photo):
 
     return 'Could not find matching photo. Should return a nice 404 error here.'
 
+
 @app.route('/time')
 def current_time():
     """
@@ -248,6 +287,7 @@ def current_time():
         place['time'] = datetime.now(pytz.timezone(place['tz'])).strftime("%H:%M")
 
     return render_template("time.html", places=places)
+
 
 def valid_credentials(username, password):
     """
@@ -266,6 +306,7 @@ def valid_credentials(username, password):
 
     return password_hash == app.config['PASSWORD_HASH']
 
+
 def create_user_jwt(username, expiration_time_delta, roles):
     """
     Creates a JWT for the given username.
@@ -279,6 +320,7 @@ def create_user_jwt(username, expiration_time_delta, roles):
                 'roles': roles}
 
     return jwt.encode(identity, secret, algorithm='HS256').decode('utf-8')
+
 
 @app.route('/login/', methods=['GET', 'POST'])
 def login():
@@ -330,6 +372,7 @@ def login():
     else:
         return render_template("login.html", action_url=action_url)
 
+
 @app.route('/protocol/')
 def protocol():
     """
@@ -344,6 +387,7 @@ def protocol():
     else:
         return "No protocol header."
 
+
 @app.route('/logout/')
 def logout():
     """
@@ -353,6 +397,7 @@ def logout():
     resp.set_cookie('identity_jwt', '', expires=0)
     return resp
 
+
 @app.route('/account')
 def account():
     """
@@ -360,12 +405,14 @@ def account():
     """
     return render_template("account.html")
 
+
 def is_token_creator(user):
     """
     Check that the user has the role token_creator
     """
     roles = user['roles']
     return 'token_creator' in roles
+
 
 @app.route('/token')
 @login_required
@@ -387,6 +434,7 @@ def token():
 
     return render_template("token.html", token=token_jwt)
 
+
 def process_folders(folders):
     """
     Given a list of folder names create a list of folder dicts
@@ -399,10 +447,11 @@ def process_folders(folders):
     for f in folders:
         text = f[0:-1].split('/')[-1] + '/'
         folder = {"text": text,
-                  "url": "/notes/" + f }
+                  "url": "/notes/" + f}
         result.append(folder)
 
     return result
+
 
 def process_files(path, files):
     """
@@ -419,6 +468,7 @@ def process_files(path, files):
         result.append({"text": text, "url": url})
 
     return result
+
 
 @app.route('/notes')
 @app.route('/notes/<path:path>')
@@ -442,12 +492,14 @@ def notes(path='/'):
 
         return render_template('notes-file.html', text=text)
 
+
 @app.route('/hacks')
 def hacks():
     """
     List of projects that I have created.
     """
     return 'Hacks go here.'
+
 
 @app.route('/books')
 def library():
@@ -456,6 +508,7 @@ def library():
     """
     # Computer Graphics Programming in OpenGL with Java
     return 'Book list goes here.'
+
 
 @app.route('/recepies')
 def recepies():
@@ -472,6 +525,7 @@ def recepies():
     # between Swedish and American measurements.
 
     return 'List of recepies goes here.'
+
 
 @app.route('/files', methods=['GET', 'POST'])
 @login_required
@@ -491,6 +545,7 @@ def files():
         _, file_list = read_s3_bucket_folder(bucket_name, '/')
         return render_template('file-list.html', file_list=file_list)
 
+
 @app.route('/files/delete/<filename>', methods=['GET', 'POST'])
 def delete_file(filename):
     """
@@ -503,6 +558,7 @@ def delete_file(filename):
         return redirect(url_for('files'))
     else:
         return render_template('delete-file.html', filename=filename)
+
 
 @app.route('/files/<filename>', methods=['GET', 'PUT'])
 @login_required
@@ -525,7 +581,8 @@ def single_file(filename):
 
         file_stream = read_s3_stream(bucket_name, filename)
         return send_file(file_stream,
-            mimetype=mimetype_from_extension(filename))
+                         mimetype=mimetype_from_extension(filename))
+
 
 def load_todo_list():
     """
@@ -533,6 +590,7 @@ def load_todo_list():
     """
     filename = app.config['TODO_LIST_FILENAME']
     return load_json(filename)
+
 
 @app.route('/todo')
 def todo():
@@ -542,6 +600,7 @@ def todo():
     todo_list = load_todo_list()
     return render_template('todo.html', todo_list=todo_list)
 
+
 @app.route('/work')
 def work():
     """
@@ -549,12 +608,14 @@ def work():
     """
     return render_template('work.html')
 
+
 @app.route('/contact')
 def contact():
     """
     Contact page.
     """
     return render_template('contact.html')
+
 
 def mimetype_from_extension(filename):
     """
@@ -573,6 +634,7 @@ def mimetype_from_extension(filename):
 
     return extensionMap.get(extension.lower(), "application/octet-stream")
 
+
 @app.route('/public/<token>/<filename>')
 def public_files(token, filename):
     bucket_name = 'redwood-files'
@@ -585,6 +647,6 @@ def public_files(token, filename):
     if token == expected_token:
         file_stream = read_s3_stream(bucket_name, filename)
         return send_file(file_stream,
-            mimetype=mimetype_from_extension(filename))
+                         mimetype=mimetype_from_extension(filename))
     else:
         raise abort(403)
