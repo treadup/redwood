@@ -520,6 +520,13 @@
                       {"text": "ROM", "url": "http://rom-rb.org/"}]
     },
     {
+        "category": "PHP",
+        "slug": "php",
+        "bookmarks": [{"text": "Lavarel", "url": "https://laravel.com/"},
+                      {"text": "Twig", "url": "https://twig.symfony.com/"},
+                      {"text": "Slim", "url": "https://www.slimframework.com/"}]
+    },
+    {
         "category": "Lua",
         "slug": "lua",
         "bookmarks": [
@@ -863,7 +870,7 @@
         "category": "RabbitMQ",
         "slug": "rabbitmq",
         "bookmarks": [{"text": "RabbitMQ", "url": "https://www.rabbitmq.com/" },
-                      {"text": "Broker Semantics"m "url": "https://www.rabbitmq.com/semantics.html"}]
+                      {"text": "Broker Semantics", "url": "https://www.rabbitmq.com/semantics.html"}]
     },
     {
         "category": "Terminal",
