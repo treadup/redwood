@@ -171,9 +171,22 @@ def collect_bookmark_categories(public_only):
         category = collection.get('category', None)
         visibility = collection.get('visibility', None)
 
-        assert slug is not None
-        assert category is not None
-        assert visibility is not None
+        if category is None:
+            return "Missing category"
+
+        if slug is None:
+            if category is not None:
+                return None, "Missing slug for category {}".format(category)
+            else:
+                return None, "Missing slug"
+
+        if visibility is None:
+            if category is not None:
+                return None, "Missing visibility for category {}".format(category)
+            elif slug is not None:
+                return None, "Missing visibility for slug {}".format(slug)
+            else:
+                return None, "Missing visibility"
 
         if public_only and visibility == "private":
             continue
@@ -183,7 +196,7 @@ def collect_bookmark_categories(public_only):
             "url": "/bookmarks/{}".format(slug),
         })
 
-    return result
+    return result, None
 
 
 @app.route('/bookmarks')
@@ -193,8 +206,12 @@ def bookmarks():
     """
     user = get_current_user()
     public_only = user is None
-    bookmark_categories = collect_bookmark_categories(public_only)
-    return render_template('bookmarks.html', categories=bookmark_categories)
+    bookmark_categories, err = collect_bookmark_categories(public_only)
+
+    if err:
+        return err, 500
+    else:
+        return render_template('bookmarks.html', categories=bookmark_categories)
 
 
 def fetch_bookmark_collection_for_category(category):
