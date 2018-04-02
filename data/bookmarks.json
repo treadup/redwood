@@ -759,8 +759,19 @@
                        "presenter": "Bret Victor"},
                       {"text": "Inventing on Principle",
                        "url": "https://vimeo.com/36579366",
-                       "presenter": "Bret Victor"}],
+                       "presenter": "Bret Victor"},
+                      {"text": "Steve Jobs: Manufacturing vs Consulting",
+                       "url": "https://www.youtube.com/watch?v=QD8N8N7wzmM",
+                       "presenter": "Steve Jobs"}],
         "visibility": "public"
+    },
+    {
+        "category": "C2",
+        "slug": "c2",
+        "bookmarks": [{"text": "Are Design Patterns Missing Language Features",
+                       "url": "http://wiki.c2.com/?AreDesignPatternsMissingLanguageFeatures"},
+                      {"text": "Design Patterns are Missing Language Features",
+                       "url": "http://wiki.c2.com/?AreDesignPatternsMissingLanguageFeatures"}]
     },
     {
         "category": "Music",
@@ -996,6 +1007,14 @@
         "visibility": "public"
     },
     {
+        "category": "Microservices",
+        "slug": "microservices",
+        "bookmarks": [{"text": "Distributed Transactions: The Icebergs of Microservices",
+                       "url": "http://www.grahamlea.com/2016/08/distributed-transactions-microservices-icebergs/"},
+                      {"text": "What I Wish I Had Known Before Scaling Uber to 1000 Services",
+                       "url": "https://www.reddit.com/r/programming/comments/54y5by/what_i_wish_i_had_known_before_scaling_uber_to/"}]
+    },
+    {
         "category": "Terminal",
         "slug": "terminal",
         "bookmarks": [{"text": "Terminals are sexy", "url": "https://terminalsare.sexy/"},
@@ -1026,10 +1045,7 @@
         "bookmarks": [{"text": "The Hub", "url": "https://thehub.se/jobs/"},
                       {"text": "Angel Co", "url": "https://angel.co/stockholm/jobs"},
                       {"text": "startupjobs.se", "url": "http://startupjobs.se/"},
-                      {"text": "Webb Jobb", "url": "https://webbjobb.io/"},
-                      {"text": "Join Startups", "url": "https://join-startups.com/stockholm"},
-                      {"text": "LinkedIn Startup Jobs",
-                       "url": "https://www.linkedin.com/jobs/startup-jobs/?country=se"}],
+                      {"text": "Webb Jobb", "url": "https://webbjobb.io/"}],
         "visibility": "private"
     },
     {
