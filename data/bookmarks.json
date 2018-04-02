@@ -996,7 +996,9 @@
     {
         "category": "Message Queues",
         "slug": "message-queues",
-        "bookmarks": [{"text": "queues.io", "url": "http://queues.io/"}],
+        "bookmarks": [{"text": "queues.io", "url": "http://queues.io/"},
+                      {"text": "You cannot have exactly once delivery",
+                       "url": "https://bravenewgeek.com/you-cannot-have-exactly-once-delivery/"}],
         "visibility": "public"
     },
     {
@@ -1013,6 +1015,14 @@
                        "url": "http://www.grahamlea.com/2016/08/distributed-transactions-microservices-icebergs/"},
                       {"text": "What I Wish I Had Known Before Scaling Uber to 1000 Services",
                        "url": "https://www.reddit.com/r/programming/comments/54y5by/what_i_wish_i_had_known_before_scaling_uber_to/"}]
+    },
+    {
+        "category": "Distributed Systems",
+        "slug": "distributed-systems",
+        "bookmarks": [{"text": "There is no now",
+                       "url": "https://queue.acm.org/detail.cfm?id=2745385"},
+                      {"text": "The two generals problem",
+                       "url": "http://wiki.c2.com/?AreDesignPatternsMissingLanguageFeatures"}]
     },
     {
         "category": "Terminal",
