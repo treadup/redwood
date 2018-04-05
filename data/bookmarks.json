@@ -678,6 +678,12 @@
         "visibility": "public"
     },
     {
+        "category": "Eshell",
+        "slug": "eshell",
+        "bookmarks": [{"text": "Eshell redirection",
+                       "url": "https://www.emacswiki.org/emacs/EshellRedirection"}]
+    },
+    {
         "category": "Spacemacs",
         "slug": "spacemacs",
         "bookmarks": [{"text": "Spacemacs", "url": "http://spacemacs.org/"},
