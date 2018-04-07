@@ -339,12 +339,17 @@
         "visibility": "public"
     },
     {
+        "category": "Game Programming",
+        "slug": "game-programming",
+        "bookmarks": [{"text": "Procedural Worlds from Simple Tiles",
+                       "url": "http://ijdykeman.github.io/ml/2017/10/12/wang-tile-procedural-generation.html"}]
+    },
+    {
         "category": "Garbage Collection",
         "slug": "garbage-collection",
         "bookmarks": [{"text": "Shenandoah", "url": "http://openjdk.java.net/jeps/189"},
                       {"text": "Go Garbage Collector",
-                       "url":
-                       "https://making.pusher.com/golangs-real-time-gc-in-theory-and-practice/"},
+                       "url": "https://making.pusher.com/golangs-real-time-gc-in-theory-and-practice/"},
                       {"text": "Linus Torvalds on Garbage Collection",
                        "url": "https://news.ycombinator.com/item?id=2473932"},
                       {"text": "Real-Time Garbage Collection Is Real",
@@ -594,6 +599,15 @@
         "visibility": "public"
     },
     {
+        "category": "Java",
+        "slug": "java",
+        "bookmarks": [{"text": "Spark", "url":"http://sparkjava.com/"},
+                      {"text": "Embedded Containers",
+                       "url": "http://www.thedevpiece.com/embedded-containers-and-standalone-java-applications/"},
+                      {"text": "Undertow", "url": "http://undertow.io/"}],
+        "visibility": "public"
+    },
+    {
         "category": "Lua",
         "slug": "lua",
         "bookmarks": [
@@ -681,7 +695,12 @@
         "category": "Eshell",
         "slug": "eshell",
         "bookmarks": [{"text": "Eshell redirection",
-                       "url": "https://www.emacswiki.org/emacs/EshellRedirection"}]
+                       "url": "https://www.emacswiki.org/emacs/EshellRedirection"},
+                      {"text": "Yes, eshell is my main shell",
+                       "url": "https://www.reddit.com/r/emacs/comments/6y3q4k/yes_eshell_is_my_main_shell/"},
+                      {"text": "Presenting Eshell",
+                       "url": "http://howardism.org/Technical/Emacs/eshell-present.html"}],
+        "visibility": "public"
     },
     {
         "category": "Spacemacs",
@@ -1288,5 +1307,24 @@
                       {"text": "xrdp", "url": "http://www.xrdp.org/"},
                       {"text": "FreeRDP", "url": "https://github.com/FreeRDP/FreeRDP"}],
         "visibility": "public"
+    },
+    {
+        "category": "MUD",
+        "slug": "mud",
+        "visibility": "public",
+        "bookmarks": [{"text": "DiscworldMUD", "url": "http://discworld.starturtle.net/lpc/"},
+                      {"text": "Dead of Night", "url": "http://deadofnight.org/"},
+                      {"text": "MUME", "url": "http://mume.org/"},
+                      {"text": "sindome", "url": "https://www.sindome.org/"},
+                      {"text": "LambdaMOO programming",
+                       "url": "https://github.com/SevenEcks/lambda-moo-programming"}]
+    },
+    {
+        "category": "Startup",
+        "slug": "startup",
+        "visibility": "public",
+        "bookmarks": [{"text": "Product Hunt Startup Books",
+                       "url": "https://www.producthunt.com/topics/startup-books?order=most-upvoted"},
+                      {"text": "Make Book", "url": "https://makebook.io/"}]
     }
 ]
