@@ -827,7 +827,10 @@
         "bookmarks": [{"text": "Awesome React",
                        "url": "https://github.com/enaqx/awesome-react"},
                       {"text": "Awesome React Components",
-                       "url": "https://github.com/brillout/awesome-react-components"}],
+                       "url": "https://github.com/brillout/awesome-react-components"},
+                      {"text": "React Basic Theoretical Concepts",
+                       "url": "https://github.com/reactjs/react-basic"},
+                      {"text": "Pure UI", "url": "https://rauchg.com/2015/pure-ui"}],
         "visibility": "public"
     },
     {
