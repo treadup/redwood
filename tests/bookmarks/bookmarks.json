@@ -3,12 +3,13 @@
         "category": "Python",
         "slug": "python",
         "bookmarks": [{"text": "Django", "url": "http://www.djangoproject.com"},
-                      {"text": "Flask",  "url": "http://flask.pocoo.org/"}]
+                      {"text": "Flask",  "url": "http://flask.pocoo.org/"}],
+        "visibility": "public"
     },
     {
         "category": "Clojure",
         "slug": "clojure",
-        "bookmarks": [{"text": "Clojure", "url": "http://clojure.org"}]
+        "bookmarks": [{"text": "Clojure", "url": "http://clojure.org"}],
+        "visibility": "public"
     }
 ]
-
