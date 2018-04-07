@@ -608,6 +608,14 @@
         "visibility": "public"
     },
     {
+        "category": "Java Web Development",
+        "slug": "java-web-development",
+        "bookmarks": [{"text": "Pebble", "url": "https://github.com/PebbleTemplates/pebble"},
+                      {"text": "JinJava", "url": "https://github.com/HubSpot/jinjava"},
+                      {"text": "Jtwig", "url": "http://jtwig.org/"}],
+        "visibility": "public"
+    },
+    {
         "category": "Lua",
         "slug": "lua",
         "bookmarks": [
