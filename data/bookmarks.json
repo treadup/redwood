@@ -830,7 +830,9 @@
                        "url": "https://github.com/brillout/awesome-react-components"},
                       {"text": "React Basic Theoretical Concepts",
                        "url": "https://github.com/reactjs/react-basic"},
-                      {"text": "Pure UI", "url": "https://rauchg.com/2015/pure-ui"}],
+                      {"text": "Pure UI", "url": "https://rauchg.com/2015/pure-ui"},
+                      {"text": "Awsome React Context",
+                       "url": "https://github.com/diegohaz/awesome-react-context"}],
         "visibility": "public"
     },
     {
@@ -1337,5 +1339,12 @@
         "bookmarks": [{"text": "Product Hunt Startup Books",
                        "url": "https://www.producthunt.com/topics/startup-books?order=most-upvoted"},
                       {"text": "Make Book", "url": "https://makebook.io/"}]
+    },
+    {
+        "category": "Structured Text Tools",
+        "slug": "structured-text-tools",
+        "visibility": "public",
+        "bookmarks": [{"text": "Curated list of Structured Text Tools",
+                       "url": "https://github.com/dbohdan/structured-text-tools"}]
     }
 ]
