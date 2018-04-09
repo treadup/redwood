@@ -696,7 +696,9 @@
         "slug": "emacs",
         "bookmarks": [{"text": "Awesome Emacs", "url": "https://github.com/emacs-tw/awesome-emacs"},
                       {"text": "Python programming in Emacs",
-                       "url": "https://www.emacswiki.org/emacs/PythonProgrammingInEmacs"}],
+                       "url": "https://www.emacswiki.org/emacs/PythonProgrammingInEmacs"},
+                      {"text": "Learn Elisp in X minutes.",
+                       "url": "https://learnxinyminutes.com/docs/elisp/"}],
         "visibility": "public"
     },
     {
