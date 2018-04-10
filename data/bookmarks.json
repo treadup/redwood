@@ -314,7 +314,8 @@
     {
         "category": "Common Lisp",
         "slug": "common-lisp",
-        "bookmarks": [{"text": "Common Lisp", "url": "https://common-lisp.net/"}],
+        "bookmarks": [{"text": "Common Lisp", "url": "https://common-lisp.net/"},
+                      {"text": "Articulate Lisp", "url": "http://articulate-lisp.com/"}],
         "visibility": "public"
     },
     {
