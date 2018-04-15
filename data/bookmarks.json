@@ -8,7 +8,6 @@
                       {"text": "Structuring Your Project",
                        "url": "http://docs.python-guide.org/en/latest/writing/structure/"},
                       {"text": "Testing Your Code", "url": "http://docs.python-guide.org/en/latest/writing/tests/"},
-                      {"text": "Kivy", "url": "https://kivy.org/"},
                       {"text": "Awesome Asyncio", "url": "https://github.com/timofurrer/awesome-asyncio"},
                       {"text": "Nuitka", "url": "http://nuitka.net/"},
                       {"text": "PyFormat", "url": "https://pyformat.info/"},
@@ -23,6 +22,13 @@
                        "url": "https://github.com/mvantellingen/localshop"},
                       {"text": "PyDigger", "url": "https://pydigger.com/"}],
         "visibility": "public"
+    },
+    {
+        "category": "Python Native Apps",
+        "slug": "python-native-apps",
+        "visibility": "public",
+        "bookmarks": [{"text": "Kivy", "url": "https://kivy.org/"},
+                      {"text": "BeeWare", "url": "https://pybee.org/"}]
     },
     {
         "category": "Python Language Specification",
