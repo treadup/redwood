@@ -343,7 +343,8 @@
         "category": "Game Programming",
         "slug": "game-programming",
         "bookmarks": [{"text": "Procedural Worlds from Simple Tiles",
-                       "url": "http://ijdykeman.github.io/ml/2017/10/12/wang-tile-procedural-generation.html"}]
+                       "url": "http://ijdykeman.github.io/ml/2017/10/12/wang-tile-procedural-generation.html"}],
+        "visibility": "public"
     },
     {
         "category": "Garbage Collection",
