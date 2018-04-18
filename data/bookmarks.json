@@ -20,7 +20,8 @@
                        "url": "https://python-packaging.readthedocs.io/en/latest/"},
                       {"text": "localshop",
                        "url": "https://github.com/mvantellingen/localshop"},
-                      {"text": "PyDigger", "url": "https://pydigger.com/"}],
+                      {"text": "PyDigger", "url": "https://pydigger.com/"},
+                      {"text": "attrs", "url": "http://www.attrs.org/en/stable/"}],
         "visibility": "public"
     },
     {
