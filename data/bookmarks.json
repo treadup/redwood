@@ -237,6 +237,15 @@
         "visibility": "public"
     },
     {
+        "category": "Lisp Shells",
+        "slug": "lisp-shells",
+        "visibility": "public",
+        "bookmarks": [{"text": "rash", "url": "https://github.com/willghatch/racket-rash"},
+                      {"text": "clash", "url": "https://clisp.sourceforge.io/clash.html"},
+                      {"text": "scsh", "url": "https://scsh.net/"},
+                      {"text": "closh", "url": "https://github.com/dundalek/closh"}]
+    },
+    {
         "category": "Ypsilon",
         "slug": "ypsilon",
         "bookmarks": [{"text": "Ypsilon",
@@ -1165,6 +1174,12 @@
         "bookmarks": [{"text": "CockroachDB", "url": "https://www.cockroachlabs.com/"},
                       {"text": "CockroachDB on GitHub", "url": "https://github.com/cockroachdb/cockroach"}],
         "visibility": "public"
+    },
+    {
+        "category": "FoundationDB",
+        "slug": "foundationdb",
+        "visibility": "public",
+        "bookmarks": [{"text": "FoundationDB", "url": "https://www.foundationdb.org/"}]
     },
     {
         "category": "Books",
