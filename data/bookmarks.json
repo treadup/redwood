@@ -1357,5 +1357,17 @@
         "visibility": "public",
         "bookmarks": [{"text": "Curated list of Structured Text Tools",
                        "url": "https://github.com/dbohdan/structured-text-tools"}]
+    },
+    {
+        "category": "Virtual Reality",
+        "slug": "virtual-reality",
+        "visibility": "public",
+        "bookmarks": [{"text": "Aframe", "url": "https://aframe.io/"}]
+    },
+    {
+        "category": "Social Coding",
+        "slug": "social-coding",
+        "visibility": "private",
+        "bookmarks": [{"text": "Glitch", "url": "https://glitch.com/"}]
     }
 ]
