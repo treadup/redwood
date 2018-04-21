@@ -1384,5 +1384,24 @@
         "slug": "social-coding",
         "visibility": "private",
         "bookmarks": [{"text": "Glitch", "url": "https://glitch.com/"}]
+    },
+    {
+        "category": "Markup Languages",
+        "slug": "markup-languages",
+        "visibility": "public",
+        "bookmarks": [{"text": "Markdown",
+                       "url": "https://daringfireball.net/projects/markdown/syntax"},
+                      {"text": "AsciiDoc",
+                       "url": "https://asciidoctor.org/docs/what-is-asciidoc/"}]
+    },
+    {
+        "category": "Diagramming Languages",
+        "slug": "diagramming-languages",
+        "visibility": "public",
+        "bookmarks": [
+            {"text": "Mermaid", "url": "https://mermaidjs.github.io/"},
+            {"text": "Blockdiag", "url": "http://blockdiag.com/en/"}
+            {"text": "Ditaa", "url": "http://ditaa.sourceforge.net/"},
+            {"text": "Markdeep", "url": "https://casual-effects.com/markdeep/"}]
     }
 ]
