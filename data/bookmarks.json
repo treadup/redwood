@@ -891,10 +891,18 @@
         "slug": "game-engines",
         "bookmarks": [{"text": "Amazon Lumberyard", "url": "https://aws.amazon.com/lumberyard/"},
                       {"text": "Unity", "url": "https://unity3d.com/"},
-                      {"text": "Phaser", "url": "https://phaser.io/"},
                       {"text": "Ignifuga", "url": "http://ignifuga.org/"},
                       {"text": "PyGame", "url": "http://www.pygame.org/"}],
         "visibility": "public"
+    },
+    {
+        "category": "JavaScript Game Engines",
+        "slug": "javascript-game-engines",
+        "visibility": "public",
+        "bookmarks": [{"text": "Phaser", "url": "https://phaser.io/"},
+                      {"text": "CraftyJS", "url": "http://craftyjs.com/"},
+                      {"text": "CreateJS", "url": "https://createjs.com/"},
+                      {"text": "PixiJS", "url": "http://www.pixijs.com/"}]
     },
     {
         "category": "Physics Engines",
