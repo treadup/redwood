@@ -543,6 +543,13 @@
         "visibility": "public"
     },
     {
+        "category": "Typography",
+        "slug": "typography",
+        "visibility": "public",
+        "bookmarks": [{"text": "Butterick's Practical Typography",
+                       "url": "https://practicaltypography.com/"}]
+    },
+    {
         "category": "Text Design Tools",
         "slug": "text-design-tools",
         "bookmarks": [{"text": "Textcraft", "url": "https://textcraft.net/"},
@@ -815,7 +822,10 @@
                        "presenter": "Bret Victor"},
                       {"text": "Steve Jobs: Manufacturing vs Consulting",
                        "url": "https://www.youtube.com/watch?v=QD8N8N7wzmM",
-                       "presenter": "Steve Jobs"}],
+                       "presenter": "Steve Jobs"},
+                      {"text": "Scaling Etsy",
+                       "url": "https://www.youtube.com/watch?v=eenrfm50mXw",
+                       "presenter": "Ross Snyder"}],
         "visibility": "public"
     },
     {
@@ -1372,7 +1382,10 @@
         "visibility": "public",
         "bookmarks": [{"text": "Product Hunt Startup Books",
                        "url": "https://www.producthunt.com/topics/startup-books?order=most-upvoted"},
-                      {"text": "Make Book", "url": "https://makebook.io/"}]
+                      {"text": "Make Book", "url": "https://makebook.io/"},
+                      {"text": "indie hackers", "url": "https://www.indiehackers.com/"},
+                      {"text": "Choose Boring Technology",
+                       "url": "http://mcfunley.com/choose-boring-technology"}]
     },
     {
         "category": "Structured Text Tools",
@@ -1411,5 +1424,12 @@
             {"text": "Blockdiag", "url": "http://blockdiag.com/en/"}
             {"text": "Ditaa", "url": "http://ditaa.sourceforge.net/"},
             {"text": "Markdeep", "url": "https://casual-effects.com/markdeep/"}]
+    },
+    {
+        "category": "Identity",
+        "slug": "identity",
+        "visibility": "public",
+        "bookmarks": [{"text": "Let's talk about usernames",
+                       "url": "https://www.b-list.org/weblog/2018/feb/11/usernames/"}]
     }
 ]
