@@ -1398,7 +1398,9 @@
                       {"text": "Choose Boring Technology",
                        "url": "http://mcfunley.com/choose-boring-technology"},
                       {"text": "Age and High-Growth Entrepreneurship",
-                       "url": "https://news.ycombinator.com/item?id=16794228"}]
+                       "url": "https://news.ycombinator.com/item?id=16794228"},
+                      {"text": "Order of operations for starting a startup",
+                       "url": "https://blog.ycombinator.com/one-order-of-operations-for-starting-a-startup/"}]
     },
     {
         "category": "Structured Text Tools",
