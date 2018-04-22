@@ -1385,7 +1385,9 @@
                       {"text": "Make Book", "url": "https://makebook.io/"},
                       {"text": "indie hackers", "url": "https://www.indiehackers.com/"},
                       {"text": "Choose Boring Technology",
-                       "url": "http://mcfunley.com/choose-boring-technology"}]
+                       "url": "http://mcfunley.com/choose-boring-technology"},
+                      {"text": "Age and High-Growth Entrepreneurship",
+                       "url": "https://news.ycombinator.com/item?id=16794228"}]
     },
     {
         "category": "Structured Text Tools",
@@ -1421,7 +1423,7 @@
         "visibility": "public",
         "bookmarks": [
             {"text": "Mermaid", "url": "https://mermaidjs.github.io/"},
-            {"text": "Blockdiag", "url": "http://blockdiag.com/en/"}
+            {"text": "Blockdiag", "url": "http://blockdiag.com/en/"},
             {"text": "Ditaa", "url": "http://ditaa.sourceforge.net/"},
             {"text": "Markdeep", "url": "https://casual-effects.com/markdeep/"}]
     },
@@ -1431,5 +1433,12 @@
         "visibility": "public",
         "bookmarks": [{"text": "Let's talk about usernames",
                        "url": "https://www.b-list.org/weblog/2018/feb/11/usernames/"}]
+    },
+    {
+        "category": "Software Engineering",
+        "slug": "software-engineering",
+        "visibility": "public",
+        "bookmarks": [{"text": "Organizational skills beat algorithmic wizardry",
+                       "url": "http://prog21.dadgum.com/177.html"}]
     }
 ]
