@@ -304,6 +304,12 @@
         "visibility": "public"
     },
     {
+        "category": "Lisp",
+        "slug": "lisp",
+        "bookmarks": [{"text": "The Nature of Lisp",
+                       "url": "http://www.defmacro.org/ramblings/lisp.html"}]
+    },
+    {
         "category": "femtolisp",
         "slug": "femtolisp",
         "bookmarks": [{"text": "femtolisp", "url": "https://github.com/JeffBezanson/femtolisp"}],
@@ -439,9 +445,10 @@
         "visibility": "public"
     },
     {
-        "category": "Continuous Delivery",
-        "slug": "continuous-delivery",
-        "bookmarks": [{"text": "GoCD", "url": "https://www.gocd.org/"}],
+        "category": "Continuous Deployment",
+        "slug": "continuous-deployment",
+        "bookmarks": [{"text": "GoCD", "url": "https://www.gocd.org/"},
+                      {"text": "DeployBot", "url": "https://deploybot.com/"}],
         "visibility": "public"
     },
     {
@@ -808,7 +815,11 @@
                        "url": "https://eev.ee/blog/2012/04/09/php-a-fractal-of-bad-design/"},
                       {"text": "Cheney on the M.T.A", "url": "http://home.pipeline.com/~hbaker1/CheneyMTA.html"},
                       {"text": "Everything Easy is Hard Again",
-                       "url": "https://frankchimero.com/writing/everything-easy-is-hard-again/"}],
+                       "url": "https://frankchimero.com/writing/everything-easy-is-hard-again/"}
+                      {"text": "After Credentials",
+                       "url": "http://www.paulgraham.com/credentials.html"},
+                      {"text": "Why Entrepreneurs Start Companies Rather Than Join Them",
+                       "url": "https://steveblank.com/2018/04/11/why-entrepreneurs-start-companies-rather-than-join-them/"}],
         "visibility": "public"
     },
     {
