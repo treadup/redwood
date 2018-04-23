@@ -566,16 +566,24 @@
     {
         "category": "JavaScript",
         "slug": "javascript",
-        "bookmarks": [{"text": "Webpack", "url": "https://webpack.js.org/"},
-                      {"text": "Survive JS", "url": "http://survivejs.com/"},
+        "bookmarks": [{"text": "Survive JS", "url": "http://survivejs.com/"},
                       {"text": "Awesome JS", "url": "https://github.com/sindresorhus/awesome-nodejs"},
                       {"text": "microjs", "url": "http://microjs.com"},
                       {"text": "unpkg", "url": "https://unpkg.com"},
                       {"text": "cdnjs", "url": "https://cdnjs.com/"},
                       {"text": "Callback Hell", "url": "http://callbackhell.com/"},
-                      {"text": "ParcelJS", "url": "https://parceljs.org/"},
                       {"text": "Prettier.io", "url": "https://prettier.io/"}],
         "visibility": "public"
+    },
+    {
+        "category": "JavaScript Build Systems",
+        "slug": "javascript-build-systems",
+        "visibility": "public",
+        "bookmarks": [
+            {"text": "SpinJS", "url": "https://github.com/sysgears/spinjs"},
+            {"text": "ParcelJS", "url": "https://parceljs.org/"},
+            {"text": "Webpack", "url": "https://webpack.js.org/"}
+        ]
     },
     {
         "category": "JavaScript Graphics",
@@ -815,7 +823,7 @@
                        "url": "https://eev.ee/blog/2012/04/09/php-a-fractal-of-bad-design/"},
                       {"text": "Cheney on the M.T.A", "url": "http://home.pipeline.com/~hbaker1/CheneyMTA.html"},
                       {"text": "Everything Easy is Hard Again",
-                       "url": "https://frankchimero.com/writing/everything-easy-is-hard-again/"}
+                       "url": "https://frankchimero.com/writing/everything-easy-is-hard-again/"},
                       {"text": "After Credentials",
                        "url": "http://www.paulgraham.com/credentials.html"},
                       {"text": "Why Entrepreneurs Start Companies Rather Than Join Them",
