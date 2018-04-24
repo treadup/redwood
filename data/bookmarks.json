@@ -306,6 +306,7 @@
     {
         "category": "Lisp",
         "slug": "lisp",
+        "visibility": "public",
         "bookmarks": [{"text": "The Nature of Lisp",
                        "url": "http://www.defmacro.org/ramblings/lisp.html"}]
     },
