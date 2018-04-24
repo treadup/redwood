@@ -557,6 +557,22 @@
                        "url": "https://practicaltypography.com/"}]
     },
     {
+        "category": "Design",
+        "slug": "design",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Airbnb Design", "url": "https://airbnb.design/"},
+            { "text": "A design system grammar",
+              "url": "https://daneden.me/2017/07/12/a-design-system-grammar/"},
+            { "text": "Building a visual language",
+              "url": "https://airbnb.design/building-a-visual-language/"},
+            { "text": "Shit Work", "url": "https://zachholman.com/posts/shit-work/"},
+            { "text": "Mailchimp Design Patterns", "url": "https://ux.mailchimp.com/patterns"},
+            { "text": "Mailchimp Styleguide", "url": "https://styleguide.mailchimp.com/"},
+            { "text": "Sketching Interfaces", "url": "https://airbnb.design/sketching-interfaces/"}
+        ]
+    },
+    {
         "category": "Text Design Tools",
         "slug": "text-design-tools",
         "bookmarks": [{"text": "Textcraft", "url": "https://textcraft.net/"},
