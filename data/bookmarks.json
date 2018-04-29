@@ -861,7 +861,10 @@
                        "presenter": "Steve Jobs"},
                       {"text": "Scaling Etsy",
                        "url": "https://www.youtube.com/watch?v=eenrfm50mXw",
-                       "presenter": "Ross Snyder"}],
+                       "presenter": "Ross Snyder"},
+                      {"text": "Agile is Dead",
+                       "url": "https://www.youtube.com/watch?v=a-BOSpxYJ9M",
+                       "presenter": "Dave Thomas"}],
         "visibility": "public"
     },
     {
@@ -898,7 +901,9 @@
                        "url": "https://github.com/reactjs/react-basic"},
                       {"text": "Pure UI", "url": "https://rauchg.com/2015/pure-ui"},
                       {"text": "Awsome React Context",
-                       "url": "https://github.com/diegohaz/awesome-react-context"}],
+                       "url": "https://github.com/diegohaz/awesome-react-context"},
+                      {"text": "React Basic",
+                       "url": "https://github.com/reactjs/react-basic"}],
         "visibility": "public"
     },
     {
@@ -1478,5 +1483,11 @@
         "visibility": "public",
         "bookmarks": [{"text": "Organizational skills beat algorithmic wizardry",
                        "url": "http://prog21.dadgum.com/177.html"}]
+    },
+    {
+        "category": "Single Board Computer",
+        "slug": "single-board-computer",
+        "visibility": "public",
+        "bookmarks": [{"text": "board db", "url":"https://www.board-db.org/"}]
     }
 ]
