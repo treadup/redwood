@@ -1,0 +1,23 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image circleci/3.6.5-stretch
+    steps:
+      - checkout
+      - run: mkdir test-reports
+      - run:
+        name: Install Python deps in a venv
+        command: |
+          python3 -m venv venv
+          . venv/bin/activate
+          pip install -r requirements.txt
+      - run:
+        name: Run tests
+        command: |
+          venv/bin/python test_redwood.py
+      - store_artifacts:
+          path: test-reports
+          destination: reports
+      - store_test_result:
+          path: test-reports/
