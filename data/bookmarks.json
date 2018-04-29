@@ -585,6 +585,7 @@
         "slug": "javascript",
         "bookmarks": [{"text": "Survive JS", "url": "http://survivejs.com/"},
                       {"text": "Awesome JS", "url": "https://github.com/sindresorhus/awesome-nodejs"},
+                      {"text": "Exploring JS", "url": "http://exploringjs.com/"},
                       {"text": "microjs", "url": "http://microjs.com"},
                       {"text": "unpkg", "url": "https://unpkg.com"},
                       {"text": "cdnjs", "url": "https://cdnjs.com/"},
@@ -678,7 +679,8 @@
         "bookmarks": [
             {"text": "Lua", "url": "http://www.lua.org/"},
             {"text": "Löve2D", "url": "https://love2d.org/"},
-            {"text": "luastatic", "url": "https://github.com/ers35/luastatic"}],
+            {"text": "luastatic", "url": "https://github.com/ers35/luastatic"},
+            {"text": "Lövr", "url": "https://lovr.org/"}],
         "visibility": "public"
     },
     {
