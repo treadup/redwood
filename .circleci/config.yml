@@ -19,5 +19,5 @@ jobs:
       - store_artifacts:
           path: test-reports
           destination: reports
-      - store_test_result:
+      - store_test_results:
           path: test-reports/
