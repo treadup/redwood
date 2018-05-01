@@ -1379,6 +1379,14 @@
         "visibility": "public"
     },
     {
+        "category": "Agile",
+        "slug": "agile",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Agile is Dead", "url": "https://pragdave.me/blog/2014/03/04/time-to-kill-agile.html"}
+        ]
+    },
+    {
         "category": "Scrum",
         "slug": "scrum",
         "bookmarks": [{"text": "Scrum Guide", "url": "http://www.scrumguides.org/scrum-guide.html"}],
