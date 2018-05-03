@@ -1499,5 +1499,13 @@
         "slug": "single-board-computer",
         "visibility": "public",
         "bookmarks": [{"text": "board db", "url":"https://www.board-db.org/"}]
+    },
+    {
+        "category": "Mobile Development",
+        "slug": "mobile-development",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "HTML5 vs Native App Debate", "url": "https://www.html5rocks.com/en/mobile/nativedebate/"}
+        ]
     }
 ]
