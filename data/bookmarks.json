@@ -621,6 +621,14 @@
         "visibility": "public"
     },
     {
+        "category": "JavaScript Desktop Programming",
+        "slug": "javascript-desktop-programming",
+        "visibility": "public",
+        "bookmarks": [
+            {"text": "Electron", "url": "https://electronjs.org/"},
+            {"text": "Proton Native", "url": "https://proton-native.js.org/"}
+    },
+    {
         "category": "Mithril",
         "slug": "mithril",
         "bookmarks": [{"text": "Mithril", "url": "https://mithril.js.org/"}],
