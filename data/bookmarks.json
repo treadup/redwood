@@ -479,6 +479,12 @@
         "visibility": "public"
     },
     {
+        "category": "Web Reverse Engineering",
+        "slug": "web-reverse-engineering",
+        "visibility": "public",
+        "bookmarks": [{"text": "Wappalyzer", "url": "https://www.wappalyzer.com/"}]
+    },
+    {
         "category": "WebSockets",
         "slug": "websockets",
         "bookmarks": [{"text": "Echo server", "url": "https://www.websocket.org/echo.html"},
