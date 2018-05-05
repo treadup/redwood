@@ -342,6 +342,23 @@
         "visibility": "public"
     },
     {
+        "category": "Common Lisp Getting Started",
+        "slug": "common-lisp-getting-started",
+        "visibility": "public",
+        "bookmarks": [{"text": "Lisp Lang Getting Started",
+                       "url": "http://lisp-lang.org/learn/getting-started/"},
+                      {"text": "Modern Common Lisp on Linux",
+                       "url": "http://www.jonathanfischer.net/modern-common-lisp-on-linux/"},
+                      {"text": "Common Lisp Development Environment",
+                       "url": "https://lispmethods.com/development-environment.html"}]
+    },
+    {
+        "category": "Quicklisp",
+        "slug": "quicklisp",
+        "visibility": "public",
+        "bookmarks": [{"text": "Quicklisp", "url": "https://www.quicklisp.org/beta/"}]
+    },
+    {
         "category": "Common Lisp Web Programming",
         "slug": "common-lisp-web-programming",
         "bookmarks": [{"text": "Clack", "url": "https://github.com/fukamachi/clack"},
