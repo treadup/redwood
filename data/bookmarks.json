@@ -466,7 +466,8 @@
         "category": "Continuous Deployment",
         "slug": "continuous-deployment",
         "bookmarks": [{"text": "GoCD", "url": "https://www.gocd.org/"},
-                      {"text": "DeployBot", "url": "https://deploybot.com/"}],
+                      {"text": "DeployBot", "url": "https://deploybot.com/"},
+                      {"text": "Octopus", "url": "https://octopus.com/"}],
         "visibility": "public"
     },
     {
