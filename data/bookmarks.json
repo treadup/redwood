@@ -829,6 +829,15 @@
         "visibility": "public"
     },
     {
+        "category": "Presentation Tools",
+        "slug": "presentation-toold",
+        "visibility": "public",
+        "bookmarks": [{"text": "deck.js", "url": "http://imakewebthings.com/deck.js"},
+                      {"text": "reveal.js", "url": "https://revealjs.com/"},
+                      {"text": "impress.js", "url": "https://impress.js.org/"},
+                      {"text": "flowtime.js", "url": "https://marcolago.github.io/flowtime.js/"}]
+    },
+    {
         "category": "WebGL",
         "slug": "webgl",
         "bookmarks": [{"text": "WebGL", "url": "https://get.webgl.org/"},
