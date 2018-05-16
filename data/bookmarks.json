@@ -503,6 +503,17 @@
         "bookmarks": [{"text": "Wappalyzer", "url": "https://www.wappalyzer.com/"}]
     },
     {
+        "category": "Offline First",
+        "slug": "offline-first",
+        "visibility": "public",
+        "bookmarks": [{"text": "OfflineFirst.org", "url": "http://offlinefirst.org/"},
+                      {"text": "hood.ie", "url": "http://hood.ie/"},
+                      {"text": "Offline First Tools", "url": "https://gist.github.com/nolanlawson/508ab18c9af40744525e"},
+                      {"text": "Offline First Links", "url": "https://github.com/pazguille/offline-first"},
+                      {"text": "UpUp", "url": "https://www.talater.com/upup/"},
+                      {"text": "PouchDB", "url": "https://pouchdb.com/"}]
+    },
+    {
         "category": "WebSockets",
         "slug": "websockets",
         "bookmarks": [{"text": "Echo server", "url": "https://www.websocket.org/echo.html"},
