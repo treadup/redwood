@@ -350,7 +350,9 @@
                       {"text": "Modern Common Lisp on Linux",
                        "url": "http://www.jonathanfischer.net/modern-common-lisp-on-linux/"},
                       {"text": "Common Lisp Development Environment",
-                       "url": "https://lispmethods.com/development-environment.html"}]
+                       "url": "https://lispmethods.com/development-environment.html"},
+                      {"text": "How to install SLIME+SBCL+Quicklisp into Emacs",
+                       "url": "https://astraybi.wordpress.com/2015/08/02/how-to-install-slimesbclquicklisp-into-emacs/"}]
     },
     {
         "category": "Quicklisp",
