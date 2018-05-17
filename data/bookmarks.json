@@ -1394,6 +1394,13 @@
         "visibility": "public"
     },
     {
+        "category": "Xorg",
+        "slug": "xorg",
+        "visibility": "public",
+        "bookmarks": [ {"text": "Ugly fonts",
+                        "url": "https://forums.freebsd.org/threads/ugly-fonts-on-some-websites.61501/"}]
+    },
+    {
         "category": "Courses",
         "slug": "courses",
         "bookmarks": [{"text": "hackr.io", "url": "https://hackr.io/"},
