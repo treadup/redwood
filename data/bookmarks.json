@@ -661,7 +661,7 @@
         "visibility": "public",
         "bookmarks": [
             {"text": "Electron", "url": "https://electronjs.org/"},
-            {"text": "Proton Native", "url": "https://proton-native.js.org/"}
+            {"text": "Proton Native", "url": "https://proton-native.js.org/"}]
     },
     {
         "category": "Mithril",
