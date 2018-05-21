@@ -1613,9 +1613,15 @@
         "bookmarks": [{"text": "Awesome Docker", "url": "https://github.com/veggiemonk/awesome-docker"}]
     },
     {
-        "category": "artifacts",
+        "category": "Artifacts",
         "slug": "artifacts",
         "visibility": "public",
         "bookmarks": [{"text": "packagecloud.io", "url": "https://packagecloud.io/"}]
     }
+    {
+        "category": "Terraform",
+        "slug": "terraform",
+        "visibility": "public",
+        "bookmarks": [{"text": "Terraform", "url": "https://www.terraform.io/intro/index.html"}]
+    },
 ]
