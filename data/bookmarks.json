@@ -1591,5 +1591,11 @@
         "bookmarks": [
             { "text": "HTML5 vs Native App Debate", "url": "https://www.html5rocks.com/en/mobile/nativedebate/"}
         ]
+    },
+    {
+        "category": "Docker",
+        "slug": "docker",
+        "visibility": "public",
+        "bookmarks": [{"text": "Awesome Docker", "url": "https://github.com/veggiemonk/awesome-docker"}]
     }
 ]
