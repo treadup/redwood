@@ -162,6 +162,12 @@
         "visibility": "public"
     },
     {
+        "category": "Clojure Graphics",
+        "slug": "clojure-graphics",
+        "visibility": "public",
+        "bookmarks": [{"text": "thi.ng", "url": "http://thi.ng/"}]
+    },
+    {
         "category": "Go",
         "slug": "go",
         "bookmarks": [{"text": "Go", "url": "https://golang.org/"},
