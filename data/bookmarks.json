@@ -564,7 +564,9 @@
                       {"text": "Websockets from Scratch",
                        "url": "https://blog.pusher.com/websockets-from-scratch/"},
                       {"text": "Awesome Websockets",
-                       "url": "https://github.com/facundofarias/awesome-websockets"}],
+                       "url": "https://github.com/facundofarias/awesome-websockets"},
+                      {"text": "Fullstack Python on Websockets ",
+                       "url": "https://www.fullstackpython.com/websockets.html"}],
         "visibility": "public"
     },
     {
