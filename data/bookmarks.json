@@ -1617,11 +1617,17 @@
         "slug": "artifacts",
         "visibility": "public",
         "bookmarks": [{"text": "packagecloud.io", "url": "https://packagecloud.io/"}]
-    }
+    },
     {
         "category": "Terraform",
         "slug": "terraform",
         "visibility": "public",
         "bookmarks": [{"text": "Terraform", "url": "https://www.terraform.io/intro/index.html"}]
     },
+    {
+        "category": "Nomad lifestyle",
+        "slug": "nomad-lifestyle",
+        "visibility": "public",
+        "bookmarks": [{"text": "Nomad List", "url": "https://nomadlist.com/"}]
+    }
 ]
