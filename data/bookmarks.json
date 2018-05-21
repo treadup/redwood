@@ -1635,5 +1635,12 @@
         "slug": "nomad-lifestyle",
         "visibility": "public",
         "bookmarks": [{"text": "Nomad List", "url": "https://nomadlist.com/"}]
-    }
+    },
+    {
+        "category": "Linear Algebra",
+        "slug": "linear-algebra",
+        "visibility": "public",
+        "bookmarks": [{"text": "Geometric interpretation of matricies.",
+                       "url": "http://www.coranac.com/documents/geomatrix/"}]
+    },
 ]
