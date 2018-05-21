@@ -144,7 +144,8 @@
                        "url": "https://objectcomputing.com/resources/publications/sett/march-2009-clojure-functional-programming-for-the-jvm/"},
                       {"text": "Clojure Distilled", "url": "https://yogthos.github.io/ClojureDistilled.html"},
                       {"text": "Awesome Clojure", "url": "https://github.com/razum2um/awesome-clojure"},
-                      {"text": "Amazonica", "url": "https://github.com/mcohen01/amazonica"}],
+                      {"text": "Amazonica", "url": "https://github.com/mcohen01/amazonica"},
+                      {"text": "Chestnut", "url": "https://github.com/plexus/chestnut"}],
         "visibility": "public"
     },
     {
@@ -508,7 +509,9 @@
                       {"text": "favicon.io", "url": "https://favicon.io/"},
                       {"text": "Favicomatic", "url": "http://www.favicomatic.com/"},
                       {"text": "WTF is a source map?",
-                       "url": "https://www.schneems.com/2017/11/14/wtf-is-a-source-map/"}],
+                       "url": "https://www.schneems.com/2017/11/14/wtf-is-a-source-map/"},
+                      {"text": "Frontend Checklist", "url": "https://frontendchecklist.io/"}
+                      {"text": "Awesome devtools", "url": "https://github.com/moimikey/awesome-devtools"}],
         "visibility": "public"
     },
     {
