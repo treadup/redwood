@@ -65,6 +65,12 @@
         "visibility": "public"
     },
     {
+        "category": "Python Messaging",
+        "slug": "python-messaging",
+        "visibility": "public",
+        "bookmarks": [{"text": "Kombu", "url": "https://github.com/celery/kombu"}]
+    }
+    {
         "category": "Django",
         "slug": "django",
         "bookmarks": [{"text": "Django", "url": "http://www.djangoproject.com"},
