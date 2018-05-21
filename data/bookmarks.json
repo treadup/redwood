@@ -53,6 +53,12 @@
         "visibility": "public"
     },
     {
+        "category": "Scaling Python",
+        "slug": "scaling-python",
+        "visibility": "public",
+        "bookmarks": [{"text": "Scaling Python", "url": "https://scaling-python.com/"}]
+    },
+    {
         "category": "Python Standalone Executables",
         "slug": "python-standalone-executables",
         "bookmarks": [{"text": "PyInstaller", "url": "http://www.pyinstaller.org/"}],
@@ -82,6 +88,12 @@
                       {"text": "Flask Admin", "url": "http://flask-admin.readthedocs.io/en/latest/" },
                       {"text": "Flask SocketIO", "url": "https://flask-socketio.readthedocs.io/en/latest/"}],
         "visibility": "public"
+    },
+    {
+        "category": "Python Testing",
+        "slug": "python-testing",
+        "visibility": "public",
+        "bookmarks": [{"text": "FreezeGun", "url": "https://github.com/spulec/freezegun"}]
     },
     {
         "category": "Stackless Python",
