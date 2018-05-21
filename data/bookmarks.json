@@ -96,6 +96,12 @@
         "bookmarks": [{"text": "FreezeGun", "url": "https://github.com/spulec/freezegun"}]
     },
     {
+        "category": "Python Documentation",
+        "slug": "python-documentation",
+        "visibility": "public",
+        "bookmarks": [{"text": "pydoc.io", "url": "https://www.pydoc.io/"}]
+    },
+    {
         "category": "Stackless Python",
         "slug": "stackless-python",
         "bookmarks": [{"text": "Stackless Python", "url": "https://bitbucket.org/stackless-dev/stackless/wiki/Home"}],
@@ -1597,5 +1603,11 @@
         "slug": "docker",
         "visibility": "public",
         "bookmarks": [{"text": "Awesome Docker", "url": "https://github.com/veggiemonk/awesome-docker"}]
+    },
+    {
+        "category": "artifacts",
+        "slug": "artifacts",
+        "visibility": "public",
+        "bookmarks": [{"text": "packagecloud.io", "url": "https://packagecloud.io/"}]
     }
 ]
