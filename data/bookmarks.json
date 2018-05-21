@@ -661,6 +661,13 @@
         "visibility": "public"
     },
     {
+        "category": "UX",
+        "slug": "ux",
+        "visibility": "public",
+        "bookmarks": [{"text": "Best place for error messages",
+                       "url": "http://uxmovement.com/forms/the-best-place-for-error-messages-on-forms/"}]
+    },
+    {
         "category": "JavaScript",
         "slug": "javascript",
         "bookmarks": [{"text": "Survive JS", "url": "http://survivejs.com/"},
