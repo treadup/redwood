@@ -506,9 +506,17 @@
                       {"text": "Unsplash it", "url": "http://unsplash.it/"},
                       {"text": "Modernizir", "url": "https://modernizr.com/"},
                       {"text": "favicon.io", "url": "https://favicon.io/"},
+                      {"text": "Favicomatic", "url": "http://www.favicomatic.com/"},
                       {"text": "WTF is a source map?",
                        "url": "https://www.schneems.com/2017/11/14/wtf-is-a-source-map/"}],
         "visibility": "public"
+    },
+    {
+        "category": "TLS",
+        "slug": "TLS",
+        "visibility": "public",
+        "bookmarks": [{"text": "SSL Labs", "url": "https://www.ssllabs.com/"},
+                      {"text": "BadSSL", "url": "https://badssl.com/"}]
     },
     {
         "category": "Web Reverse Engineering",
