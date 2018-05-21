@@ -740,7 +740,8 @@
         "category": "Ruby",
         "slug": "ruby",
         "bookmarks": [{"text": "Awesome Ruby", "url": "http://awesome-ruby.com/"},
-                      {"text": "ROM", "url": "http://rom-rb.org/"}],
+                      {"text": "ROM", "url": "http://rom-rb.org/"},
+                      {"text": "Shoes", "url": "http://shoesrb.com/"}],
         "visibility": "public"
     },
     {
