@@ -69,7 +69,7 @@
         "slug": "python-messaging",
         "visibility": "public",
         "bookmarks": [{"text": "Kombu", "url": "https://github.com/celery/kombu"}]
-    }
+    },
     {
         "category": "Django",
         "slug": "django",
@@ -528,7 +528,7 @@
                       {"text": "Favicomatic", "url": "http://www.favicomatic.com/"},
                       {"text": "WTF is a source map?",
                        "url": "https://www.schneems.com/2017/11/14/wtf-is-a-source-map/"},
-                      {"text": "Frontend Checklist", "url": "https://frontendchecklist.io/"}
+                      {"text": "Frontend Checklist", "url": "https://frontendchecklist.io/"},
                       {"text": "Awesome devtools", "url": "https://github.com/moimikey/awesome-devtools"}],
         "visibility": "public"
     },
@@ -638,6 +638,12 @@
                        "url": "https://practicaltypography.com/"}]
     },
     {
+        "category": "Fonts",
+        "slug": "fonts",
+        "visibility": "public",
+        "bookmarks": [{ "text": "Font Squirrel", "url": "https://www.fontsquirrel.com/"}]
+    },
+    {
         "category": "Design",
         "slug": "design",
         "visibility": "public",
@@ -720,6 +726,12 @@
         "slug": "mithril",
         "bookmarks": [{"text": "Mithril", "url": "https://mithril.js.org/"}],
         "visibility": "public"
+    },
+    {
+        "category": "Hyperapp",
+        "slug": "hyperapp",
+        "visibility": "public",
+        "bookmarks": [{ "text": "Hyperapp", "url": "https://github.com/hyperapp/hyperapp"}]
     },
     {
         "category": "Aurelia",
@@ -1652,5 +1664,5 @@
         "visibility": "public",
         "bookmarks": [{"text": "Geometric interpretation of matricies.",
                        "url": "http://www.coranac.com/documents/geomatrix/"}]
-    },
+    }
 ]
