@@ -383,7 +383,9 @@
                       {"text": "Common Lisp Development Environment",
                        "url": "https://lispmethods.com/development-environment.html"},
                       {"text": "How to install SLIME+SBCL+Quicklisp into Emacs",
-                       "url": "https://astraybi.wordpress.com/2015/08/02/how-to-install-slimesbclquicklisp-into-emacs/"}]
+                       "url": "https://astraybi.wordpress.com/2015/08/02/how-to-install-slimesbclquicklisp-into-emacs/"},
+                      {"text": "Keifer Miller's Literate Dotfiles",
+                       "url": "http://keifer.link/projects/dotfiles/dotfiles.html"}]
     },
     {
         "category": "Quicklisp",
