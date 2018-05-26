@@ -220,7 +220,8 @@
                       {"text": "Handmade Math", "url": "https://github.com/HandmadeMath/Handmade-Math"},
                       {"text": "SubC", "url": "https://www.t3x.org/reload/"},
                       {"text": "Awesome C", "url": "https://notabug.org/koz.ross/awesome-c"},
-                      {"text": "MiniAL", "url": "https://github.com/dr-soft/mini_al"}],
+                      {"text": "MiniAL", "url": "https://github.com/dr-soft/mini_al"},
+                      { "text": "One year of C", "url": "http://floooh.github.io/2018/06/02/one-year-of-c.html"}],
         "visibility": "public"
     },
     {
@@ -1443,7 +1444,9 @@
                       {"text": "Sabayon Linux", "url": "https://www.sabayon.org/"},
                       {"text": "Void Linux", "url": "https://www.voidlinux.eu/"},
                       {"text": "Artix Linux", "url": "https://artixlinux.org/"},
-                      {"text": "Manjaro Linux", "url": "https://manjaro.org/"}],
+                      {"text": "Manjaro Linux", "url": "https://manjaro.org/"},
+                      { "text": "Bunsen Labs", "url": "https://www.bunsenlabs.org/"},
+                      { "text": "ArchLabs Linuzx", "url": "https://archlabslinux.com/"}],
         "visibility": "public"
     },
     {
@@ -1621,6 +1624,13 @@
         "visibility": "public",
         "bookmarks": [{"text": "Organizational skills beat algorithmic wizardry",
                        "url": "http://prog21.dadgum.com/177.html"}]
+    },
+    {
+        "category": "Quality Engineering",
+        "slug": "quality-engineering",
+        "visibility": "public",
+        "bookmarks": [{ "text": "Quality Engineering in Agile World",
+                        "url": "https://www.linkedin.com/pulse/quality-engineering-agile-world-merly-varghese/"}]
     },
     {
         "category": "Single Board Computer",
