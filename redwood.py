@@ -1,4 +1,7 @@
 import os
+import time
+import pytz
+
 from flask import Flask, render_template, request, make_response
 from flask import redirect, url_for, abort, send_file
 from flask import send_from_directory
@@ -29,14 +32,17 @@ from photos import (
     create_image_dict,
     get_photo_collection
 )
+
+from writings import load_writing
+
 from util import load_json
 from datetime import datetime
-import time
-import pytz
 import jwt
 import hashlib
 from jwt import ExpiredSignatureError
 from functools import wraps
+
+import markdown
 
 from settings import load_environment_variable
 
@@ -667,3 +673,12 @@ def public_files(token, filename):
                          mimetype=mimetype_from_extension(filename))
     else:
         raise abort(403)
+
+@app.route('/interesting-languages')
+def interesting_languages():
+    content = load_writing("interesting-languages.md")
+    html = markdown.markdown(content)
+
+    return render_template("content.html",
+                           content=html,
+                           title="Interesting Languages")
