@@ -1676,5 +1676,11 @@
         "visibility": "public",
         "bookmarks": [{"text": "Geometric interpretation of matricies.",
                        "url": "http://www.coranac.com/documents/geomatrix/"}]
+    },
+    {
+        "category": "Bootable USB",
+        "slug": "bootable-usb",
+        "visibility": "public",
+        "bookmarks": [{ "text": "etcher.io", "url": "http://etcher.io/"}]
     }
 ]
