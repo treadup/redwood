@@ -1682,5 +1682,20 @@
         "slug": "bootable-usb",
         "visibility": "public",
         "bookmarks": [{ "text": "etcher.io", "url": "http://etcher.io/"}]
+    },
+    {
+        "category": "Gnome Shell",
+        "slug": "gnome",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "JavaScript bindings for Gnome",
+              "url": "https://gitlab.gnome.org/GNOME/gjs/wikis/Home"},
+            { "text": "How I developed my first gnome extension",
+              "url": "https://www.abidibo.net/blog/2016/03/02/how-i-developed-my-first-gnome-shell-extension/"},
+            { "text": "Gnome Shell JavaScript source documentation",
+              "url": "http://mathematicalcoffee.blogspot.com/2012/09/gnome-shell-javascript-source.html"},
+            { "text": "Gnome Shell Extensions Getting started writing your own.",
+              "url": "http://mathematicalcoffee.blogspot.com/2012/09/gnome-shell-extensions-getting-started.html"}
+        ]
     }
 ]
