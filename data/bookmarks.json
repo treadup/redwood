@@ -1708,5 +1708,13 @@
             { "text": "Gnome Shell Extensions Getting started writing your own.",
               "url": "http://mathematicalcoffee.blogspot.com/2012/09/gnome-shell-extensions-getting-started.html"}
         ]
+    },
+    {
+        "category": "Cloud Lambda",
+        "slug": "cloud-lambda",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "architect", "url": "https://arc.codes/"}
+        ]
     }
 ]
