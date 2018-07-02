@@ -791,7 +791,11 @@
             {"text": "Lua", "url": "http://www.lua.org/"},
             {"text": "Löve2D", "url": "https://love2d.org/"},
             {"text": "luastatic", "url": "https://github.com/ers35/luastatic"},
-            {"text": "Lövr", "url": "https://lovr.org/"}],
+            {"text": "Lövr", "url": "https://lovr.org/"},
+            {"text": "Lapis - a Lua web framework", "url": "http://leafo.net/lapis/"},
+            {"text": "Luvit - asynchronous I/O for Lua", "url": "https://luvit.io/"},
+            {"text": "MoonScript", "url": "https://luvit.io/"},
+            {"text": "Corona", "url": "https://coronalabs.com/"}],
         "visibility": "public"
     },
     {
