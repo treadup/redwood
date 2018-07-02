@@ -929,6 +929,13 @@
         "visibility": "public"
     },
     {
+        "category": "VPS Providers",
+        "slug": "vps-providers",
+        "visibility": "public",
+        "bookmarks": [ { "text": "Serveraptor", "url": "https://www.serveraptor.com/"},
+                       { "text": "RootBSD", "url": "https://www.rootbsd.net/"}]
+    },
+    {
         "category": "Self Hosted Cloud",
         "slug": "self-hosted-cloud",
         "bookmarks": [{"text": "Dokku", "url": "http://dokku.viewdocs.io/dokku/"}],
