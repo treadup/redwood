@@ -1059,8 +1059,18 @@
                        "url": "https://github.com/diegohaz/awesome-react-context"},
                       {"text": "React Basic",
                        "url": "https://github.com/reactjs/react-basic"},
-                      { "text": "Storybook", "url": "https://github.com/storybooks/storybook"}],
+                      { "text": "Storybook", "url": "https://github.com/storybooks/storybook"},
+                      { "text": "9 things every react beginner should know",
+                        "url": "https://camjackson.net/post/9-things-every-reactjs-beginner-should-know"}],
         "visibility": "public"
+    },
+    {
+        "category": "React and State",
+        "slug": "react-and-state",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Flux", "url": "https://facebook.github.io/flux/"}
+        ]
     },
     {
         "category": "REST",
@@ -1145,6 +1155,14 @@
         "slug": "web-game-dev",
         "bookmarks": [{"text": "HTML5 Game Devs", "url": "http://www.html5gamedevs.com/"}],
         "visibility": "public"
+    },
+    {
+        "category": "Indie Games",
+        "slug": "indie-games",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "itch.io", "url": "https://itch.io/"}
+        ]
     },
     {
         "category": "Web Games",
