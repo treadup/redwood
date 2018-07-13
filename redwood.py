@@ -42,7 +42,7 @@ import hashlib
 from jwt import ExpiredSignatureError
 from functools import wraps
 
-import markdown
+from markdown import markdown
 
 from settings import load_environment_variable
 
@@ -676,25 +676,18 @@ def public_files(token, filename):
 
 def render_markdown(title, markdown_filename):
     content = load_writing(markdown_filename)
-    html = markdown.markdown(content)
+
+    # Use the fenced_code markdown extension to get support for newlines
+    # in code blocks.
+    html = markdown(content, extensions=['markdown.extensions.fenced_code'])
 
     return render_template("content.html",
                            content=html,
                            title=title)
 
-
-
 @app.route('/interesting-languages')
 def interesting_languages():
-    content = load_writing("interesting-languages.md")
-
-    # Use the fenced_code markdown extension to get support for newlines
-    # in code blocks.
-    html = markdown.markdown(content, extensions=['markdown.extensions.fenced_code'])
-
-    return render_template("content.html",
-                           content=html,
-                           title="Interesting Languages")
+    return render_markdown("Interesting Languages", "interesting-languages.md")
 
 @app.route('/gpg')
 def gpg():
