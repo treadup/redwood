@@ -686,7 +686,8 @@
                       {"text": "unpkg", "url": "https://unpkg.com"},
                       {"text": "cdnjs", "url": "https://cdnjs.com/"},
                       {"text": "Callback Hell", "url": "http://callbackhell.com/"},
-                      {"text": "Prettier.io", "url": "https://prettier.io/"}],
+                      {"text": "Prettier.io", "url": "https://prettier.io/"},
+                      { "text": "jspm.io - Native ES module CDN.", "url": "https://jspm.io/"}],
         "visibility": "public"
     },
     {
@@ -697,6 +698,25 @@
             {"text": "SpinJS", "url": "https://github.com/sysgears/spinjs"},
             {"text": "ParcelJS", "url": "https://parceljs.org/"},
             {"text": "Webpack", "url": "https://webpack.js.org/"}
+        ]
+    },
+    {
+        "category": "JavaScript Testing",
+        "slug": "javascript-testing",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Jest", "url": "https://jestjs.io/"},
+            { "text": "Enzyme", "url": "https://jestjs.io/"},
+            { "text": "Night Watch", "url": "http://nightwatchjs.org/"}
+        ]
+    },
+    {
+        "category": "JavaScript Routing",
+        "slug": "javascript-routing",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "page.js", "url": "https://visionmedia.github.io/page.js/"},
+            { "text": "universal router", "url": "https://www.kriasoft.com/universal-router/"}
         ]
     },
     {
@@ -1038,7 +1058,8 @@
                       {"text": "Awsome React Context",
                        "url": "https://github.com/diegohaz/awesome-react-context"},
                       {"text": "React Basic",
-                       "url": "https://github.com/reactjs/react-basic"}],
+                       "url": "https://github.com/reactjs/react-basic"},
+                      { "text": "Storybook", "url": "https://github.com/storybooks/storybook"}],
         "visibility": "public"
     },
     {
