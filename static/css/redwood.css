@@ -8,6 +8,10 @@ body {
     font-family: Verdana, Geneva, sans-serif;
 }
 
+*:focus {
+    outline: none;
+}
+
 @media only screen and (max-width: 480px) {
     body {
         margin-bottom: 10em;
