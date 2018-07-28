@@ -595,6 +595,14 @@
         "visibility": "public"
     },
     {
+        "category": "CSS Grid",
+        "slug": "css-grid",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Layoutit", "url": "https://www.layoutit.com/grid"}
+        ]
+    },
+    {
         "category": "Responsive Web Design",
         "slug": "responsive-web-design",
         "bookmarks": [{"text": "Guidelines for Responsive Web Design",
@@ -1046,6 +1054,15 @@
         "visibility": "public"
     },
     {
+        "category": "Single Page Applications",
+        "slug": "single-page-applications",
+        "visibility": "public",
+        "bookmarks": [
+            {"text": "How Single Page Applications Work",
+             "url": "https://medium.com/@pshrmn/demystifying-single-page-applications-3068d0555d46"}
+        ]
+    },
+    {
         "category": "React",
         "slug": "react",
         "bookmarks": [{"text": "Awesome React",
@@ -1119,7 +1136,8 @@
         "bookmarks": [{"text": "Phaser", "url": "https://phaser.io/"},
                       {"text": "CraftyJS", "url": "http://craftyjs.com/"},
                       {"text": "CreateJS", "url": "https://createjs.com/"},
-                      {"text": "PixiJS", "url": "http://www.pixijs.com/"}]
+                      {"text": "PixiJS", "url": "http://www.pixijs.com/"},
+                      {"text": "Kiwi.js", "url": "http://www.kiwijs.org/"}]
     },
     {
         "category": "Physics Engines",
