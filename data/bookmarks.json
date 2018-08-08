@@ -780,6 +780,16 @@
         "visibility": "public"
     },
     {
+        "category": "ReasonML",
+        "slug": "reasonml",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "ReasonML", "url": "https://reasonml.github.io"},
+            { "text": "ReasonML on Github", "url": "https://github.com/facebook/reason"},
+            { "text": "Awesome ReasonML", "url": "https://github.com/vramana/awesome-reasonml"}
+        ]
+    },
+    {
         "category": "Ruby",
         "slug": "ruby",
         "bookmarks": [{"text": "Awesome Ruby", "url": "http://awesome-ruby.com/"},
