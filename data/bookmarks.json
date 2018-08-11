@@ -780,6 +780,15 @@
         "visibility": "public"
     },
     {
+        "category": "Dart",
+        "slug": "dart",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Dart", "url": "https://www.dartlang.org/"},
+            { "text": "Flutter", "url": "https://flutter.io/"}
+        ]
+    },
+    {
         "category": "ReasonML",
         "slug": "reasonml",
         "visibility": "public",
