@@ -164,7 +164,8 @@
         "category": "Clojure Script",
         "slug": "clojure-script",
         "bookmarks": [{"text": "Reagent", "url": "https://reagent-project.github.io/"},
-                      {"text": "Om", "url": "https://github.com/omcljs/om"}],
+                      {"text": "Om", "url": "https://github.com/omcljs/om"},
+                      { "text": "re-frame", "url": "https://github.com/Day8/re-frame"}],
         "visibility": "public"
     },
     {
@@ -778,6 +779,16 @@
                       {"text": "C3.js", "url": "http://c3js.org/"},
                       {"text": "NVD3.js", "url": "http://nvd3.org/"}],
         "visibility": "public"
+    },
+    {
+        "category": "Elm",
+        "slug": "elm",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Elm", "url": "http://elm-lang.org/"},
+            { "text": "Awesome Elm", "url": "https://github.com/isRuslan/awesome-elm"},
+            { "text": "Programming Elm", "url": "https://pragprog.com/book/jfelm/programming-elm"}
+        ]
     },
     {
         "category": "Dart",
