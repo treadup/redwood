@@ -789,6 +789,16 @@
         ]
     },
     {
+        "category": "Bucklescript",
+        "slug": "bucklescript",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Bucklescript", "url": "https://bucklescript.github.io/"},
+            { "text": "Why I choose Bucklescript",
+              "url": "https://infinitetree.eu/blog/2017/10/28/why-i-choose-bucklescript/"}
+        ]
+    },
+    {
         "category": "ReasonML",
         "slug": "reasonml",
         "visibility": "public",
