@@ -132,6 +132,14 @@
         "visibility": "public"
     },
     {
+        "category": "Python code formatting",
+        "slug": "python-code-formatting",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Black", "url": "https://github.com/ligurio/awesome-ci"}
+        ]
+    },
+    {
         "category": "Clojure",
         "slug": "clojure",
         "bookmarks": [{"text": "Clojure", "url": "https://clojure.org/"},
@@ -496,7 +504,8 @@
         "slug": "continuous-integration",
         "bookmarks": [{"text": "Circle CI", "url": "https://circleci.com/"},
                       {"text": "Travis CI", "url": "https://travis-ci.org/"},
-                      {"text": "Coveralls", "url": "https://coveralls.io/"}],
+                      {"text": "Coveralls", "url": "https://coveralls.io/"},
+                     { "text": "Awesome CI", "url": "https://github.com/ligurio/awesome-ci"}],
         "visibility": "public"
     },
     {
@@ -600,7 +609,8 @@
         "slug": "css-grid",
         "visibility": "public",
         "bookmarks": [
-            { "text": "Layoutit", "url": "https://www.layoutit.com/grid"}
+            { "text": "Layoutit", "url": "https://www.layoutit.com/grid"},
+            { "text": "Grid visual cheetsheet", "url": "http://grid.malven.co/"}
         ]
     },
     {
@@ -1127,6 +1137,49 @@
         "visibility": "public",
         "bookmarks": [
             { "text": "Flux", "url": "https://facebook.github.io/flux/"}
+        ]
+    },
+    {
+        "category": "Routing and History",
+        "slug": "routing-and-history",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "A little bit of history",
+              "url": "https://medium.com/@pshrmn/a-little-bit-of-history-f245306f48dd"},
+            { "text": "FinchJS",
+              "url": "https://medium.com/@pshrmn/a-little-bit-of-history-f245306f48dd"}
+        ]
+    },
+    {
+        "category": "Routing in React",
+        "slug": "routing-in-react",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Routing in react the uncomplicated way",
+              "url": "https://hackernoon.com/routing-in-react-the-uncomplicated-way-b2c5ffaee997"},
+            { "text": "Building a router with raw react",
+              "url": "https://hackernoon.com/routing-in-react-the-uncomplicated-way-b2c5ffaee997"},
+            { "text": "Switch statement as a React router alternative",
+              "url": "https://medium.com/@daveford/react-router-alternative-switch-acd7961f08db"}
+        ]
+    },
+    {
+        "category": "React Native",
+        "slug": "react-native",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Expo",
+              "url": "https://expo.io/"},
+            { "text": "Building React Native on CircleCI",
+              "url": "https://github.com/CircleCI-Public/circleci-demo-react-native"}
+        ]
+    },
+    {
+        "category": "Proton Native",
+        "slug": "proton-native",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Proton Native", "url": "https://proton-native.js.org/"}
         ]
     },
     {
