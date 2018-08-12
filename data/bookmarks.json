@@ -1760,7 +1760,10 @@
         "bookmarks": [{"text": "Markdown",
                        "url": "https://daringfireball.net/projects/markdown/syntax"},
                       {"text": "AsciiDoc",
-                       "url": "https://asciidoctor.org/docs/what-is-asciidoc/"}]
+                       "url": "https://asciidoctor.org/docs/what-is-asciidoc/"},
+                      { "text": "Slim", "url": "http://slim-lang.com/"},
+                      { "text": "Haml", "url": "http://haml.info"},
+                      { "text": "Hamdown", "url": "https://github.com/inem/hamdown"}]
     },
     {
         "category": "Diagramming Languages",
