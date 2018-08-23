@@ -36,7 +36,11 @@ from photos import (
 from writings import load_writing
 
 from util import load_json
-from datetime import datetime
+from datetime import (
+    date,
+    datetime
+)
+
 import jwt
 import hashlib
 from jwt import ExpiredSignatureError
@@ -692,3 +696,16 @@ def interesting_languages():
 @app.route('/gpg')
 def gpg():
     return render_markdown("GPG", "gpg.md")
+
+@app.route('/left')
+def days_left():
+    target_date = date(2018, 9, 20)
+    duration = target_date - datetime.now().date()
+    days = duration.days
+
+    if days >= 0:
+        message = "{} days left".format(days)
+    else:
+        message = "Target date has already occurred."
+
+    return render_template("days_left.html", message=message)
