@@ -1869,5 +1869,13 @@
         "bookmarks": [
             { "text": "architect", "url": "https://arc.codes/"}
         ]
+    },
+    {
+        "category": "Organizations",
+        "slug": "organizations",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Price's Law", "url": "https://dariusforoux.com/prices-law/"}
+        ]
     }
 ]
