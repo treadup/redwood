@@ -697,6 +697,10 @@ def interesting_languages():
 def gpg():
     return render_markdown("GPG", "gpg.md")
 
+@app.route('/psychology')
+def psychology():
+    return render_markdown("Psychology", "psychology.md")
+
 @app.route('/left')
 def days_left():
     target_date = date(2018, 9, 20)
