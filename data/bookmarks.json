@@ -873,7 +873,8 @@
             {"text": "Lapis - a Lua web framework", "url": "http://leafo.net/lapis/"},
             {"text": "Luvit - asynchronous I/O for Lua", "url": "https://luvit.io/"},
             {"text": "MoonScript", "url": "https://luvit.io/"},
-            {"text": "Corona", "url": "https://coronalabs.com/"}],
+            {"text": "Corona", "url": "https://coronalabs.com/"},
+            {"text": "middleclass", "url": "https://github.com/kikito/middleclass"}],
         "visibility": "public"
     },
     {
@@ -1158,7 +1159,7 @@
             { "text": "Routing in react the uncomplicated way",
               "url": "https://hackernoon.com/routing-in-react-the-uncomplicated-way-b2c5ffaee997"},
             { "text": "Building a router with raw react",
-              "url": "https://hackernoon.com/routing-in-react-the-uncomplicated-way-b2c5ffaee997"},
+              "url": "http://jamesknelson.com/routing-with-raw-react/"},
             { "text": "Switch statement as a React router alternative",
               "url": "https://medium.com/@daveford/react-router-alternative-switch-acd7961f08db"}
         ]
