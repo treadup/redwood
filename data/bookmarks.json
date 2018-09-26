@@ -1878,5 +1878,14 @@
         "bookmarks": [
             { "text": "Price's Law", "url": "https://dariusforoux.com/prices-law/"}
         ]
+    },
+    {
+        "category": "Monitoring",
+        "slug": "monitoring",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Pingdom", "url": "https://www.pingdom.com/"},
+            { "text": "UptimeRobot", "url": "https://uptimerobot.com/"}
+        ]
     }
 ]
