@@ -526,7 +526,6 @@
         "category": "Web",
         "slug": "web",
         "bookmarks": [{"text": "Dirty Markup", "url": "https://dirtymarkup.com/"},
-                      {"text": "BEM", "url": "http://getbem.com/introduction/"},
                       {"text": "Can I use?", "url": "http://caniuse.com"},
                       {"text": "I want to use", "url": "http://www.iwanttouse.com/"},
                       {"text": "Do I use?", "url": "http://doiuse.herokuapp.com/"},
@@ -679,6 +678,20 @@
             { "text": "Mailchimp Design Patterns", "url": "https://ux.mailchimp.com/patterns"},
             { "text": "Mailchimp Styleguide", "url": "https://styleguide.mailchimp.com/"},
             { "text": "Sketching Interfaces", "url": "https://airbnb.design/sketching-interfaces/"}
+        ]
+    },
+    {
+        "category": "Web Design",
+        "slug": "",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Atomic Design", "url": "http://atomicdesign.bradfrost.com/"},
+            { "text": "Atomic Web Design", "url": "http://bradfrost.com/blog/post/atomic-web-design/"},
+            { "text": "patternlab", "url": "https://patternlab.io/"},
+            { "text": "Style Tiles", "url": "http://styletil.es/"},
+            { "text": "Web Style Guide", "url": "https://webstyleguide.com/"},
+            { "text": "SMACSS", "url": "https://smacss.com/"},
+            {"text": "BEM", "url": "http://getbem.com/introduction/"}
         ]
     },
     {
