@@ -3,7 +3,10 @@
 {% block auth %}{% endblock %}
 {% block content %}
 <div class="login-form-container">
-    <form action="{{action_url}}" method="post" class="login-form">
+    <form action="{{action_url}}"
+        method="post"
+        class="login-form"
+        autocomplete="off">
         <label for="username">Username</label>
         <input type="text" name="username" />
         <label>Password</label>
