@@ -1,6 +1,7 @@
 import os
 import time
 import pytz
+import json
 
 from flask import Flask, render_template, request, make_response
 from flask import redirect, url_for, abort, send_file
@@ -678,6 +679,7 @@ def public_files(token, filename):
     else:
         raise abort(403)
 
+
 def render_markdown(title, markdown_filename):
     content = load_writing(markdown_filename)
 
@@ -689,17 +691,21 @@ def render_markdown(title, markdown_filename):
                            content=html,
                            title=title)
 
+
 @app.route('/interesting-languages')
 def interesting_languages():
     return render_markdown("Interesting Languages", "interesting-languages.md")
+
 
 @app.route('/gpg')
 def gpg():
     return render_markdown("GPG", "gpg.md")
 
+
 @app.route('/psychology')
 def psychology():
     return render_markdown("Psychology", "psychology.md")
+
 
 @app.route('/left')
 def days_left():
@@ -713,3 +719,13 @@ def days_left():
         message = "Target date has already occurred."
 
     return render_template("days_left.html", message=message)
+
+
+@app.route('/api/bookmarks')
+def api_bookmarks():
+    all_bookmarks = load_bookmarks()
+    filtered_bookmarks = [{"bookmarks": b["bookmarks"],
+                         "category": b["category"],
+                         "slug": b["slug"]} for b in all_bookmarks
+                        if b['visibility'] == 'public']
+    return json.dumps(filtered_bookmarks, indent=4, sort_keys=True)
