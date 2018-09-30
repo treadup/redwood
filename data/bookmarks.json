@@ -264,6 +264,16 @@
         "visibility": "public"
     },
     {
+        "category": "TCL/TK",
+        "slug": "tcl-tk",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "TCL the Misunderstood", "url": "http://antirez.com/articoli/tclmisunderstood.html"},
+            { "text": "TCL Syntax", "url": "http://www.tcl.tk/man/tcl/TclCmd/Tcl.htm"},
+            { "text": "TK tutorial", "url": "https://tkdocs.com/tutorial/index.html"}
+        ]
+    },
+    {
         "category": "JVM",
         "slug": "jvm",
         "bookmarks": [{"text": "Awesome JVM",
