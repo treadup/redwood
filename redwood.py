@@ -169,45 +169,47 @@ def load_bookmarks():
     Loads the bookmarks from the bookmarks.json file
     """
     filename = app.config['BOOKMARKS_FILENAME']
-    return load_json(filename)
+    result = load_json(filename)
+
+    # TODO: Validate JSON
+
+    for ordinal, collection in enumerate(result):
+        collection['ordinal'] = ordinal
+        collection['url'] = "/bookmarks/{}".format(collection['slug'])
+
+    errors = []
+
+    return result, errors
 
 
-def collect_bookmark_categories(public_only):
+def validate_bookmarks(bookmark_categories):
     """
-    Create a list of bookmark categories from the bookmarks.
+    Validate a list of bookmark categories from the bookmarks.
     """
-    result = []
-    for collection in load_bookmarks():
+    errors = []
+    for collection in bookmark_categories:
         slug = collection.get('slug', None)
         category = collection.get('category', None)
         visibility = collection.get('visibility', None)
 
         if category is None:
-            return "Missing category"
+            errors.append("Missing category")
 
         if slug is None:
             if category is not None:
-                return None, "Missing slug for category {}".format(category)
+                errors.append("Missing slug for category {}".format(category))
             else:
-                return None, "Missing slug"
+                errors.append("Missing slug")
 
         if visibility is None:
             if category is not None:
-                return None, "Missing visibility for category {}".format(category)
+                errors.append("Missing visibility for category {}".format(category))
             elif slug is not None:
-                return None, "Missing visibility for slug {}".format(slug)
+                errors.append("Missing visibility for slug {}".format(slug))
             else:
-                return None, "Missing visibility"
+                errors.append("Missing visibility")
 
-        if public_only and visibility == "private":
-            continue
-
-        result.append({
-            "category": category,
-            "url": "/bookmarks/{}".format(slug),
-        })
-
-    return result, None
+    return errors
 
 
 @app.route('/bookmarks')
@@ -216,49 +218,53 @@ def bookmarks():
     Show the different bookmark categories.
     """
     user = get_current_user()
-    public_only = user is None
-    bookmark_categories, err = collect_bookmark_categories(public_only)
+    bookmark_categories, errors = load_bookmarks()
 
-    if err:
-        return err, 500
-    else:
-        return render_template('bookmarks.html', categories=bookmark_categories)
+    if errors:
+        return errors, 500
 
+    if user is None:
+        bookmark_categories = [c for c in bookmark_categories if c['visibility'] == 'public']
 
-def fetch_bookmark_collection_for_category(category):
-    for collection in load_bookmarks():
-        slug = collection.get('slug', None)
-
-        if not slug:
-            raise LookupError('Bookmark category "{}" missing slug.'.format(category))
-
-        if slug == category:
-            return collection
-
-    return None
+    return render_template('bookmarks.html', categories=bookmark_categories)
 
 
-@app.route('/bookmarks/<category_slug>')
-def bookmark_category(category_slug):
+def load_bookmark_collections():
+    collections = {}
+    bookmark_collections_list, errors = load_bookmarks()
+
+    if errors:
+        return None, errors
+
+    for collection in bookmark_collections_list:
+        collections[collection['slug']] = collection
+
+    return collections, None
+
+
+@app.route('/bookmarks/<collection_slug>')
+def bookmark_category(collection_slug):
     """
     Show the bookmarks for a given category.
     """
-    bookmark_collection = fetch_bookmark_collection_for_category(category_slug)
+    bookmark_collections, errors = load_bookmark_collections()
+
+    if errors:
+        return "There where errors loading the bookmarks.", 500
+
+    if not collection_slug in bookmark_collections:
+        abort(404)
+
+    collection = bookmark_collections[collection_slug]
 
     user = get_current_user()
     if user is None:
-        if bookmark_collection["visibility"] == "private":
+        if collection["visibility"] == "private":
             abort(404)
 
-    if bookmark_collection:
-        category = bookmark_collection['category']
-        bookmarks = bookmark_collection['bookmarks']
-        return render_template('bookmark-category.html',
-                               category=category,
-                               bookmarks=bookmarks)
-    else:
-        abort(404)
-
+    return render_template('bookmark-category.html',
+                           category=collection['category'],
+                           bookmarks=collection['bookmarks'])
 
 @app.route('/photos')
 def photo_collection_list():
@@ -723,7 +729,11 @@ def days_left():
 
 @app.route('/api/bookmarks')
 def api_bookmarks():
-    all_bookmarks = load_bookmarks()
+    all_bookmarks, errors = load_bookmarks()
+
+    if errors:
+        return { "errors": ["There was an error parsing the bookmarks file"] }, 500
+
     filtered_bookmarks = [{"bookmarks": b["bookmarks"],
                          "category": b["category"],
                          "slug": b["slug"]} for b in all_bookmarks
