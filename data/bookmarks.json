@@ -588,7 +588,8 @@
                       {"text": "Awesome Websockets",
                        "url": "https://github.com/facundofarias/awesome-websockets"},
                       {"text": "Fullstack Python on Websockets ",
-                       "url": "https://www.fullstackpython.com/websockets.html"}],
+                       "url": "https://www.fullstackpython.com/websockets.html"},
+                      { "text": "wscat", "url": "https://github.com/websockets/wscat"}],
         "visibility": "public"
     },
     {
