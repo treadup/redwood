@@ -1909,7 +1909,8 @@
         "visibility": "public",
         "bookmarks": [
             { "text": "Pingdom", "url": "https://www.pingdom.com/"},
-            { "text": "UptimeRobot", "url": "https://uptimerobot.com/"}
+            { "text": "UptimeRobot", "url": "https://uptimerobot.com/"},
+            { "text": "pagerduty", "url": "https://www.pagerduty.com/"}
         ]
     }
 ]
