@@ -230,7 +230,7 @@ def fetch_bookmark_collection_for_category(category):
         slug = collection.get('slug', None)
 
         if not slug:
-            raise LookupError('Bookmark category missing slug.')
+            raise LookupError('Bookmark category "{}" missing slug.'.format(category))
 
         if slug == category:
             return collection
