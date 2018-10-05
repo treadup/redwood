@@ -1,4 +1,4 @@
-import unittest 
+import unittest
 from flask import Flask
 from flask_testing import TestCase
 from redwood import app, create_user_jwt
@@ -19,7 +19,7 @@ class RedwoodTest(TestCase):
 
         app.config['HTTPS_REQUIRED'] = False
         app.config['USERNAME'] = username
-        app.config['PASSWORD_SALT'] = salt        
+        app.config['PASSWORD_SALT'] = salt
         app.config['PASSWORD_HASH'] = password_hash
         app.config['IDENTITY_JWT_SECRET'] = 'some kind of secret'
         app.config['JWT_EXPIRATION_TIMEDELTA'] = 3600 # One hour
@@ -52,11 +52,26 @@ class RedwoodTest(TestCase):
         self.assertTemplateUsed("index.html")
 
     def test_bookmarks_page(self):
-        expected_categories = [ {"category": "Python",
-                                "url": "/bookmarks/python"},
-                               {"category": "Clojure",
-                                "url": "/bookmarks/clojure"}]
-        
+        expected_categories = [
+            {
+                "ordinal": 0,
+                "category": "Python",
+                "slug": "python",
+                "bookmarks": [{"text": "Django", "url": "http://www.djangoproject.com"},
+                              {"text": "Flask",  "url": "http://flask.pocoo.org/"}],
+                "visibility": "public",
+                "url": "/bookmarks/python"
+            },
+            {
+                "ordinal": 1,
+                "category": "Clojure",
+                "slug": "clojure",
+                "bookmarks": [{"text": "Clojure", "url": "http://clojure.org"}],
+                "visibility": "public",
+                "url": "/bookmarks/clojure"
+            }
+        ]
+
         response = self.client.get("/bookmarks")
         self.assertStatus(response, status_code=200)
         self.assertTemplateUsed("bookmarks.html")
@@ -115,7 +130,7 @@ class RedwoodTest(TestCase):
         self.assertTemplateUsed('login.html')
         self.assertContext('action_url', '/login/')
         self.assertContext('login_error_message', "Incorrect username or password.")
-        
+
     def assert_post_successful_login(self, login_url, redirect_url):
         payload = {'username': 'henrik', 'password': 'foo'}
         response = self.client.post(login_url, data=payload)
@@ -131,7 +146,7 @@ class RedwoodTest(TestCase):
 
         identity_jwt = cookie.value
         secret = 'some kind of secret'
-        
+
         # The secret should come from the configuration.
         identity = jwt.decode(identity_jwt.encode('utf-8'), secret, algorithms=['HS256'])
 
@@ -150,7 +165,7 @@ class RedwoodTest(TestCase):
         login_url = '/login/'
         redirect_url = '/'
         self.assert_post_successful_login(login_url, redirect_url)
-        
+
     def test_post_successful_login_with_redirect(self):
         login_url = '/login/?redirect=/foo'
         redirect_url = '/foo'
@@ -161,7 +176,7 @@ class RedwoodTest(TestCase):
         response = self.client.post('/login/', data=payload)
         cookie = self.get_cookie_from_client('identity_jwt', self.client)
         self.assertIsNotNone(cookie, msg='No JWT cookie created.')
-        
+
         response = self.client.get('/logout/')
         cookie = self.get_cookie_from_client('identity_jwt', self.client)
         self.assertIsNone(cookie, msg='JWT cookie still present.')
@@ -172,7 +187,7 @@ class RedwoodTest(TestCase):
 
         # Get the response
         response = self.client.get('/token')
-        
+
         self.assertStatus(response, status_code=200)
         self.assertTemplateUsed('token.html')
 
@@ -185,7 +200,7 @@ class RedwoodTest(TestCase):
 
         self.assertEqual('henrik', identity['username'])
         self.assertEqual([], identity['roles'])
-        
+
         # Check that the expiration date is 15 minutes from now.
         actual_exp = identity['exp']
         current_time = int(time.time())
@@ -200,7 +215,7 @@ class RedwoodTest(TestCase):
 
         # Get the response
         response = self.client.get('/token')
-        
+
         self.assertStatus(response, status_code=401)
 
     def test_work(self):
