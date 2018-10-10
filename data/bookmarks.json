@@ -693,7 +693,7 @@
     },
     {
         "category": "Web Design",
-        "slug": "",
+        "slug": "web-design",
         "visibility": "public",
         "bookmarks": [
             { "text": "Atomic Design", "url": "http://atomicdesign.bradfrost.com/"},
@@ -1911,6 +1911,14 @@
             { "text": "Pingdom", "url": "https://www.pingdom.com/"},
             { "text": "UptimeRobot", "url": "https://uptimerobot.com/"},
             { "text": "pagerduty", "url": "https://www.pagerduty.com/"}
+        ]
+    },
+    {
+        "category": "Relational Database",
+        "slug": "relational-database",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "bobby-tables.com", "url": "http://bobby-tables.com/"}
         ]
     }
 ]
