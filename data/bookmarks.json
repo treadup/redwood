@@ -624,6 +624,35 @@
         ]
     },
     {
+        "category": "CSS Modules",
+        "slug": "css-modules",
+        "visibility": "public",
+        "bookmarks": [
+            {"text": "CSS modules", "url": "https://github.com/css-modules/css-modules"},
+            {"text": "Interoperable CSS", "url": "https://github.com/css-modules/icss"},
+            {"text": "Welcome to the future", "url": "https://glenmaddern.com/articles/css-modules"}
+        ]
+    },
+    {
+        "category": "PostCSS Modules",
+        "slug": "postcss-modules",
+        "visibility": "public",
+        "bookmarks": [
+            {"text": "PostCSS modules", "url": "https://github.com/css-modules/postcss-modules"},
+            {"text": "Make CSS great again", "url": "https://evilmartians.com/chronicles/postcss-modules-make-css-great-again"}
+        ]
+    },
+    {
+        "category": "Styled Components",
+        "slug": "styled-components",
+        "visibility": "public",
+        "bookmarks": [
+           {"text": "Styled Components", "url": "https://www.styled-components.com/"},
+           {"text": "Styled Components Basics", "url": "https://www.styled-components.com/docs/basics"},
+           {"text": "Radium", "url": "https://formidable.com/open-source/radium/"}
+        ]
+    },
+    {
         "category": "Responsive Web Design",
         "slug": "responsive-web-design",
         "bookmarks": [{"text": "Guidelines for Responsive Web Design",
@@ -1186,6 +1215,16 @@
               "url": "http://jamesknelson.com/routing-with-raw-react/"},
             { "text": "Switch statement as a React router alternative",
               "url": "https://medium.com/@daveford/react-router-alternative-switch-acd7961f08db"}
+        ]
+    },
+    {
+        "category": "React and CSS",
+        "slug": "react-and-css",
+        "visibility": "public",
+        "bookmarks": [
+            {"text": "CSS in React", "url": "https://alligator.io/react/react-css/"},
+            {"text": "Modular CSS with React",
+             "url": "https://medium.com/@pioul/modular-css-with-react-61638ae9ea3e"}
         ]
     },
     {
