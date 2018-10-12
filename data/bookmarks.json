@@ -979,8 +979,21 @@
         "category": "Error handling",
         "slug": "error-handling",
         "bookmarks": [{"text": "Airbrake", "url": "https://airbrake.io/"},
-                      {"text": "Rollbar", "url": "http://rollbar.com"}],
+                      {"text": "Rollbar", "url": "http://rollbar.com"},
+                      {"text": "Sentry.io", "url": "https://sentry.io/"}
+        ],
         "visibility": "public"
+    },
+    {
+        "category": "Logging",
+        "slug": "logging",
+        "visibility": "public",
+        "bookmarks": [
+            {"text": "Timber", "url": "https://timber.io/"},
+            {"text": "Loggly", "url": "https://www.loggly.com/"},
+            {"text": "Papertrail", "url": "https://papertrailapp.com/"}
+        ]
+
     },
     {
         "category": "Static analysis",
@@ -1949,7 +1962,9 @@
         "bookmarks": [
             { "text": "Pingdom", "url": "https://www.pingdom.com/"},
             { "text": "UptimeRobot", "url": "https://uptimerobot.com/"},
-            { "text": "pagerduty", "url": "https://www.pagerduty.com/"}
+            { "text": "PagerDuty", "url": "https://www.pagerduty.com/"},
+            { "text": "DataDog", "url": "https://www.datadoghq.com/"},
+            { "text": "Scout", "url": "https://scoutapp.com/"}
         ]
     },
     {
