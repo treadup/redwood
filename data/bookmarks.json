@@ -536,23 +536,26 @@
     {
         "category": "Web",
         "slug": "web",
-        "bookmarks": [{"text": "Dirty Markup", "url": "https://dirtymarkup.com/"},
-                      {"text": "Can I use?", "url": "http://caniuse.com"},
-                      {"text": "I want to use", "url": "http://www.iwanttouse.com/"},
-                      {"text": "Do I use?", "url": "http://doiuse.herokuapp.com/"},
-                      {"text": "HTML5 please", "url": "http://html5please.com/"},
-                      {"text": "Edge status",
-                       "url": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/"},
-                      {"text": "You might not need jQuery", "url": "http://youmightnotneedjquery.com/"},
-                      {"text": "CodePen", "url": "https://codepen.io/"},
-                      {"text": "Unsplash it", "url": "http://unsplash.it/"},
-                      {"text": "Modernizir", "url": "https://modernizr.com/"},
-                      {"text": "favicon.io", "url": "https://favicon.io/"},
-                      {"text": "Favicomatic", "url": "http://www.favicomatic.com/"},
-                      {"text": "WTF is a source map?",
-                       "url": "https://www.schneems.com/2017/11/14/wtf-is-a-source-map/"},
-                      {"text": "Frontend Checklist", "url": "https://frontendchecklist.io/"},
-                      {"text": "Awesome devtools", "url": "https://github.com/moimikey/awesome-devtools"}],
+        "bookmarks": [
+            {"text": "Dirty Markup", "url": "https://dirtymarkup.com/"},
+            {"text": "Can I use?", "url": "http://caniuse.com"},
+            {"text": "I want to use", "url": "http://www.iwanttouse.com/"},
+            {"text": "Do I use?", "url": "http://doiuse.herokuapp.com/"},
+            {"text": "HTML5 please", "url": "http://html5please.com/"},
+            {"text": "Edge status",
+             "url": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/"},
+            {"text": "You might not need jQuery", "url": "http://youmightnotneedjquery.com/"},
+            {"text": "CodePen", "url": "https://codepen.io/"},
+            {"text": "Unsplash it", "url": "http://unsplash.it/"},
+            {"text": "Modernizir", "url": "https://modernizr.com/"},
+            {"text": "favicon.io", "url": "https://favicon.io/"},
+            {"text": "Favicomatic", "url": "http://www.favicomatic.com/"},
+            {"text": "WTF is a source map?",
+             "url": "https://www.schneems.com/2017/11/14/wtf-is-a-source-map/"},
+            {"text": "Frontend Checklist", "url": "https://frontendchecklist.io/"},
+            {"text": "Awesome devtools", "url": "https://github.com/moimikey/awesome-devtools"},
+            {"text": "alligator.io", "url": "https://alligator.io/"}
+        ],
         "visibility": "public"
     },
     {
@@ -740,7 +743,8 @@
             { "text": "Style Tiles", "url": "http://styletil.es/"},
             { "text": "Web Style Guide", "url": "https://webstyleguide.com/"},
             { "text": "SMACSS", "url": "https://smacss.com/"},
-            {"text": "BEM", "url": "http://getbem.com/introduction/"}
+            { "text": "BEM", "url": "http://getbem.com/introduction/"},
+            { "text": "Design Systems Repo", "url": "https://designsystemsrepo.com/"}
         ]
     },
     {
@@ -1379,8 +1383,11 @@
     {
         "category": "Documentation",
         "slug": "documentation",
-        "bookmarks": [{"text": "DevDocs", "url": "http://devdocs.io"}],
-        "visibility": "public"
+        "bookmarks": [
+        "visibility": "public",
+            {"text": "DevDocs", "url": "http://devdocs.io"},
+            {"text": "devhints", "url": "https://devhints.io/"}
+        ]
     },
     {
         "category": "Git",
@@ -2046,6 +2053,22 @@
         "bookmarks": [
             { "text": "Forestry.io", "url": "https://forestry.io/"},
             { "text": "Contentful", "url": "https://www.contentful.com/"}
+        ]
+    },
+    {
+        "category": "Communities",
+        "slug": "communities",
+        "visibility": "public",
+        "bookmarks": [
+            {"text": "Gitter", "url": "https://gitter.im/"}
+        ]
+    },
+    {
+        "category": "Tech Stacks",
+        "slug": "tech-stacks",
+        "visibility": "public",
+        "bookmarks": [
+            {"text": "stackshare.io", "url": "https://stackshare.io/"}
         ]
     }
 ]
