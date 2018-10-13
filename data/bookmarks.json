@@ -1096,7 +1096,10 @@
         "bookmarks": [
             {"text": "Dokku", "url": "http://dokku.viewdocs.io/dokku/"},
             {"text": "Flynn", "url": "https://flynn.io/"},
-            {"text": "Docker Cloud", "url": "https://cloud.docker.com/"}
+            {"text": "Docker Cloud", "url": "https://cloud.docker.com/"},
+            {"text": "Convox", "url": "https://convox.com/"},
+            {"text": "rack", "url": "https://github.com/convox/rack"},
+            {"text": "Tsuru", "url": "https://tsuru.io/"}
         ]
     },
     {
@@ -1924,7 +1927,10 @@
         "category": "Docker",
         "slug": "docker",
         "visibility": "public",
-        "bookmarks": [{"text": "Awesome Docker", "url": "https://github.com/veggiemonk/awesome-docker"}]
+        "bookmarks": [
+            {"text": "Awesome Docker", "url": "https://github.com/veggiemonk/awesome-docker"},
+            {"text": "Moby", "url": "https://mobyproject.org/"}
+        ]
     },
     {
         "category": "Artifacts",
