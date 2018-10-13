@@ -136,7 +136,7 @@
         "slug": "python-code-formatting",
         "visibility": "public",
         "bookmarks": [
-            { "text": "Black", "url": "https://github.com/ligurio/awesome-ci"}
+            { "text": "Black", "url": "https://github.com/ambv/black"}
         ]
     },
     {
@@ -553,6 +553,14 @@
                       {"text": "Frontend Checklist", "url": "https://frontendchecklist.io/"},
                       {"text": "Awesome devtools", "url": "https://github.com/moimikey/awesome-devtools"}],
         "visibility": "public"
+    },
+    {
+        "category": "Web Forms",
+        "slug": "web-forms",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Uppy", "url": "https://uppy.io/"}
+        ]
     },
     {
         "category": "TLS",
@@ -1176,7 +1184,8 @@
         "visibility": "public",
         "bookmarks": [
             {"text": "How Single Page Applications Work",
-             "url": "https://medium.com/@pshrmn/demystifying-single-page-applications-3068d0555d46"}
+             "url": "https://medium.com/@pshrmn/demystifying-single-page-applications-3068d0555d46"},
+            {"text": "JAMstack", "url": "https://jamstack.org/"}
         ]
     },
     {
@@ -1268,7 +1277,8 @@
     {
         "category": "Security",
         "slug": "security",
-        "bookmarks": [{"text": "OWASP", "url": "https://www.owasp.org"}],
+        "bookmarks": [{"text": "OWASP", "url": "https://www.owasp.org"},
+                      {"text": "Sqreen", "url": "https://www.sqreen.io/"}],
         "visibility": "public"
     },
     {
@@ -1588,6 +1598,16 @@
                         "url": "https://harfangk.github.io/2016/09/19/manage-dotfiles-with-a-git-bare-repository.html"}
                      ],
         "visibility": "private"
+    },
+    {
+        "category": "NewSQL",
+        "slug": "newsql",
+        "visibility": "public",
+        "bookmarks": [
+            {"text": "CockroachDB", "url": "https://www.cockroachlabs.com/"},
+            {"text": "NuoDB", "url": "https://www.nuodb.com/"},
+            {"text": "MemSQL", "url": "https://www.memsql.com/"}
+        ]
     },
     {
         "category": "CockroachDB",
@@ -1964,7 +1984,21 @@
             { "text": "UptimeRobot", "url": "https://uptimerobot.com/"},
             { "text": "PagerDuty", "url": "https://www.pagerduty.com/"},
             { "text": "DataDog", "url": "https://www.datadoghq.com/"},
-            { "text": "Scout", "url": "https://scoutapp.com/"}
+            { "text": "Scout", "url": "https://scoutapp.com/"},
+            { "text": "Instrumental", "url": "https://instrumentalapp.com/"},
+            { "text": "Metricly", "url": "https://www.metricly.com/"},
+            { "text": "Uptrends", "url": "https://www.uptrends.com/"}
+        ]
+    },
+    {
+        "category": "Dashboards",
+        "slug": "dashboards",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Hosted Graphite", "url": "https://www.hostedgraphite.com/"},
+            { "text": "Grafana", "url": "https://grafana.com/cloud/grafana"},
+            { "text": "Geckoboard", "url": "https://www.geckoboard.com/"},
+            { "text": "Dash Metrics", "url": "http://www.dashmetrics.io/"}
         ]
     },
     {
@@ -1984,6 +2018,15 @@
         "visibility": "public",
         "bookmarks": [
             { "text": "bobby-tables.com", "url": "http://bobby-tables.com/"}
+        ]
+    },
+    {
+        "category": "Content Management",
+        "slug": "content-management",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Forestry.io", "url": "https://forestry.io/"},
+            { "text": "Contentful", "url": "https://www.contentful.com/"}
         ]
     }
 ]
