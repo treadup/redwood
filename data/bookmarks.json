@@ -515,7 +515,8 @@
         "bookmarks": [{"text": "Circle CI", "url": "https://circleci.com/"},
                       {"text": "Travis CI", "url": "https://travis-ci.org/"},
                       {"text": "Coveralls", "url": "https://coveralls.io/"},
-                     { "text": "Awesome CI", "url": "https://github.com/ligurio/awesome-ci"}],
+                      {"text": "drone.io", "url": "https://drone.io/"},
+                      {"text": "Awesome CI", "url": "https://github.com/ligurio/awesome-ci"}],
         "visibility": "public"
     },
     {
@@ -1089,10 +1090,14 @@
                        { "text": "RootBSD", "url": "https://www.rootbsd.net/"}]
     },
     {
-        "category": "Self Hosted Cloud",
-        "slug": "self-hosted-cloud",
-        "bookmarks": [{"text": "Dokku", "url": "http://dokku.viewdocs.io/dokku/"}],
-        "visibility": "public"
+        "category": "Hosted Docker Cloud",
+        "slug": "hosted-docker-cloud",
+        "visibility": "public",
+        "bookmarks": [
+            {"text": "Dokku", "url": "http://dokku.viewdocs.io/dokku/"},
+            {"text": "Flynn", "url": "https://flynn.io/"},
+            {"text": "Docker Cloud", "url": "https://cloud.docker.com/"}
+        ]
     },
     {
         "category": "Hosting",
@@ -1861,6 +1866,14 @@
                       { "text": "Slim", "url": "http://slim-lang.com/"},
                       { "text": "Haml", "url": "http://haml.info"},
                       { "text": "Hamdown", "url": "https://github.com/inem/hamdown"}]
+    },
+    {
+        "category": "Documentation Generators",
+        "slug": "documentation-generators",
+        "visibility": "public",
+        "bookmarks": [
+            {"text": "docusaurus.io", "url": "https://docusaurus.io/"}
+        ]
     },
     {
         "category": "Diagramming Languages",
