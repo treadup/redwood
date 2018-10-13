@@ -30,7 +30,8 @@
         "visibility": "public",
         "bookmarks": [
             { "text": "pipenv", "url": "https://pipenv.readthedocs.io/en/latest/"},
-            { "text": "pur", "url": "https://pypi.org/project/pur/"}
+            { "text": "pur", "url": "https://pypi.org/project/pur/"},
+            { "text": "poetry", "url": "https://github.com/sdispater/poetry"}
         ]
     },
     {
@@ -578,6 +579,16 @@
             {"text": "alligator.io", "url": "https://alligator.io/"}
         ],
         "visibility": "public"
+    },
+    {
+        "category": "HTML Canvas",
+        "slug": "html-canvas",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "HTML5 Canvas Basics", "url": "https://dev.opera.com/articles/html5-canvas-basics/"},
+            { "text": "Canvas API", "url": "https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API"},
+            { "text": "Canvas Specification", "url": "https://www.w3.org/TR/2dcontext/"}
+        ]
     },
     {
         "category": "Web Forms",
