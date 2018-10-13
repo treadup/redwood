@@ -1,5 +1,10 @@
 # GPG
-This page contains instructions for exporting and importing GPG keys.
+This page contains instructions for creating, exporting and importing GPG keys.
+
+## Creating Keys
+To create a new GPG key use the following command.
+
+    gpg --full-generate-key
 
 ## Exporting Keys
 To export your public and private GPG keys use the following commands.
