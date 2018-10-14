@@ -843,6 +843,15 @@
         "visibility": "public"
     },
     {
+        "category": "JavaScript Sound",
+        "slug": "javascript-sound",
+        "visibility": "public",
+        "bookmarks": [
+            {"text": "howler.js", "url": "https://howlerjs.com/"},
+            {"text": "sound.js", "url": "https://createjs.com/soundjs"}
+        ]
+    },
+    {
         "category": "JavaScript 3D Engines",
         "slug": "javascript-3d-engines",
         "bookmarks": [{"text": "Copperlicht", "url": "http://www.ambiera.com/copperlicht/index.html"},
