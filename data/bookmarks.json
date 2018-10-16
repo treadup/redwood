@@ -981,7 +981,8 @@
             {"text": "Luvit - asynchronous I/O for Lua", "url": "https://luvit.io/"},
             {"text": "MoonScript", "url": "https://luvit.io/"},
             {"text": "Corona", "url": "https://coronalabs.com/"},
-            {"text": "middleclass", "url": "https://github.com/kikito/middleclass"}],
+            {"text": "middleclass", "url": "https://github.com/kikito/middleclass"},
+            {"text": "lua-http", "url": "https://daurnimator.github.io/lua-http/0.2/"}],
         "visibility": "public"
     },
     {
@@ -1359,7 +1360,11 @@
         "bookmarks": [{"text": "Amazon Lumberyard", "url": "https://aws.amazon.com/lumberyard/"},
                       {"text": "Unity", "url": "https://unity3d.com/"},
                       {"text": "Ignifuga", "url": "http://ignifuga.org/"},
-                      {"text": "PyGame", "url": "http://www.pygame.org/"}],
+                      {"text": "PyGame", "url": "http://www.pygame.org/"},
+                      {"text": "Game Engines on itch.io",
+                       "url": "https://itch.io/game-development/engines"},
+                      {"text": "PICO-8", "url": "https://www.lexaloffle.com/pico-8.php"},
+                      {"text": "Voxatron", "url": "https://www.lexaloffle.com/voxatron.php"}],
         "visibility": "public"
     },
     {
@@ -2110,6 +2115,14 @@
         "visibility": "public",
         "bookmarks": [
             {"text": "stackshare.io", "url": "https://stackshare.io/"}
+        ]
+    },
+    {
+        "category": "Text Search",
+        "slug": "text-search",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Woosh", "url": "https://whoosh.readthedocs.io/en/latest/intro.html"}
         ]
     }
 ]
