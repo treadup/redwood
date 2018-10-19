@@ -106,6 +106,16 @@
         "visibility": "public"
     },
     {
+        "category": "Python Async Web Frameworks",
+        "slug": "python-async-web-frameworks",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "aiohttp", "url": "https://github.com/aio-libs/aiohttp"},
+            { "text": "Quart", "url": "https://github.com/pgjones/quart"},
+            { "text": "Sanic", "url": "https://github.com/huge-success/sanic"}
+        ]
+    },
+    {
         "category": "Python Testing",
         "slug": "python-testing",
         "visibility": "public",
@@ -1151,8 +1161,11 @@
     {
         "category": "Hosting",
         "slug": "hosting",
-	      "bookmarks": [{"text": "Netlify", "url": "https://www.netlify.com/"},
-                        {"text": "Python Anywhere", "url": "https://www.pythonanywhere.com/"}],
+        "bookmarks": [
+            {"text": "Netlify", "url": "https://www.netlify.com/"},
+            {"text": "Python Anywhere", "url": "https://www.pythonanywhere.com/"},
+            {"text": "Surge", "url": "https://surge.sh/"}
+        ],
         "visibility": "public"
     },
     {
@@ -1243,6 +1256,17 @@
         ]
     },
     {
+        "category": "DOM manipulation libraries",
+        "slug": "dom-manipulation-libraries",
+        "visibility": "public",
+        "bookmarks": [
+            {"text": "redom", "url": "https://redom.js.org/"},
+            {"text": "Maquette", "url": "https://maquettejs.org/"},
+            {"text": "Choo", "url": "https://choo.io/"},
+            {"text": "Mithril", "url": "https://mithril.js.org/"}
+        ]
+    },
+    {
         "category": "React",
         "slug": "react",
         "bookmarks": [{"text": "Awesome React",
@@ -1301,6 +1325,19 @@
             {"text": "CSS in React", "url": "https://alligator.io/react/react-css/"},
             {"text": "Modular CSS with React",
              "url": "https://medium.com/@pioul/modular-css-with-react-61638ae9ea3e"}
+        ]
+    },
+    {
+        "category": "React UI Framework",
+        "slug": "react-ui-framework",
+        "visibility": "public",
+        "bookmarks": [
+            {"text": "Evergreen", "url": "https://evergreen.segment.com/"},
+            {"text": "Material UI", "url": "https://material-ui.com/"},
+            {"text": "Semantic UI", "url": "https://semantic-ui.com/"},
+            {"text": "Ant Design", "url": "https://ant.design/"},
+            {"text": "Grommet", "url": "https://grommet.io/"},
+            {"text": "Blueprint", "url": "https://blueprintjs.com/"}
         ]
     },
     {
