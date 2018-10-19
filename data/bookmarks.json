@@ -1169,6 +1169,17 @@
         "visibility": "public"
     },
     {
+        "category": "Hosted Forms",
+        "slug": "hosted-forms",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "formspree.io", "url": "https://formspree.io/"},
+            { "text": "Mail This To", "url": "https://mailthis.to/"},
+            { "text": "formtoemail.com", "url": "https://formtoemail.com/"},
+            { "text": "formcarry", "url": "https://formcarry.com/"}
+        ]
+    },
+    {
         "category": "Literate Programming",
         "slug": "literate-programming",
         "bookmarks": [{"text": "Docco", "url": "http://jashkenas.github.io/docco/"},
