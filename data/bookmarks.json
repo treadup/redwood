@@ -2172,5 +2172,55 @@
         "bookmarks": [
             { "text": "Woosh", "url": "https://whoosh.readthedocs.io/en/latest/intro.html"}
         ]
+    },
+    {
+        "category": "Web Screenshots",
+        "slug": "web-screenshots",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Stillio", "url": "https://www.stillio.com/"},
+            { "text": "urlbox", "url": "https://urlbox.io/"},
+            { "text": "Snapito", "url": "https://snapito.com/"},
+            { "text": "URL2PNG", "url": "https://www.url2png.com/"},
+            { "text": "screenshots.cloud", "url": "https://screenshots.cloud/"}
+        ]
+    },
+    {
+        "category": "Training",
+        "slug": "training",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "frontloops.io", "url": "https://frontloops.io"},
+            { "text": "Learn Front End Development",
+              "url": "https://medium.com/@GarrettLevine/5-projects-to-complete-when-starting-to-learn-front-end-web-development-48e8a1ce3178"},
+            { "text": "Frontend Back to Basics", "url":
+              "https://medium.freecodecamp.org/what-to-learn-in-2017-if-youre-a-frontend-developer-b6cfef46effd"},
+            { "text": "Public APIs", "url": "https://github.com/toddmotto/public-apis"},
+            { "text": "Daily Coding Problem", "url": "https://www.dailycodingproblem.com/"},
+            { "text": "dev-practice", "url": "https://github.com/alinebastos/dev-practice"}
+        ]
+    },
+    {
+        "category": "Web Design Galleries",
+        "slug": "web-design-galleries",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Unmatched Style", "url": "http://unmatchedstyle.com/gallery/"},
+            { "text": "siteinspire", "url": "https://www.siteinspire.com/"},
+            { "text": "awwwards", "url": "https://www.awwwards.com/"},
+            { "text": "The Best Designs", "url": "https://www.thebestdesigns.com/"},
+            { "text": "One Page Love", "url": "https://onepagelove.com/"},
+            { "text": "Best Website Gallery", "url": "https://bestwebsite.gallery/"},
+            { "text": "styleboost", "url": "http://styleboost.com/"},
+            { "text": "Admire the Web", "url": "https://www.admiretheweb.com/"},
+            { "text": "HTML inspiration", "url": "http://www.htmlinspiration.com/"},
+            { "text": "CSS Gallery List", "url": "https://thecssgallerylist.com/"},
+            { "text": "CSS Nectar", "url": "https://cssnectar.com/"},
+            { "text": "Free Frontend CSS Gallery", "url": "https://freefrontend.com/css-gallery/"},
+            { "text": "CSSDSGN", "url": "https://www.cssdsgn.com/"},
+            { "text": "Design Shack", "url": "https://designshack.net/gallery/"},
+            { "text": "CSSMania", "url": "http://www.cssmania.com/galleries/"},
+            { "text": "Siiimple", "url": "https://siiimple.com/"}
+        ]
     }
 ]
