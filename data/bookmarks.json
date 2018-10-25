@@ -853,6 +853,14 @@
         "visibility": "public"
     },
     {
+        "category": "JavaScript Animation",
+        "slug": "javascript-animation",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "anime.js", "url": "http://animejs.com/"}
+        ]
+    },
+    {
         "category": "JavaScript Sound",
         "slug": "javascript-sound",
         "visibility": "public",
@@ -2221,6 +2229,14 @@
             { "text": "Design Shack", "url": "https://designshack.net/gallery/"},
             { "text": "CSSMania", "url": "http://www.cssmania.com/galleries/"},
             { "text": "Siiimple", "url": "https://siiimple.com/"}
+        ]
+    },
+    {
+        "category": "Load Testing",
+        "slug": "load-testing",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "hey", "url": "https://github.com/rakyll/hey"}
         ]
     }
 ]
