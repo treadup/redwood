@@ -579,6 +579,7 @@
             {"text": "You might not need jQuery", "url": "http://youmightnotneedjquery.com/"},
             {"text": "CodePen", "url": "https://codepen.io/"},
             {"text": "Unsplash it", "url": "http://unsplash.it/"},
+            { "text": "Lorem Picsum", "url": "https://picsum.photos/"},
             {"text": "Modernizir", "url": "https://modernizr.com/"},
             {"text": "favicon.io", "url": "https://favicon.io/"},
             {"text": "Favicomatic", "url": "http://www.favicomatic.com/"},
@@ -1064,7 +1065,8 @@
         "bookmarks": [
             {"text": "Timber", "url": "https://timber.io/"},
             {"text": "Loggly", "url": "https://www.loggly.com/"},
-            {"text": "Papertrail", "url": "https://papertrailapp.com/"}
+            {"text": "Papertrail", "url": "https://papertrailapp.com/"},
+            {"text": "Scalyr", "url": "https://www.scalyr.com"}
         ]
 
     },
@@ -2205,7 +2207,8 @@
               "https://medium.freecodecamp.org/what-to-learn-in-2017-if-youre-a-frontend-developer-b6cfef46effd"},
             { "text": "Public APIs", "url": "https://github.com/toddmotto/public-apis"},
             { "text": "Daily Coding Problem", "url": "https://www.dailycodingproblem.com/"},
-            { "text": "dev-practice", "url": "https://github.com/alinebastos/dev-practice"}
+            { "text": "dev-practice", "url": "https://github.com/alinebastos/dev-practice"},
+            { "text": "marksheet.io", "url": "https://marksheet.io/"}
         ]
     },
     {
@@ -2237,6 +2240,30 @@
         "visibility": "public",
         "bookmarks": [
             { "text": "hey", "url": "https://github.com/rakyll/hey"}
+        ]
+    },
+    {
+        "category": "Shopping Feeds",
+        "slug": "shopping-feeds",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "channable.com", "url": "https://channable.com"}
+        ]
+    },
+    {
+        "category": "Stock Photos",
+        "slug": "stock-photos",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "unsplash.com", "url": "https://unsplash.com/"}
+        ]
+    },
+    {
+        "category": "Domains",
+        "slug": "domains",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "park.io", "url": "https://park.io"}
         ]
     }
 ]
