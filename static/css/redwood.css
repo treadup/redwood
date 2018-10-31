@@ -281,3 +281,18 @@ footer div {
 .files-trash {
     padding-left: 4em;
 }
+
+.indian-tea-video-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Height of the viewport minus height of the footer and header
+       minus the padding for the main element. */
+    height: calc(100vh - 6em - 2em);
+
+
+}
+
+.indian-tea-video {
+    z-index: -1;
+}

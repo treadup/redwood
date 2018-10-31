@@ -739,3 +739,7 @@ def api_bookmarks():
                          "slug": b["slug"]} for b in all_bookmarks
                         if b['visibility'] == 'public']
     return json.dumps(filtered_bookmarks, indent=4, sort_keys=True)
+
+@app.route('/video')
+def video():
+    return render_template("video.html")
