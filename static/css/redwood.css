@@ -30,6 +30,8 @@ header {
     height: 3em;
     background: #228B22;
     color: white;
+
+    z-index: 10;
 }
 
 @media only screen and (max-width: 480px) {
@@ -37,6 +39,8 @@ header {
         width: 100%;
         height: auto;
     }
+
+    z-index: 10;
 }
 
 .hamburger {
@@ -172,6 +176,8 @@ footer {
     /* Colors */
     background: #228B22;
     color: white;
+
+    z-index: 10;
 }
 
 @media only screen and (max-width: 480px) {
@@ -197,6 +203,7 @@ footer {
         background: #228B22;
         color: white;
 
+	z-index: 10;
     }
 }
 
@@ -293,4 +300,6 @@ footer div {
 
 .indian-tea-video {
     z-index: -1;
+    max-width: 100%;
+    height: auto;
 }
