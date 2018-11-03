@@ -580,6 +580,7 @@
             {"text": "CodePen", "url": "https://codepen.io/"},
             {"text": "Unsplash it", "url": "http://unsplash.it/"},
             { "text": "Lorem Picsum", "url": "https://picsum.photos/"},
+            { "text": "place kitten", "url": "https://placekitten.com/"},
             {"text": "Modernizir", "url": "https://modernizr.com/"},
             {"text": "favicon.io", "url": "https://favicon.io/"},
             {"text": "Favicomatic", "url": "http://www.favicomatic.com/"},
@@ -1684,6 +1685,19 @@
                       {"text": "statuspage.io", "url": "https://www.statuspage.io/"},
                       {"text": "statushub", "url": "https://statushub.com/"}],
         "visibility": "public"
+    },
+    {
+        "category": "Feature Flags and Configuration",
+        "slug": "feature-flags-configuration",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Launch Darkly", "url": "https://launchdarkly.com/"},
+            { "text": "Config Cat", "url": "https://configcat.com/"},
+            { "text": "Bullet Train", "url": "https://bullet-train.io/"},
+            { "text": "featureflags.io", "url": "http://featureflags.io/"},
+            { "text": "rollout.io", "url": "https://rollout.io/"},
+            { "text": "Feature Ops", "url": "https://www.featureops.com"}
+        ]
     },
     {
         "category": "GraphQL",
