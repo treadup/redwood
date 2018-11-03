@@ -1571,7 +1571,7 @@
     },
     {
         "category": "OpenGL",
-        "slug": "openly",
+        "slug": "opengl",
         "bookmarks": [{"text": "docs.GL", "url": "http://docs.gl"},
                       {"text": "OpenGL 4 Reference Pages",
                        "url": "https://www.khronos.org/registry/OpenGL-Refpages/gl4/"},
