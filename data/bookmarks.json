@@ -1571,7 +1571,7 @@
     },
     {
         "category": "OpenGL",
-        "slug": "opengl",
+        "slug": "openly",
         "bookmarks": [{"text": "docs.GL", "url": "http://docs.gl"},
                       {"text": "OpenGL 4 Reference Pages",
                        "url": "https://www.khronos.org/registry/OpenGL-Refpages/gl4/"},
@@ -1583,6 +1583,16 @@
         "slug": "glsl",
         "bookmarks": [{"text": "GLSL debugger", "url": "http://glsl-debugger.github.io/"}],
         "visibility": "public"
+    },
+    {
+        "category": "Quaternions",
+        "slug": "quaternions",
+        "visibility": "public",
+        "bookmarks": [
+            {"text": "Visualizing Quaternions", "url": "https://eater.net/quaternions"},
+            { "text": "Geometric Algebra",
+              "url": "https://www.youtube.com/playlist?list=PLpzmRsG7u_gqaTo_vEseQ7U8KFvtiJY4K"}
+        ]
     },
     {
         "category": "Naming Things",
