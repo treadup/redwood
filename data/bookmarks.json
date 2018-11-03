@@ -1623,7 +1623,9 @@
         "bookmarks": [{"text": "Distributed Transactions: The Icebergs of Microservices",
                        "url": "http://www.grahamlea.com/2016/08/distributed-transactions-microservices-icebergs/"},
                       {"text": "What I Wish I Had Known Before Scaling Uber to 1000 Services",
-                       "url": "https://www.reddit.com/r/programming/comments/54y5by/what_i_wish_i_had_known_before_scaling_uber_to/"}],
+                       "url": "https://www.reddit.com/r/programming/comments/54y5by/what_i_wish_i_had_known_before_scaling_uber_to/"},
+                      { "text": "Small Sharp Tools", "url": "https://brandur.org/small-sharp-tools"}],
+
         "visibility": "public"
     },
     {
@@ -2251,11 +2253,21 @@
         ]
     },
     {
-        "category": "Stock Photos",
-        "slug": "stock-photos",
+        "category": "Stock Photos and Videos",
+        "slug": "stock-photos-videos",
         "visibility": "public",
         "bookmarks": [
-            { "text": "unsplash.com", "url": "https://unsplash.com/"}
+            { "text": "unsplash.com", "url": "https://unsplash.com/"},
+            { "text": "pixabay", "url": "https://pixabay.com/"},
+            { "text": "coverr", "url": "http://www.coverr.co/"}
+        ]
+    },
+    {
+        "category": "Creative Resources",
+        "slug": "creative-resources",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Makerbook", "url": "http://makerbook.net/"}
         ]
     },
     {
