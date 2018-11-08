@@ -2116,11 +2116,15 @@
         ]
     },
     {
-        "category": "Cloud Lambda",
-        "slug": "cloud-lambda",
+        "category": "Serverless",
+        "slug": "Serverless",
         "visibility": "public",
         "bookmarks": [
-            { "text": "architect", "url": "https://arc.codes/"}
+            { "text": "architect", "url": "https://arc.codes/"},
+            { "text": "Chalice", "url": "https://github.com/aws/chalice"},
+            { "text": "Zappa", "url": "https://www.zappa.io/"},
+            { "text": "now", "url": "https://zeit.co/now"},
+            { "text": "up", "url": "https://up.docs.apex.sh/"}
         ]
     },
     {
