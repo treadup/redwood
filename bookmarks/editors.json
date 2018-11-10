@@ -1,0 +1,37 @@
+[
+    {
+        "category": "Emacs",
+        "slug": "emacs",
+        "bookmarks": [{"text": "Awesome Emacs", "url": "https://github.com/emacs-tw/awesome-emacs"},
+                      {"text": "Python programming in Emacs",
+                       "url": "https://www.emacswiki.org/emacs/PythonProgrammingInEmacs"},
+                      {"text": "Learn Elisp in X minutes.",
+                       "url": "https://learnxinyminutes.com/docs/elisp/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Eshell",
+        "slug": "eshell",
+        "bookmarks": [{"text": "Eshell redirection",
+                       "url": "https://www.emacswiki.org/emacs/EshellRedirection"},
+                      {"text": "Yes, eshell is my main shell",
+                       "url": "https://www.reddit.com/r/emacs/comments/6y3q4k/yes_eshell_is_my_main_shell/"},
+                      {"text": "Presenting Eshell",
+                       "url": "http://howardism.org/Technical/Emacs/eshell-present.html"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Spacemacs",
+        "slug": "spacemacs",
+        "bookmarks": [{"text": "Spacemacs", "url": "http://spacemacs.org/"},
+                      {"text": "Quick Start", "url": "http://spacemacs.org/doc/QUICK_START.html"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Vim",
+        "slug": "vim",
+        "bookmarks": [{"text": "Vim Awesome", "url": "http://vimawesome.com/"},
+                      {"text": "Fireplace", "url": "https://github.com/tpope/vim-fireplace"}],
+        "visibility": "public"
+    }
+]
