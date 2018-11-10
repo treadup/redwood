@@ -207,10 +207,7 @@ def bookmarks():
     Show the different bookmark categories.
     """
     user = get_current_user()
-    bookmark_categories, errors = load_all_bookmarks()
-
-    if errors:
-        return errors, 500
+    bookmark_categories = load_all_bookmarks()
 
     if user is None:
         bookmark_categories = [c for c in bookmark_categories if c['visibility'] == 'public']
@@ -223,10 +220,7 @@ def bookmark_category(collection_slug):
     """
     Show the bookmarks for a given category.
     """
-    bookmark_collections, errors = load_bookmark_collections()
-
-    if errors:
-        return "There where errors loading the bookmarks.", 500
+    bookmark_collections = load_bookmark_collections()
 
     if not collection_slug in bookmark_collections:
         abort(404)

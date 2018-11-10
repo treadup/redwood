@@ -1,7 +1,14 @@
 from util import load_json
+import os.path
 
 def load_all_bookmarks():
-    return load_bookmarks("data/bookmarks.json")
+    filenames = ["bookmarks.json"]
+    result = []
+
+    for filename in filenames:
+        result.extend(load_bookmarks(os.path.join("bookmarks", filename)))
+
+    return result
 
 def load_bookmarks(filename):
     """
@@ -13,18 +20,13 @@ def load_bookmarks(filename):
         collection['ordinal'] = ordinal
         collection['url'] = "/bookmarks/{}".format(collection['slug'])
 
-    errors = []
-
-    return result, errors
+    return result
 
 def load_bookmark_collections():
     collections = {}
-    bookmark_collections_list, errors = load_all_bookmarks()
-
-    if errors:
-        return None, errors
+    bookmark_collections_list = load_all_bookmarks()
 
     for collection in bookmark_collections_list:
         collections[collection['slug']] = collection
 
-    return collections, None
+    return collections
