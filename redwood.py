@@ -3,7 +3,12 @@ import time
 import pytz
 import json
 
-from flask import Flask, render_template, request, make_response
+from flask import (
+    Flask,
+    render_template,
+    request,
+    make_response
+)
 from flask import redirect, url_for, abort, send_file
 from flask import send_from_directory
 from werkzeug import secure_filename
@@ -34,6 +39,8 @@ from photos import (
     get_photo_collection
 )
 
+from bookmarks import load_all_bookmarks
+from bookmarks import load_bookmark_collections
 from writings import load_writing
 
 from util import load_json
@@ -164,24 +171,6 @@ def index():
     return render_template('index.html')
 
 
-def load_bookmarks():
-    """
-    Loads the bookmarks from the bookmarks.json file
-    """
-    filename = app.config['BOOKMARKS_FILENAME']
-    result = load_json(filename)
-
-    # TODO: Validate JSON
-
-    for ordinal, collection in enumerate(result):
-        collection['ordinal'] = ordinal
-        collection['url'] = "/bookmarks/{}".format(collection['slug'])
-
-    errors = []
-
-    return result, errors
-
-
 def validate_bookmarks(bookmark_categories):
     """
     Validate a list of bookmark categories from the bookmarks.
@@ -218,7 +207,7 @@ def bookmarks():
     Show the different bookmark categories.
     """
     user = get_current_user()
-    bookmark_categories, errors = load_bookmarks()
+    bookmark_categories, errors = load_all_bookmarks()
 
     if errors:
         return errors, 500
@@ -227,19 +216,6 @@ def bookmarks():
         bookmark_categories = [c for c in bookmark_categories if c['visibility'] == 'public']
 
     return render_template('bookmarks.html', categories=bookmark_categories)
-
-
-def load_bookmark_collections():
-    collections = {}
-    bookmark_collections_list, errors = load_bookmarks()
-
-    if errors:
-        return None, errors
-
-    for collection in bookmark_collections_list:
-        collections[collection['slug']] = collection
-
-    return collections, None
 
 
 @app.route('/bookmarks/<collection_slug>')
@@ -729,7 +705,7 @@ def days_left():
 
 @app.route('/api/bookmarks')
 def api_bookmarks():
-    all_bookmarks, errors = load_bookmarks()
+    all_bookmarks, errors = load_all_bookmarks()
 
     if errors:
         return { "errors": ["There was an error parsing the bookmarks file"] }, 500
@@ -738,7 +714,9 @@ def api_bookmarks():
                          "category": b["category"],
                          "slug": b["slug"]} for b in all_bookmarks
                         if b['visibility'] == 'public']
-    return json.dumps(filtered_bookmarks, indent=4, sort_keys=True)
+    response = make_response(json.dumps(filtered_bookmarks, indent=4, sort_keys=True))
+    response.headers['Content-Type'] = 'application/json'
+    return response
 
 @app.route('/video')
 def video():
