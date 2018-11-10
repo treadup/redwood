@@ -2,7 +2,15 @@ from util import load_json
 import os.path
 
 def load_all_bookmarks():
-    filenames = ["bookmarks.json"]
+    filenames = [
+        "python.json",
+        "clojure.json",
+        "go.json",
+        "javascript.json",
+        "lisp.json",
+        "web.json",
+        "bookmarks.json"]
+
     result = []
 
     for filename in filenames:

@@ -1,0 +1,260 @@
+[
+    {
+        "category": "Web",
+        "slug": "web",
+        "bookmarks": [
+            {"text": "Dirty Markup", "url": "https://dirtymarkup.com/"},
+            {"text": "Can I use?", "url": "http://caniuse.com"},
+            {"text": "I want to use", "url": "http://www.iwanttouse.com/"},
+            {"text": "Do I use?", "url": "http://doiuse.herokuapp.com/"},
+            {"text": "HTML5 please", "url": "http://html5please.com/"},
+            {"text": "Edge status",
+             "url": "https://developer.microsoft.com/en-us/microsoft-edge/platform/status/"},
+            {"text": "You might not need jQuery", "url": "http://youmightnotneedjquery.com/"},
+            {"text": "CodePen", "url": "https://codepen.io/"},
+            {"text": "Unsplash it", "url": "http://unsplash.it/"},
+            { "text": "Lorem Picsum", "url": "https://picsum.photos/"},
+            { "text": "place kitten", "url": "https://placekitten.com/"},
+            {"text": "Modernizir", "url": "https://modernizr.com/"},
+            {"text": "favicon.io", "url": "https://favicon.io/"},
+            {"text": "Favicomatic", "url": "http://www.favicomatic.com/"},
+            {"text": "WTF is a source map?",
+             "url": "https://www.schneems.com/2017/11/14/wtf-is-a-source-map/"},
+            {"text": "Frontend Checklist", "url": "https://frontendchecklist.io/"},
+            {"text": "Awesome devtools", "url": "https://github.com/moimikey/awesome-devtools"},
+            {"text": "alligator.io", "url": "https://alligator.io/"}
+        ],
+        "visibility": "public"
+    },
+    {
+        "category": "HTML Canvas",
+        "slug": "html-canvas",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "HTML5 Canvas Basics", "url": "https://dev.opera.com/articles/html5-canvas-basics/"},
+            { "text": "Canvas API", "url": "https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API"},
+            { "text": "Canvas Specification", "url": "https://www.w3.org/TR/2dcontext/"}
+        ]
+    },
+    {
+        "category": "Web Forms",
+        "slug": "web-forms",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Uppy", "url": "https://uppy.io/"}
+        ]
+    },
+    {
+        "category": "TLS",
+        "slug": "TLS",
+        "visibility": "public",
+        "bookmarks": [{"text": "SSL Labs", "url": "https://www.ssllabs.com/"},
+                      {"text": "BadSSL", "url": "https://badssl.com/"}]
+    },
+    {
+        "category": "Web Reverse Engineering",
+        "slug": "web-reverse-engineering",
+        "visibility": "public",
+        "bookmarks": [{"text": "Wappalyzer", "url": "https://www.wappalyzer.com/"}]
+    },
+    {
+        "category": "Offline First",
+        "slug": "offline-first",
+        "visibility": "public",
+        "bookmarks": [{"text": "OfflineFirst.org", "url": "http://offlinefirst.org/"},
+                      {"text": "hood.ie", "url": "http://hood.ie/"},
+                      {"text": "Offline First Tools", "url": "https://gist.github.com/nolanlawson/508ab18c9af40744525e"},
+                      {"text": "Offline First Links", "url": "https://github.com/pazguille/offline-first"},
+                      {"text": "UpUp", "url": "https://www.talater.com/upup/"},
+                      {"text": "PouchDB", "url": "https://pouchdb.com/"}]
+    },
+    {
+        "category": "WebSockets",
+        "slug": "websockets",
+        "bookmarks": [{"text": "Echo server", "url": "https://www.websocket.org/echo.html"},
+                      {"text": "websocketd", "url": "http://websocketd.com/"},
+                      {"text": "Websockets from Scratch",
+                       "url": "https://blog.pusher.com/websockets-from-scratch/"},
+                      {"text": "Awesome Websockets",
+                       "url": "https://github.com/facundofarias/awesome-websockets"},
+                      {"text": "Fullstack Python on Websockets ",
+                       "url": "https://www.fullstackpython.com/websockets.html"},
+                      { "text": "wscat", "url": "https://github.com/websockets/wscat"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Realtime Data",
+        "slug": "realtime-data",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "fanout.io", "url": "https://fanout.io/"},
+            { "text": "pushpin", "url": "https://pushpin.org/"}
+        ]
+    },
+    {
+        "category": "RethinkDB",
+        "slug": "rethinkdb",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "RethinkDB", "url": "https://www.rethinkdb.com/"},
+            { "text": "Compose hosted databases", "url": "https://www.compose.com/"}
+        ]
+    },
+    {
+        "category": "CSS",
+        "slug": "css",
+        "bookmarks": [{"text":"Picnic CSS", "url": "https://picnicss.com/"},
+                      {"text": "PostCSS", "url": "http://postcss.org/"},
+                      {"text": "Awesome PostCSS", "url": "https://github.com/jjaderg/awesome-postcss"},
+                      {"text": "cssreference.io", "url": "http://cssreference.io/"},
+                      {"text": "pesticide.io", "url": "http://pesticide.io/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Flexbox",
+        "slug": "flexbox",
+        "bookmarks": [{"text": "A Complete Guide to Flexbox",
+                       "url": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/"},
+                      {"text": "Flexbugs", "url": "https://github.com/philipwalton/flexbugs"},
+                      {"text": "Almost complete guide to flexbox without flexbox",
+                       "url": "https://kyusuf.com/post/almost-complete-guide-to-flexbox-without-flexbox"},
+                      {"text": "Flexbox: How to deal with older browsers",
+                       "url": "https://medium.com/css-mine/flexbox-how-to-deal-with-older-browsers-fbf6eb8c7a65"}],
+        "visibility": "public"
+    },
+    {
+        "category": "CSS Grid",
+        "slug": "css-grid",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Layoutit", "url": "https://www.layoutit.com/grid"},
+            { "text": "Grid visual cheetsheet", "url": "http://grid.malven.co/"}
+        ]
+    },
+    {
+        "category": "CSS Modules",
+        "slug": "css-modules",
+        "visibility": "public",
+        "bookmarks": [
+            {"text": "CSS modules", "url": "https://github.com/css-modules/css-modules"},
+            {"text": "Interoperable CSS", "url": "https://github.com/css-modules/icss"},
+            {"text": "Welcome to the future", "url": "https://glenmaddern.com/articles/css-modules"}
+        ]
+    },
+    {
+        "category": "PostCSS Modules",
+        "slug": "postcss-modules",
+        "visibility": "public",
+        "bookmarks": [
+            {"text": "PostCSS modules", "url": "https://github.com/css-modules/postcss-modules"},
+            {"text": "Make CSS great again", "url": "https://evilmartians.com/chronicles/postcss-modules-make-css-great-again"}
+        ]
+    },
+    {
+        "category": "Styled Components",
+        "slug": "styled-components",
+        "visibility": "public",
+        "bookmarks": [
+           {"text": "Styled Components", "url": "https://www.styled-components.com/"},
+           {"text": "Styled Components Basics", "url": "https://www.styled-components.com/docs/basics"},
+           {"text": "Radium", "url": "https://formidable.com/open-source/radium/"}
+        ]
+    },
+    {
+        "category": "Responsive Web Design",
+        "slug": "responsive-web-design",
+        "bookmarks": [{"text": "Guidelines for Responsive Web Design",
+                       "url": "https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Progressive Enhancement",
+        "slug": "progressive-enhancement",
+        "bookmarks": [{"text": "Progressive enhancement is still important",
+                       "url": "https://jakearchibald.com/2013/progressive-enhancement-still-important/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Bootstrap",
+        "slug": "bootstrap",
+        "bookmarks": [{"text": "Buttons", "url": "https://getbootstrap.com/docs/4.0/components/buttons/"},
+                      {"text": "Spacing", "url": "https://getbootstrap.com/docs/4.0/utilities/spacing/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Spectre CSS",
+        "slug": "spectre",
+        "bookmarks": [{"text": "spectre", "url": "https://picturepan2.github.io/spectre/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Tailwind CSS",
+        "slug": "tailwindcss",
+        "bookmarks": [{"text": "Tailwind CSS", "url": "https://tailwindcss.com/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Tachyons CSS",
+        "slug": "tachyons",
+        "bookmarks": [{"text": "tachyons", "url": "https://tachyons.io"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Typography",
+        "slug": "typography",
+        "visibility": "public",
+        "bookmarks": [{"text": "Butterick's Practical Typography",
+                       "url": "https://practicaltypography.com/"}]
+    },
+    {
+        "category": "Fonts",
+        "slug": "fonts",
+        "visibility": "public",
+        "bookmarks": [{ "text": "Font Squirrel", "url": "https://www.fontsquirrel.com/"}]
+    },
+    {
+        "category": "Design",
+        "slug": "design",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Airbnb Design", "url": "https://airbnb.design/"},
+            { "text": "A design system grammar",
+              "url": "https://daneden.me/2017/07/12/a-design-system-grammar/"},
+            { "text": "Building a visual language",
+              "url": "https://airbnb.design/building-a-visual-language/"},
+            { "text": "Shit Work", "url": "https://zachholman.com/posts/shit-work/"},
+            { "text": "Mailchimp Design Patterns", "url": "https://ux.mailchimp.com/patterns"},
+            { "text": "Mailchimp Styleguide", "url": "https://styleguide.mailchimp.com/"},
+            { "text": "Sketching Interfaces", "url": "https://airbnb.design/sketching-interfaces/"}
+        ]
+    },
+    {
+        "category": "Web Design",
+        "slug": "web-design",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Atomic Design", "url": "http://atomicdesign.bradfrost.com/"},
+            { "text": "Atomic Web Design", "url": "http://bradfrost.com/blog/post/atomic-web-design/"},
+            { "text": "patternlab", "url": "https://patternlab.io/"},
+            { "text": "Style Tiles", "url": "http://styletil.es/"},
+            { "text": "Web Style Guide", "url": "https://webstyleguide.com/"},
+            { "text": "SMACSS", "url": "https://smacss.com/"},
+            { "text": "BEM", "url": "http://getbem.com/introduction/"},
+            { "text": "Design Systems Repo", "url": "https://designsystemsrepo.com/"}
+        ]
+    },
+    {
+        "category": "Text Design Tools",
+        "slug": "text-design-tools",
+        "bookmarks": [{"text": "Textcraft", "url": "https://textcraft.net/"},
+                      {"text": "Cool Text", "url": "https://cooltext.com/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "UX",
+        "slug": "ux",
+        "visibility": "public",
+        "bookmarks": [{"text": "Best place for error messages",
+                       "url": "http://uxmovement.com/forms/the-best-place-for-error-messages-on-forms/"}]
+    }
+]

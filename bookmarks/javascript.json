@@ -1,0 +1,114 @@
+[
+    {
+        "category": "JavaScript",
+        "slug": "javascript",
+        "bookmarks": [{"text": "Survive JS", "url": "http://survivejs.com/"},
+                      {"text": "Awesome JS", "url": "https://github.com/sindresorhus/awesome-nodejs"},
+                      {"text": "Exploring JS", "url": "http://exploringjs.com/"},
+                      {"text": "microjs", "url": "http://microjs.com"},
+                      {"text": "unpkg", "url": "https://unpkg.com"},
+                      {"text": "cdnjs", "url": "https://cdnjs.com/"},
+                      {"text": "Callback Hell", "url": "http://callbackhell.com/"},
+                      {"text": "Prettier.io", "url": "https://prettier.io/"},
+                      { "text": "jspm.io - Native ES module CDN.", "url": "https://jspm.io/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "JavaScript Build Systems",
+        "slug": "javascript-build-systems",
+        "visibility": "public",
+        "bookmarks": [
+            {"text": "SpinJS", "url": "https://github.com/sysgears/spinjs"},
+            {"text": "ParcelJS", "url": "https://parceljs.org/"},
+            {"text": "Webpack", "url": "https://webpack.js.org/"}
+        ]
+    },
+    {
+        "category": "JavaScript Testing",
+        "slug": "javascript-testing",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Jest", "url": "https://jestjs.io/"},
+            { "text": "Enzyme", "url": "https://jestjs.io/"},
+            { "text": "Night Watch", "url": "http://nightwatchjs.org/"}
+        ]
+    },
+    {
+        "category": "JavaScript Routing",
+        "slug": "javascript-routing",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "page.js", "url": "https://visionmedia.github.io/page.js/"},
+            { "text": "universal router", "url": "https://www.kriasoft.com/universal-router/"}
+        ]
+    },
+    {
+        "category": "JavaScript Graphics",
+        "slug": "javascript-graphics",
+        "bookmarks": [{"text": "Pixi.js", "url": "http://www.pixijs.com/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "JavaScript Animation",
+        "slug": "javascript-animation",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "anime.js", "url": "http://animejs.com/"}
+        ]
+    },
+    {
+        "category": "JavaScript Sound",
+        "slug": "javascript-sound",
+        "visibility": "public",
+        "bookmarks": [
+            {"text": "howler.js", "url": "https://howlerjs.com/"},
+            {"text": "sound.js", "url": "https://createjs.com/soundjs"}
+        ]
+    },
+    {
+        "category": "JavaScript 3D Engines",
+        "slug": "javascript-3d-engines",
+        "bookmarks": [{"text": "Copperlicht", "url": "http://www.ambiera.com/copperlicht/index.html"},
+                      {"text": "Goo Engine", "url": "http://code.gooengine.com/latest/docs/"},
+                      {"text": "Ammo.js", "url": "https://github.com/kripken/ammo.js"},
+                      {"text": "three.js", "url": "https://threejs.org/"},
+                      {"text": "BabylonJS", "url": "http://www.babylonjs.com/"},
+                      {"text": "Whitestorm", "url": "http://whsjs.io/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "JavaScript Desktop Programming",
+        "slug": "javascript-desktop-programming",
+        "visibility": "public",
+        "bookmarks": [
+            {"text": "Electron", "url": "https://electronjs.org/"},
+            {"text": "Proton Native", "url": "https://proton-native.js.org/"}]
+    },
+    {
+        "category": "Mithril",
+        "slug": "mithril",
+        "bookmarks": [{"text": "Mithril", "url": "https://mithril.js.org/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Hyperapp",
+        "slug": "hyperapp",
+        "visibility": "public",
+        "bookmarks": [{ "text": "Hyperapp", "url": "https://github.com/hyperapp/hyperapp"}]
+    },
+    {
+        "category": "Aurelia",
+        "slug": "aurelia",
+        "bookmarks": [{"text": "Aurelia", "url": "http://aurelia.io/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "D3",
+        "slug": "d3",
+        "bookmarks": [{"text": "D3.js", "url": "https://d3js.org/"},
+                      {"text": "Dashing D3", "url": "https://www.dashingd3js.com/"},
+                      {"text": "C3.js", "url": "http://c3js.org/"},
+                      {"text": "NVD3.js", "url": "http://nvd3.org/"}],
+        "visibility": "public"
+    }
+]

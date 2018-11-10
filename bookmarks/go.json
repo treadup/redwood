@@ -1,0 +1,33 @@
+[
+    {
+        "category": "Go",
+        "slug": "go",
+        "bookmarks": [{"text": "Go", "url": "https://golang.org/"},
+                      {"text": "Awesome Go", "url": "http://awesome-go.com/"},
+                      {"text": "Go Lang Libs", "url": "https://golanglibs.com/"},
+                      {"text": "cgo", "url": "https://golang.org/cmd/cgo/"},
+                      {"text": "Grumpy", "url": "https://github.com/google/grumpy"},
+                      {"text": "dep", "url": "https://github.com/golang/dep"},
+                      {"text": "Delve", "url": "https://github.com/derekparker/delve"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Go Documentation",
+        "slug": "godocs",
+        "bookmarks": [
+            {"text": "Effective Go", "url": "https://golang.org/doc/effective_go.html"},
+            {"text": "Go Programming Language Specification",
+             "url": "https://golang.org/ref/spec"},
+            {"text": "Errors are values", "url": "https://blog.golang.org/errors-are-values"},
+            {"text": "Error handling and Go", "url": "https://blog.golang.org/error-handling-and-go"},
+            {"text": "Go Proverbs", "url": "http://go-proverbs.github.io/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Go Web Development",
+        "slug": "goweb",
+        "bookmarks": [{"text": "Writing Web Applications", "url": "https://golang.org/doc/articles/wiki/"},
+                      {"text": "Go Web Examples", "url": "https://gowebexamples.com"}],
+        "visibility": "public"
+    }
+]

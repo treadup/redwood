@@ -1,0 +1,162 @@
+[
+    {
+        "category": "Python",
+        "slug": "python",
+        "bookmarks": [{"text": "Awesome Python", "url": "https://awesome-python.com/"},
+                      {"text": "Fabric", "url": "http://www.fabfile.org/"},
+                      {"text": "Hitchhiker's Guide to Python", "url": "http://docs.python-guide.org/en/latest/"},
+                      {"text": "Structuring Your Project",
+                       "url": "http://docs.python-guide.org/en/latest/writing/structure/"},
+                      {"text": "Testing Your Code", "url": "http://docs.python-guide.org/en/latest/writing/tests/"},
+                      {"text": "Awesome Asyncio", "url": "https://github.com/timofurrer/awesome-asyncio"},
+                      {"text": "Nuitka", "url": "http://nuitka.net/"},
+                      {"text": "PyFormat", "url": "https://pyformat.info/"},
+                      {"text": "strftime", "url": "http://strftime.org/"},
+                      {"text": "Alice in Python projectland",
+                       "url": "https://veekaybee.github.io/2017/09/26/python-packaging/"},
+                      {"text": "Structuring your Project",
+                       "url": "http://docs.python-guide.org/en/latest/writing/structure/"},
+                      {"text": "Python Packaging",
+                       "url": "https://python-packaging.readthedocs.io/en/latest/"},
+                      {"text": "localshop",
+                       "url": "https://github.com/mvantellingen/localshop"},
+                      {"text": "PyDigger", "url": "https://pydigger.com/"},
+                      {"text": "attrs", "url": "http://www.attrs.org/en/stable/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Python Dependency Management",
+        "slug": "python-dependency-management",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "pipenv", "url": "https://pipenv.readthedocs.io/en/latest/"},
+            { "text": "pur", "url": "https://pypi.org/project/pur/"},
+            { "text": "poetry", "url": "https://github.com/sdispater/poetry"}
+        ]
+    },
+    {
+        "category": "Python Native Apps",
+        "slug": "python-native-apps",
+        "visibility": "public",
+        "bookmarks": [{"text": "Kivy", "url": "https://kivy.org/"},
+                      {"text": "BeeWare", "url": "https://pybee.org/"}]
+    },
+    {
+        "category": "Python Language Specification",
+        "slug": "python-language-spec",
+        "bookmarks": [
+            {"text": "ToC", "url": "https://docs.python.org/3/reference/index.html"}
+        ],
+        "visibility": "public"
+    },
+    {
+        "category": "Python Game Development",
+        "slug": "python-game-development",
+        "bookmarks": [{"text": "pyglet", "url": "https://bitbucket.org/pyglet/pyglet/wiki/Home"},
+                      {"text": "Python Game Libraries", "url": "https://wiki.python.org/moin/PythonGameLibraries"},
+                      {"text": "Cocos2D", "url": "http://cocos2d.org/"},
+                      {"text": "2d and 3d Game and Rendering Engines for Python",
+                       "url": "http://codeboje.de/2d-and-3d-game-and-rendering-engines-python/"},
+                      {"text": "KivEnt", "url": "http://kivent.org/"},
+                      {"text": "PyOpenGL", "url": "http://pyopengl.sourceforge.net/"},
+                      {"text": "Python 3D Software", "url": "http://www.vrplumber.com/py3d.py"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Scaling Python",
+        "slug": "scaling-python",
+        "visibility": "public",
+        "bookmarks": [{"text": "Scaling Python", "url": "https://scaling-python.com/"}]
+    },
+    {
+        "category": "Python Standalone Executables",
+        "slug": "python-standalone-executables",
+        "bookmarks": [{"text": "PyInstaller", "url": "http://www.pyinstaller.org/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Python Messaging",
+        "slug": "python-messaging",
+        "visibility": "public",
+        "bookmarks": [{"text": "Kombu", "url": "https://github.com/celery/kombu"}]
+    },
+    {
+        "category": "Django",
+        "slug": "django",
+        "bookmarks": [{"text": "Django", "url": "http://www.djangoproject.com"},
+                      {"text": "Awesome Django", "url": "http://awesome-django.com/"},
+                      {"text": "Classy Class Based Views", "url": "http://ccbv.co.uk/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Django Rest Framework",
+        "slug": "django-rest-framework",
+        "bookmarks": [{"text": "Djanog Rest Framework", "url": "http://www.django-rest-framework.org/"},
+                      {"text": "Classy Django Rest Framework", "url": "http://www.cdrf.co/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Flask",
+        "slug": "flask",
+        "bookmarks": [{"text": "Flask",  "url": "http://flask.pocoo.org/"},
+                      {"text": "Jinja2", "url": "http://jinja.pocoo.org/"},
+                      {"text": "Flask Principal", "url": "https://pythonhosted.org/Flask-Principal/"},
+                      {"text": "Flask Admin", "url": "http://flask-admin.readthedocs.io/en/latest/" },
+                      {"text": "Flask SocketIO", "url": "https://flask-socketio.readthedocs.io/en/latest/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Python Async Web Frameworks",
+        "slug": "python-async-web-frameworks",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "aiohttp", "url": "https://github.com/aio-libs/aiohttp"},
+            { "text": "Quart", "url": "https://github.com/pgjones/quart"},
+            { "text": "Sanic", "url": "https://github.com/huge-success/sanic"}
+        ]
+    },
+    {
+        "category": "Python Testing",
+        "slug": "python-testing",
+        "visibility": "public",
+        "bookmarks": [{"text": "FreezeGun", "url": "https://github.com/spulec/freezegun"}]
+    },
+    {
+        "category": "Python Documentation",
+        "slug": "python-documentation",
+        "visibility": "public",
+        "bookmarks": [{"text": "pydoc.io", "url": "https://www.pydoc.io/"}]
+    },
+    {
+        "category": "Stackless Python",
+        "slug": "stackless-python",
+        "bookmarks": [{"text": "Stackless Python", "url": "https://bitbucket.org/stackless-dev/stackless/wiki/Home"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Cython",
+        "slug": "cython",
+        "bookmarks": [{"text": "Cython", "url": "http://cython.org/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Python on the Web",
+        "slug": "python-on-the-web",
+        "bookmarks": [{"text": "PyPy.js", "url": "http://pypyjs.org/" }],
+        "visibility": "public"
+    },
+    {
+        "category": "RPython",
+        "slug": "rpython",
+        "bookmarks": [{"text": "RPython", "url": "https://rpython.readthedocs.io/en/latest/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Python code formatting",
+        "slug": "python-code-formatting",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Black", "url": "https://github.com/ambv/black"}
+        ]
+    }
+]

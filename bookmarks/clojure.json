@@ -1,0 +1,45 @@
+[
+    {
+        "category": "Clojure",
+        "slug": "clojure",
+        "bookmarks": [{"text": "Clojure", "url": "https://clojure.org/"},
+                      {"text": "Clojure Toolbox", "url": "http://www.clojure-toolbox.com/"},
+                      {"text": "Cider", "url": "https://cider.readthedocs.io/en/latest/"},
+                      {"text": "Leiningen", "url": "https://leiningen.org/"},
+                      {"text": "NightCode", "url": "https://sekao.net/nightcode/"},
+                      {"text": "Light Table", "url": "http://lighttable.com/"},
+                      {"text": "Ring", "url": "https://github.com/ring-clojure/ring"},
+                      {"text": "Ring Swagger", "url": "https://github.com/metosin/ring-swagger"},
+                      {"text": "Compojure", "url": "https://github.com/weavejester/compojure"},
+                      {"text": "Hiccup", "url": "https://github.com/weavejester/hiccup"},
+                      {"text": "Selmer", "url": "https://github.com/yogthos/Selmer"},
+                      {"text": "Compujure API", "url": "https://github.com/metosin/compojure-api"},
+                      {"text": "HugSQL", "url": "https://github.com/layerware/hugsql"},
+                      {"text": "Hickory", "url": "https://github.com/davidsantiago/hickory"},
+                      {"text": "Clojars", "url": "https://clojars.org/"},
+                      {"text": "Clojure Docs", "url": "http://clojure-doc.org/"},
+                      {"text": "Clojure Style Guide", "url": "https://github.com/bbatsov/clojure-style-guide"},
+                      {"text": "Clojure Quick Reference", "url": "http://clojuredocs.org/quickref"},
+                      {"text": "Functional programming for the JVM",
+                       "url": "https://objectcomputing.com/resources/publications/sett/march-2009-clojure-functional-programming-for-the-jvm/"},
+                      {"text": "Clojure Distilled", "url": "https://yogthos.github.io/ClojureDistilled.html"},
+                      {"text": "Awesome Clojure", "url": "https://github.com/razum2um/awesome-clojure"},
+                      {"text": "Amazonica", "url": "https://github.com/mcohen01/amazonica"},
+                      {"text": "Chestnut", "url": "https://github.com/plexus/chestnut"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Clojure Script",
+        "slug": "clojure-script",
+        "bookmarks": [{"text": "Reagent", "url": "https://reagent-project.github.io/"},
+                      {"text": "Om", "url": "https://github.com/omcljs/om"},
+                      { "text": "re-frame", "url": "https://github.com/Day8/re-frame"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Clojure Graphics",
+        "slug": "clojure-graphics",
+        "visibility": "public",
+        "bookmarks": [{"text": "thi.ng", "url": "http://thi.ng/"}]
+    }
+]
