@@ -19,7 +19,6 @@ def load_boolean_environment_variable(name, default):
 
 class DefaultConfiguration:
 
-    BOOKMARKS_FILENAME = 'data/bookmarks.json'
     TODO_LIST_FILENAME = 'data/todo.json'
     PHOTO_COLLECTION_FILENAME = 'photos/photo_collections.json'
     IDENTITY_JWT_SECRET = load_environment_variable('IDENTITY_JWT_SECRET')
