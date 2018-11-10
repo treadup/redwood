@@ -649,6 +649,24 @@
         "visibility": "public"
     },
     {
+        "category": "Realtime Data",
+        "slug": "realtime-data",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "fanout.io", "url": "https://fanout.io/"},
+            { "text": "pushpin", "url": "https://pushpin.org/"}
+        ]
+    },
+    {
+        "category": "RethinkDB",
+        "slug": "rethinkdb",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "RethinkDB", "url": "https://www.rethinkdb.com/"},
+            { "text": "Compose hosted databases", "url": "https://www.compose.com/"}
+        ]
+    },
+    {
         "category": "CSS",
         "slug": "css",
         "bookmarks": [{"text":"Picnic CSS", "url": "https://picnicss.com/"},
