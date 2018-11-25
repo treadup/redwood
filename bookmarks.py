@@ -10,7 +10,8 @@ def load_all_bookmarks():
         "lisp.json",
         "web.json",
         "editors.json",
-        "bookmarks.json"]
+        "bookmarks.json",
+        "project_management.json"]
 
     result = []
 
