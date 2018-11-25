@@ -110,5 +110,39 @@
                       {"text": "C3.js", "url": "http://c3js.org/"},
                       {"text": "NVD3.js", "url": "http://nvd3.org/"}],
         "visibility": "public"
+    },
+    {
+        "category": "Express",
+        "slug": "express",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Express", "url": "http://expressjs.com/"}
+        ]
+    },
+    {
+        "category": "Koa",
+        "slug": "koa",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Koa", "url": "https://koajs.com/"},
+            { "text": "Koa Static", "url": "https://github.com/koajs/static"}
+        ]
+    },
+    {
+        "category": "Hapi",
+        "slug": "",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Hapi", "url": "https://hapijs.com/"}
+        ]
+    },
+    {
+        "category": "Node",
+        "slug": "node",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Event loop, timers and next tick",
+              "url": "https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/"}
+        ]
     }
 ]
