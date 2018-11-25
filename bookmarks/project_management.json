@@ -5,7 +5,16 @@
         "visibility": "public",
         "bookmarks": [
             { "text": "Clubhouse", "url": "https://clubhouse.io/"},
-            { "text": "Trello", "url": "https://trello.com/"}
+            { "text": "Trello", "url": "https://trello.com/"},
+            { "text": "Taskworld", "url": "https://www.taskworld.com"},
+            { "text": "Wrike", "url": "https://www.wrike.com/"},
+            { "text": "Asana", "url": "https://asana.com/"},
+            { "text": "Favro", "url": "https://favro.com/"},
+            { "text": "Basecamp", "url": "https://basecamp.com/"},
+            { "text": "Zenkit", "url": "https://zenkit.com/en/"},
+            { "text": "Kantree", "url": "https://kantree.io/index"},
+            { "text": "hello epics", "url": "https://helloepics.com/"},
+            { "text": "craft.io", "url": "https://craft.io/"}
         ]
     }
 ]
