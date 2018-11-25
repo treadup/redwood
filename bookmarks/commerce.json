@@ -1,0 +1,26 @@
+[
+    {
+        "category": "Shopping Feeds",
+        "slug": "shopping-feeds",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "channable.com", "url": "https://channable.com"}
+        ]
+    },
+    {
+        "category": "Online Payments",
+        "slug": "online-payments",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Stripe", "url": "https://stripe.com/s"}
+        ]
+    },
+    {
+        "category": "Ecommerce Platform",
+        "slug": "ecommerce-platform",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Shopify", "url": "https://www.shopify.com/"}
+        ]
+    }
+]

@@ -280,7 +280,7 @@
         "slug": "website-builder",
         "visibility": "public",
         "bookmarks": [
-            { "text": "Webflow", "url": "https://webflow.com/"},
+            { "text": "Webflow", "url": "https://webflow.com/"}
         ]
-    },
+    }
 ]

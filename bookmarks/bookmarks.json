@@ -1499,14 +1499,6 @@
         ]
     },
     {
-        "category": "Shopping Feeds",
-        "slug": "shopping-feeds",
-        "visibility": "public",
-        "bookmarks": [
-            { "text": "channable.com", "url": "https://channable.com"}
-        ]
-    },
-    {
         "category": "Stock Photos and Videos",
         "slug": "stock-photos-videos",
         "visibility": "public",
