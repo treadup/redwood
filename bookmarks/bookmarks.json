@@ -400,7 +400,8 @@
         "bookmarks": [
             {"text": "Netlify", "url": "https://www.netlify.com/"},
             {"text": "Python Anywhere", "url": "https://www.pythonanywhere.com/"},
-            {"text": "Surge", "url": "https://surge.sh/"}
+            {"text": "Surge", "url": "https://surge.sh/"},
+            {"text": "Areobatic", "url": "https://www.aerobatic.com/"}
         ],
         "visibility": "public"
     },
