@@ -2,6 +2,7 @@
     {
         "category": "Clojure",
         "slug": "clojure",
+        "visibility": "public",
         "bookmarks": [{"text": "Clojure", "url": "https://clojure.org/"},
                       {"text": "Clojure Toolbox", "url": "http://www.clojure-toolbox.com/"},
                       {"text": "Cider", "url": "https://cider.readthedocs.io/en/latest/"},
@@ -25,15 +26,18 @@
                       {"text": "Clojure Distilled", "url": "https://yogthos.github.io/ClojureDistilled.html"},
                       {"text": "Awesome Clojure", "url": "https://github.com/razum2um/awesome-clojure"},
                       {"text": "Amazonica", "url": "https://github.com/mcohen01/amazonica"},
-                      {"text": "Chestnut", "url": "https://github.com/plexus/chestnut"}],
-        "visibility": "public"
+                      {"text": "Chestnut", "url": "https://github.com/plexus/chestnut"},
+                      {"text": "Clojure Cheatsheet", "url": "https://clojure.org/api/cheatsheet"}]
     },
     {
         "category": "Clojure Script",
         "slug": "clojure-script",
         "bookmarks": [{"text": "Reagent", "url": "https://reagent-project.github.io/"},
                       {"text": "Om", "url": "https://github.com/omcljs/om"},
-                      { "text": "re-frame", "url": "https://github.com/Day8/re-frame"}],
+                      {"text": "re-frame", "url": "https://github.com/Day8/re-frame"},
+                      {"text": "cljsjs", "url": "http://cljsjs.github.io/"},
+                      { "text": "JavaScript Interop",
+                        "url": "http://www.spacjer.com/blog/2014/09/12/clojurescript-javascript-interop/"}],
         "visibility": "public"
     },
     {
@@ -58,7 +62,15 @@
         "visibility": "public",
         "bookmarks": [
             { "text": "The Characters of Clojure",
-              "url": "https://yobriefca.se/blog/2014/05/19/the-weird-and-wonderful-characters-of-clojure/"},
+              "url": "https://yobriefca.se/blog/2014/05/19/the-weird-and-wonderful-characters-of-clojure/"}
         ]
     },
+    {
+        "category": "Amazon Web Services",
+        "slug": "amazon-web-services",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Amazonica", "url": "https://github.com/mcohen01/amazonica"}
+        ]
+    }
 ]
