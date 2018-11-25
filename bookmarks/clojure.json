@@ -41,5 +41,24 @@
         "slug": "clojure-graphics",
         "visibility": "public",
         "bookmarks": [{"text": "thi.ng", "url": "http://thi.ng/"}]
-    }
+    },
+    {
+        "category": "Clojure SSH",
+        "slug": "clojure-ssh",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Clojure SSH", "url": "https://github.com/hugoduncan/clj-ssh"},
+            { "text": "Clojure SSH Host Key Algorithm Issue",
+              "url": "https://codehopper.nl/2018/09/27/clojure-gitlab-deps/"}
+        ]
+    },
+    {
+        "category": "Clojure Language",
+        "slug": "clojure-language",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "The Characters of Clojure",
+              "url": "https://yobriefca.se/blog/2014/05/19/the-weird-and-wonderful-characters-of-clojure/"},
+        ]
+    },
 ]
