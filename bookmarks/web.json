@@ -272,7 +272,15 @@
         "slug": "image-cdn",
         "visibility": "public",
         "bookmarks": [
-            { "text": "cloudimage", "url": "https://www.cloudimage.io"},
+            { "text": "cloudimage", "url": "https://www.cloudimage.io"}
+        ]
+    },
+    {
+        "category": "Website Builder",
+        "slug": "website-builder",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Webflow", "url": "https://webflow.com/"},
         ]
     },
 ]
