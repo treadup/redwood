@@ -256,5 +256,23 @@
         "visibility": "public",
         "bookmarks": [{"text": "Best place for error messages",
                        "url": "http://uxmovement.com/forms/the-best-place-for-error-messages-on-forms/"}]
-    }
+    },
+    {
+        "category": "Video",
+        "slug": "video-transcoding",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Coconut", "url": "https://coconut.co"},
+            { "text": "vid.ly", "url": "https://vid.ly" },
+            { "text": "Zencoder", "url": "https://zencoder.com" }
+        ]
+    },
+    {
+        "category": "Image CDN",
+        "slug": "image-cdn",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "cloudimage", "url": "https://www.cloudimage.io"},
+        ]
+    },
 ]
