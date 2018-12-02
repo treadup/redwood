@@ -851,7 +851,8 @@
         "category": "RabbitMQ",
         "slug": "rabbitmq",
         "bookmarks": [{"text": "RabbitMQ", "url": "https://www.rabbitmq.com/" },
-                      {"text": "Broker Semantics", "url": "https://www.rabbitmq.com/semantics.html"}],
+                      {"text": "Broker Semantics", "url": "https://www.rabbitmq.com/semantics.html"},
+                      {"text": "CloudAMQP", "url": "https://www.cloudamqp.com/"}],
         "visibility": "public"
     },
     {
