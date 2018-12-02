@@ -282,5 +282,17 @@
         "bookmarks": [
             { "text": "Webflow", "url": "https://webflow.com/"}
         ]
+    },
+    {
+        "category": "Caching",
+        "slug": "caching",
+        "visibility": "public",
+        "bookmarks": [
+            {"text": "Fastly", "url": "https://www.fastly.com/"},
+            {"text": "Cloudflare", "url": "https://www.cloudflare.com/cdn/"},
+            {"text": "KeyCDN", "url": "https://www.keycdn.com/"},
+            {"text": "Warpcache", "url": "https://www.warpcache.com/"},
+            {"text": "AWS Cloudfront", "url": "https://aws.amazon.com/cloudfront/"}
+        ]
     }
 ]
