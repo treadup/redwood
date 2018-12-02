@@ -511,7 +511,8 @@
             {"text": "redom", "url": "https://redom.js.org/"},
             {"text": "Maquette", "url": "https://maquettejs.org/"},
             {"text": "Choo", "url": "https://choo.io/"},
-            {"text": "Mithril", "url": "https://mithril.js.org/"}
+            {"text": "Mithril", "url": "https://mithril.js.org/"},
+            {"text": "Hyperscript", "url": "https://github.com/hyperhype/hyperscript"}
         ]
     },
     {

@@ -34,6 +34,14 @@
         ]
     },
     {
+        "category": "Debugging JavaScript",
+        "slug": "debugging-javascript",
+        "visibility": "public",
+        "bookmarks": [
+            {"text": "debug", "url": "https://github.com/visionmedia/debug"}
+        ]
+    },
+    {
         "category": "JavaScript Routing",
         "slug": "javascript-routing",
         "visibility": "public",
@@ -143,6 +151,16 @@
         "bookmarks": [
             { "text": "Event loop, timers and next tick",
               "url": "https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/"}
+        ]
+    },
+    {
+        "category": "Parsing in JavaScript",
+        "slug": "parsing-in-javascript",
+        "visibility": "public",
+        "bookmarks": [
+           {"text": "Acorn", "url": "https://github.com/acornjs/acorn"},
+           {"text": "AcornJSX", "url": "https://github.com/RReverser/acorn-jsx"},
+           {"text": "Nearly", "url": "https://nearley.js.org/"}
         ]
     }
 ]

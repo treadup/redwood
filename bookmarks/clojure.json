@@ -72,5 +72,14 @@
         "bookmarks": [
             { "text": "Amazonica", "url": "https://github.com/mcohen01/amazonica"}
         ]
+    },
+    {
+        "category": "Function Libraries",
+        "slug": "function-libraries",
+        "visibility": "public",
+        "bookmarks": [
+            {"text": "Medley", "url": "https://github.com/weavejester/medley"},
+            {"text": "useful", "url": "https://github.com/amalloy/useful"}
+        ]
     }
 ]
