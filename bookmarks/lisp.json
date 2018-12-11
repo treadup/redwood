@@ -137,6 +137,14 @@
         "visibility": "public"
     },
     {
+        "category": "Parenscript",
+        "slug": "parenscript",
+        "visibility": "public",
+        "bookmarks": [
+            {"text": "Parenscript", "url": "https://common-lisp.net/project/parenscript/"}
+        ]
+    },
+    {
         "category": "Lisp Game Programming",
         "slug": "lisp-game-programming",
         "bookmarks": [{"text": "CLinch", "url": "https://github.com/BradWBeer/clinch"},
