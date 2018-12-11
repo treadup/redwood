@@ -111,6 +111,15 @@
         "visibility": "public"
     },
     {
+        "category": "CSS in JS",
+        "slug": "css-in-js",
+        "visibility": "public",
+        "bookmarks": [
+            {"text": "CSS in JS techniques comparison",
+             "url": "https://github.com/MicheleBertoli/css-in-js"}
+        ]
+    },
+    {
         "category": "Flexbox",
         "slug": "flexbox",
         "bookmarks": [{"text": "A Complete Guide to Flexbox",
@@ -293,6 +302,14 @@
             {"text": "KeyCDN", "url": "https://www.keycdn.com/"},
             {"text": "Warpcache", "url": "https://www.warpcache.com/"},
             {"text": "AWS Cloudfront", "url": "https://aws.amazon.com/cloudfront/"}
+        ]
+    },
+    {
+        "category": "Web Dev Tools",
+        "slug": "web-dev-tools",
+        "visibility": "public",
+        "bookmarks": [
+            {"text": "Requestly", "url": "http://www.requestly.in/"}
         ]
     }
 ]
