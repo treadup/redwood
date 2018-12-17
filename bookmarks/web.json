@@ -173,7 +173,8 @@
         "category": "Responsive Web Design",
         "slug": "responsive-web-design",
         "bookmarks": [{"text": "Guidelines for Responsive Web Design",
-                       "url": "https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/"}],
+                       "url": "https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/"},
+                      {"text": "Sizzy", "url": "https://sizzy.co"}],
         "visibility": "public"
     },
     {
