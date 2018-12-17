@@ -30,8 +30,8 @@
                       {"text": "Clojure Cheatsheet", "url": "https://clojure.org/api/cheatsheet"}]
     },
     {
-        "category": "Clojure Script",
-        "slug": "clojure-script",
+        "category": "ClojureScript",
+        "slug": "clojurescript",
         "bookmarks": [{"text": "Reagent", "url": "https://reagent-project.github.io/"},
                       {"text": "Om", "url": "https://github.com/omcljs/om"},
                       {"text": "re-frame", "url": "https://github.com/Day8/re-frame"},
@@ -39,6 +39,26 @@
                       { "text": "JavaScript Interop",
                         "url": "http://www.spacjer.com/blog/2014/09/12/clojurescript-javascript-interop/"}],
         "visibility": "public"
+    },
+    {
+        "category": "ClojureScript build tools",
+        "slug": "",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "shadow-cljs", "url": "http://shadow-cljs.org/"},
+            { "text": "shadow-cljs introduction",
+              "url": "https://code.thheller.com/blog/shadow-cljs/2017/09/15/shadow-cljs-introduction.html"},
+            { "text": "npmdemo", "url": "https://github.com/lambdaisland/npmdemo"}
+        ]
+    },
+    {
+        "category": "ClojureScript REPL",
+        "slug": "clojurescript-repl",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "lumo", "url": "https://github.com/anmonteiro/lumo"},
+            { "text": "Planck", "url": "http://planck-repl.org"}
+        ]
     },
     {
         "category": "Clojure Graphics",
