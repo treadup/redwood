@@ -1,5 +1,16 @@
 [
     {
+        "category": "Project Management",
+        "slug": "project-management",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Personality patterns of problematic projects",
+              "url": "https://neilonsoftware.com/books/personality-patterns-of-problematic-projects/"},
+            { "text": "Difficult People on Software Projects",
+              "url": "https://people.neilon.software/"}
+        ]
+    },
+    {
         "category": "Project Management Boards",
         "slug": "project-management-boards",
         "visibility": "public",
