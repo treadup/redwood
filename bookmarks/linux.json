@@ -1,0 +1,11 @@
+[
+    {
+        "category": "systemd",
+        "slug": "systemd",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Systemd user services are amazing",
+              "url": "https://www.brendanlong.com/systemd-user-services-are-amazing.html"}
+        ]
+    }
+]
