@@ -323,5 +323,19 @@
         "bookmarks": [
             {"text": "Requestly", "url": "http://www.requestly.in/"}
         ]
+    },
+    {
+        "category": "Metadata",
+        "slug": "metadata",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Open Graph Protocol",
+              "url": "http://ogp.me/"},
+            { "text": "Open Graph Protocol Debugger",
+              "url": "https://developers.facebook.com/tools/debug/"},
+            { "text": "Twitter Cards",
+              "url": "https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards.html"},
+            { "text": "oEmbed", "url": "https://oembed.com/"}
+        ]
     }
 ]
