@@ -3,7 +3,6 @@
         "category": "Python",
         "slug": "python",
         "bookmarks": [{"text": "Awesome Python", "url": "https://awesome-python.com/"},
-                      {"text": "Fabric", "url": "http://www.fabfile.org/"},
                       {"text": "Hitchhiker's Guide to Python", "url": "http://docs.python-guide.org/en/latest/"},
                       {"text": "Structuring Your Project",
                        "url": "http://docs.python-guide.org/en/latest/writing/structure/"},
@@ -157,6 +156,16 @@
         "visibility": "public",
         "bookmarks": [
             { "text": "Black", "url": "https://github.com/ambv/black"}
+        ]
+    },
+    {
+        "category": "Fabric",
+        "slug": "fabric",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Fabric", "url": "http://www.fabfile.org/"},
+            { "text": "Patchwork", "url": "https://fabric-patchwork.readthedocs.io/en/latest/index.html"},
+            { "text": "Invoke", "url": "http://www.pyinvoke.org/"}
         ]
     }
 ]
