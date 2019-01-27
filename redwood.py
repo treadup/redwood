@@ -677,6 +677,10 @@ def interesting_languages():
 def gpg():
     return render_markdown("GPG", "gpg.md")
 
+@app.route('/ssh-keys')
+def ssh_keys():
+    return render_markdown("SSH keys", "ssh_keys.md")
+
 
 @app.route('/psychology')
 def psychology():
