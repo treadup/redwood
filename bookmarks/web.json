@@ -321,7 +321,8 @@
         "slug": "web-dev-tools",
         "visibility": "public",
         "bookmarks": [
-            {"text": "Requestly", "url": "http://www.requestly.in/"}
+            {"text": "Requestly", "url": "http://www.requestly.in/"},
+            {"text": "hoxy", "url": "http://greim.github.io/hoxy/"}
         ]
     },
     {
