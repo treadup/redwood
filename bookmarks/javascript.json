@@ -20,6 +20,7 @@
         "bookmarks": [
             {"text": "SpinJS", "url": "https://github.com/sysgears/spinjs"},
             {"text": "ParcelJS", "url": "https://parceljs.org/"},
+            {"text": "Awesome Parcel", "url": "https://github.com/parcel-bundler/awesome-parcel"},
             {"text": "Webpack", "url": "https://webpack.js.org/"}
         ]
     },
@@ -161,6 +162,14 @@
            {"text": "Acorn", "url": "https://github.com/acornjs/acorn"},
            {"text": "AcornJSX", "url": "https://github.com/RReverser/acorn-jsx"},
            {"text": "Nearly", "url": "https://nearley.js.org/"}
+        ]
+    },
+    {
+        "category": "JavaScript Game Dev",
+        "slug": "javascript-game-dev",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Key Codes", "url": "http://keycode.info/"}
         ]
     }
 ]
