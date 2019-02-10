@@ -58,7 +58,6 @@ from markdown import markdown
 
 from settings import load_environment_variable
 
-
 def create_app():
     app = Flask(__name__)
     app.config.from_object(settings.DefaultConfiguration)
@@ -587,24 +586,6 @@ def single_file(filename):
         return send_file(file_stream,
                          mimetype=mimetype_from_extension(filename))
 
-
-def load_todo_list():
-    """
-    Loads the Todo list from the todo.json file
-    """
-    filename = app.config['TODO_LIST_FILENAME']
-    return load_json(filename)
-
-
-@app.route('/todo')
-def todo():
-    """
-    Display Todo list.
-    """
-    todo_list = load_todo_list()
-    return render_template('todo.html', todo_list=todo_list)
-
-
 @app.route('/work')
 def work():
     """
@@ -681,6 +662,9 @@ def gpg():
 def ssh_keys():
     return render_markdown("SSH keys", "ssh_keys.md")
 
+@app.route('/learning')
+def learning():
+    return render_markdown("Learning", "learning.md")
 
 @app.route('/psychology')
 def psychology():
