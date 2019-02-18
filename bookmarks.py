@@ -13,7 +13,8 @@ def load_all_bookmarks():
         "bookmarks.json",
         "project_management.json",
         "commerce.json",
-        "linux.json"]
+        "linux.json",
+        "compilers.json"]
 
     result = []
 

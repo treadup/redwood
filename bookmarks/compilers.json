@@ -1,0 +1,25 @@
+[
+    {
+        "category": "Parsers",
+        "slug": "parsers",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "ANTLR",
+              "url": "https://www.antlr.org/"},
+            { "text": "Lark",
+              "url": "https://github.com/lark-parser/lark"},
+            { "text": "lrparsing",
+              "url": "http://lrparsing.sourceforge.net/doc/html/"},
+            { "text": "PLY",
+              "url": "https://github.com/dabeaz/ply"},
+            { "text": "Parsimonious",
+              "url": "https://github.com/erikrose/parsimonious"},
+            { "text": "Parsy",
+              "url": "https://parsy.readthedocs.io/en/latest/"},
+            { "text": "Parsing in Python",
+              "url": "https://tomassetti.me/parsing-in-python/"},
+            { "text": "nearly",
+              "url": "https://github.com/kach/nearley"}
+        ]
+    }
+]
