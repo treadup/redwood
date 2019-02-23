@@ -16,7 +16,7 @@ These environment variables are needed for handling authentication.
     USERNAME=<username>
     PASSWORD_HASH=<password hash>
     PASSWORD_SALT=<random salt>
-    
+
 The following is pseudo code for how the password hash is calculated.
 
     PASSWORD_HASH = tohex(sha256(salt + password))
@@ -31,5 +31,12 @@ To run the unit tests locally use the following command.
 
     python test_redwood.py
 
-This project uses CircleCI for automatic unit tests. 
+This project uses CircleCI for automatic unit tests.
 [![CircleCI](https://circleci.com/gh/treadup/redwood.svg?style=svg)](https://circleci.com/gh/treadup/redwood)
+
+## Git Hooks
+There are some git hooks in the .githooks folder in this project. To
+run these hooks change git to use the .githooks folder as the path to
+the git hooks folder. This is done using the following command.
+
+    git config core.hooksPath .githooks
