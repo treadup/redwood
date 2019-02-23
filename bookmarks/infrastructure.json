@@ -1,0 +1,85 @@
+[
+    {
+        "category": "Buildpacks",
+        "slug": "buildpacks",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "buildpacks.io", "url": "https://buildpacks.io/"}
+        ]
+    },
+    {
+        "category": "rkt",
+        "slug": "rkt",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "rkt",
+              "url": "https://github.com/rkt/rkt"},
+            { "text": "Trying out rkt",
+              "url": "https://github.com/rkt/rkt/blob/v1.29.0/Documentation/trying-out-rkt.md"},
+            { "text": "Moving from docker to rkt",
+              "url": "https://medium.com/@adriaandejonge/moving-from-docker-to-rkt-310dc9aec938"}
+        ]
+    },
+    {
+        "category": "Open Container Initiative",
+        "slug": "open-container-initiative",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Open Container Initiative",
+              "url": "https://www.opencontainers.org/"}
+        ]
+    },
+    {
+        "category": "Container Build Tools",
+        "slug": "container-build-tools",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Buildah", "url": "https://buildah.io/"},
+            { "text": "img", "url": "https://github.com/genuinetools/img"}
+        ]
+    },
+    {
+        "category": "Podman",
+        "slug": "podman",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "podman.io",
+              "url": "https://podman.io/"}
+        ]
+    },
+    {
+        "category": "Flatcar Linux",
+        "slug": "",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Flatcar Linux",
+              "url": "https://www.flatcar-linux.org/"}
+        ]
+    },
+    {
+        "category": "CoreOS",
+        "slug": "coreos",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "CoreOS Container Linux",
+              "url": "https://coreos.com/os/docs/latest/"}
+        ]
+    },
+    {
+        "category": "Project Atomic",
+        "slug": "project-atomic",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "projectatomic.io", "url": "https://www.projectatomic.io/"}
+        ]
+    },
+    {
+        "category": "Kubernetes",
+        "slug": "kubernetes",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "CRI-O",
+              "url": "https://cri-o.io/"}
+        ]
+    }
+]

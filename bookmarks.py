@@ -3,18 +3,20 @@ import os.path
 
 def load_all_bookmarks():
     filenames = [
-        "python.json",
-        "clojure.json",
-        "go.json",
-        "javascript.json",
-        "lisp.json",
-        "web.json",
-        "editors.json",
         "bookmarks.json",
-        "project_management.json",
+        "clojure.json",
         "commerce.json",
+        "compilers.json"
+        "editors.json",
+        "go.json",
+        "infrastructure.json",
+        "javascript.json",
         "linux.json",
-        "compilers.json"]
+        "lisp.json",
+        "project_management.json",
+        "python.json",
+        "web.json",
+    ]
 
     result = []
 
