@@ -5,6 +5,8 @@ from redwood import app, create_user_jwt
 import hashlib
 import jwt
 import time
+import json
+from glob import glob
 
 class RedwoodTest(TestCase):
 
@@ -185,6 +187,14 @@ class RedwoodTest(TestCase):
         response = self.client.get('/work')
         self.assertStatus(response, status_code=200)
         self.assertTemplateUsed('work.html')
+
+    def test_lint_bookmark_json_files(self):
+        for filename in glob('bookmarks/*.json'):
+            with open(filename, 'r') as f:
+                try:
+                    json.load(f)
+                except json.decoder.JSONDecodeError:
+                    assert False, "Invalid json file: {}".format(filename)
 
 if __name__ == '__main__':
     unittest.main()
