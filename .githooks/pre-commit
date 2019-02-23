@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Exit this script if there are any errors.
+set -e
+
+# Exit script if it tries to use an uninitialized variable.
+set -u
+
+VENV_NAME=$(cat .venv)
+
+echo Running tests
+~/.virtualenvs/$VENV_NAME/bin/python3 test_redwood.py
