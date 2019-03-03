@@ -106,6 +106,17 @@
         "bookmarks": [{ "text": "Hyperapp", "url": "https://github.com/hyperapp/hyperapp"}]
     },
     {
+      "category": "Hyperscript",
+      "slug": "hyperscript",
+      "visibility": "public",
+      "bookmarks": [
+        { "text": "Hyperscript",
+          "url": "https://github.com/hyperhype/hyperscript"},
+        { "text": "Hyperscript Helpers",
+          "url": "https://github.com/ohanhi/hyperscript-helpers"}
+      ]
+    },
+    {
         "category": "Aurelia",
         "slug": "aurelia",
         "bookmarks": [{"text": "Aurelia", "url": "http://aurelia.io/"}],
@@ -173,3 +184,4 @@
         ]
     }
 ]
+
