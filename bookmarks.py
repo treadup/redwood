@@ -6,7 +6,7 @@ def load_all_bookmarks():
         "bookmarks.json",
         "clojure.json",
         "commerce.json",
-        "compilers.json"
+        "compilers.json",
         "editors.json",
         "go.json",
         "infrastructure.json",
