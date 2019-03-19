@@ -155,8 +155,19 @@
         "slug": "python-code-formatting",
         "visibility": "public",
         "bookmarks": [
-            { "text": "Black", "url": "https://github.com/ambv/black"}
+            { "text": "Black", "url": "https://github.com/ambv/black"},
+            { "text": "YAPF", "url": "https://github.com/google/yapf"},
+            { "text": "autopep8", "url": "https://github.com/hhatto/autopep8"}
         ]
+    },
+    {
+      "category": "Linting",
+      "slug": "linting",
+      "visibility": "public",
+      "bookmarks": [
+        { "text": "Flake8", "url": "http://flake8.pycqa.org/en/latest/"},
+        { "text": "Pylint", "url": "https://www.pylint.org/"}
+      ]
     },
     {
         "category": "Fabric",
@@ -167,5 +178,14 @@
             { "text": "Patchwork", "url": "https://fabric-patchwork.readthedocs.io/en/latest/index.html"},
             { "text": "Invoke", "url": "http://www.pyinvoke.org/"}
         ]
-    }
+    },
+    {
+      "category": "Static Analysis",
+      "slug": "static-analysis",
+      "visibility": "public",
+      "bookmarks": [
+          { "text": "Bandit", "url": "https://github.com/PyCQA/bandit"},
+          { "text": "Vulture", "url": "https://github.com/jendrikseipp/vulture"}
+      ]
+  }
 ]
