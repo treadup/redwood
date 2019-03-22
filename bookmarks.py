@@ -16,6 +16,7 @@ def load_all_bookmarks():
         "project_management.json",
         "python.json",
         "web.json",
+        "api.json"
     ]
 
     result = []
