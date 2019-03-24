@@ -1392,7 +1392,8 @@
             { "text": "Hosted Graphite", "url": "https://www.hostedgraphite.com/"},
             { "text": "Grafana", "url": "https://grafana.com/cloud/grafana"},
             { "text": "Geckoboard", "url": "https://www.geckoboard.com/"},
-            { "text": "Dash Metrics", "url": "http://www.dashmetrics.io/"}
+            { "text": "Dash Metrics", "url": "http://www.dashmetrics.io/"},
+            { "text": "Redash", "url": "https://redash.io/"}
         ]
     },
     {
