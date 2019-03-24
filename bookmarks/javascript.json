@@ -182,6 +182,14 @@
         "bookmarks": [
             { "text": "Key Codes", "url": "http://keycode.info/"}
         ]
+    },
+    {
+      "category": "VirtualDom",
+      "slug": "virtualdom",
+      "visibility": "public",
+      "bookmarks": [
+        { "text": "VirtualDom", "url": "https://github.com/Matt-Esch/virtual-dom"},
+        { "text": "VirtualHyperscript", "url": "https://github.com/Matt-Esch/virtual-dom/tree/master/virtual-hyperscript"}
+      ]
     }
 ]
-
