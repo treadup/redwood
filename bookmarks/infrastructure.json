@@ -81,5 +81,43 @@
             { "text": "CRI-O",
               "url": "https://cri-o.io/"}
         ]
+    },
+      {
+        "category": "Continuous Integration",
+        "slug": "continuous-integration",
+        "bookmarks": [{"text": "Circle CI", "url": "https://circleci.com/"},
+                      {"text": "Travis CI", "url": "https://travis-ci.org/"},
+                      {"text": "Coveralls", "url": "https://coveralls.io/"},
+                      {"text": "drone.io", "url": "https://drone.io/"},
+                      {"text": "Awesome CI", "url": "https://github.com/ligurio/awesome-ci"},
+                      {"text": "Deploying to Heroku using GitLab",
+                       "url": "https://blog.thecodewhisperer.com/permalink/deploying-jekyll-to-heroku-using-gitlab-ci"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Continuous Deployment",
+        "slug": "continuous-deployment",
+        "bookmarks": [{"text": "GoCD", "url": "https://www.gocd.org/"},
+                      {"text": "DeployBot", "url": "https://deploybot.com/"},
+                      {"text": "Octopus", "url": "https://octopus.com/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Configuration Management",
+        "slug": "configuration-management",
+        "bookmarks": [{"text": "Ansible", "url": "https://www.ansible.com/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Distributed Key Value Store",
+        "slug": "distributed-key-value-store",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "doozerd", "url": "https://github.com/ha/doozerd"},
+            { "text": "etcd", "url": "https://etcd.readthedocs.io/en/latest/"},
+            { "text": "confd", "url": "http://www.confd.io/"},
+            { "text": "Consul", "url": "https://www.consul.io/"},
+            { "text": "Conjur", "url": "https://www.conjur.org/"}
+        ]
     }
 ]
