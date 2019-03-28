@@ -1,0 +1,10 @@
+[
+  {
+    "category": "Load Testing",
+    "slug": "load-testing",
+    "visibility": "public",
+    "bookmarks": [
+      {"text": "locust.io", "url": "https://locust.io/"}
+    ]
+  }
+]

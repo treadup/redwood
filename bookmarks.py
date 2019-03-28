@@ -17,7 +17,8 @@ def load_all_bookmarks():
         "python.json",
         "web.json",
         "api.json",
-        "design.json"
+        "design.json",
+        "testing.json"
     ]
 
     result = []
