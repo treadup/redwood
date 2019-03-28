@@ -4,6 +4,10 @@ name: redwood
 steps:
   - name: backend
     image: python:3.6.8
+    environment:
+      HEROKU_API_KEY:
+        from_secret: HEROKU_API_KEY
     commands:
       - pip3 install -r requirements.txt
       - python3 test_redwood.py
+      - git push -f https://heroku:$HEROKU_API_KEY@git.heroku.com/redwood-prod.git master
