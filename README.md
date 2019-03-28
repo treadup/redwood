@@ -31,8 +31,9 @@ To run the unit tests locally use the following command.
 
     python test_redwood.py
 
-This project uses CircleCI for automatic unit tests.
-[![CircleCI](https://circleci.com/gh/treadup/redwood.svg?style=svg)](https://circleci.com/gh/treadup/redwood)
+This project uses a simple CI/CD pipeline on drone.io to deploy the
+project to Heroku.
+[![Build Status](https://cloud.drone.io/api/badges/treadup/redwood/status.svg)](https://cloud.drone.io/treadup/redwood)
 
 ## Git Hooks
 There are some git hooks in the .githooks folder in this project. To
