@@ -48,6 +48,15 @@
         ]
     },
     {
+      "category": "Containers",
+      "slug": "containers",
+      "visibility": "public",
+      "bookmarks": [
+          { "text": "Running containers without Docker",
+            "url": "https://jvns.ca/blog/2016/10/26/running-container-without-docker/"}
+      ]
+    },
+    {
         "category": "Flatcar Linux",
         "slug": "",
         "visibility": "public",
@@ -119,5 +128,26 @@
             { "text": "Consul", "url": "https://www.consul.io/"},
             { "text": "Conjur", "url": "https://www.conjur.org/"}
         ]
+    },
+    {
+        "category": "Docker",
+        "slug": "docker",
+        "visibility": "public",
+        "bookmarks": [
+            {"text": "Awesome Docker", "url": "https://github.com/veggiemonk/awesome-docker"},
+            {"text": "Moby", "url": "https://mobyproject.org/"}
+        ]
+    },
+    {
+        "category": "Artifacts",
+        "slug": "artifacts",
+        "visibility": "public",
+        "bookmarks": [{"text": "packagecloud.io", "url": "https://packagecloud.io/"}]
+    },
+    {
+        "category": "Terraform",
+        "slug": "terraform",
+        "visibility": "public",
+        "bookmarks": [{"text": "Terraform", "url": "https://www.terraform.io/intro/index.html"}]
     }
 ]
