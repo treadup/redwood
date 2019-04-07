@@ -180,12 +180,23 @@
         ]
     },
     {
-      "category": "Static Analysis",
-      "slug": "static-analysis",
-      "visibility": "public",
-      "bookmarks": [
-          { "text": "Bandit", "url": "https://github.com/PyCQA/bandit"},
-          { "text": "Vulture", "url": "https://github.com/jendrikseipp/vulture"}
-      ]
-  }
+        "category": "Static Analysis",
+        "slug": "static-analysis",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Bandit", "url": "https://github.com/PyCQA/bandit"},
+            { "text": "Vulture", "url": "https://github.com/jendrikseipp/vulture"}
+        ]
+    },
+    {
+        "category": "Serialization",
+        "slug": "serialization",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Marshmallow",
+              "url": "https://marshmallow.readthedocs.io/en/latest/"},
+            { "text": "Schematics",
+              "url": "https://schematics.readthedocs.io/en/latest/"}
+        ]
+    }
 ]
