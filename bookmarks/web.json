@@ -339,5 +339,22 @@
               "url": "https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards.html"},
             { "text": "oEmbed", "url": "https://oembed.com/"}
         ]
+    },
+    {
+        "category": "Static Sites",
+        "slug": "static-sites",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Building a static site with components using Nunjucks",
+              "url": "https://www.smashingmagazine.com/2018/03/static-site-with-nunjucks/"}
+        ]
+    },
+    {
+      "category": "Static Site Generators",
+      "slug": "static-site-generators",
+      "visibility": "public",
+      "bookmarks": [
+          { "text": "Eleventy", "url": "https://www.11ty.io/"}
+      ]
     }
 ]

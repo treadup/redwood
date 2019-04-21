@@ -6,5 +6,16 @@
       "bookmarks": [
         { "text": "Balsamiq", "url": "https://balsamiq.com/"}
       ]
+    },
+    {
+        "category": "",
+        "slug": "",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Sketchy Wireframes",
+              "url": "http://boxesandarrows.com/sketchy-wireframes/"},
+            { "text": "How to create your first wireframe",
+              "url": "https://careerfoundry.com/en/blog/ux-design/how-to-create-your-first-wireframe/"}
+        ]
     }
 ]
