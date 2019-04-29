@@ -1,0 +1,11 @@
+[
+    {
+      "category": "Swift",
+      "slug": "swift",
+      "visibility": "public",
+      "bookmarks": [
+          {"text": "Swift The Basics",
+            "url": "https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html"}
+      ]
+    }
+]

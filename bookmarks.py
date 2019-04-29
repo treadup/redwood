@@ -5,6 +5,7 @@ def load_all_bookmarks():
     filenames = [
         "bookmarks.json",
         "clojure.json",
+        "swift.json",
         "commerce.json",
         "compilers.json",
         "editors.json",
