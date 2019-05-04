@@ -4,14 +4,14 @@ def get_thumbnail_s3_url(collection_name, image_name):
     """
     Creates the thumbnail url given the collection name and the image name.
     """
-    f = 'https://s3.amazonaws.com/rainforestphotos/{}/thumbs/thumb_{}'
+    f = 'https://rainforestphotos.s3.amazonaws.com/{}/thumbs/thumb_{}'
     return f.format(collection_name, image_name)
 
 def get_photo_s3_url(collection_name, image_name):
     """
     Creates the image url given the collection name and the image name.
     """
-    f = 'https://s3.amazonaws.com/rainforestphotos/{}/{}'
+    f = 'https://rainforestphotos.s3.amazonaws.com/{}/{}'
     return f.format(collection_name, image_name)
 
 def add_collection_thumbnail_url(collection):
@@ -25,7 +25,7 @@ def add_collection_url(collection):
     Adds the collection url to the collection.
     """
     collection['url'] = '/photos/{}'.format(collection['slug'])
-    
+
 def load_photo_collection_list(filename):
     """
     Loads the photo collection list from the photo collection json file.
@@ -59,7 +59,7 @@ def create_image_dict(collection_name, image_name):
             "s3url": get_photo_s3_url(collection_name, image_name),
             "thumbnail": get_thumbnail_s3_url(collection_name, image_name),
             "url": '/photos/{}/{}'.format(collection_name, image_name)}
-    
+
 def get_photo_collection(collection_name, filename):
     """
     Gets the photo collection for the given name. If there is no photo collection
