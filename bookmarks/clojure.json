@@ -101,5 +101,15 @@
             {"text": "Medley", "url": "https://github.com/weavejester/medley"},
             {"text": "useful", "url": "https://github.com/amalloy/useful"}
         ]
+    },
+    {
+        "category": "Clojure Documentation",
+        "slug": "clojure-documentation",
+        "visibility": "public",
+        "bookmarks": [
+          { "text": "conj.io", "url": "https://www.conj.io/"},
+          { "text": "clojure-doc.org", "url": "http://clojure-doc.org/"},
+          { "text": "clojuredocs.org", "url": "http://clojuredocs.org/"}
+        ]
     }
 ]
