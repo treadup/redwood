@@ -200,6 +200,7 @@
         "category": "Java",
         "slug": "java",
         "bookmarks": [{"text": "Spark", "url":"http://sparkjava.com/"},
+                      {"text": "Javalin", "url": "https://javalin.io/"},
                       {"text": "Embedded Containers",
                        "url": "http://www.thedevpiece.com/embedded-containers-and-standalone-java-applications/"},
                       {"text": "Undertow", "url": "http://undertow.io/"}],
