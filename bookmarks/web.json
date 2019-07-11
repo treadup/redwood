@@ -72,7 +72,11 @@
     {
         "category": "WebSockets",
         "slug": "websockets",
-        "bookmarks": [{"text": "Echo server", "url": "https://www.websocket.org/echo.html"},
+        "bookmarks": [{"text": "Writing WebSocket Servers",
+                       "url": "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_servers"},
+                      {"text": "Wrting a WebSocket Server in Java",
+                       "url": "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_a_WebSocket_server_in_Java"},
+                      {"text": "Echo server", "url": "https://www.websocket.org/echo.html"},
                       {"text": "websocketd", "url": "http://websocketd.com/"},
                       {"text": "Websockets from Scratch",
                        "url": "https://blog.pusher.com/websockets-from-scratch/"},
