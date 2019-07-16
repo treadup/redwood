@@ -12,6 +12,17 @@
         "visibility": "public"
     },
     {
+        "category": "Go Books",
+        "slug": "go-books",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "An Introduction to Programming in Go",
+              "url": "http://www.golang-book.com/books/intro"},
+            { "text": "Network Programming in Go",
+              "url": "https://tumregels.github.io/Network-Programming-with-Go/"}
+        ]
+    },
+    {
         "category": "Go Documentation",
         "slug": "godocs",
         "bookmarks": [
