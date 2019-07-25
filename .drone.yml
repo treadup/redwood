@@ -1,6 +1,12 @@
 kind: pipeline
 name: redwood
 
+# Limits Drone to running one pipeline at a time. This will prevent
+# pipelines from being run concurrently. This is useful if you want to
+# prevent two or more deployments to be run in parallel.
+concurrency:
+  limit: 1
+
 steps:
   - name: backend
     image: python:3.6.8
