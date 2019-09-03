@@ -657,7 +657,10 @@
         "bookmarks": [{"text": "docs.GL", "url": "http://docs.gl"},
                       {"text": "OpenGL 4 Reference Pages",
                        "url": "https://www.khronos.org/registry/OpenGL-Refpages/gl4/"},
-                      {"text": "Mesa3D", "url": "https://www.mesa3d.org/"}],
+                      {"text": "Mesa3D", "url": "https://www.mesa3d.org/"},
+                      { "text": "An intro to modern OpenGL",
+                        "url": "http://duriansoftware.com/joe/An-intro-to-modern-OpenGL.-Table-of-Contents.html"}
+                     ],
         "visibility": "public"
     },
     {
