@@ -111,5 +111,20 @@
           { "text": "clojure-doc.org", "url": "http://clojure-doc.org/"},
           { "text": "clojuredocs.org", "url": "http://clojuredocs.org/"}
         ]
+    },
+    {
+        "category": "Packaging Apps",
+        "slug": "packaging-apps",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "javapackager",
+              "url": "https://en.wikipedia.org/wiki/Java_packager"},
+            { "text": "packr",
+              "url": "https://github.com/libgdx/packr" },
+            { "text": "lein-native-image",
+              "url": "https://github.com/taylorwood/lein-native-image"},
+            { "text": "Graal Native Images",
+              "url": "https://www.graalvm.org/docs/reference-manual/aot-compilation/"}
+        ]
     }
 ]
