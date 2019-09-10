@@ -126,5 +126,15 @@
             { "text": "Graal Native Images",
               "url": "https://www.graalvm.org/docs/reference-manual/aot-compilation/"}
         ]
+    },
+    {
+        "category": "Clojure Game Development",
+        "slug": "clojure-game-development",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Using libGDX with Clojure",
+              "url": "https://github.com/libgdx/libgdx/wiki/Using-libgdx-with-Clojure"},
+            { "text": "libGDX", "url": "https://libgdx.badlogicgames.com/"}
+        ]
     }
 ]
