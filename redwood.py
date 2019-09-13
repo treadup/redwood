@@ -670,6 +670,10 @@ def learning():
 def psychology():
     return render_markdown("Psychology", "psychology.md")
 
+@app.route('/game-development-programming-languages')
+def game_development_programming_languages():
+    return render_markdown("Game Development Programming Languages",
+                           "game_development_programming_languages.md")
 
 @app.route('/left')
 def days_left():
