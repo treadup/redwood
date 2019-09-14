@@ -11,5 +11,29 @@
                       {"text": "MiniAL", "url": "https://github.com/dr-soft/mini_al"},
                       { "text": "One year of C", "url": "http://floooh.github.io/2018/06/02/one-year-of-c.html"}],
         "visibility": "public"
+    },
+        {
+        "category": "SDCC",
+        "slug": "sdcc",
+        "bookmarks": [{"text": "Small Device C Compiler", "url": "http://sdcc.sourceforge.net/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "LLVM",
+        "slug": "llvm",
+        "bookmarks": [{"text": "LLVM", "url": "https://llvm.org/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "LCC",
+        "slug": "lcc",
+        "bookmarks": [{"text": "LCC", "url": "https://en.m.wikipedia.org/wiki/LCC_(compiler)"}],
+        "visibility": "public"
+    },
+    {
+        "category": "TCC",
+        "slug": "tcc",
+        "bookmarks": [{"text": "TCC", "url": "https://bellard.org/tcc/"}],
+        "visibility": "public"
     }
 ]

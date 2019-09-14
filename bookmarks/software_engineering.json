@@ -1,0 +1,149 @@
+[
+    {
+        "category": "Garbage Collection",
+        "slug": "garbage-collection",
+        "bookmarks": [{"text": "Shenandoah", "url": "http://openjdk.java.net/jeps/189"},
+                      {"text": "Go Garbage Collector",
+                       "url": "https://making.pusher.com/golangs-real-time-gc-in-theory-and-practice/"},
+                      {"text": "Linus Torvalds on Garbage Collection",
+                       "url": "https://news.ycombinator.com/item?id=2473932"},
+                      {"text": "Real-Time Garbage Collection Is Real",
+                       "url": "http://michaelrbernste.in/2013/06/03/real-time-garbage-collection-is-real.html"},
+                      {"text": "Baby's First Garbage Collector",
+                       "url": "http://journal.stuffwithstuff.com/2013/12/08/babys-first-garbage-collector/"},
+                      {"text": "The Garbage Collection Handbook", "url": "http://gchandbook.org"},
+                      {"text": "Concurrent Garbage Collection in Rubinius",
+                       "url": "https://github.com/rubinius/rubinius-website-archive/blob/cf54187d421275eec7d2db0abd5d4c059755b577/_posts/2013-06-22-concurrent-garbage-collection.markdown"},
+                      {"text": "Immix", "url": "http://users.cecs.anu.edu.au/~steveb/pubs/papers/immix-pldi-2008.pdf"},
+                      {"text": "Reference Counting Immix",
+                       "url": "http://users.cecs.anu.edu.au/~steveb/downloads/pdf/rcix-oopsla-2013.pdf"},
+                      {"text": "Go 1.5 Garbage Collector", "url": "https://blog.golang.org/go15gc"},
+                      {"text": "Building a lower latency garbage collector",
+                       "url": "https://blog.janestreet.com/building-a-lower-latency-gc/"},
+                      {"text": "Very Concurrent Mark and Sweep Garbage Collection",
+                       "url": "http://doc.cat-v.org/inferno/concurrent_gc/"},
+                      {"text": "memorymanagement.org", "url": "http://www.memorymanagement.org"},
+                      {"text": "Learning garbage collection theory",
+                       "url": "https://stackoverflow.com/questions/1318631/learning-garbage-collection-theory"},
+                      {"text": "Baker's Treadmill", "url": "http://home.pipeline.com/~hbaker1/NoMotionGC.html"},
+                      {"text": "Garbage Collection in Real Time Games with Lua",
+                       "url": "http://lua-users.org/wiki/GarbageCollectionInRealTimeGames"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Tail Calls",
+        "slug": "tail-calls",
+        "bookmarks": [{"text": "Tail Calls", "url": "https://david.wragg.org/blog/2014/02/c-tail-calls-1.html"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Region Based Memory Management",
+        "slug": "region-based-memory-management",
+        "bookmarks": [{"text": "Region Based Memory Manangement", "url": "https://en.wikipedia.org/wiki/Region-based_memory_management"}],
+        "visibility": "public"
+    },
+        {
+        "category": "Error handling",
+        "slug": "error-handling",
+        "bookmarks": [{"text": "Airbrake", "url": "https://airbrake.io/"},
+                      {"text": "Rollbar", "url": "http://rollbar.com"},
+                      {"text": "Sentry.io", "url": "https://sentry.io/"}
+        ],
+        "visibility": "public"
+    },
+    {
+        "category": "Logging",
+        "slug": "logging",
+        "visibility": "public",
+        "bookmarks": [
+            {"text": "Timber", "url": "https://timber.io/"},
+            {"text": "Loggly", "url": "https://www.loggly.com/"},
+            {"text": "Papertrail", "url": "https://papertrailapp.com/"},
+            {"text": "Scalyr", "url": "https://www.scalyr.com"}
+        ]
+
+    },
+    {
+        "category": "Static analysis",
+        "slug": "static-analysis",
+        "bookmarks": [{"text": "Code Climate", "url": "https://codeclimate.com/"}],
+        "visibility": "public"
+    },
+        {
+        "category": "Literate Programming",
+        "slug": "literate-programming",
+        "bookmarks": [{"text": "Docco", "url": "http://jashkenas.github.io/docco/"},
+                      {"text": "Pycco", "url": "https://github.com/pycco-docs/pycco"},
+                      {"text": "Marginalia", "url": "https://github.com/gdeer81/marginalia"},
+                      {"text": "Gocco", "url": "http://nikhilm.github.io/gocco/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Articles",
+        "slug": "articles",
+        "bookmarks": [{"text": "The Vietnam of Computer Science",
+                       "url": "http://blogs.tedneward.com/post/the-vietnam-of-computer-science/"},
+                      {"text": "Bored People Quit",
+                       "url": "http://randsinrepose.com/archives/bored-people-quit/"},
+                      {"text": "Python Paradox", "url": "http://www.paulgraham.com/pypar.html"},
+                      {"text": "Beating the Averages",
+                       "url": "http://www.paulgraham.com/avg.html"},
+                      {"text": "Project Management: A surefire way to kill your software product",
+                       "url": "https://techbeacon.com/project-management-surefire-way-kill-your-software-product"},
+                      {"text": "PHP: A fractal of bad design",
+                       "url": "https://eev.ee/blog/2012/04/09/php-a-fractal-of-bad-design/"},
+                      {"text": "Cheney on the M.T.A", "url": "http://home.pipeline.com/~hbaker1/CheneyMTA.html"},
+                      {"text": "Everything Easy is Hard Again",
+                       "url": "https://frankchimero.com/writing/everything-easy-is-hard-again/"},
+                      {"text": "After Credentials",
+                       "url": "http://www.paulgraham.com/credentials.html"},
+                      {"text": "Why Entrepreneurs Start Companies Rather Than Join Them",
+                       "url": "https://steveblank.com/2018/04/11/why-entrepreneurs-start-companies-rather-than-join-them/"},
+                      {"text": "There has never been an easier time to write a language.",
+                       "url": "http://joshsharp.com.au/blog/never-been-an-easier-time-to-write-a-language.html"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Talks",
+        "slug": "talks",
+        "bookmarks": [{"text": "The Future of Programming",
+                       "url": "https://vimeo.com/71278954",
+                       "presenter": "Bret Victor"},
+                      {"text": "Inventing on Principle",
+                       "url": "https://vimeo.com/36579366",
+                       "presenter": "Bret Victor"},
+                      {"text": "Steve Jobs: Manufacturing vs Consulting",
+                       "url": "https://www.youtube.com/watch?v=QD8N8N7wzmM",
+                       "presenter": "Steve Jobs"},
+                      {"text": "Scaling Etsy",
+                       "url": "https://www.youtube.com/watch?v=eenrfm50mXw",
+                       "presenter": "Ross Snyder"},
+                      {"text": "Agile is Dead",
+                       "url": "https://www.youtube.com/watch?v=a-BOSpxYJ9M",
+                       "presenter": "Dave Thomas"}],
+        "visibility": "public"
+    },
+    {
+        "category": "C2",
+        "slug": "c2",
+        "bookmarks": [{"text": "Are Design Patterns Missing Language Features",
+                       "url": "http://wiki.c2.com/?AreDesignPatternsMissingLanguageFeatures"},
+                      {"text": "Design Patterns are Missing Language Features",
+                       "url": "http://wiki.c2.com/?AreDesignPatternsMissingLanguageFeatures"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Software Engineering",
+        "slug": "software-engineering",
+        "visibility": "public",
+        "bookmarks": [{"text": "Organizational skills beat algorithmic wizardry",
+                       "url": "http://prog21.dadgum.com/177.html"}]
+    },
+    {
+        "category": "Quality Engineering",
+        "slug": "quality-engineering",
+        "visibility": "public",
+        "bookmarks": [{ "text": "Quality Engineering in Agile World",
+                        "url": "https://www.linkedin.com/pulse/quality-engineering-agile-world-merly-varghese/"}]
+    }
+]

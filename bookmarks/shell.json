@@ -1,0 +1,58 @@
+[
+    {
+        "category": "Shell",
+        "slug": "shell",
+        "bookmarks": [{"text": "Awesome Shell", "url": "https://github.com/alebcay/awesome-shell"},
+                      {"text": "Writing robust shell scripts", "url": "http://www.davidpashley.com/articles/writing-robust-shell-scripts/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Bash Shell",
+        "slug": "bash",
+        "bookmarks": [{"text": "Awesome Bash", "url": "https://github.com/awesome-lists/awesome-bash"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Fish Shell",
+        "slug": "fish",
+        "bookmarks": [{"text": "fish", "url": "https://fishshell.com/"},
+                      {"text": "fish design document", "url": "https://fishshell.com/docs/current/design.html"},
+                      {"text": "fish source code", "url": "https://github.com/fish-shell/fish-shell"},
+                      {"text": "Oh My Fish!", "url": "https://github.com/oh-my-fish/oh-my-fish"},
+                      {"text": "Fish Cookbook", "url": "https://github.com/JorgeBucaran/fish-shell-cookbook"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Elvish",
+        "slug": "elvish",
+        "bookmarks": [{"text": "elvish", "url": "https://elvish.io/"}],
+        "visibility": "public"
+    },
+        {
+        "category": "tmux",
+        "slug": "tmux",
+        "bookmarks": [
+            {"text": "tmux", "url": "https://github.com/tmux/tmux/wiki"},
+            {"text": "The tao of tmux", "url": "https://leanpub.com/the-tao-of-tmux/read"},
+            {"text": "tmux crash course", "url": "https://robots.thoughtbot.com/a-tmux-crash-course"},
+            {"text": "a quick and easy guide to tmux", "url": "http://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/"},
+            {"text": "tmuxp", "url": "https://tmuxp.git-pull.com/en/latest/"},
+            {"text": "Zanshin Tmux Configuration", "url": "https://zanshin.net/2013/09/05/my-tmux-configuration/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "dot files",
+        "slug": "dot-files",
+        "bookmarks": [{"text": "Store your dot files in a bare git repo",
+                       "url": "https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/"},
+                      {"text": "dotfiles on GitHub", "url": "http://dotfiles.github.io/"},
+                      {"text": "Yet Another Dotfiles Manager",
+                       "url": "https://thelocehiliosan.github.io/yadm/"},
+                       {"text": "Dotfiles without Symlinks",
+                        "url": "http://lukehinds.com/2016/09/02/dotfiles-without-symlinks.html"},
+                       {"text": "Manage Dotfiles With a Bare Git Repository",
+                        "url": "https://harfangk.github.io/2016/09/19/manage-dotfiles-with-a-git-bare-repository.html"}
+                     ],
+        "visibility": "private"
+    }
+]

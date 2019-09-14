@@ -1,0 +1,14 @@
+[
+    {
+        "category": "Single Board Computer",
+        "slug": "single-board-computer",
+        "visibility": "public",
+        "bookmarks": [{"text": "board db", "url":"https://www.board-db.org/"}]
+    },
+    {
+        "category": "Microcontrollers",
+        "slug": "microcontrollers",
+        "bookmarks": [{"text": "The Amazing $1 Microcontroller"}],
+        "visibility": "public"
+    }
+]

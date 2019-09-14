@@ -1,10 +1,35 @@
 [
-  {
-    "category": "Deep Learning",
-    "slug": "deep-learning",
-    "visibility": "public",
-    "bookmarks": [
-      { "text": "Deep Lizard", "url": "https://deeplizard.com" }
-    ]
-  }
+    {
+        "category": "Deep Learning",
+        "slug": "deep-learning",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Deep Lizard", "url": "https://deeplizard.com" }
+        ]
+    },
+    {
+        "category": "Data Science",
+        "slug": "data-science",
+        "bookmarks": [{"text": "Machine Learning Prerequisite isnt math",
+                       "url": "http://sharpsightlabs.com/blog/machine-learning-prerequisite-isnt-math/"},
+                      {"text": "Kaggle", "url": "https://www.kaggle.com/"},
+                      {"text": "Deep Learning Book", "url": "http://www.deeplearningbook.org/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Machine Learning",
+        "slug": "machine-learning",
+        "bookmarks": [{"text": "Awesome Machine Learning",
+                       "url": "https://github.com/josephmisiti/awesome-machine-learning"},
+                      {"text": "Keras.io", "url": "https://keras.io/"},
+                      {"text": "PyTorch", "url": "http://pytorch.org/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Machine Learning Courses",
+        "slug": "machine-learning-courses",
+        "bookmarks": [{"text": "fast.ai", "url": "http://www.fast.ai/"},
+                      {"text": "deeplearning.ai", "url": "https://www.deeplearning.ai/"}],
+        "visibility": "public"
+    }
 ]

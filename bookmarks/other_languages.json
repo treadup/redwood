@@ -1,0 +1,152 @@
+[
+    {
+        "category": "Haxe",
+        "slug": "haxe",
+        "bookmarks": [{"text": "Haxe", "url": "https://haxe.org/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "TCL/TK",
+        "slug": "tcl-tk",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "TCL the Misunderstood", "url": "http://antirez.com/articoli/tclmisunderstood.html"},
+            { "text": "TCL Syntax", "url": "http://www.tcl.tk/man/tcl/TclCmd/Tcl.htm"},
+            { "text": "TK tutorial", "url": "https://tkdocs.com/tutorial/index.html"}
+        ]
+    },
+    {
+        "category": "JVM",
+        "slug": "jvm",
+        "bookmarks": [{"text": "Awesome JVM",
+                       "url": "https://github.com/deephacks/awesome-jvm"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Elm",
+        "slug": "elm",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Elm", "url": "http://elm-lang.org/"},
+            { "text": "Awesome Elm", "url": "https://github.com/isRuslan/awesome-elm"},
+            { "text": "Programming Elm", "url": "https://pragprog.com/book/jfelm/programming-elm"}
+        ]
+    },
+    {
+        "category": "Dart",
+        "slug": "dart",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Dart", "url": "https://www.dartlang.org/"},
+            { "text": "Flutter", "url": "https://flutter.io/"}
+        ]
+    },
+    {
+        "category": "Bucklescript",
+        "slug": "bucklescript",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Bucklescript", "url": "https://bucklescript.github.io/"},
+            { "text": "Why I choose Bucklescript",
+              "url": "https://infinitetree.eu/blog/2017/10/28/why-i-choose-bucklescript/"}
+        ]
+    },
+    {
+        "category": "ReasonML",
+        "slug": "reasonml",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "ReasonML", "url": "https://reasonml.github.io"},
+            { "text": "ReasonML on Github", "url": "https://github.com/facebook/reason"},
+            { "text": "Awesome ReasonML", "url": "https://github.com/vramana/awesome-reasonml"}
+        ]
+    },
+    {
+        "category": "Ruby",
+        "slug": "ruby",
+        "bookmarks": [{"text": "Awesome Ruby", "url": "http://awesome-ruby.com/"},
+                      {"text": "ROM", "url": "http://rom-rb.org/"},
+                      {"text": "Shoes", "url": "http://shoesrb.com/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "PHP",
+        "slug": "php",
+        "bookmarks": [{"text": "Lavarel", "url": "https://laravel.com/"},
+                      {"text": "Twig", "url": "https://twig.symfony.com/"},
+                      {"text": "Slim", "url": "https://www.slimframework.com/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Java",
+        "slug": "java",
+        "bookmarks": [{"text": "Spark", "url":"http://sparkjava.com/"},
+                      {"text": "Javalin", "url": "https://javalin.io/"},
+                      {"text": "Embedded Containers",
+                       "url": "http://www.thedevpiece.com/embedded-containers-and-standalone-java-applications/"},
+                      {"text": "Undertow", "url": "http://undertow.io/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Java Web Development",
+        "slug": "java-web-development",
+        "bookmarks": [{"text": "Pebble", "url": "https://github.com/PebbleTemplates/pebble"},
+                      {"text": "JinJava", "url": "https://github.com/HubSpot/jinjava"},
+                      {"text": "Jtwig", "url": "http://jtwig.org/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Lua",
+        "slug": "lua",
+        "bookmarks": [
+            {"text": "Lua", "url": "http://www.lua.org/"},
+            {"text": "Löve2D", "url": "https://love2d.org/"},
+            {"text": "luastatic", "url": "https://github.com/ers35/luastatic"},
+            {"text": "Lövr", "url": "https://lovr.org/"},
+            {"text": "Lapis - a Lua web framework", "url": "http://leafo.net/lapis/"},
+            {"text": "Luvit - asynchronous I/O for Lua", "url": "https://luvit.io/"},
+            {"text": "MoonScript", "url": "https://luvit.io/"},
+            {"text": "Corona", "url": "https://coronalabs.com/"},
+            {"text": "middleclass", "url": "https://github.com/kikito/middleclass"},
+            {"text": "lua-http", "url": "https://daurnimator.github.io/lua-http/0.2/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "R",
+        "slug": "r",
+        "bookmarks": [{"text": "R", "url": "https://www.r-project.org/"},
+                      {"text": "Tidyverse", "url": "https://www.tidyverse.org/"},
+                      {"text": "Advanced R", "url": "https://adv-r.hadley.nz/"},
+                      {"text": "R for Data Science", "url": "http://r4ds.had.co.nz/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Concatenative Programming",
+        "slug": "concatenative",
+        "bookmarks": [{"text": "Concatenative.org", "url": "http://concatenative.org"},
+                      {"text": "Wikipedia on Concatenative Languages",
+                       "url": "https://en.wikipedia.org/wiki/Concatenative_programming_language"},
+                      {"text": "Wikipedia on Stack Oriented Languages",
+                       "url": "https://en.wikipedia.org/wiki/Stack-oriented_programming_language"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Forth",
+        "slug": "forth",
+        "bookmarks": [{"text": "C2 on Forth", "url": "http://wiki.c2.com/?ForthLanguage"},
+                      {"text": "StoneKnifeForth", "url": "https://github.com/kragen/stoneknifeforth"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Factor",
+        "slug": "factor",
+        "bookmarks": [{"text": "C2 on Factor", "url": "http://wiki.c2.com/?FactorLanguage"}],
+        "visibility": "public"
+    },
+    {
+        "category": "NIM",
+        "slug": "nim",
+        "bookmarks": [{"text": "NIM", "url": "https://nim-lang.org/"}],
+        "visibility": "public"
+    }
+]

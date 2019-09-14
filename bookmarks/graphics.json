@@ -1,0 +1,47 @@
+[
+    {
+        "category": "OpenGL",
+        "slug": "opengl",
+        "bookmarks": [{"text": "docs.GL", "url": "http://docs.gl"},
+                      {"text": "OpenGL 4 Reference Pages",
+                       "url": "https://www.khronos.org/registry/OpenGL-Refpages/gl4/"},
+                      {"text": "Mesa3D", "url": "https://www.mesa3d.org/"},
+                      { "text": "An intro to modern OpenGL",
+                        "url": "http://duriansoftware.com/joe/An-intro-to-modern-OpenGL.-Table-of-Contents.html"},
+                      { "text": "Apple OpenGL support",
+                        "url": "https://support.apple.com/en-us/HT202823"},
+                      { "text": "Learn OpenGL", "url": "https://learnopengl.com"},
+                      { "text": "The Book of Shaders",
+                        "url": "https://thebookofshaders.com/"}
+                     ],
+        "visibility": "public"
+    },
+    {
+        "category": "GLSL",
+        "slug": "glsl",
+        "bookmarks": [{"text": "GLSL debugger", "url": "http://glsl-debugger.github.io/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Quaternions",
+        "slug": "quaternions",
+        "visibility": "public",
+        "bookmarks": [
+            {"text": "Visualizing Quaternions", "url": "https://eater.net/quaternions"},
+            { "text": "Geometric Algebra",
+              "url": "https://www.youtube.com/playlist?list=PLpzmRsG7u_gqaTo_vEseQ7U8KFvtiJY4K"}
+        ]
+    },
+    {
+        "category": "Image Libraries",
+        "slug": "image-libraries",
+        "bookmarks": [{"text": "soil", "url": "http://www.lonesock.net/soil.html"}],
+        "visibility": "public"
+    },
+        {
+        "category": "Virtual Reality",
+        "slug": "virtual-reality",
+        "visibility": "public",
+        "bookmarks": [{"text": "Aframe", "url": "https://aframe.io/"}]
+    }
+]

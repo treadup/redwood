@@ -1,0 +1,30 @@
+[
+    {
+        "category": "Music Tracker",
+        "slug": "music-tracker",
+        "bookmarks": [{"text": "Music Tracker", "url": "https://en.wikipedia.org/wiki/Music_tracker"},
+                       {"text": "Module file", "url": "https://en.wikipedia.org/wiki/Module_file"},
+                      {"text": "Tracker file formats",
+                       "url": "http://web.archive.org/web/20090504053653/http://pipin.tmd.ns.ac.yu/extra/fileformat/modules/index.htm"},
+                      {"text": "Music Tracking at Library of Congress", "url": "https://www.loc.gov/preservation/digital/formats/fdd/fdd000126.shtml"},
+                      {"text": "Module formats", "url": "https://wiki.openmpt.org/Manual:_Module_formats"},
+                      {"text": "Chiptune", "url": "https://en.wikipedia.org/wiki/Chiptune"},
+                      {"text": "MOD file format", "url": "https://en.wikipedia.org/wiki/MOD_(file_format)"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Programming Music",
+        "slug": "programming-music",
+        "bookmarks": [{"text": "Pencil Code Music", "url": "https://gym.pencilcode.net/jam/#/jam/dream.html"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Audio Libraries",
+        "slug": "audo-libraries",
+        "bookmarks": [{"text": "libsound", "url": "http://libsound.io/"},
+                      {"text": "OpenAL Soft", "url": "https://github.com/kcat/openal-soft"},
+                      {"text": "PortAudio", "url": "http://www.portaudio.com/"},
+                      {"text": "cubeb", "url": "https://github.com/kinetiknz/cubeb"}],
+        "visibility": "public"
+    }
+]

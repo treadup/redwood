@@ -1,0 +1,42 @@
+[
+    {
+        "category": "NewSQL",
+        "slug": "newsql",
+        "visibility": "public",
+        "bookmarks": [
+            {"text": "CockroachDB", "url": "https://www.cockroachlabs.com/"},
+            {"text": "NuoDB", "url": "https://www.nuodb.com/"},
+            {"text": "MemSQL", "url": "https://www.memsql.com/"}
+        ]
+    },
+    {
+        "category": "CockroachDB",
+        "slug": "cockroachdb",
+        "bookmarks": [{"text": "CockroachDB", "url": "https://www.cockroachlabs.com/"},
+                      {"text": "CockroachDB on GitHub", "url": "https://github.com/cockroachdb/cockroach"}],
+        "visibility": "public"
+    },
+    {
+        "category": "FoundationDB",
+        "slug": "foundationdb",
+        "visibility": "public",
+        "bookmarks": [{"text": "FoundationDB", "url": "https://www.foundationdb.org/"}]
+    },
+    {
+        "category": "Redis",
+        "slug": "redis",
+        "bookmarks": [{"text": "Redis", "url": "https://redis.io/"},
+                      {"text": "Redis Manifesto", "url": "https://github.com/antirez/redis/blob/unstable/MANIFESTO"},
+                      {"text": "Redis CLI", "url": "https://redis.io/topics/rediscli"},
+                      {"text": "Redis Commands", "url": "https://redis.io/commands"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Relational Database",
+        "slug": "relational-database",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "bobby-tables.com", "url": "http://bobby-tables.com/"}
+        ]
+    }
+]
