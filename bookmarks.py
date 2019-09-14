@@ -30,7 +30,7 @@ def load_all_bookmarks():
         "shell.json",
         "software_engineering.json",
         "swift.json",
-        "testing.json"
+        "testing.json",
         "web.json",
     ]
 
