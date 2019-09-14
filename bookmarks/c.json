@@ -35,5 +35,15 @@
         "slug": "tcc",
         "bookmarks": [{"text": "TCC", "url": "https://bellard.org/tcc/"}],
         "visibility": "public"
+    },
+    {
+        "category": "CMake",
+        "slug": "cmake",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "CMake Tutorial", "url": "https://cmake.org/cmake-tutorial/"},
+            { "text": "An Introduction to Modern CMake",
+              "url": "https://cliutils.gitlab.io/modern-cmake/"}
+        ]
     }
 ]
