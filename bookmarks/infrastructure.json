@@ -112,9 +112,14 @@
         "visibility": "public"
     },
     {
-        "category": "Configuration Management",
-        "slug": "configuration-management",
-        "bookmarks": [{"text": "Ansible", "url": "https://www.ansible.com/"}],
+        "category": "Ansible",
+        "slug": "ansible",
+        "bookmarks": [
+            {"text": "Ansible",
+             "url": "https://www.ansible.com/"},
+            {"text": "Ansible User Guide",
+             "url": "https://docs.ansible.com/ansible/latest/user_guide/index.html"}
+        ],
         "visibility": "public"
     },
     {
@@ -139,6 +144,15 @@
         ]
     },
     {
+        "category": "Kubernetes",
+        "slug": "kubernetes",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Kubernetes tutorial for beginners",
+              "url": "https://www.youtube.com/watch?v=gpmerrSpbHg"}
+        ]
+    },
+    {
         "category": "Artifacts",
         "slug": "artifacts",
         "visibility": "public",
@@ -149,5 +163,58 @@
         "slug": "terraform",
         "visibility": "public",
         "bookmarks": [{"text": "Terraform", "url": "https://www.terraform.io/intro/index.html"}]
+    },
+      {
+        "category": "Cloud Providers",
+        "slug": "cloud-providers",
+        "bookmarks": [{"text": "Heroku", "url": "https://heroku.com"},
+		      {"text": "Amazon Web Services", "url": "https://aws.amazon.com/"},
+                      {"text": "Amazon LightSail", "url": "https://amazonlightsail.com/"},
+                      {"text": "Google Cloud", "url": "https://cloud.google.com/"},
+                      {"text": "Vultr", "url": "https://www.vultr.com/"},
+                      {"text": "Hyper.sh", "url": "https://hyper.sh/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "VPS Providers",
+        "slug": "vps-providers",
+        "visibility": "public",
+        "bookmarks": [ { "text": "Serveraptor", "url": "https://www.serveraptor.com/"},
+                       { "text": "RootBSD", "url": "https://www.rootbsd.net/"}]
+    },
+    {
+        "category": "Hosted Docker Cloud",
+        "slug": "hosted-docker-cloud",
+        "visibility": "public",
+        "bookmarks": [
+            {"text": "Dokku", "url": "http://dokku.viewdocs.io/dokku/"},
+            {"text": "Flynn", "url": "https://flynn.io/"},
+            {"text": "Docker Cloud", "url": "https://cloud.docker.com/"},
+            {"text": "Convox", "url": "https://convox.com/"},
+            {"text": "rack", "url": "https://github.com/convox/rack"},
+            {"text": "Tsuru", "url": "https://tsuru.io/"}
+        ]
+    },
+    {
+        "category": "Hosting",
+        "slug": "hosting",
+        "bookmarks": [
+            {"text": "Netlify", "url": "https://www.netlify.com/"},
+            {"text": "Python Anywhere", "url": "https://www.pythonanywhere.com/"},
+            {"text": "Surge", "url": "https://surge.sh/"},
+            {"text": "Areobatic", "url": "https://www.aerobatic.com/"}
+        ],
+        "visibility": "public"
+    },
+    {
+        "category": "Hosted Forms",
+        "slug": "hosted-forms",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "formspree.io", "url": "https://formspree.io/"},
+            { "text": "Mail This To", "url": "https://mailthis.to/"},
+            { "text": "formtoemail.com", "url": "https://formtoemail.com/"},
+            { "text": "formcarry", "url": "https://formcarry.com/"}
+        ]
     }
 ]

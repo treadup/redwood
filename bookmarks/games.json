@@ -1,0 +1,89 @@
+[
+    {
+        "category": "Game Engines",
+        "slug": "game-engines",
+        "bookmarks": [{"text": "Amazon Lumberyard", "url": "https://aws.amazon.com/lumberyard/"},
+                      {"text": "Unity", "url": "https://unity3d.com/"},
+                      {"text": "Ignifuga", "url": "http://ignifuga.org/"},
+                      {"text": "PyGame", "url": "http://www.pygame.org/"},
+                      {"text": "Game Engines on itch.io",
+                       "url": "https://itch.io/game-development/engines"},
+                      {"text": "PICO-8", "url": "https://www.lexaloffle.com/pico-8.php"},
+                      {"text": "Voxatron", "url": "https://www.lexaloffle.com/voxatron.php"}],
+        "visibility": "public"
+    },
+    {
+        "category": "JavaScript Game Engines",
+        "slug": "javascript-game-engines",
+        "visibility": "public",
+        "bookmarks": [{"text": "Phaser", "url": "https://phaser.io/"},
+                      {"text": "CraftyJS", "url": "http://craftyjs.com/"},
+                      {"text": "CreateJS", "url": "https://createjs.com/"},
+                      {"text": "PixiJS", "url": "http://www.pixijs.com/"},
+                      {"text": "Kiwi.js", "url": "http://www.kiwijs.org/"}]
+    },
+    {
+        "category": "Physics Engines",
+        "slug": "physics-engines",
+        "bookmarks": [{"text": "Chipmunk", "url": "https://chipmunk-physics.net/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Game Libraries in C",
+        "slug": "c-game-libraries",
+        "bookmarks": [{"text": "Raylib", "url": "http://www.raylib.com/"},
+                      {"text": "SDL2", "url": "https://www.libsdl.org/"},
+                      {"text": "rfxgen", "url": "https://github.com/raysan5/rfxgen"},
+                      {"text": "raygui", "url": "https://github.com/raysan5/raygui"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Game Development",
+        "slug": "game-development",
+        "bookmarks": [{"text": "Graphics Server", "url": "http://prog21.dadgum.com/157.html"},
+                      {"text": "Game Development in Scheme",
+                       "url": "https://www.reddit.com/r/scheme/comments/6hng3q/i_developed_a_medium_sized_cross_platform/"},
+                      {"text": "Functional game logic with truly pauseless garbage collection",
+                       "url": "https://medium.com/@brianwill/functional-game-logic-with-truly-pauseless-garbage-collection-cffecc7b96d7"},
+                      {"text": "Hexagonal Grids", "url": "https://www.redblobgames.com/grids/hexagons/"},
+                      {"text": "Tiled", "url": "http://www.mapeditor.org/"},
+                      {"text": "Awesome Game Development",
+                       "url": "https://notabug.org/Calinou/awesome-gamedev"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Web Game Dev",
+        "slug": "web-game-dev",
+        "bookmarks": [{"text": "HTML5 Game Devs", "url": "http://www.html5gamedevs.com/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Indie Games",
+        "slug": "indie-games",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "itch.io", "url": "https://itch.io/"}
+        ]
+    },
+    {
+        "category": "Web Games",
+        "slug": "web-games",
+        "visibility": "public",
+        "bookmarks": [
+            {"text": "KeepOut", "url": "http://www.playkeepout.com/"}
+        ]
+    },
+    {
+        "category": "MUD",
+        "slug": "mud",
+        "visibility": "public",
+        "bookmarks": [
+            {"text": "DiscworldMUD", "url": "http://discworld.starturtle.net/lpc/"},
+            {"text": "Dead of Night", "url": "http://deadofnight.org/"},
+            {"text": "MUME", "url": "http://mume.org/"},
+            {"text": "sindome", "url": "https://www.sindome.org/"},
+            {"text": "LambdaMOO programming",
+             "url": "https://github.com/SevenEcks/lambda-moo-programming"}
+        ]
+    }
+]

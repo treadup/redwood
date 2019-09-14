@@ -1,45 +1,8 @@
 [
     {
-        "category": "C",
-        "slug": "c",
-        "bookmarks": [{"text": "clib", "url": "https://github.com/clibs/clib"},
-                      {"text": "tinyspline", "url": "https://github.com/msteinbeck/tinyspline"},
-                      {"text": "MathC", "url": "https://github.com/ferreiradaselva/mathc"},
-                      {"text": "Handmade Math", "url": "https://github.com/HandmadeMath/Handmade-Math"},
-                      {"text": "SubC", "url": "https://www.t3x.org/reload/"},
-                      {"text": "Awesome C", "url": "https://notabug.org/koz.ross/awesome-c"},
-                      {"text": "MiniAL", "url": "https://github.com/dr-soft/mini_al"},
-                      { "text": "One year of C", "url": "http://floooh.github.io/2018/06/02/one-year-of-c.html"}],
-        "visibility": "public"
-    },
-    {
         "category": "Haxe",
         "slug": "haxe",
         "bookmarks": [{"text": "Haxe", "url": "https://haxe.org/"}],
-        "visibility": "public"
-    },
-    {
-        "category": "Erlang",
-        "slug": "erlang",
-        "bookmarks": [{"text": "Erlang", "url": "https://www.erlang.org/"},
-                      {"text": "Cowboy", "url": "https://github.com/ninenines/cowboy"},
-                      {"text": "Learn you some Erlang", "url": "http://learnyousomeerlang.com/content"},
-                      {"text": "rebar3", "url": "https://github.com/erlang/rebar3"}],
-        "visibility": "public"
-    },
-    {
-        "category": "Elixir",
-        "slug": "elixir",
-        "bookmarks": [{"text": "Elixir", "url": "https://elixir-lang.org/"},
-                      {"text": "Introduction to Elixir",
-                       "url": "https://elixir-lang.org/getting-started/introduction.html"},
-                      {"text": "mix", "url": "https://hexdocs.pm/mix/Mix.html"},
-                      {"text": "hex", "url": "https://hex.pm/"},
-                      {"text": "Elixir Docs", "url": "https://elixir-lang.org/docs.html"},
-                      {"text": "Phoenix Framework", "url": "http://phoenixframework.org/"},
-                      {"text": "Distillery", "url": "https://github.com/bitwalker/distillery"},
-                      {"text": "Gigalixir", "url": "https://gigalixir.com/"},
-                      {"text": "Elixir on Google Cloud", "url": "https://cloud.google.com/elixir/"}],
         "visibility": "public"
     },
     {
@@ -57,13 +20,6 @@
         "slug": "jvm",
         "bookmarks": [{"text": "Awesome JVM",
                        "url": "https://github.com/deephacks/awesome-jvm"}],
-        "visibility": "public"
-    },
-    {
-        "category": "BEAM",
-        "slug": "beam",
-        "bookmarks": [{"text": "BEAM Wisdoms", "url": "http://beam-wisdoms.clau.se/en/latest/"},
-                      {"text": "BEAM languages", "url": "https://github.com/llaisdy/beam_languages"}],
         "visibility": "public"
     },
     {
@@ -231,13 +187,6 @@
         "visibility": "public"
     },
     {
-        "category": "Lisp Flavored Erlang",
-        "slug": "lfe",
-        "bookmarks": [{"text": "Lisp Flavored Erlang", "url": "http://lfe.io/"},
-                      {"text": "Robert Virding on LFE", "url": "https://www.youtube.com/watch?v=Br2KY12LB2w"}],
-        "visibility": "public"
-    },
-    {
         "category": "R",
         "slug": "r",
         "bookmarks": [{"text": "R", "url": "https://www.r-project.org/"},
@@ -327,59 +276,6 @@
                       {"text": "WebGL fundamentals", "url": "https://webglfundamentals.org/"},
                       {"text": "WebGL2 fundamentals", "url": "https://webgl2fundamentals.org/"}],
         "visibility": "public"
-    },
-    {
-        "category": "Cloud Providers",
-        "slug": "cloud-providers",
-        "bookmarks": [{"text": "Heroku", "url": "https://heroku.com"},
-		      {"text": "Amazon Web Services", "url": "https://aws.amazon.com/"},
-                      {"text": "Amazon LightSail", "url": "https://amazonlightsail.com/"},
-                      {"text": "Google Cloud", "url": "https://cloud.google.com/"},
-                      {"text": "Vultr", "url": "https://www.vultr.com/"},
-                      {"text": "Hyper.sh", "url": "https://hyper.sh/"}],
-        "visibility": "public"
-    },
-    {
-        "category": "VPS Providers",
-        "slug": "vps-providers",
-        "visibility": "public",
-        "bookmarks": [ { "text": "Serveraptor", "url": "https://www.serveraptor.com/"},
-                       { "text": "RootBSD", "url": "https://www.rootbsd.net/"}]
-    },
-    {
-        "category": "Hosted Docker Cloud",
-        "slug": "hosted-docker-cloud",
-        "visibility": "public",
-        "bookmarks": [
-            {"text": "Dokku", "url": "http://dokku.viewdocs.io/dokku/"},
-            {"text": "Flynn", "url": "https://flynn.io/"},
-            {"text": "Docker Cloud", "url": "https://cloud.docker.com/"},
-            {"text": "Convox", "url": "https://convox.com/"},
-            {"text": "rack", "url": "https://github.com/convox/rack"},
-            {"text": "Tsuru", "url": "https://tsuru.io/"}
-        ]
-    },
-    {
-        "category": "Hosting",
-        "slug": "hosting",
-        "bookmarks": [
-            {"text": "Netlify", "url": "https://www.netlify.com/"},
-            {"text": "Python Anywhere", "url": "https://www.pythonanywhere.com/"},
-            {"text": "Surge", "url": "https://surge.sh/"},
-            {"text": "Areobatic", "url": "https://www.aerobatic.com/"}
-        ],
-        "visibility": "public"
-    },
-    {
-        "category": "Hosted Forms",
-        "slug": "hosted-forms",
-        "visibility": "public",
-        "bookmarks": [
-            { "text": "formspree.io", "url": "https://formspree.io/"},
-            { "text": "Mail This To", "url": "https://mailthis.to/"},
-            { "text": "formtoemail.com", "url": "https://formtoemail.com/"},
-            { "text": "formcarry", "url": "https://formcarry.com/"}
-        ]
     },
     {
         "category": "Literate Programming",
@@ -472,94 +368,9 @@
         "visibility": "public"
     },
     {
-        "category": "Future Web",
-        "slug": "future-web",
-        "bookmarks": [{"text": "Web Components", "url": "https://www.webcomponents.org"}],
-        "visibility": "public"
-    },
-    {
-        "category": "Web Assembly",
-        "slug": "web-assembly",
-        "bookmarks": [{"text": "Web Assembly", "url": "http://webassembly.org"},
-                      {"text": "Cheerp", "url": "https://www.leaningtech.com/cheerp/"}],
-        "visibility": "public"
-    },
-    {
         "category": "Data models",
         "slug": "data-models",
         "bookmarks": [{"text": "Schema.org", "url": "https://schema.org/"}],
-        "visibility": "public"
-    },
-    {
-        "category": "Game Engines",
-        "slug": "game-engines",
-        "bookmarks": [{"text": "Amazon Lumberyard", "url": "https://aws.amazon.com/lumberyard/"},
-                      {"text": "Unity", "url": "https://unity3d.com/"},
-                      {"text": "Ignifuga", "url": "http://ignifuga.org/"},
-                      {"text": "PyGame", "url": "http://www.pygame.org/"},
-                      {"text": "Game Engines on itch.io",
-                       "url": "https://itch.io/game-development/engines"},
-                      {"text": "PICO-8", "url": "https://www.lexaloffle.com/pico-8.php"},
-                      {"text": "Voxatron", "url": "https://www.lexaloffle.com/voxatron.php"}],
-        "visibility": "public"
-    },
-    {
-        "category": "JavaScript Game Engines",
-        "slug": "javascript-game-engines",
-        "visibility": "public",
-        "bookmarks": [{"text": "Phaser", "url": "https://phaser.io/"},
-                      {"text": "CraftyJS", "url": "http://craftyjs.com/"},
-                      {"text": "CreateJS", "url": "https://createjs.com/"},
-                      {"text": "PixiJS", "url": "http://www.pixijs.com/"},
-                      {"text": "Kiwi.js", "url": "http://www.kiwijs.org/"}]
-    },
-    {
-        "category": "Physics Engines",
-        "slug": "physics-engines",
-        "bookmarks": [{"text": "Chipmunk", "url": "https://chipmunk-physics.net/"}],
-        "visibility": "public"
-    },
-    {
-        "category": "Game Libraries in C",
-        "slug": "c-game-libraries",
-        "bookmarks": [{"text": "Raylib", "url": "http://www.raylib.com/"},
-                      {"text": "SDL2", "url": "https://www.libsdl.org/"},
-                      {"text": "rfxgen", "url": "https://github.com/raysan5/rfxgen"},
-                      {"text": "raygui", "url": "https://github.com/raysan5/raygui"}],
-        "visibility": "public"
-    },
-    {
-        "category": "Game Development",
-        "slug": "game-development",
-        "bookmarks": [{"text": "Graphics Server", "url": "http://prog21.dadgum.com/157.html"},
-                      {"text": "Game Development in Scheme",
-                       "url": "https://www.reddit.com/r/scheme/comments/6hng3q/i_developed_a_medium_sized_cross_platform/"},
-                      {"text": "Functional game logic with truly pauseless garbage collection",
-                       "url": "https://medium.com/@brianwill/functional-game-logic-with-truly-pauseless-garbage-collection-cffecc7b96d7"},
-                      {"text": "Hexagonal Grids", "url": "https://www.redblobgames.com/grids/hexagons/"},
-                      {"text": "Tiled", "url": "http://www.mapeditor.org/"},
-                      {"text": "Awesome Game Development",
-                       "url": "https://notabug.org/Calinou/awesome-gamedev"}],
-        "visibility": "public"
-    },
-    {
-        "category": "Web Game Dev",
-        "slug": "web-game-dev",
-        "bookmarks": [{"text": "HTML5 Game Devs", "url": "http://www.html5gamedevs.com/"}],
-        "visibility": "public"
-    },
-    {
-        "category": "Indie Games",
-        "slug": "indie-games",
-        "visibility": "public",
-        "bookmarks": [
-            { "text": "itch.io", "url": "https://itch.io/"}
-        ]
-    },
-    {
-        "category": "Web Games",
-        "slug": "web-games",
-        "bookmarks": [{"text": "KeepOut", "url": "http://www.playkeepout.com/"}],
         "visibility": "public"
     },
     {
@@ -646,12 +457,6 @@
         "visibility": "public"
     },
     {
-        "category": "Lisp Papers",
-        "slug": "lisp-papers",
-        "bookmarks": [{"text": "Cheney on the M.T.A.", "url": "http://www.pipeline.com/~hbaker1/CheneyMTA.html"}],
-        "visibility": "public"
-    },
-    {
         "category": "OpenGL",
         "slug": "opengl",
         "bookmarks": [{"text": "docs.GL", "url": "http://docs.gl"},
@@ -659,7 +464,12 @@
                        "url": "https://www.khronos.org/registry/OpenGL-Refpages/gl4/"},
                       {"text": "Mesa3D", "url": "https://www.mesa3d.org/"},
                       { "text": "An intro to modern OpenGL",
-                        "url": "http://duriansoftware.com/joe/An-intro-to-modern-OpenGL.-Table-of-Contents.html"}
+                        "url": "http://duriansoftware.com/joe/An-intro-to-modern-OpenGL.-Table-of-Contents.html"},
+                      { "text": "Apple OpenGL support",
+                        "url": "https://support.apple.com/en-us/HT202823"},
+                      { "text": "Learn OpenGL", "url": "https://learnopengl.com"},
+                      { "text": "The Book of Shaders",
+                        "url": "https://thebookofshaders.com/"}
                      ],
         "visibility": "public"
     },
@@ -1036,17 +846,6 @@
                       {"text": "xrdp", "url": "http://www.xrdp.org/"},
                       {"text": "FreeRDP", "url": "https://github.com/FreeRDP/FreeRDP"}],
         "visibility": "public"
-    },
-    {
-        "category": "MUD",
-        "slug": "mud",
-        "visibility": "public",
-        "bookmarks": [{"text": "DiscworldMUD", "url": "http://discworld.starturtle.net/lpc/"},
-                      {"text": "Dead of Night", "url": "http://deadofnight.org/"},
-                      {"text": "MUME", "url": "http://mume.org/"},
-                      {"text": "sindome", "url": "https://www.sindome.org/"},
-                      {"text": "LambdaMOO programming",
-                       "url": "https://github.com/SevenEcks/lambda-moo-programming"}]
     },
     {
         "category": "Startup",

@@ -153,5 +153,11 @@
                        "url": "http://alex-charlton.com/posts/Prototype_to_polish_Making_games_in_CHICKEN_Scheme_with_Hypergiant/"},
                       {"text": "Hypergiant", "url": "http://wiki.call-cc.org/eggref/4/hypergiant"}],
         "visibility": "public"
+    },
+    {
+        "category": "Lisp Papers",
+        "slug": "lisp-papers",
+        "bookmarks": [{"text": "Cheney on the M.T.A.", "url": "http://www.pipeline.com/~hbaker1/CheneyMTA.html"}],
+        "visibility": "public"
     }
 ]

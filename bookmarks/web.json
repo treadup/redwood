@@ -360,5 +360,18 @@
       "bookmarks": [
           { "text": "Eleventy", "url": "https://www.11ty.io/"}
       ]
+    },
+    {
+        "category": "Future Web",
+        "slug": "future-web",
+        "bookmarks": [{"text": "Web Components", "url": "https://www.webcomponents.org"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Web Assembly",
+        "slug": "web-assembly",
+        "bookmarks": [{"text": "Web Assembly", "url": "http://webassembly.org"},
+                      {"text": "Cheerp", "url": "https://www.leaningtech.com/cheerp/"}],
+        "visibility": "public"
     }
 ]

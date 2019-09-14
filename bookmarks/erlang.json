@@ -1,0 +1,40 @@
+[
+    {
+        "category": "Erlang",
+        "slug": "erlang",
+        "bookmarks": [{"text": "Erlang", "url": "https://www.erlang.org/"},
+                      {"text": "Cowboy", "url": "https://github.com/ninenines/cowboy"},
+                      {"text": "Learn you some Erlang", "url": "http://learnyousomeerlang.com/content"},
+                      {"text": "rebar3", "url": "https://github.com/erlang/rebar3"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Elixir",
+        "slug": "elixir",
+        "bookmarks": [{"text": "Elixir", "url": "https://elixir-lang.org/"},
+                      {"text": "Introduction to Elixir",
+                       "url": "https://elixir-lang.org/getting-started/introduction.html"},
+                      {"text": "mix", "url": "https://hexdocs.pm/mix/Mix.html"},
+                      {"text": "hex", "url": "https://hex.pm/"},
+                      {"text": "Elixir Docs", "url": "https://elixir-lang.org/docs.html"},
+                      {"text": "Phoenix Framework", "url": "http://phoenixframework.org/"},
+                      {"text": "Distillery", "url": "https://github.com/bitwalker/distillery"},
+                      {"text": "Gigalixir", "url": "https://gigalixir.com/"},
+                      {"text": "Elixir on Google Cloud", "url": "https://cloud.google.com/elixir/"}],
+        "visibility": "public"
+    },
+    {
+        "category": "Lisp Flavored Erlang",
+        "slug": "lfe",
+        "bookmarks": [{"text": "Lisp Flavored Erlang", "url": "http://lfe.io/"},
+                      {"text": "Robert Virding on LFE", "url": "https://www.youtube.com/watch?v=Br2KY12LB2w"}],
+        "visibility": "public"
+    },
+    {
+        "category": "BEAM",
+        "slug": "beam",
+        "bookmarks": [{"text": "BEAM Wisdoms", "url": "http://beam-wisdoms.clau.se/en/latest/"},
+                      {"text": "BEAM languages", "url": "https://github.com/llaisdy/beam_languages"}],
+        "visibility": "public"
+    }
+]

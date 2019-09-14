@@ -1,0 +1,15 @@
+[
+    {
+        "category": "C",
+        "slug": "c",
+        "bookmarks": [{"text": "clib", "url": "https://github.com/clibs/clib"},
+                      {"text": "tinyspline", "url": "https://github.com/msteinbeck/tinyspline"},
+                      {"text": "MathC", "url": "https://github.com/ferreiradaselva/mathc"},
+                      {"text": "Handmade Math", "url": "https://github.com/HandmadeMath/Handmade-Math"},
+                      {"text": "SubC", "url": "https://www.t3x.org/reload/"},
+                      {"text": "Awesome C", "url": "https://notabug.org/koz.ross/awesome-c"},
+                      {"text": "MiniAL", "url": "https://github.com/dr-soft/mini_al"},
+                      { "text": "One year of C", "url": "http://floooh.github.io/2018/06/02/one-year-of-c.html"}],
+        "visibility": "public"
+    }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "category": "Deep Learning",
+    "slug": "deep-learning",
+    "visibility": "public",
+    "bookmarks": [
+      { "text": "Deep Lizard", "url": "https://deeplizard.com" }
+    ]
+  }
+]
