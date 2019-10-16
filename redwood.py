@@ -704,6 +704,29 @@ def api_bookmarks():
     response.headers['Content-Type'] = 'application/json'
     return response
 
+
 @app.route('/video')
 def video():
     return render_template("video.html")
+
+
+stored_text = ""
+
+
+@app.route('/storage', methods=['GET', 'POST'])
+def storage():
+    global stored_text
+
+    authorization = request.headers.get('Authorization')
+    if authorization != "Bearer decafbad":
+        return "Not Authorized", 403
+
+    if request.method == 'POST':
+        content_length = int(request.headers.get('Content-Length'))
+        if content_length > 128:
+            return "Text is too large", 400
+        stored_text = request.get_data()
+        print("type of stored_text: {type(stored_text)}")
+        return ""
+    else:
+        return stored_text
