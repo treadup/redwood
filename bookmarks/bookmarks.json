@@ -65,7 +65,9 @@
     {
         "category": "GitHub",
         "slug": "github",
-        "bookmarks": [{"text": "GitHub stars", "url": "https://github.com/stars"}],
+        "bookmarks": [{"text": "GitHub stars", "url": "https://github.com/stars"},
+                      {"text": "GitHub Actions",
+                       "url": "https://help.github.com/en/actions/automating-your-workflow-with-github-actions"}],
         "visibility": "public"
     },
     {
