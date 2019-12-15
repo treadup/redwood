@@ -97,7 +97,7 @@ nav {
         /* Colors */
         background-color: #228B22;
         color: white;
-	z-index: 10;
+	z-index: 20;
     }
 
     .nav-menu--collapsed {
