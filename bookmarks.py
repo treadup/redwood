@@ -12,6 +12,7 @@ def load_all_bookmarks():
         "compilers.json",
         "database.json",
         "design.json",
+        "driving.json",
         "editors.json",
         "erlang.json",
         "games.json",
