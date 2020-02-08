@@ -658,26 +658,31 @@ def interesting_languages():
 def gpg():
     return render_markdown("GPG", "gpg.md")
 
+
 @app.route('/ssh-keys')
 def ssh_keys():
     return render_markdown("SSH keys", "ssh_keys.md")
+
 
 @app.route('/learning')
 def learning():
     return render_markdown("Learning", "learning.md")
 
+
 @app.route('/psychology')
 def psychology():
     return render_markdown("Psychology", "psychology.md")
+
 
 @app.route('/game-development-programming-languages')
 def game_development_programming_languages():
     return render_markdown("Game Development Programming Languages",
                            "game_development_programming_languages.md")
 
+
 @app.route('/left')
 def days_left():
-    target_date = date(2018, 9, 20)
+    target_date = date(2020, 9, 10)
     duration = target_date - datetime.now().date()
     days = duration.days
 
