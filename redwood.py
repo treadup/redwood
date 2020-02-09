@@ -282,7 +282,6 @@ def current_time():
     Show the current local time in different time zones.
     """
     places = [{"name": "Sweden:", "tz": "Europe/Stockholm"},
-              {"name": "Hawaii:", "tz": "Pacific/Honolulu"},
               {"name": "California:", "tz": "America/Los_Angeles"},
               {"name": "Wyoming:", "tz": "US/Mountain"}]
 
