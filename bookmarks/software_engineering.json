@@ -66,7 +66,9 @@
     {
         "category": "Static analysis",
         "slug": "static-analysis",
-        "bookmarks": [{"text": "Code Climate", "url": "https://codeclimate.com/"}],
+        "bookmarks": [{"text": "Code Climate", "url": "https://codeclimate.com/"},
+                      {"text": "Codacy", "url": "http://codacy.com"},
+                      {"text": "Codebeat", "url": "http://codebeat.co"}],
         "visibility": "public"
     },
         {
