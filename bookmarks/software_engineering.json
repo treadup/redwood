@@ -139,7 +139,9 @@
         "slug": "software-engineering",
         "visibility": "public",
         "bookmarks": [{"text": "Organizational skills beat algorithmic wizardry",
-                       "url": "http://prog21.dadgum.com/177.html"}]
+                       "url": "http://prog21.dadgum.com/177.html"},
+                      {"text": "Simple Systems Have Less Downtime",
+                       "url": "https://www.gkogan.co/blog/simple-systems/"}]
     },
     {
         "category": "Quality Engineering",
