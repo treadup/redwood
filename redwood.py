@@ -734,3 +734,11 @@ def storage():
         return ""
     else:
         return stored_text
+
+@app.route('/empty', methods=['GET'])
+def empty():
+    return ('', 200)
+
+@app.route('/nocontent', methods=['GET'])
+def nocontent():
+    return ('', 204)
