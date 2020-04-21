@@ -686,7 +686,7 @@ def days_left():
     days = duration.days
 
     if days >= 0:
-        message = "{} days left".format(days)
+        message = "{} months and {} days left".format(days // 30, days % 30)
     else:
         message = "Target date has already occurred."
 
