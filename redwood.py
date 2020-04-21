@@ -2,6 +2,7 @@ import os
 import time
 import pytz
 import json
+from dateutil.relativedelta import relativedelta
 
 from flask import (
     Flask,
@@ -682,13 +683,17 @@ def game_development_programming_languages():
 @app.route('/left')
 def days_left():
     target_date = date(2020, 9, 10)
-    duration = target_date - datetime.now().date()
+    now = datetime.now().date()
+    duration = target_date - now
     days = duration.days
 
-    if days >= 0:
-        message = "{} months and {} days left".format(days // 30, days % 30)
+    if days == 0:
+        message = "Target date is today"
+    elif days > 0:
+        delta = relativedelta(target_date, now)
+        message = "{} months and {} days left".format(delta.months, delta.days)
     else:
-        message = "Target date has already occurred."
+        message = "Target date has already occurred"
 
     return render_template("days_left.html", message=message)
 

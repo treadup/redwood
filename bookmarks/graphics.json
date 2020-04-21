@@ -12,7 +12,9 @@
                         "url": "https://support.apple.com/en-us/HT202823"},
                       { "text": "Learn OpenGL", "url": "https://learnopengl.com"},
                       { "text": "The Book of Shaders",
-                        "url": "https://thebookofshaders.com/"}
+                        "url": "https://thebookofshaders.com/"},
+                      { "text": "Building your own C application",
+                        "url": "http://www.opengl-tutorial.org/miscellaneous/building-your-own-c-application/"}
                      ],
         "visibility": "public"
     },
