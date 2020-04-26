@@ -682,7 +682,7 @@ def game_development_programming_languages():
 
 @app.route('/left')
 def days_left():
-    target_date = date(2020, 9, 10)
+    target_date = date(2020, 10, 1)
     now = datetime.now().date()
     duration = target_date - now
     days = duration.days
