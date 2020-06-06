@@ -27,6 +27,7 @@ def load_all_bookmarks():
         "math.json",
         "project_management.json",
         "python.json",
+        "organization.json",
         "other_languages.json",
         "shell.json",
         "software_engineering.json",

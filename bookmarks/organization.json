@@ -1,0 +1,24 @@
+[
+    {
+        "category": "Leadership",
+        "slug": "leadership",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Så blir du en bra ledare",
+              "url": "https://www.framfot.se/tips/sa-blir-du-en-bra-ledare/"}
+        ]
+    },
+    {
+        "category": "Teams",
+        "slug": "teams",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Habits of High Functioning Teams",
+              "url": "https://deniseyu.io/2020/05/23/habits-of-high-performing-teams.html"},
+            { "text": "Understand team effectiveness",
+              "url": "https://rework.withgoogle.com/guides/understanding-team-effectiveness/steps/introduction/"},
+            { "text": "Psychological Safety",
+              "url": "https://rework.withgoogle.com/guides/understanding-team-effectiveness/steps/foster-psychological-safety/"}
+        ]
+    }
+]
