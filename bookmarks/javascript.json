@@ -231,7 +231,9 @@
                        "url": "https://github.com/reactjs/react-basic"},
                       { "text": "Storybook", "url": "https://github.com/storybooks/storybook"},
                       { "text": "9 things every react beginner should know",
-                        "url": "https://camjackson.net/post/9-things-every-reactjs-beginner-should-know"}],
+                        "url": "https://camjackson.net/post/9-things-every-reactjs-beginner-should-know"},
+                      { "text": "Component Communication",
+                        "url": "https://www.javascriptstuff.com/component-communication/"}],
         "visibility": "public"
     },
     {
