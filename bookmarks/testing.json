@@ -1,5 +1,14 @@
 [
   {
+      "category": "Testing",
+      "slug": "testing",
+      "visibility": "public",
+      "bookmarks": [
+          { "text": "Ministry of Testing",
+            "url": "https://www.ministryoftesting.com/"}
+      ]
+  },
+  {
     "category": "Load Testing",
     "slug": "load-testing",
     "visibility": "public",
