@@ -1,15 +1,23 @@
 [
-   {
-       "category": "Körkort",
-       "slug": "körkort",
-       "visibility": "public",
-       "bookmarks": [
-           { "text": "Körkortsljudboken",
-             "url": "https://korkortssidan.se/korkortsljudboken/"},
-           { "text": "Sunne Trafikskola",
-             "url": "https://www.youtube.com/channel/UCpKtboErtbPewj8wOsV0X9w/videos"},
-           { "text": "Fickparkering", "url": "https://www.youtube.com/watch?v=HBdrUdxAoKg"},
-           { "text": "Ta Körkort Appen", "url": "https://teoriappar.se/p/appen"}
-       ]
-   }
+    {
+        "category": "Körkort",
+        "slug": "körkort",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "Körkortsljudboken",
+              "url": "https://korkortssidan.se/korkortsljudboken/"},
+            { "text": "Sunne Trafikskola",
+              "url": "https://www.youtube.com/channel/UCpKtboErtbPewj8wOsV0X9w/videos"},
+            { "text": "Fickparkering", "url": "https://www.youtube.com/watch?v=HBdrUdxAoKg"},
+            { "text": "Ta Körkort Appen", "url": "https://teoriappar.se/p/appen"}
+        ]
+    },
+    {
+        "category": "Bil",
+        "slug": "bil",
+        "visibility": "public",
+        "bookmarks": [
+            { "text": "bilskatt.nu", "url": "https://bilskatt.nu/"}
+        ]
+    }
 ]
