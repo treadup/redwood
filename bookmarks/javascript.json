@@ -201,7 +201,11 @@
         "bookmarks": [
             {"text": "How Single Page Applications Work",
              "url": "https://medium.com/@pshrmn/demystifying-single-page-applications-3068d0555d46"},
-            {"text": "JAMstack", "url": "https://jamstack.org/"}
+            {"text": "JAMstack", "url": "https://jamstack.org/"},
+            {"text": "Server Side Rendering is a Thiel Truth",
+             "url": "https://timr.co/server-side-rendering-is-a-thiel-truth"},
+            {"text": "The Architecture No One Needs",
+             "url": "https://www.gregnavis.com/articles/the-architecture-no-one-needs.html"}
         ]
     },
     {
