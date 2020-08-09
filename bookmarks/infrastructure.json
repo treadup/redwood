@@ -216,5 +216,18 @@
             { "text": "formtoemail.com", "url": "https://formtoemail.com/"},
             { "text": "formcarry", "url": "https://formcarry.com/"}
         ]
+    },
+    {
+        "category": "DevOps",
+        "slug": "devops",
+        "visibility": "public",
+        "bookmarks": [
+            {"text": "What DevOps means to me",
+             "url": "https://www.kartar.net/2010/02/what-devops-means-to-me/"},
+            {"text": "DevOps is About CAMS",
+             "url": "https://blog.chef.io/what-devops-means-to-me/"},
+            {"text": "What is DevOps",
+             "url": "https://theagileadmin.com/what-is-devops/"}
+        ]
     }
 ]

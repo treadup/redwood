@@ -747,3 +747,7 @@ def empty():
 @app.route('/nocontent', methods=['GET'])
 def nocontent():
     return ('', 204)
+
+# Soundscape
+# <iframe width="560" height="315" src="https://www.youtube.com/embed/8myYyMg1fFE" frameborder="0"
+# allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
