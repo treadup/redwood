@@ -3,7 +3,7 @@
 {% block content %}
 <div class="photo-gallery">
 {% for image in collection.images %}
-    <a href="{{image.url}}"><img src="{{image.thumbnail}}" /></a>
+    <a href="{{image.url}}"><img src="{{image.thumbnail}}" loading=lazy /></a>
 {% endfor %}
 </div>
 {% endblock %}
